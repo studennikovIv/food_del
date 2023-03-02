@@ -10,6 +10,8 @@ import titleMenuPizzaKFC from './components/KFC/titleMenuKFC.jsx';
 import menuPizza from './components/PizzaDay/pizzaDay';
 import titleMenuPizzaDay from './components/PizzaDay/titleMenuPizzaDay';
 import Menu from './components/Menu/Menu';
+// SushiFamily
+import menuSushiFamily from './components/SushiFamily/SushiFamily.jsx';
 
 const App = () => {
   return (
@@ -25,6 +27,12 @@ const App = () => {
           <Route
             path="/food_del/PizzaDay"
             element={<Menu arrMenu={menuPizza} titleMenu={titleMenuPizzaDay} />}
+          />
+          <Route
+            path="/food_del/SushiFamily"
+            element={
+              <Menu arrMenu={menuSushiFamily} titleMenu={titleMenuPizzaDay} />
+            }
           />
         </Routes>
       </div>
