@@ -24,7 +24,7 @@ const myClients = [
   },
   {
     id: 4,
-    name: 'MyCherie',
+    name: 'MaCherie',
     logoImg: myCherie,
   },
   {

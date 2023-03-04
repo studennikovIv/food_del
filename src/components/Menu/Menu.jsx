@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import css from "./Menu.module.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import css from './Menu.module.css';
 
 const PizzaDay = ({ arrMenu, titleMenu }) => {
   const {
@@ -20,12 +20,12 @@ const PizzaDay = ({ arrMenu, titleMenu }) => {
   return (
     <div className={conteinerMenu}>
       <div className={leftBox}>
-        {titleMenu.map((el) => {
+        {titleMenu.map(el => {
           return <NavLink key={el}>{el}</NavLink>;
         })}
       </div>
       <div className={rightBox}>
-        {titleMenu.map((el) => {
+        {titleMenu.map(el => {
           return (
             <div className={conteinerRightBox} key={el}>
               <h3 className={titleCard}>{el}</h3>
@@ -46,12 +46,12 @@ const PizzaDay = ({ arrMenu, titleMenu }) => {
                       <li className={optionCard}>
                         <span>{mass}</span>
                         <span>{size}</span>
-                        <span>{price}</span>
+                        <span>{price}₴</span>
                       </li>
                     )}
 
                     <li>
-                      <button className={cardBtn}>{price}</button>
+                      <button className={cardBtn}>{price}₴</button>
                     </li>
                   </ul>
                 );

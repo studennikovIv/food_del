@@ -14,6 +14,8 @@ import Menu from './components/Menu/Menu';
 import menuSushiFamily from './components/SushiFamily/SushiFamily.jsx';
 // Shaurmichka
 import menuShaurmichka from './components/Shaurmichka/Shaurmichka.jsx';
+// MaCherie
+import menuMaCherie from 'components/MaCherie/MaCherie';
 
 const App = () => {
   return (
@@ -40,6 +42,12 @@ const App = () => {
             path="/food_del/SushiFamily"
             element={
               <Menu arrMenu={menuSushiFamily} titleMenu={titleMenuPizzaDay} />
+            }
+          />
+          <Route
+            path="/food_del/MaCherie"
+            element={
+              <Menu arrMenu={menuMaCherie} titleMenu={titleMenuPizzaDay} />
             }
           />
         </Routes>
