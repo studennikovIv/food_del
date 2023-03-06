@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import css from './Menu.module.css';
 
-const PizzaDay = ({ arrMenu, titleMenu }) => {
+const Menu = ({ arrMenu, titleMenu }) => {
   const {
     conteinerMenu,
     leftBox,
@@ -64,4 +64,4 @@ const PizzaDay = ({ arrMenu, titleMenu }) => {
   );
 };
 
-export default PizzaDay;
+export default Menu;
