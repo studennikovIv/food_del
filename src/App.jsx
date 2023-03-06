@@ -18,8 +18,10 @@ import menuShaurmichka from './components/Shaurmichka/Shaurmichka.jsx';
 import menuMaCherie from 'components/MaCherie/MaCherie.jsx';
 // SushiZoom
 import menuSushiZoom from 'components/SushiZoom/menuSushiZoom.jsx';
+// Osama Sushi
+import menuOsamaSushi from 'components/OsamaSushi/OsamaSushi.jsx';
 
-const App = () => {
+function App() {
   return (
     <>
       <Header />
@@ -58,10 +60,16 @@ const App = () => {
               <Menu arrMenu={menuSushiZoom} titleMenu={titleMenuPizzaDay} />
             }
           />
+          <Route
+            path="/food_del/OsamaSushi"
+            element={
+              <Menu arrMenu={menuOsamaSushi} titleMenu={titleMenuPizzaDay} />
+            }
+          />
         </Routes>
       </div>
     </>
   );
-};
+}
 
 export default App;
