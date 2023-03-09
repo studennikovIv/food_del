@@ -113,6 +113,7 @@ import voda10 from './img/voda10.jpg';
 const menuSushiFamily = [
   // Ролы
   {
+    name: 'Sushi Family',
     title: 'Роли',
     list: [
       {

@@ -25,16 +25,16 @@ export const OneCardStyled = styled.li`
 `;
 
 export const ImageInCard = styled.img`
-  width: 50px;
+  width: 60px;
   // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
-  border-radius: 50%;
+  // border-radius: 50%;
 
   @media screen and (min-width: 760px) {
-    width: 70px;
+    width: 80px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 100px;
+    width: 110px;
   }
 `;
 
@@ -54,16 +54,16 @@ export const NamePosition = styled.h1`
 
 export const Description = styled.p`
   padding: 2px;
-  font-size: 8px;
+  font-size: 5px;
   text-align: center;
   margin: 7px;
 
   @media screen and (min-width: 760px) {
-    font-size: 10px;
+    font-size: 7px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 12px;
+    font-size: 9px;
   }
 `;
 

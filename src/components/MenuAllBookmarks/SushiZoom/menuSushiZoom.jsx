@@ -160,6 +160,7 @@ import napoi2 from './img/napoi2.jpg';
 
 const menuSushiZoom = [
   {
+    name: 'Sushi Zoom',
     title: 'Роли',
     list: [
       {
@@ -1302,7 +1303,7 @@ const menuSushiZoom = [
       {
         img: napoi1,
         title: 'Напої',
-        name: 'Pepsi 1л',
+        name: 'Pepsi 0,5л',
         text: '',
         price: 35,
         mass: '0,5л',

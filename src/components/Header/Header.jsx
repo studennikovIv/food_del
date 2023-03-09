@@ -1,7 +1,6 @@
 // import React from 'react';
 import logo from './images/location-pin-svgrepo-com.svg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
-import home from '../Home/Home';
 import {
   HeaderStyled,
   ContentHeader,
@@ -18,7 +17,7 @@ export function Header() {
   return (
     <HeaderStyled>
       <ContentHeader>
-        <a href={home}>
+        <a href="/">
           <Logo src={logo} alt="logo" />
         </a>
         <Title>FOOD DELIVERY</Title>

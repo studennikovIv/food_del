@@ -37,6 +37,7 @@ import shawerma3 from './img/shawerma3.jpg';
 const menuMaCherie = [
   // Піцца
   {
+    name: 'Ma Cherie',
     title: 'Піцца',
     list: [
       {
@@ -310,7 +311,7 @@ const menuMaCherie = [
       {
         img: shawerma2,
         title: 'Шаурма',
-        name: 'Шаурма з куркою',
+        name: 'Шаурма з куркою та грибами',
         text: '',
         price: 100,
         mass: '400гр',

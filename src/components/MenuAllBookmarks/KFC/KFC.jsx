@@ -84,6 +84,7 @@ import desert5 from './img/desert/5.jpg';
 
 const menuKFC = [
   {
+    name: 'KFC',
     title: 'Бургери',
     list: [
       {

@@ -6,6 +6,7 @@ import hotDog from './img/hotDog.jpg';
 
 const menuShaurmichka = [
   {
+    name: 'Шаурмичка',
     title: 'Шаурма',
     list: [
       {

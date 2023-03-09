@@ -18,6 +18,7 @@ import pizza17 from './img/pizza17.jpg';
 
 const menuPizza = [
   {
+    name: 'Pizza Day',
     title: 'Піцца',
     list: [
       {

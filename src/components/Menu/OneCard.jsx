@@ -16,8 +16,8 @@ export function OneCard({ position }) {
         <ImageInCard src={img && img} alt={name && name} />
         <NamePosition>{name && name}</NamePosition>
         <Description>{text && text}</Description>
-        <Size>{size && <span>Размер: {size}</span>}</Size>
-        <Massa>{mass && <span>Вес: {mass}</span>}</Massa>
+        <Size>{size && size}</Size>
+        <Massa>{mass && mass}</Massa>
         <ButtonPrice>{price && price}</ButtonPrice>
       </OneCardStyled>
     );
