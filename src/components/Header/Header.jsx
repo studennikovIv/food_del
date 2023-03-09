@@ -1,6 +1,6 @@
-// import React from 'react';
 import logo from './images/location-pin-svgrepo-com.svg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
+import { ModaBasket } from './ModalBasket';
 import {
   HeaderStyled,
   ContentHeader,
@@ -31,7 +31,7 @@ export function Header() {
             </li>
           </Contacts>
           <Basket>
-            <BasketImg src={basket} alt="basket" />
+            <BasketImg src={basket} alt="basket" onClick={ModaBasket} />
           </Basket>
         </LeftInfo>
       </ContentHeader>
