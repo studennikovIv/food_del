@@ -1,43 +1,41 @@
-import React from "react";
-import css from "./Header.module.css";
+// import React from 'react';
+import logo from './images/location-pin-svgrepo-com.svg';
+import basket from './images/basket-free-material-svgrepo-com.svg';
+import home from '../Home/Home';
+import {
+  HeaderStyled,
+  ContentHeader,
+  Logo,
+  Title,
+  LeftInfo,
+  Contacts,
+  ContentContact,
+  Basket,
+  BasketImg,
+} from './styled/Header.styled';
 
-import logo from "./1.png";
-import addSale from "./addSale.png";
-const Header = () => {
-  const {
-    logoImg,
-    header,
-    headerList__link,
-    headerList__ul,
-    addSale__btn,
-    headerList__li,
-    header__container,
-    logoImg__link,
-  } = css;
+export function Header() {
   return (
-    <header className={header}>
-      <div className={header__container}>
-        <a href="/" className={logoImg__link}>
-          <img src={logo} alt="asdasd" className={logoImg} />
+    <HeaderStyled>
+      <ContentHeader>
+        <a href={home}>
+          <Logo src={logo} alt="logo" />
         </a>
-
-        <ul className={headerList__ul}>
-          <li className={headerList__li}>
-            <a href="tel:+380632431675" className={headerList__link}>
-              {" "}
-              +380 63 243 16 75{" "}
-            </a>
-            <p>з 09:00 до 21:00 без вихідних</p>
-          </li>
-          <li>
-            <button className={addSale__btn}>
-              <img src={addSale} alt="1" />
-            </button>
-          </li>
-        </ul>
-      </div>
-    </header>
+        <Title>FOOD DELIVERY</Title>
+        <LeftInfo>
+          <Contacts>
+            <li>
+              <ContentContact>+380992121234</ContentContact>
+            </li>
+            <li>
+              <ContentContact>food-del@gmail.com</ContentContact>
+            </li>
+          </Contacts>
+          <Basket>
+            <BasketImg src={basket} alt="basket" />
+          </Basket>
+        </LeftInfo>
+      </ContentHeader>
+    </HeaderStyled>
   );
-};
-
-export default Header;
+}
