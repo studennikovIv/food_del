@@ -2,39 +2,26 @@ import logo from './images/location-pin-svgrepo-com.svg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
 import { ModaBasket } from './ModalBasket';
 import {
-  HeaderStyled,
-  ContentHeader,
-  Logo,
-  Title,
-  LeftInfo,
-  Contacts,
-  ContentContact,
-  Basket,
-  BasketImg,
+  STYLED_HEADER,
+  CONTENT_DIV,
+  LOGO_IMG,
+  TITLE_H1,
+  BASKET_BTN,
+  BASKET_IMG,
 } from './styled/Header.styled';
 
 export function Header() {
   return (
-    <HeaderStyled>
-      <ContentHeader>
+    <STYLED_HEADER>
+      <CONTENT_DIV>
         <a href="/">
-          <Logo src={logo} alt="logo" />
+          <LOGO_IMG src={logo} alt="logo" />
         </a>
-        <Title>FOOD DELIVERY</Title>
-        <LeftInfo>
-          <Contacts>
-            <li>
-              <ContentContact>+380992121234</ContentContact>
-            </li>
-            <li>
-              <ContentContact>food-del@gmail.com</ContentContact>
-            </li>
-          </Contacts>
-          <Basket>
-            <BasketImg src={basket} alt="basket" onClick={ModaBasket} />
-          </Basket>
-        </LeftInfo>
-      </ContentHeader>
-    </HeaderStyled>
+        <TITLE_H1>FOOD DELIVERY</TITLE_H1>
+        <BASKET_BTN>
+          <BASKET_IMG src={basket} alt="basket" onClick={ModaBasket} />
+        </BASKET_BTN>
+      </CONTENT_DIV>
+    </STYLED_HEADER>
   );
 }

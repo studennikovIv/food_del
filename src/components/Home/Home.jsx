@@ -1,22 +1,24 @@
 import React from 'react';
-import css from './styled/Home.module.css';
-import myClients from './myClients/myClients';
+import { CONTENT_DIV, CLIENTS_DIV, CARD_DIV } from './styled/Home.styled';
+import myClients from './My_clients/My_clients';
 import { Link } from 'react-router-dom';
+
 const Home = () => {
-  const { card, conteinerCard, linkClient } = css;
   return (
     <>
-      <div className={conteinerCard}>
+      <CONTENT_DIV>
         {myClients.map(({ name, id, logoImg }) => {
           return (
-            <Link className={linkClient} to={`${name}`} key={id}>
-              <div className={card}>
-                <img src={logoImg} alt={name} />
-              </div>
-            </Link>
+            <CLIENTS_DIV>
+              <Link to={`${name}`} key={id}>
+                <CARD_DIV>
+                  <img src={logoImg} alt={name} />
+                </CARD_DIV>
+              </Link>
+            </CLIENTS_DIV>
           );
         })}
-      </div>
+      </CONTENT_DIV>
     </>
   );
 };

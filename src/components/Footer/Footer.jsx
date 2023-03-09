@@ -1,29 +1,29 @@
 import {
-  FooterStyled,
-  ContentFooter,
-  Title,
-  Contacts,
-  ContactsContent,
+  STYLED_FOOTER,
+  CONTENT_DIV,
+  TITLE_H1,
+  CONTACTS_UL,
+  CONTACTS_TEXT_P,
 } from './styled/Footer.styled';
 
 export function Footer() {
   return (
-    <FooterStyled>
-      <Title>FAST AND QUALITY</Title>
-      <ContentFooter>
-        <Contacts>
+    <STYLED_FOOTER>
+      <TITLE_H1>FAST AND QUALITY</TITLE_H1>
+      <CONTENT_DIV>
+        <CONTACTS_UL>
           <li>
-            <ContactsContent>з 8:00 дo 21:00</ContactsContent>
+            <CONTACTS_TEXT_P>з 8:00 дo 21:00</CONTACTS_TEXT_P>
           </li>
           <li>
-            <ContactsContent>+380992121234</ContactsContent>
+            <CONTACTS_TEXT_P>+380992121234</CONTACTS_TEXT_P>
           </li>
           <li>
-            <ContactsContent>food-del@gmail.com</ContactsContent>
+            <CONTACTS_TEXT_P>food-del@gmail.com</CONTACTS_TEXT_P>
           </li>
-        </Contacts>
-        <ContactsContent>© 2023. Food Delivery.</ContactsContent>
-      </ContentFooter>
-    </FooterStyled>
+        </CONTACTS_UL>
+        <CONTACTS_TEXT_P>© 2023. Food Delivery.</CONTACTS_TEXT_P>
+      </CONTENT_DIV>
+    </STYLED_FOOTER>
   );
 }

@@ -6,6 +6,7 @@ import pizzaDay from './images/pizzaDay.jpg';
 import MyPlace from './images/MyPlace.jpg';
 import sushiZoom from './images/sushiZoom.jpg';
 import osamaSushi from './images/osamaSushi.jpg';
+
 const myClients = [
   {
     id: 1,

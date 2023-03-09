@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ConteinerMenu = styled.div`
+export const CONTEINER_MENU_DIV = styled.div`
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -20,7 +20,7 @@ export const ConteinerMenu = styled.div`
   }
 `;
 
-export const MenuStyled = styled.ul`
+export const MENU_UL = styled.ul`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -37,12 +37,12 @@ export const MenuStyled = styled.ul`
   }
 `;
 
-export const OneCase = styled.li`
+export const ONE_CASE_LI = styled.li`
   margin: 0 0 20px 0;
   // padding: 80px 0 0 0;
 `;
 
-export const TitlePosition = styled.h1`
+export const NAME_SUBPOSITION_H1 = styled.h1`
   font-size: 15px;
   margin: 0 0 0 40px;
 
@@ -57,7 +57,7 @@ export const TitlePosition = styled.h1`
   }
 `;
 
-export const OneList = styled.ul`
+export const SUBPOSITION_UL = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

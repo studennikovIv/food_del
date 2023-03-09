@@ -1,26 +1,21 @@
 import {
-  TitleMenuStyle,
-  OnePosition,
-  OneLink,
+  NAVIGATION_MENU_UL,
+  MENU_HEADER_H2,
+  ONE_POSITION_LI,
+  LINK_A,
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
   return (
-    <TitleMenuStyle>
-      {props.map(({ name }) => {
-        return (
-          <div key={name}>
-            <h2>{name}</h2>
-          </div>
-        );
-      })}
+    <NAVIGATION_MENU_UL>
+      <MENU_HEADER_H2>{props[0].name}:</MENU_HEADER_H2>
       {props.map(({ title }) => {
         return (
-          <OnePosition key={title}>
-            <OneLink href={`#${title}`}>{title}</OneLink>
-          </OnePosition>
+          <ONE_POSITION_LI key={title}>
+            <LINK_A href={`#${title}`}>{title}</LINK_A>
+          </ONE_POSITION_LI>
         );
       })}
-    </TitleMenuStyle>
+    </NAVIGATION_MENU_UL>
   );
 }

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FooterStyled = styled.footer`
+export const STYLED_FOOTER = styled.footer`
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,7 +24,7 @@ export const FooterStyled = styled.footer`
   // }
 `;
 
-export const ContentFooter = styled.div`
+export const CONTENT_DIV = styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ export const ContentFooter = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const TITLE_H1 = styled.h1`
   display: flex;
   margin: 10px;
   font-size: 20px;
@@ -58,7 +58,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Contacts = styled.ul`
+export const CONTACTS_UL = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ export const Contacts = styled.ul`
   }
 `;
 
-export const ContactsContent = styled.p`
+export const CONTACTS_TEXT_P = styled.p`
   padding: 3px;
   font-size: 16px;
   // font-family: Robota;

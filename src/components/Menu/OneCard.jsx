@@ -1,25 +1,28 @@
 import {
-  OneCardStyled,
-  ImageInCard,
-  NamePosition,
-  Description,
-  ButtonPrice,
-  Massa,
-  Size,
+  ONE_CARD_LI,
+  IMAGE_IMG,
+  NAME_DISH_H1,
+  DESCRIPTION_P,
+  SUPPORT_DIV,
+  MASSA_P,
+  SIZE_P,
+  BUTTON_PRICE,
 } from './styled/OneCard.styled';
 
 export function OneCard({ position }) {
   const { list } = position;
   return list.map(({ img, name, text, price, mass, size }) => {
     return (
-      <OneCardStyled key={name}>
-        <ImageInCard src={img && img} alt={name && name} />
-        <NamePosition>{name && name}</NamePosition>
-        <Description>{text && text}</Description>
-        <Size>{size && size}</Size>
-        <Massa>{mass && mass}</Massa>
-        <ButtonPrice>{price && price}</ButtonPrice>
-      </OneCardStyled>
+      <ONE_CARD_LI key={name}>
+        <IMAGE_IMG src={img} alt={name} />
+        <NAME_DISH_H1>{name}</NAME_DISH_H1>
+        {text && <DESCRIPTION_P>{text}</DESCRIPTION_P>}
+        <SUPPORT_DIV>
+          {size && <SIZE_P>{size}</SIZE_P>}
+          {mass && <MASSA_P>{mass}</MASSA_P>}
+        </SUPPORT_DIV>
+        <BUTTON_PRICE>{price}</BUTTON_PRICE>
+      </ONE_CARD_LI>
     );
   });
 }

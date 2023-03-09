@@ -1,9 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { BESIC_CONTAINER_DIV } from './App.styled';
 import Home from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
 import { Footer } from 'components/Footer/Footer';
+
 // KFC
 import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
 // Pizza Day;
@@ -23,7 +25,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="container">
+      <BESIC_CONTAINER_DIV>
         <Routes>
           <Route path="/food_del" element={<Home />} />
           <Route path="/food_del/KFC" element={<Menu prop={menuKFC} />} />
@@ -52,7 +54,7 @@ function App() {
             element={<Menu prop={menuOsamaSushi} />}
           />
         </Routes>
-      </div>
+      </BESIC_CONTAINER_DIV>
       <Footer />
     </>
   );

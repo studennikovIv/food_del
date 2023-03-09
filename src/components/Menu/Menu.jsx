@@ -1,32 +1,30 @@
-// import React from 'react';
 import { OneCard } from './OneCard';
 import {
-  MenuStyled,
-  ConteinerMenu,
-  OneList,
-  TitlePosition,
-  OneCase,
+  CONTEINER_MENU_DIV,
+  MENU_UL,
+  ONE_CASE_LI,
+  NAME_SUBPOSITION_H1,
+  SUBPOSITION_UL,
 } from './styled/Menu.styled';
-// import { MenuStyled, TitleMenu, OnePosition, Link } from './styled/Menu.styled';
 import { TitleMenu } from './TitleMenu';
 
 export function Menu({ prop }) {
   return (
-    <ConteinerMenu>
+    <CONTEINER_MENU_DIV>
       <TitleMenu props={prop} />
-      <MenuStyled>
-        {prop.map(prop => {
-          const { title } = prop;
+      <MENU_UL>
+        {prop.map(res => {
+          const { title } = res;
           return (
-            <OneCase key={title} id={title}>
-              <TitlePosition>{title}</TitlePosition>
-              <OneList>
-                <OneCard position={prop} />
-              </OneList>
-            </OneCase>
+            <ONE_CASE_LI key={title} id={title}>
+              <NAME_SUBPOSITION_H1>{title}</NAME_SUBPOSITION_H1>
+              <SUBPOSITION_UL>
+                <OneCard position={res} />
+              </SUBPOSITION_UL>
+            </ONE_CASE_LI>
           );
         })}
-      </MenuStyled>
-    </ConteinerMenu>
+      </MENU_UL>
+    </CONTEINER_MENU_DIV>
   );
 }

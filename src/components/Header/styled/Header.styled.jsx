@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const HeaderStyled = styled.header`
+export const STYLED_HEADER = styled.header`
   // position: fixed;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ export const HeaderStyled = styled.header`
   }
 `;
 
-export const ContentHeader = styled.div`
+export const CONTENT_DIV = styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ export const ContentHeader = styled.div`
   }
 `;
 
-export const Logo = styled.img`
+export const LOGO_IMG = styled.img`
   width: 60px;
   fill: currentCollor;
 
@@ -49,7 +49,7 @@ export const Logo = styled.img`
   }
 `;
 
-export const Title = styled.h1`
+export const TITLE_H1 = styled.h1`
   font-size: 25px;
   font-family: Ubuntu;
 
@@ -61,45 +61,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const LeftInfo = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-export const Contacts = styled.ul`
-  position: absolute;
-  top: 60px;
-  left: 0;
-  // transform: translate(-50%);
-  display: none;
-  justify-content: space-around;
-  border-radius: 5px;
-  width: 400px;
-
-  background-color: #fff;
-  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.4);
-
-  @media screen and (min-width: 760px) {
-    top: 70px;
-    width: 450px;
-  }
-`;
-
-export const ContentContact = styled.a`
-  display: block;
-  padding: 2px;
-  margin: 2px 0;
-  font-size: 19px;
-  font-weight: bold;
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-  }
-`;
-
-export const Basket = styled.button`
+export const BASKET_BTN = styled.button`
   display: flex;
   padding: 0;
   margin: 5px;
@@ -123,7 +85,7 @@ export const Basket = styled.button`
   }
 `;
 
-export const BasketImg = styled.img`
+export const BASKET_IMG = styled.img`
   width: 100%;
   height: 100%;
   borber-radius: 50%;
