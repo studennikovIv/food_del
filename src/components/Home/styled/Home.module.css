@@ -1,0 +1,42 @@
+.conteinerCard {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.linkClient {
+  padding: 5px;
+  margin: 10px;
+}
+
+.card {
+  width: 120px;
+  cursor: pointer;
+  /* border-radius: 18px;
+  background: linear-gradient(145deg, #f6f6f6, #cfcfcf);
+  box-shadow: 9px 9px 22px #a8a8a8, -9px -9px 22px #ffffff; */
+}
+/* .card:hover,
+.card:focus {
+  background: linear-gradient(145deg, #cfcfcf, #f6f6f6);
+  box-shadow: 9px 9px 22px #757575, -9px -9px 22px #ffffff;
+} */
+
+@media screen and (min-width: 760px) {
+  .linkClient {
+    padding: 10px;
+    margin: 20px;
+  }
+  .card {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .linkClient {
+    margin: 30px;
+  }
+  .card {
+    width: 220px;
+  }
+}

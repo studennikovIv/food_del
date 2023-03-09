@@ -3,11 +3,7 @@ import {
   ContentFooter,
   Title,
   Contacts,
-  Submit,
   ContactsContent,
-  Lable,
-  Input,
-  ButtonSend,
 } from './styled/Footer.styled';
 
 export function Footer() {
@@ -26,12 +22,7 @@ export function Footer() {
             <ContactsContent>food-del@gmail.com</ContactsContent>
           </li>
         </Contacts>
-        <Submit>
-          <Lable>Співпраця:</Lable>
-          <Input type="text" />
-          <ButtonSend>Надіслати</ButtonSend>
-        </Submit>
-        {/* <ContactsContent>© 2023. Food Delivery.</ContactsContent> */}
+        <ContactsContent>© 2023. Food Delivery.</ContactsContent>
       </ContentFooter>
     </FooterStyled>
   );
