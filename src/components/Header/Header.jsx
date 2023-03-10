@@ -4,7 +4,9 @@ import { ModaBasket } from './ModalBasket';
 import {
   STYLED_HEADER,
   CONTENT_DIV,
+  // LOGO_DIV,
   LOGO_IMG,
+  // LOGO_P,
   TITLE_H1,
   BASKET_BTN,
   BASKET_IMG,
@@ -14,9 +16,7 @@ export function Header() {
   return (
     <STYLED_HEADER>
       <CONTENT_DIV>
-        <a href="/">
-          <LOGO_IMG src={logo} alt="logo" />
-        </a>
+        <LOGO_IMG src={logo} alt="logo" />
         <TITLE_H1>FOOD DELIVERY</TITLE_H1>
         <BASKET_BTN>
           <BASKET_IMG src={basket} alt="basket" onClick={ModaBasket} />

@@ -8,16 +8,8 @@ export const CONTENT_DIV = styled.div`
 `;
 
 export const CLIENTS_DIV = styled.div`
-  padding: 5px;
   margin: 10px;
-
-  img:hover,
-  img:focus {
-    border-radius: 23px;
-    background: #ffffff;
-    box-shadow: -10px -10px 20px #e6e6e6, 10px 10px 20px #ffffff;
-    transition: all 0.2s ease 0s;
-  }
+  transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
     padding: 10px;
@@ -25,6 +17,17 @@ export const CLIENTS_DIV = styled.div`
   }
   @media screen and (min-width: 1200px) {
     margin: 30px;
+  }
+
+  img {
+    border-radius: 13px;
+  }
+
+  img:hover,
+  img:focus {
+    background: #ffffff;
+    box-shadow: -10px -10px 20px black, 10px 10px 20px #ffffff;
+    transition: all 0.4s ease 0s;
   }
 `;
 

@@ -35,17 +35,38 @@ export const CONTENT_DIV = styled.div`
     // padding: 16px;
     width: 1200px;
   }
+
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const LOGO_DIV = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+
+    :hover,
+    :focus{
+      box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease 0s;
+    }
+}
 `;
 
 export const LOGO_IMG = styled.img`
-  width: 60px;
-  fill: currentCollor;
+  width: 50px;
+  fill: black;
 
   @media screen and (min-width: 760px) {
-    width: 80px;
+    width: 70px;
   }
   @media screen and (min-width: 1200px) {
-    width: 110px;
+    width: 100px;
   }
 `;
 

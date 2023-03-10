@@ -7,6 +7,7 @@ export const STYLED_FOOTER = styled.footer`
   align-items: center;
   width: 100%;
   height: 340px;
+  z-index: 9999;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
   background: rgb(85, 85, 85);
   background: linear-gradient(

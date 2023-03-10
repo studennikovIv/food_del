@@ -8,12 +8,45 @@ export const NAVIGATION_MENU_UL = styled.ul`
   flex-direction: column;
   align-items: center;
 
+  a {
+    text-decoration: none;
+  }
+
   @media screen and (min-width: 760px) {
     left: 5%;
   }
 
   @media screen and (min-width: 1200px) {
     left: 6%;
+  }
+`;
+
+export const LOGO_P = styled.h1`
+  margin: 5px 0;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #5768ff;
+
+  @media screen and (min-width: 760px) {
+    margin: 10px 0;
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 15px 0;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+
+  :hover,
+  :focus {
+    cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -45,8 +78,8 @@ export const LINK_A = styled.a`
   font-size: 10px;
   font-weight: bold;
   text-decoration: none;
-  background-color: #ff000094;
-  color: #fff;
+  color: #000;
+  background-color: #0000001c;
 
   @media screen and (min-width: 760px) {
     padding: 6px;
@@ -67,6 +100,7 @@ export const LINK_A = styled.a`
     cursor: pointer;
     font-weight: bold;
     color: red;
-    background-color: #d1d1d1d1;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   }
 `;
