@@ -1,12 +1,11 @@
 import logo from './images/location-pin-svgrepo-com.svg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
-import { ModaBasket } from './ModalBasket';
+import { yourOrder } from './additional_functions/yourOrder';
+
 import {
   STYLED_HEADER,
   CONTENT_DIV,
-  // LOGO_DIV,
   LOGO_IMG,
-  // LOGO_P,
   TITLE_H1,
   BASKET_BTN,
   BASKET_IMG,
@@ -18,8 +17,8 @@ export function Header() {
       <CONTENT_DIV>
         <LOGO_IMG src={logo} alt="logo" />
         <TITLE_H1>FOOD DELIVERY</TITLE_H1>
-        <BASKET_BTN>
-          <BASKET_IMG src={basket} alt="basket" onClick={ModaBasket} />
+        <BASKET_BTN onClick={yourOrder}>
+          <BASKET_IMG src={basket} alt="basket" />
         </BASKET_BTN>
       </CONTENT_DIV>
     </STYLED_HEADER>

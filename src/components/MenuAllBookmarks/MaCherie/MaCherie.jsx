@@ -37,7 +37,7 @@ import shawerma3 from './img/shawerma3.jpg';
 const menuMaCherie = [
   // Піцца
   {
-    name: 'Ma Cherie',
+    nameInst: 'Ma Cherie',
     title: 'Піцца',
     list: [
       {

@@ -9,6 +9,8 @@ import {
   BUTTON_PRICE,
 } from './styled/OneCard.styled';
 
+export const arreyListShopping = [];
+
 export function OneCard({ position }) {
   const { list } = position;
   return list.map(({ img, name, text, price, mass, size }) => {
@@ -21,7 +23,15 @@ export function OneCard({ position }) {
           {size && <SIZE_P>{size}</SIZE_P>}
           {mass && <MASSA_P>{mass}</MASSA_P>}
         </SUPPORT_DIV>
-        <BUTTON_PRICE>{price}</BUTTON_PRICE>
+        <BUTTON_PRICE
+          onClick={el => {
+            const val = el.target.textContent;
+            arreyListShopping.push({ name: name, price: Number(val) });
+          }}
+        >
+          {price}
+          {/* ₴ */}
+        </BUTTON_PRICE>
       </ONE_CARD_LI>
     );
   });

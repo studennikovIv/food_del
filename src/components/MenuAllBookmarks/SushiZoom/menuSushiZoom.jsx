@@ -160,7 +160,7 @@ import napoi2 from './img/napoi2.jpg';
 
 const menuSushiZoom = [
   {
-    name: 'Sushi Zoom',
+    nameInst: 'Sushi Zoom',
     title: 'Роли',
     list: [
       {

@@ -55,7 +55,7 @@ import futomaki4 from './img/futomak4.jpg';
 
 const menuOsamaSushi = [
   {
-    name: 'Osama Sushi',
+    nameInst: 'Osama Sushi',
     title: 'Сети',
     list: [
       {

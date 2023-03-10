@@ -6,7 +6,7 @@ import hotDog from './img/hotDog.jpg';
 
 const menuShaurmichka = [
   {
-    name: 'Шаурмичка',
+    nameInst: 'Шаурмичка',
     title: 'Шаурма',
     list: [
       {
@@ -14,7 +14,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Арабська',
         text: '',
-        price: '130 ₴',
+        price: 130,
         mass: '-',
       },
       {
@@ -22,7 +22,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Подвійна',
         text: '',
-        price: '160 ₴',
+        price: 160,
         mass: '-',
       },
       {
@@ -30,7 +30,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Стандарт з куркою',
         text: '',
-        price: '120 ₴',
+        price: 120,
         mass: '-',
       },
       {
@@ -38,7 +38,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Міні',
         text: '',
-        price: '90 ₴',
+        price: 90,
         mass: '-',
       },
       {
@@ -46,7 +46,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Бурум',
         text: '',
-        price: '130 ₴',
+        price: 130,
         mass: '-',
       },
       {
@@ -54,7 +54,7 @@ const menuShaurmichka = [
         title: 'Шаурма',
         name: 'Донер',
         text: '',
-        price: '140 ₴',
+        price: 140,
         mass: '-',
       },
     ],
@@ -69,7 +69,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Цезар',
         text: '',
-        price: '185 ₴',
+        price: 185,
         mass: '35см',
       },
       {
@@ -77,7 +77,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Падишах',
         text: '',
-        price: '175 ₴',
+        price: 175,
         mass: '35см',
       },
       {
@@ -85,7 +85,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Хан',
         text: '',
-        price: '165 ₴',
+        price: 165,
         mass: '35см',
       },
       {
@@ -93,7 +93,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Турецька з куркою',
         text: '',
-        price: '120 ₴',
+        price: 120,
         mass: '-',
       },
       {
@@ -101,7 +101,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Турецька з яловичиною',
         text: '',
-        price: '140 ₴',
+        price: 140,
         mass: '-',
       },
       {
@@ -109,7 +109,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Чотири сира',
         text: '',
-        price: '200 ₴',
+        price: 200,
         mass: '-',
       },
       {
@@ -117,7 +117,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Карбонара',
         text: '',
-        price: '170 ₴',
+        price: 170,
         mass: '-',
       },
       {
@@ -125,7 +125,7 @@ const menuShaurmichka = [
         title: 'Піцца',
         name: 'Пеппероні',
         text: '',
-        price: '180 ₴',
+        price: 180,
         mass: '-',
       },
     ],
@@ -140,7 +140,7 @@ const menuShaurmichka = [
         title: 'Картопля фрі',
         name: 'Міні',
         text: '',
-        price: '55 ₴',
+        price: 55,
         mass: '90гр',
       },
       {
@@ -148,7 +148,7 @@ const menuShaurmichka = [
         title: 'Картопля фрі',
         name: 'Стандарт',
         text: '',
-        price: '75 ₴',
+        price: 75,
         mass: '200гр',
       },
       {
@@ -156,7 +156,7 @@ const menuShaurmichka = [
         title: 'Картопля фрі',
         name: 'Велика',
         text: '',
-        price: '140 ₴',
+        price: 140,
         mass: '400гр',
       },
     ],
@@ -171,7 +171,7 @@ const menuShaurmichka = [
         title: 'Нагетси',
         name: 'Нагетси Міні',
         text: '',
-        price: '85 ₴',
+        price: 85,
         mass: '6шт',
       },
       {
@@ -179,7 +179,7 @@ const menuShaurmichka = [
         title: 'Нагетси',
         name: 'Нагетси Стандарт',
         text: '',
-        price: '105 ₴',
+        price: 105,
         mass: '9шт',
       },
       {
@@ -187,7 +187,7 @@ const menuShaurmichka = [
         title: 'Нагетси',
         name: 'Нагетси Макс',
         text: '',
-        price: '210 ₴',
+        price: 210,
         mass: '20шт',
       },
     ],
@@ -202,7 +202,7 @@ const menuShaurmichka = [
         title: 'Хот-дог',
         name: 'Хот-дог',
         text: '',
-        price: '210 ₴',
+        price: 210,
         mass: '20шт',
       },
     ],

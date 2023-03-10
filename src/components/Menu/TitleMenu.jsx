@@ -13,7 +13,7 @@ export function TitleMenu({ props }) {
       <Link to={`/food_del`}>
         <LOGO_P>Home page</LOGO_P>
       </Link>
-      <MENU_HEADER_H2>{props[0].name}:</MENU_HEADER_H2>
+      <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
       {props.map(({ title }) => {
         return (
           <ONE_POSITION_LI key={title}>
