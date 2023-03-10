@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.8b9832de.css",
-    "main.js": "/food_del/static/js/main.96686da2.js",
+    "main.js": "/food_del/static/js/main.3208e698.js",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
     "static/media/pizza1.jpg": "/food_del/static/media/pizza1.78bd10480f15f78da174.jpg",
@@ -262,10 +262,10 @@
     "index.html": "/food_del/index.html",
     "static/media/location-pin-svgrepo-com.svg": "/food_del/static/media/location-pin-svgrepo-com.af1d72d70ccd2e6f6af7eba998643b4f.svg",
     "main.8b9832de.css.map": "/food_del/static/css/main.8b9832de.css.map",
-    "main.96686da2.js.map": "/food_del/static/js/main.96686da2.js.map"
+    "main.3208e698.js.map": "/food_del/static/js/main.3208e698.js.map"
   },
   "entrypoints": [
     "static/css/main.8b9832de.css",
-    "static/js/main.96686da2.js"
+    "static/js/main.3208e698.js"
   ]
 }
