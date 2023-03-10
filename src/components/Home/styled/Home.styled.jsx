@@ -28,6 +28,7 @@ export const CLIENTS_DIV = styled.div`
     background: #ffffff;
     box-shadow: -10px -10px 20px black, 10px 10px 20px #ffffff;
     transition: all 0.4s ease 0s;
+    transform: scale(1.01);
   }
 `;
 
