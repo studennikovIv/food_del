@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BESIC_CONTAINER_DIV } from './App.styled';
-import Home from './components/Home/Home';
+import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
 import { Footer } from 'components/Footer/Footer';

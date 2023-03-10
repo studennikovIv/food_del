@@ -3,14 +3,14 @@ import { CONTENT_DIV, CLIENTS_DIV, CARD_DIV } from './styled/Home.styled';
 import myClients from './My_clients/My_clients';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+export function Home() {
   return (
     <>
       <CONTENT_DIV>
         {myClients.map(({ name, id, logoImg }) => {
           return (
-            <CLIENTS_DIV>
-              <Link to={`${name}`} key={id}>
+            <CLIENTS_DIV key={id}>
+              <Link to={`${name}`}>
                 <CARD_DIV>
                   <img src={logoImg} alt={name} />
                 </CARD_DIV>
@@ -21,6 +21,4 @@ const Home = () => {
       </CONTENT_DIV>
     </>
   );
-};
-
-export default Home;
+}
