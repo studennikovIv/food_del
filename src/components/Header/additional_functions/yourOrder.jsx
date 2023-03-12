@@ -1,4 +1,4 @@
-import { arreyListShopping } from '../../Menu/OneCard';
+import { arreyListShopping } from '../../Menu/card/OneCard';
 
 export function yourOrder() {
   let fullPrice = 50;
