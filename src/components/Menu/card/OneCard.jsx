@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   ONE_CARD_LI,
   IMAGE_IMG,
