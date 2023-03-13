@@ -14,16 +14,22 @@ export const arreyListShopping = [];
 
 export function OneCard({ position, clickOnCard }) {
   const { list } = position;
-  const arrInfoCard = [];
+  let linkImg = '';
+  let linkName = '';
+  let linkPrice = '';
+  let linkText = '';
   const Click = () => {
-    clickOnCard(true);
+    clickOnCard(true, linkImg, linkName, linkPrice, linkText);
   };
   return list.map(({ img, name, text, price, mass, size }) => {
     return (
       <ONE_CARD_LI
         key={name}
         onClick={() => {
-          arrInfoCard.push(img);
+          linkImg = img;
+          linkName = name;
+          linkPrice = price;
+          linkText = text;
           Click();
         }}
       >

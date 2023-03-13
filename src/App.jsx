@@ -24,9 +24,18 @@ import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.js
 
 function App() {
   const [modalCard, useModalCard] = useState(false);
+  const [imgModal, useImgModal] = useState('');
+  const [nameModal, useNameModal] = useState('');
+  const [priceModal, usePriceModal] = useState('');
+  const [textModal, useTextModal] = useState('');
 
-  const ClickOnCard = () => {
-    useModalCard(true);
+  const ClickOnCard = (bool, img, name, price, text) => {
+    useModalCard(bool);
+    console.log(img, name, price, text);
+    useImgModal(img);
+    useNameModal(name);
+    usePriceModal(price);
+    useTextModal(text);
   };
   const CloseModal = () => {
     useModalCard(false);
@@ -68,7 +77,15 @@ function App() {
         </Routes>
       </BESIC_CONTAINER_DIV>
       <Footer />
-      {modalCard && <ModalCard modalClose={CloseModal} />}
+      {modalCard && (
+        <ModalCard
+          modalClose={CloseModal}
+          img={imgModal}
+          name={nameModal}
+          price={priceModal}
+          text={textModal}
+        />
+      )}
     </>
   );
 }
