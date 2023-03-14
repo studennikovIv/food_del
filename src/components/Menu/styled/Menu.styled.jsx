@@ -40,6 +40,10 @@ export const MENU_UL = styled.ul`
 export const ONE_CASE_LI = styled.li`
   margin: 0 0 20px 0;
   // padding: 80px 0 0 0;
+  :active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 `;
 
 export const NAME_SUBPOSITION_H1 = styled.h1`

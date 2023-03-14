@@ -1,3 +1,4 @@
+// import { useEffect } from 'react';
 import {
   ONE_CARD_LI,
   IMAGE_IMG,
@@ -9,17 +10,19 @@ import {
   BUTTON_PRICE,
 } from './styled/OneCard.styled';
 export { ModalCard } from './ModalCard';
-export const arreyListShopping = [];
 
 export function OneCard({ position, clickOnCard }) {
   const { list } = position;
+
   let linkImg = '';
   let linkName = '';
   let linkPrice = '';
   let linkText = '';
+
   const Click = () => {
     clickOnCard(true, linkImg, linkName, linkPrice, linkText);
   };
+
   return list.map(({ img, name, text, price, mass, size }) => {
     return (
       <ONE_CARD_LI

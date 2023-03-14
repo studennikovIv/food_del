@@ -28,6 +28,7 @@ export const LOGO_P = styled.h1`
   font-size: 10px;
   color: #fff;
   background-color: #5768ff;
+  transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
     margin: 10px 0;
@@ -82,6 +83,7 @@ export const LINK_A = styled.a`
   text-decoration: none;
   color: #000;
   background-color: #0000001c;
+  transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
     padding: 6px;
@@ -97,6 +99,14 @@ export const LINK_A = styled.a`
     font-size: 14px;
   }
 
+  // .active {
+  //   cursor: pointer;
+  //   font-weight: bold;
+  //   color: red;
+  //   background-color: #fff;
+  //   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  // }
+
   :hover,
   :focus {
     cursor: pointer;
@@ -104,7 +114,6 @@ export const LINK_A = styled.a`
     color: red;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-
     transform: scale(1.1);
   }
 `;

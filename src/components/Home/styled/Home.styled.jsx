@@ -9,7 +9,6 @@ export const CONTENT_DIV = styled.div`
 
 export const CLIENTS_DIV = styled.div`
   margin: 10px;
-  transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
     padding: 10px;
@@ -21,13 +20,13 @@ export const CLIENTS_DIV = styled.div`
 
   img {
     border-radius: 13px;
+    transition: all 0.4s ease 0s;
   }
 
   img:hover,
   img:focus {
     background: #ffffff;
     box-shadow: -10px -10px 20px black, 10px 10px 20px #ffffff;
-    transition: all 0.4s ease 0s;
     transform: scale(1.01);
   }
 `;
