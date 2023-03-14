@@ -1,4 +1,5 @@
-import logo from './images/location-pin-svgrepo-com.svg';
+// import logo from './images/location-pin-svgrepo-com.svg';
+import logo from './images/logo.jpg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
 
 import {

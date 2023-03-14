@@ -66,7 +66,7 @@ export const LOGO_IMG = styled.img`
     width: 70px;
   }
   @media screen and (min-width: 1200px) {
-    width: 100px;
+    width: 60px;
   }
 `;
 
