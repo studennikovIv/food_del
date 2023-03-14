@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.8b9832de.css",
-    "main.js": "/food_del/static/js/main.fae19cc1.js",
+    "main.js": "/food_del/static/js/main.c8cd7500.js",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
     "static/media/pizza1.jpg": "/food_del/static/media/pizza1.78bd10480f15f78da174.jpg",
@@ -210,6 +210,7 @@
     "static/media/rol64.jpg": "/food_del/static/media/rol64.4ad9a461f006fe17aa0d.jpg",
     "static/media/set9.jpg": "/food_del/static/media/set9.62dd57ea6fb7087b3206.jpg",
     "static/media/set21.jpg": "/food_del/static/media/set21.52986faf7004c9543bf5.jpg",
+    "static/media/logo.jpg": "/food_del/static/media/logo.ffdb50dd194f67b563bc.jpg",
     "static/media/set18.jpg": "/food_del/static/media/set18.af2361d7652cf756f0da.jpg",
     "static/media/set12.jpg": "/food_del/static/media/set12.7e87c311a04c94f3bc54.jpg",
     "static/media/sushiFamily.jpg": "/food_del/static/media/sushiFamily.f0ef7930b05e50b64c10.jpg",
@@ -260,12 +261,11 @@
     "static/media/sushi1.jpg": "/food_del/static/media/sushi1.ae8f35a6cddd5a16a48c.jpg",
     "static/media/basket-free-material-svgrepo-com.svg": "/food_del/static/media/basket-free-material-svgrepo-com.eb03a918b9c36a8f436ef7be7b962b0a.svg",
     "index.html": "/food_del/index.html",
-    "static/media/location-pin-svgrepo-com.svg": "/food_del/static/media/location-pin-svgrepo-com.af1d72d70ccd2e6f6af7eba998643b4f.svg",
     "main.8b9832de.css.map": "/food_del/static/css/main.8b9832de.css.map",
-    "main.fae19cc1.js.map": "/food_del/static/js/main.fae19cc1.js.map"
+    "main.c8cd7500.js.map": "/food_del/static/js/main.c8cd7500.js.map"
   },
   "entrypoints": [
     "static/css/main.8b9832de.css",
-    "static/js/main.fae19cc1.js"
+    "static/js/main.c8cd7500.js"
   ]
 }
