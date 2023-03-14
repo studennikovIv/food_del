@@ -78,6 +78,7 @@ export const CONTENT_DIV = styled.div`
 `;
 
 export const INCREASED_INFO_DIV = styled.div`
+  width: 45%;
   @media screen and (min-width: 760px) {
     img {
       width: 300px;
