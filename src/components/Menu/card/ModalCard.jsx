@@ -31,7 +31,7 @@ export function ModalCard({ modalClose, img, name, price, text }) {
           </SUPPLEMENTS_DIV>
         </CONTENT_DIV>
         <BUTTON_ORDER>
-          <button>{price}</button>
+          <button>{price}₴</button>
         </BUTTON_ORDER>
       </MODAL_DIV>
     </BACKDROP_DIV>

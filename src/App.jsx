@@ -5,6 +5,7 @@ import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
 import { ModalCard } from './components/Menu/card/ModalCard';
+import { ModalBasket } from 'components/Basket/ModalBasket';
 import { Footer } from 'components/Footer/Footer';
 
 // KFC
@@ -29,6 +30,10 @@ function App() {
   const [priceModal, usePriceModal] = useState('');
   const [textModal, useTextModal] = useState('');
 
+  // Modal Basket
+
+  const [modalBasket, useModalBasket] = useState(false);
+
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
     console.log(img, name, price, text);
@@ -42,9 +47,12 @@ function App() {
     useModalCard(false);
   };
 
+  const OpenBusket = bool => {
+    useModalBasket(bool);
+  };
   return (
     <>
-      <Header />
+      <Header openBusket={OpenBusket} />
       <BESIC_CONTAINER_DIV>
         <Routes>
           <Route path="/food_del" element={<Home />} />
@@ -88,6 +96,7 @@ function App() {
           text={textModal}
         />
       )}
+      {modalBasket && <ModalBasket />}
     </>
   );
 }

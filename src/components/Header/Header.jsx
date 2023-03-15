@@ -1,4 +1,7 @@
-import logo from './images/location-pin-svgrepo-com.svg';
+import { Link } from 'react-router-dom';
+
+// import logo from './images/location-pin-svgrepo-com.svg';
+import logo from './images/logo.jpg';
 import basket from './images/basket-free-material-svgrepo-com.svg';
 
 import {
@@ -10,13 +13,20 @@ import {
   BASKET_IMG,
 } from './styled/Header.styled';
 
-export function Header() {
+export function Header({ openBusket }) {
+  const clickBusket = () => {
+    openBusket(true);
+  };
+
   return (
     <STYLED_HEADER>
       <CONTENT_DIV>
-        <LOGO_IMG src={logo} alt="logo" />
+        <Link to="/food_del">
+          <LOGO_IMG src={logo} alt="logo" />
+        </Link>
         <TITLE_H1>FOOD DELIVERY</TITLE_H1>
-        <BASKET_BTN>
+
+        <BASKET_BTN onClick={clickBusket}>
           <BASKET_IMG src={basket} alt="basket" />
         </BASKET_BTN>
       </CONTENT_DIV>

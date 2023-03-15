@@ -42,10 +42,7 @@ export function OneCard({ position, clickOnCard }) {
           {size && <SIZE_P>{size}</SIZE_P>}
           {mass && <MASSA_P>{mass}</MASSA_P>}
         </SUPPORT_DIV>
-        <BUTTON_PRICE>
-          {price}
-          {/* ₴ */}
-        </BUTTON_PRICE>
+        <BUTTON_PRICE>{price}₴</BUTTON_PRICE>
       </ONE_CARD_LI>
     );
   });
