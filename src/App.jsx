@@ -37,9 +37,11 @@ function App() {
     usePriceModal(price);
     useTextModal(text);
   };
+
   const CloseModal = () => {
     useModalCard(false);
   };
+
   return (
     <>
       <Header />

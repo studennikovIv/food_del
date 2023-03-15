@@ -6,6 +6,7 @@ import {
   CONTENT_DIV,
   INCREASED_INFO_DIV,
   BUTTON_ORDER,
+  SUPPLEMENTS_DIV,
 } from './styled/ModalCard.styled';
 
 export function ModalCard({ modalClose, img, name, price, text }) {
@@ -18,16 +19,16 @@ export function ModalCard({ modalClose, img, name, price, text }) {
       <MODAL_DIV>
         <TOP_MODAL_DIV>
           <h3>{name}</h3>
-          <BUTTON_CLOSE onClick={ClickOnCard}>x</BUTTON_CLOSE>
+          <BUTTON_CLOSE onClick={ClickOnCard}>×</BUTTON_CLOSE>
         </TOP_MODAL_DIV>
         <CONTENT_DIV>
           <INCREASED_INFO_DIV>
             <img src={img} alt="" />
             <p>{text}</p>
           </INCREASED_INFO_DIV>
-          <div className="rightContent">
+          <SUPPLEMENTS_DIV>
             <h3>CONTENT</h3>
-          </div>
+          </SUPPLEMENTS_DIV>
         </CONTENT_DIV>
         <BUTTON_ORDER>
           <button>{price}</button>
