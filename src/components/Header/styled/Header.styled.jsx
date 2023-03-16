@@ -59,11 +59,11 @@ export const LOGO_DIV = styled.div`
 `;
 
 export const LOGO_IMG = styled.img`
-  width: 50px;
+  width: 45px;
   fill: black;
 
   @media screen and (min-width: 760px) {
-    width: 70px;
+    width: 55px;
   }
   @media screen and (min-width: 1200px) {
     width: 60px;

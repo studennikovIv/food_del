@@ -15,7 +15,7 @@ export const MODAL_DIV = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 330px;
+  width: 340px;
   border-radius: 5px;
   border: none;
 
