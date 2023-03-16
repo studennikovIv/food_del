@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import {
   ONE_CARD_LI,
@@ -13,7 +13,7 @@ import {
 export { ModalCard } from './ModalCard';
 
 export function OneCard({ position, clickOnCard }) {
-  const [lincImg, useLincImg] = useState('');
+  // const [lincImg, useLincImg] = useState('');
   const { list } = position;
 
   let linkImg = '';

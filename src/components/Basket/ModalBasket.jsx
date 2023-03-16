@@ -27,7 +27,7 @@ export function ModalBasket({ basketArr, modalClose }) {
             basketArr.map(({ img, text, name }) => {
               return (
                 <div>
-                  <img src={img} alt={text} />
+                  <img src={img} alt={text} width="50px" />
                   {name}
                 </div>
               );
