@@ -33,14 +33,18 @@ function App() {
   // Modal Basket
 
   const [modalBasket, useModalBasket] = useState(false);
+  const [basketArr, useBasketArr] = useState([]);
 
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
-    console.log(img, name, price, text);
+
     useImgModal(img);
     useNameModal(name);
     usePriceModal(price);
     useTextModal(text);
+  };
+  const ClickAddBasket = (img, name, price, text) => {
+    useBasketArr([...basketArr, { img, name, price, text }]);
   };
   const CloseModal = () => {
     useModalCard(false);
@@ -87,6 +91,7 @@ function App() {
       <Footer />
       {modalCard && (
         <ModalCard
+          clickAddBasket={ClickAddBasket}
           modalClose={CloseModal}
           img={imgModal}
           name={nameModal}
@@ -94,7 +99,9 @@ function App() {
           text={textModal}
         />
       )}
-      {modalBasket && <ModalBasket />}
+      {modalBasket && (
+        <ModalBasket basketArr={basketArr} modalClose={useModalBasket} />
+      )}
     </>
   );
 }

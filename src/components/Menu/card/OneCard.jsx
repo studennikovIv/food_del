@@ -1,4 +1,5 @@
-// import { useEffect } from 'react';
+import { useState } from 'react';
+
 import {
   ONE_CARD_LI,
   IMAGE_IMG,
@@ -12,6 +13,7 @@ import {
 export { ModalCard } from './ModalCard';
 
 export function OneCard({ position, clickOnCard }) {
+  const [lincImg, useLincImg] = useState('');
   const { list } = position;
 
   let linkImg = '';
@@ -19,7 +21,7 @@ export function OneCard({ position, clickOnCard }) {
   let linkPrice = '';
   let linkText = '';
 
-  const Click = () => {
+  const ClickOpenModal = () => {
     clickOnCard(true, linkImg, linkName, linkPrice, linkText);
   };
 
@@ -32,7 +34,7 @@ export function OneCard({ position, clickOnCard }) {
           linkName = name;
           linkPrice = price;
           linkText = text;
-          Click();
+          ClickOpenModal();
         }}
       >
         <IMAGE_IMG src={img} alt={name} />

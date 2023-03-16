@@ -8,9 +8,20 @@ import {
   BUTTON_ORDER,
 } from './styled/ModalCard.styled';
 
-export function ModalCard({ modalClose, img, name, price, text }) {
+export function ModalCard({
+  modalClose,
+  img,
+  name,
+  price,
+  text,
+  clickAddBasket,
+}) {
   const ClickOnCard = () => {
     modalClose(false);
+  };
+
+  const addBasket = () => {
+    clickAddBasket(img, name, price, text);
   };
 
   return (
@@ -30,7 +41,7 @@ export function ModalCard({ modalClose, img, name, price, text }) {
           </div>
         </CONTENT_DIV>
         <BUTTON_ORDER>
-          <button>{price}₴</button>
+          <button onClick={addBasket}>{price}₴</button>
         </BUTTON_ORDER>
       </MODAL_DIV>
     </BACKDROP_DIV>
