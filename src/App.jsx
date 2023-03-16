@@ -43,12 +43,15 @@ function App() {
     usePriceModal(price);
     useTextModal(text);
   };
+
   const ClickAddBasket = (img, name, price, text) => {
     useBasketArr([...basketArr, { img, name, price, text }]);
   };
+
   const CloseModal = () => {
     useModalCard(false);
   };
+
   const OpenBusket = bool => {
     useModalBasket(bool);
   };

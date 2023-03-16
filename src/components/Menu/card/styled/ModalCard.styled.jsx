@@ -25,11 +25,11 @@ export const MODAL_DIV = styled.div`
   background-color: #fff;
 
   @media screen and (min-width: 760px) {
-    width: 500px;
+    width: 600px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 700px;
+    width: 800px;
   }
 `;
 
@@ -37,7 +37,8 @@ export const TOP_MODAL_DIV = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   background-color: red;
 
@@ -62,6 +63,7 @@ export const BUTTON_CLOSE = styled.button`
   :focus {
     cursor: pointer;
     color: #b7b6b6;
+    transform: scale(1.5);
   }
 `;
 
@@ -69,29 +71,50 @@ export const CONTENT_DIV = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 10px;
+
   @media screen and (min-width: 760px) {
+    padding: 0 20px;
     flex-direction: row;
   }
 
   @media screen and (min-width: 1200px) {
+    padding: 0 40px;
   }
 `;
 
 export const INCREASED_INFO_DIV = styled.div`
-  width: 45%;
+  p {
+    padding: 5px;
+  }
   @media screen and (min-width: 760px) {
     img {
+      width: 300px;
+    }
+    p {
+      padding: 10px;
       width: 300px;
     }
   }
 
   @media screen and (min-width: 1200px) {
+    img {
+      width: 400px;
+    }
+    p {
+      padding: 15px;
+      width: 400px;
+    }
   }
 `;
+
+export const SUPPLEMENTS_DIV = styled.div`
+  width: 100%;
+`;
+
 export const BUTTON_ORDER = styled.div`
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px 0 10px 0;
   width: 100%;
 
   button {
@@ -113,5 +136,13 @@ export const BUTTON_ORDER = styled.div`
       outline: 1px solid red;
       background-color: #ffffff;
     }
+  }
+
+  @media screen and (min-width: 760px) {
+    padding: 20px 0 15px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0 20px 0;
   }
 `;
