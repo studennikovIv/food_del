@@ -9,10 +9,10 @@ import {
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ basketArr, modalClose }) {
-  console.log(basketArr);
   const closeButton = () => {
     modalClose(false);
   };
+
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -23,7 +23,6 @@ export function ModalBasket({ basketArr, modalClose }) {
         <BOTTOM_FORM
           typeof="submit"
           onClick={ev => {
-            // ev.preventDefault();
             console.log(ev.currentTarget.textContent);
           }}
         >
@@ -40,6 +39,7 @@ export function ModalBasket({ basketArr, modalClose }) {
                 </div>
               );
             })}
+          {basketArr && <p>До сплати :</p>}
           {basketArr.length !== 0 && (
             <div>
               <label htmlFor="tel">
