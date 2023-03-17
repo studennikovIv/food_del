@@ -12,7 +12,8 @@ export function ModalBasket({ basketArr, modalClose }) {
   const closeButton = () => {
     modalClose(false);
   };
-
+  let arr = [];
+  // let vall = 0;
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -31,6 +32,8 @@ export function ModalBasket({ basketArr, modalClose }) {
           )}
           {basketArr &&
             basketArr.map(({ img, text, name, price }) => {
+              arr.push(price);
+              console.log(arr);
               return (
                 <div key={name}>
                   <img src={img} alt={text} width="50px" />
@@ -39,9 +42,10 @@ export function ModalBasket({ basketArr, modalClose }) {
                 </div>
               );
             })}
-          {basketArr && <p>До сплати :</p>}
           {basketArr.length !== 0 && (
             <div>
+              <p>До сплати :</p>
+
               <label htmlFor="tel">
                 Ваш телефон
                 <input type="tel" htmlFor="tel" />
