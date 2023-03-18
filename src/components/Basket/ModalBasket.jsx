@@ -1,4 +1,5 @@
 import { BACKDROP_DIV } from '../Menu/card/styled/ModalCard.styled';
+import { CardBasket } from './card/BasketCard.jsx';
 import {
   BASKET_DIV,
   TOP_DIV,
@@ -12,8 +13,7 @@ export function ModalBasket({ basketArr, modalClose }) {
   const closeButton = () => {
     modalClose(false);
   };
-  let arr = [];
-  // let vall = 0;
+
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -24,24 +24,15 @@ export function ModalBasket({ basketArr, modalClose }) {
         <BOTTOM_FORM
           typeof="submit"
           onClick={ev => {
+            ev.preventDefault();
             console.log(ev.currentTarget.textContent);
           }}
         >
           {basketArr.length === 0 && (
             <TEXT_ARR_EMPTY_P>У вашому кошику порожньо!</TEXT_ARR_EMPTY_P>
           )}
-          {basketArr &&
-            basketArr.map(({ img, text, name, price }) => {
-              arr.push(price);
-              console.log(arr);
-              return (
-                <div key={name}>
-                  <img src={img} alt={text} width="50px" />
-                  <p>{name}</p>
-                  <p>{price}</p>
-                </div>
-              );
-            })}
+          {basketArr && <CardBasket basketArr={basketArr} />}
+
           {basketArr.length !== 0 && (
             <div>
               <p>До сплати :</p>
