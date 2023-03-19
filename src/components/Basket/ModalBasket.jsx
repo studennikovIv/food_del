@@ -1,5 +1,6 @@
 import { BACKDROP_DIV } from '../Menu/card/styled/ModalCard.styled';
 import { CardBasket } from './card/BasketCard.jsx';
+import { useEffect, useState } from 'react';
 import {
   BASKET_DIV,
   TOP_DIV,
@@ -10,10 +11,19 @@ import {
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ basketArr, modalClose }) {
+  const [totalSum, setTotalSum] = useState(0);
+
+  useEffect(() => {
+    let sum = 0;
+    basketArr.map(({ price }) => {
+      return (sum = sum + price);
+    });
+    setTotalSum(sum);
+  }, [basketArr, totalSum]);
+
   const closeButton = () => {
     modalClose(false);
   };
-
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -35,7 +45,7 @@ export function ModalBasket({ basketArr, modalClose }) {
 
           {basketArr.length !== 0 && (
             <div>
-              <p>До сплати :</p>
+              <p>До сплати :{totalSum}</p>
 
               <label htmlFor="tel">
                 Ваш телефон
