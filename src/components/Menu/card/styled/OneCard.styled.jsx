@@ -8,7 +8,8 @@ export const ONE_CARD_LI = styled.li`
   margin: 5px;
   border-radius: 5px;
   padding: 0px;
-  width: 150px;
+  width: 100%;
+  min-height: 450px;
   cursor: pointer;
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
@@ -21,12 +22,11 @@ export const ONE_CARD_LI = styled.li`
 
   @media screen and (min-width: 1200px) {
     margin: 15px;
-    width: 250px;
+    width: 100%;
   }
 
   :hover,
   :focus {
-    transform: scale(1.03);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
   }
 `;
@@ -124,7 +124,6 @@ export const BUTTON_PRICE = styled.button`
   :hover,
   :focus {
     cursor: pointer;
-    font-weight: bold;
     color: red;
     outline: 1px solid red;
     background-color: #ffffff;
