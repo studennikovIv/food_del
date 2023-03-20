@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food_del/static/css/main.8b9832de.css",
-    "main.js": "/food_del/static/js/main.7e53dcc1.js",
+    "main.css": "/food_del/static/css/main.35ec8973.css",
+    "main.js": "/food_del/static/js/main.e5e5f336.js",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
     "static/media/pizza1.jpg": "/food_del/static/media/pizza1.78bd10480f15f78da174.jpg",
@@ -259,13 +259,12 @@
     "static/media/lokshina5.jpg": "/food_del/static/media/lokshina5.f6b5c212176cc0b0787e.jpg",
     "static/media/lokshina2.jpg": "/food_del/static/media/lokshina2.71186a00ac182fa3bf23.jpg",
     "static/media/sushi1.jpg": "/food_del/static/media/sushi1.ae8f35a6cddd5a16a48c.jpg",
-    "static/media/basket-free-material-svgrepo-com.svg": "/food_del/static/media/basket-free-material-svgrepo-com.eb03a918b9c36a8f436ef7be7b962b0a.svg",
     "index.html": "/food_del/index.html",
-    "main.8b9832de.css.map": "/food_del/static/css/main.8b9832de.css.map",
-    "main.7e53dcc1.js.map": "/food_del/static/js/main.7e53dcc1.js.map"
+    "main.35ec8973.css.map": "/food_del/static/css/main.35ec8973.css.map",
+    "main.e5e5f336.js.map": "/food_del/static/js/main.e5e5f336.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b9832de.css",
-    "static/js/main.7e53dcc1.js"
+    "static/css/main.35ec8973.css",
+    "static/js/main.e5e5f336.js"
   ]
 }
