@@ -6,27 +6,34 @@ export const STYLED_FOOTER = styled.footer`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 340px;
+  height: 120px;
   z-index: 9999;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
-  background: rgb(85, 85, 85);
-  background: linear-gradient(
-    90deg,
-    rgba(85, 85, 85, 1) 0%,
-    rgba(171, 171, 171, 1) 35%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.4);
 
   @media screen and (min-width: 760px) {
-    height: 250px;
+    height: 170px;
   }
-  // @media screen and (min-width: 760px) {
-  //   height: 200px;
-  // }
+  @media screen and (min-width: 1200px) {
+    height: 150px;
+  }
+`;
+
+export const TITLE_H1 = styled.h1`
+  display: flex;
+  font-size: 15px;
+  font-family: Ubuntu;
+
+  @media screen and (min-width: 760px) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 19px;
+  }
 `;
 
 export const CONTENT_DIV = styled.div`
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -41,21 +48,6 @@ export const CONTENT_DIV = styled.div`
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-  }
-`;
-
-export const TITLE_H1 = styled.h1`
-  display: flex;
-  margin: 10px;
-  font-size: 20px;
-  font-family: Ubuntu;
-
-  @media screen and (min-width: 760px) {
-    font-size: 25px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 30px;
   }
 `;
 
@@ -75,15 +67,15 @@ export const CONTACTS_UL = styled.ul`
 `;
 
 export const CONTACTS_TEXT_P = styled.p`
-  padding: 3px;
-  font-size: 16px;
+  padding: 2px;
+  font-size: 11px;
   // font-family: Robota;
 
   @media screen and (min-width: 760px) {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
