@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 import {
   NAVIGATION_MENU_UL,
   LOGO_P,
