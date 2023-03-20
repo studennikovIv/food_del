@@ -65,12 +65,17 @@ export const TEXT_ARR_EMPTY_P = styled.p`
 // ////////////////////CARD
 
 export const CONTEINER_CARD_BASKET_DIV = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  grid-template-columns: 45% 45%;
+  justify-items: end;
+  margin-left: 30px;
+  align-items: center;
 `;
 export const CARD_BASKET_DIV = styled.div`
-  width: 45%;
+  width: 100%;
+  min-height: 80px;
   border-radius: 5px;
   outline-offset: -1px;
   outline: 1px solid #ccc;

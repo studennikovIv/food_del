@@ -4,27 +4,23 @@ export const CONTEINER_MENU_DIV = styled.div`
   position: relative;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
 
   @media screen and (min-width: 470px) {
     justify-content: center;
   }
   @media screen and (min-width: 760px) {
-    justify-content: flex-end;
+    justify-content: center;
   }
   @media screen and (min-width: 890px) {
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-    justify-content: flex-end;
   }
 `;
 
 export const MENU_UL = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-width: 230px;
+  display: grid;
+
   // background-color: #d1d1d1d1;
   // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 
@@ -42,7 +38,6 @@ export const ONE_CASE_LI = styled.li`
   // padding: 80px 0 0 0;
   :active {
     opacity: 1;
-    transform: translateY(0);
   }
 `;
 
@@ -62,7 +57,11 @@ export const NAME_SUBPOSITION_H1 = styled.h1`
 `;
 
 export const SUBPOSITION_UL = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  place-items: center;
+  gap: 0 50px;
+  grid-template-columns: 250px 250px 250px;
+  justify-items: center;
+  margin-left: 30px;
+  align-items: center;
 `;

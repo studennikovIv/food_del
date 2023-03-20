@@ -48,8 +48,6 @@ export const LOGO_H1 = styled.h1`
     color: blue;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-
-    transform: scale(1.1);
   }
 `;
 
@@ -106,6 +104,6 @@ export const LINK_A = styled.a`
     color: red;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `;
