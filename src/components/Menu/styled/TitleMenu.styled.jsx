@@ -21,7 +21,7 @@ export const NAVIGATION_MENU_UL = styled.ul`
   }
 `;
 
-export const LOGO_P = styled.h1`
+export const LOGO_H1 = styled.h1`
   margin: 5px 0;
   padding: 3px 10px;
   border-radius: 4px;
@@ -99,14 +99,6 @@ export const LINK_A = styled.a`
     font-size: 14px;
   }
 
-  // .active {
-  //   cursor: pointer;
-  //   font-weight: bold;
-  //   color: red;
-  //   background-color: #fff;
-  //   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  // }
-
   :hover,
   :focus {
     cursor: pointer;
@@ -114,6 +106,6 @@ export const LINK_A = styled.a`
     color: red;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;

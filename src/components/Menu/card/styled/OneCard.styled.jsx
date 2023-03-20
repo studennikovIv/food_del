@@ -26,7 +26,6 @@ export const ONE_CARD_LI = styled.li`
 
   :hover,
   :focus {
-    transform: scale(1.03);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
   }
 `;

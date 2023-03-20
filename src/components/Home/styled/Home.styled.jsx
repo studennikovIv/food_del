@@ -26,8 +26,8 @@ export const CLIENTS_DIV = styled.div`
   img:hover,
   img:focus {
     background: #ffffff;
-    box-shadow: -10px -10px 20px black, 10px 10px 20px #ffffff;
-    transform: scale(1.01);
+    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
   }
 `;
 
