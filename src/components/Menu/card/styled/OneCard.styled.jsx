@@ -8,8 +8,7 @@ export const ONE_CARD_LI = styled.li`
   margin: 5px;
   border-radius: 5px;
   padding: 0px;
-  width: 100%;
-  min-height: 450px;
+  width: 150px;
   cursor: pointer;
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
