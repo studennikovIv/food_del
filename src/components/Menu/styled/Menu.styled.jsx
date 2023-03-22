@@ -20,7 +20,7 @@ export const CONTEINER_MENU_DIV = styled.div`
 
 export const MENU_UL = styled.ul`
   display: grid;
-
+  margin: 0 auto !important;
   // background-color: #d1d1d1d1;
   // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 
@@ -64,4 +64,8 @@ export const SUBPOSITION_UL = styled.ul`
   justify-items: center;
   margin-left: 30px;
   align-items: center;
+  @media screen and (max-width: 760px) {
+    margin: 0 auto !important;
+    grid-template-columns: 250px;
+  }
 `;
