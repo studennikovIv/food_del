@@ -45,7 +45,12 @@ function App() {
   };
 
   const ClickAddBasket = (img, name, price, text) => {
-    useBasketArr([...basketArr, { img, name, price, text }]);
+    let span = 1;
+    if(basketArr.filter(el => el.name === name).length > 0){
+      span =+1;
+      console.log(span)
+    }
+    useBasketArr([...basketArr, { img, name, price, text, span}]);
   };
 
   const CloseModal = () => {

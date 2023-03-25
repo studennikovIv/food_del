@@ -8,6 +8,14 @@ import {
   BOTTOM_FORM,
   TEXT_ARR_EMPTY_P,
   BUTTONE_CLOSE,
+  CONTEINER_SUM_DIV,
+  SUM_P,
+  DELIVERY_P,
+  CONTEINER_BTN_DIV,
+  LEFT_BUTTON,
+  RIGHT_BUTTON,
+
+
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ basketArr, modalClose }) {
@@ -24,6 +32,7 @@ export function ModalBasket({ basketArr, modalClose }) {
   const closeButton = () => {
     modalClose(false);
   };
+  
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -44,15 +53,18 @@ export function ModalBasket({ basketArr, modalClose }) {
           {basketArr && <CardBasket basketArr={basketArr} />}
 
           {basketArr.length !== 0 && (
-            <div>
-              <p>До сплати :{totalSum}</p>
-
-              <label htmlFor="tel">
-                Ваш телефон
-                <input type="tel" htmlFor="tel" />
-              </label>
-              <button type="submit">Замовити</button>
-            </div>
+            <>
+            <CONTEINER_SUM_DIV>
+              <SUM_P>Сумма:{totalSum}</SUM_P>
+              <DELIVERY_P>Доставка:50грн</DELIVERY_P>
+              <SUM_P>До сплати:{totalSum + 50}</SUM_P>
+            </CONTEINER_SUM_DIV>
+            <CONTEINER_BTN_DIV>
+            <LEFT_BUTTON>Продовжіти покупки</LEFT_BUTTON>
+            <RIGHT_BUTTON>Оформити замовлення</RIGHT_BUTTON>
+            
+            </CONTEINER_BTN_DIV>
+            </>
           )}
         </BOTTOM_FORM>
       </BASKET_DIV>

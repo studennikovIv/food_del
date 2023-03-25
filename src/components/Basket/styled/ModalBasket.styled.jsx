@@ -5,7 +5,7 @@ export const BASKET_DIV = styled.div`
   left: 50%;
   top: 0%;
   transform: translate(-50%, 0%);
-  width: 340px;
+  width: 70%;
   border-radius: 5px;
 
   background-color: #fff;
@@ -68,9 +68,9 @@ export const CONTEINER_CARD_BASKET_DIV = styled.div`
   display: grid;
   place-items: center;
   gap: 20px;
-  grid-template-columns: 45% 45%;
-  justify-items: end;
-  margin-left: 30px;
+  grid-template-columns: 100%;
+  justify-items: center;
+
   align-items: center;
 `;
 export const CARD_BASKET_DIV = styled.div`
@@ -120,3 +120,53 @@ export const BUTTON_MINUS = styled.button`
   margin-right: 10px;
 `;
 export const NUMBER_SPAN = styled.span``;
+
+
+
+export const CONTEINER_SUM_DIV = styled.div`
+width:100%;
+display:flex;
+justify-content: space-between;
+margin-top: 10px;
+`;
+
+export const SUM_P = styled.p``;
+
+export const DELIVERY_P = styled.p``
+
+
+export const CONTEINER_BTN_DIV = styled.div`
+width:100%;
+display:flex;
+justify-content: space-between;
+margin-top: 10px;`
+
+
+export const LEFT_BUTTON = styled.button`
+
+cursor:pointer;
+vertical-align: middle;
+outline: 0;
+border: 1px solid rgba(0,0,0, 0.05);
+background-color: rgba(255,255,255, 0);
+color: #999;
+transition: all 0.4s ease 0s;
+:hover,
+:focus {
+  background-color: rgba(0,0,0, 0.1)
+}`;
+
+export const RIGHT_BUTTON = styled.button`
+    border: 1px solid #ec2929;
+    background-color: #ec2929;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    :hover,
+    :focus {
+      color: #ec2929;
+      background-color:#fff;
+    }`
+
+
+   
