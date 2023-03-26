@@ -9,12 +9,15 @@ export const STYLED_HEADER = styled.header`
   background-color: #fff;
   box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-  padding: 0 300px 0 300px;
+  @media screen and (min-width: 320px) {
+    padding: 0 30px 0 30px;
+  }
   @media screen and (min-width: 760px) {
     height: 80px;
   }
   @media screen and (min-width: 1200px) {
     height: 100px;
+    padding: 0 300px 0 300px;
     justify-content: space-around;
   }
 `;
@@ -85,7 +88,7 @@ export const TITLE_H1 = styled.h1`
   font-family: 'Inter', sans-serif;
   font-weight: 200;
   @media screen and (min-width: 350px) {
-    font-size: 22px;
+    font-size: 19px;
     letter-spacing: 3px;
     font-weight: 300;
   }
@@ -104,9 +107,8 @@ export const TITLE_P = styled.p`
   font-weight: 400;
 
   @media screen and (min-width: 350px) {
-    font-size: 11px;
+    font-size: 9px;
     letter-spacing: 1px;
-    text-align: center;
     font-weight: 500;
   }
   @media screen and (min-width: 760px) {

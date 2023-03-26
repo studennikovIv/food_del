@@ -1,12 +1,6 @@
 import styled from '@emotion/styled';
 
 export const NAVIGATION_MENU_UL = styled.ul`
-  position: fixed;
-  left: 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   a {
     text-decoration: none;
   }
@@ -14,6 +8,10 @@ export const NAVIGATION_MENU_UL = styled.ul`
     display: none;
   }
   @media screen and (min-width: 760px) {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     left: 1%;
     top: 15%;
   }
@@ -28,8 +26,9 @@ export const LOGO_H1 = styled.h1`
   padding: 3px 10px;
   border-radius: 4px;
   font-size: 10px;
-  color: #fff;
-  background-color: #5768ff;
+  color: #ff0000;
+  background-color: transparent;
+  border: 1px solid #ff0000;
   transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
@@ -47,9 +46,8 @@ export const LOGO_H1 = styled.h1`
   :focus {
     cursor: pointer;
     font-weight: bold;
-    color: blue;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    color: #cb0000;
+    border-color: #cb0000;
   }
 `;
 

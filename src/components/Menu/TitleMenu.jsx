@@ -13,36 +13,34 @@ import {
 export function TitleMenu({ props }) {
   return (
     <>
-    <NAVIGATION_MENU_UL>
-      <Link to={`/food_del`}>
-        <LOGO_H1>Home page</LOGO_H1>
-      </Link>
-      <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
-      {props.map(({ title }) => {
-        return (
-          <ONE_POSITION_LI key={title}>
-            <LINK_A href={`#${title}`}>{title}</LINK_A>
-          </ONE_POSITION_LI>
-        );
-      })}
-    </NAVIGATION_MENU_UL>
-    <NAVIGATION_MENU_MOB_DIV>
+      <NAVIGATION_MENU_UL>
         <Link to={`/food_del`}>
           <LOGO_H1>Home page</LOGO_H1>
         </Link>
-        <BURGER_MOBILE_IMG>
-
-        </BURGER_MOBILE_IMG>
-        <ul>
+        <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
         {props.map(({ title }) => {
-        return (
-          <ONE_POSITION_LI key={title}>
-            <LINK_A href={`#${title}`}>{title}</LINK_A>
-          </ONE_POSITION_LI>
-        );
-      })}
-      </ul>
-    </NAVIGATION_MENU_MOB_DIV>
+          return (
+            <ONE_POSITION_LI key={title}>
+              <LINK_A href={`#${title}`}>{title}</LINK_A>
+            </ONE_POSITION_LI>
+          );
+        })}
+      </NAVIGATION_MENU_UL>
+      <NAVIGATION_MENU_MOB_DIV>
+        <Link to={`/food_del`}>
+          <LOGO_H1>Home page</LOGO_H1>
+        </Link>
+        <BURGER_MOBILE_IMG></BURGER_MOBILE_IMG>
+        <ul>
+          {props.map(({ title }) => {
+            return (
+              <ONE_POSITION_LI key={title}>
+                <LINK_A href={`#${title}`}>{title}</LINK_A>
+              </ONE_POSITION_LI>
+            );
+          })}
+        </ul>
+      </NAVIGATION_MENU_MOB_DIV>
     </>
   );
 }
