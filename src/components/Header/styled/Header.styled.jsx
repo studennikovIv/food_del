@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 export const STYLED_HEADER = styled.header`
   // position: fixed;
   display: flex;
@@ -10,27 +9,27 @@ export const STYLED_HEADER = styled.header`
   background-color: #fff;
   box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.1);
   z-index: 9999;
+  padding: 0 300px 0 300px;
   @media screen and (min-width: 760px) {
     height: 80px;
   }
   @media screen and (min-width: 1200px) {
     height: 100px;
-    justify-content: space-around;;
+    justify-content: space-around;
   }
 `;
 
 export const CONTENT_DIV = styled.div`
-display: flex;
-align-items: center;
-position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
   @media screen and (min-width: 760px) {
     padding: 16px;
     justify-content: space-between;
   }
-
   @media screen and (min-width: 1200px) {
-  padding: 5px;
-  width: 100%;
+    padding: 5px;
+    width: 100%;
   }
 
   a {
@@ -46,7 +45,6 @@ export const LOGO_DIV = styled.div`
     width: 100%;
     padding: 5px;
     margin: 5px;
-
     :hover,
     :focus{
       box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -69,17 +67,17 @@ export const LOGO_IMG = styled.img`
 `;
 
 export const TITLE_CONTEINER_DIV = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 350px) {
     margin-left: 20px;
   }
   @media screen and (min-width: 760px) {
-    align-items:start;
-    margin-left:85px;
+    align-items: start;
+    margin-left: 85px;
   }
   @media screen and (min-width: 1200px) {
-  align-items: center;
+    align-items: center;
   }
 `;
 export const TITLE_H1 = styled.h1`
@@ -94,7 +92,7 @@ export const TITLE_H1 = styled.h1`
   @media screen and (min-width: 760px) {
     font-size: 30px;
     letter-spacing: 17px;
-    text-align:left;
+    text-align: left;
   }
   @media screen and (min-width: 1200px) {
     font-size: 50px;
@@ -138,11 +136,11 @@ export const BASKET_BTN = styled.button`
   }
   @media screen and (min-width: 350px) {
     width: 50px;
-    margin-left: 20px
+    margin-left: 20px;
   }
   @media screen and (min-width: 760px) {
     width: 60px;
-    margin-left: 75px
+    margin-left: 75px;
   }
   @media screen and (min-width: 1200px) {
     width: 80px;

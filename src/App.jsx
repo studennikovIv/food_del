@@ -46,11 +46,13 @@ function App() {
 
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
-    if(basketArr.filter(el => el.name === name).length > 0){
-      span =+1;
-      console.log(span)
+    if (basketArr.filter(el => el.name === name).length > 0) {
+      basketArr.map(el => {
+        return (span = el.span + 1);
+      });
     }
-    useBasketArr([...basketArr, { img, name, price, text, span}]);
+
+    useBasketArr([...basketArr, { img, name, price, text, span }]);
   };
 
   const CloseModal = () => {
@@ -99,6 +101,7 @@ function App() {
       <Footer />
       {modalCard && (
         <ModalCard
+          basketArr={basketArr}
           clickAddBasket={ClickAddBasket}
           modalClose={CloseModal}
           img={imgModal}

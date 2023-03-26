@@ -14,8 +14,6 @@ import {
   CONTEINER_BTN_DIV,
   LEFT_BUTTON,
   RIGHT_BUTTON,
-
-
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ basketArr, modalClose }) {
@@ -32,7 +30,7 @@ export function ModalBasket({ basketArr, modalClose }) {
   const closeButton = () => {
     modalClose(false);
   };
-  
+
   return (
     <BACKDROP_DIV>
       <BASKET_DIV>
@@ -44,7 +42,6 @@ export function ModalBasket({ basketArr, modalClose }) {
           typeof="submit"
           onClick={ev => {
             ev.preventDefault();
-            console.log(ev.currentTarget.textContent);
           }}
         >
           {basketArr.length === 0 && (
@@ -54,16 +51,15 @@ export function ModalBasket({ basketArr, modalClose }) {
 
           {basketArr.length !== 0 && (
             <>
-            <CONTEINER_SUM_DIV>
-              <SUM_P>Сумма:{totalSum}</SUM_P>
-              <DELIVERY_P>Доставка:50грн</DELIVERY_P>
-              <SUM_P>До сплати:{totalSum + 50}</SUM_P>
-            </CONTEINER_SUM_DIV>
-            <CONTEINER_BTN_DIV>
-            <LEFT_BUTTON>Продовжіти покупки</LEFT_BUTTON>
-            <RIGHT_BUTTON>Оформити замовлення</RIGHT_BUTTON>
-            
-            </CONTEINER_BTN_DIV>
+              <CONTEINER_SUM_DIV>
+                <SUM_P>Сумма:{totalSum}</SUM_P>
+                <DELIVERY_P>Доставка:50грн</DELIVERY_P>
+                <SUM_P>До сплати:{totalSum + 50}</SUM_P>
+              </CONTEINER_SUM_DIV>
+              <CONTEINER_BTN_DIV>
+                <LEFT_BUTTON>Продовжіти покупки</LEFT_BUTTON>
+                <RIGHT_BUTTON>Оформити замовлення</RIGHT_BUTTON>
+              </CONTEINER_BTN_DIV>
             </>
           )}
         </BOTTOM_FORM>
