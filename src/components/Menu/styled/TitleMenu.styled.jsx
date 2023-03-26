@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const NAVIGATION_MENU_UL = styled.ul`
   position: fixed;
   left: 4%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,13 +10,19 @@ export const NAVIGATION_MENU_UL = styled.ul`
   a {
     text-decoration: none;
   }
-
+  @media screen and (max-width: 759px) {
+    display: none;
+   
+  }
   @media screen and (min-width: 760px) {
-    left: 5%;
+    left: 1%;
+    top: 15%;
   }
 
   @media screen and (min-width: 1200px) {
-    left: 6%;
+    left: 0%;
+    top:32%;
+
   }
 `;
 
@@ -32,12 +37,12 @@ export const LOGO_H1 = styled.h1`
 
   @media screen and (min-width: 760px) {
     margin: 10px 0;
-    padding: 5px 15px;
+    padding: 5px 28px;
     font-size: 13px;
   }
   @media screen and (min-width: 1200px) {
     margin: 15px 0;
-    padding: 5px 20px;
+    padding: 5px 35px;
     font-size: 16px;
   }
 
@@ -104,6 +109,23 @@ export const LINK_A = styled.a`
     color: red;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
+    
   }
 `;
+
+
+
+
+export const NAVIGATION_MENU_MOB_DIV = styled.div `
+position: fixed;
+  left: 0%;
+  top:15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 760px) {
+    display:none;
+  }
+`
+
+export const BURGER_MOBILE_IMG = styled.img``

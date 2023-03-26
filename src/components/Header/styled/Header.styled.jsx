@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const STYLED_HEADER = styled.header`
   // position: fixed;
   display: flex;
-  justify-content: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,24 +15,22 @@ export const STYLED_HEADER = styled.header`
   }
   @media screen and (min-width: 1200px) {
     height: 100px;
+    justify-content: space-around;;
   }
 `;
 
 export const CONTENT_DIV = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  width: 100%;
-
+display: flex;
+align-items: center;
+position: relative;
   @media screen and (min-width: 760px) {
     padding: 16px;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1200px) {
-    // padding: 16px;
-    width: 1200px;
+  padding: 5px;
+  width: 100%;
   }
 
   a {
@@ -60,11 +57,11 @@ export const LOGO_DIV = styled.div`
 
 export const LOGO_IMG = styled.img`
   fill: black;
-  @media screen and (min-width: 360px) {
+  @media screen and (min-width: 350px) {
     width: 40px;
   }
   @media screen and (min-width: 760px) {
-    width: 55px;
+    width: 45px;
   }
   @media screen and (min-width: 1200px) {
     width: 60px;
@@ -72,9 +69,18 @@ export const LOGO_IMG = styled.img`
 `;
 
 export const TITLE_CONTEINER_DIV = styled.div`
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
+  @media screen and (min-width: 350px) {
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 760px) {
+    align-items:start;
+    margin-left:85px;
+  }
+  @media screen and (min-width: 1200px) {
   align-items: center;
+  }
 `;
 export const TITLE_H1 = styled.h1`
   font-size: 25px;
@@ -86,8 +92,9 @@ export const TITLE_H1 = styled.h1`
     font-weight: 300;
   }
   @media screen and (min-width: 760px) {
-    font-size: 45px;
-    letter-spacing: 20px;
+    font-size: 30px;
+    letter-spacing: 17px;
+    text-align:left;
   }
   @media screen and (min-width: 1200px) {
     font-size: 50px;
@@ -129,9 +136,13 @@ export const BASKET_BTN = styled.button`
     cursor: pointer;
     // box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
   }
-
+  @media screen and (min-width: 350px) {
+    width: 50px;
+    margin-left: 20px
+  }
   @media screen and (min-width: 760px) {
     width: 60px;
+    margin-left: 75px
   }
   @media screen and (min-width: 1200px) {
     width: 80px;
@@ -146,7 +157,7 @@ export const BASKET_BTN = styled.button`
 
 export const BASKET_IMG = styled.img`
   width: 100%;
-  @media screen and (min-width: 350px) {
+  @media screen and (max-width: 759px) {
     width: 85%;
   }
 `;
