@@ -26,7 +26,6 @@ export function TitleMenu({ props }) {
           );
         })}
       </NAVIGATION_MENU_UL>
-
       <NAVIGATION_MENU_MOB_DIV>
         <Link to={`/food_del`}>
           <LOGO_H1>Home page</LOGO_H1>

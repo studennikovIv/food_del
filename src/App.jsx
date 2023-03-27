@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BESIC_CONTAINER_DIV } from './App.styled';
 import { Home } from './components/Home/Home';
@@ -34,7 +34,7 @@ function App() {
 
   const [modalBasket, useModalBasket] = useState(false);
   const [basketArr, useBasketArr] = useState([]);
-  // const [basketItem, useBasketItem] = useState()
+  const [basketItem, useBasketItem] = useState();
 
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
@@ -45,25 +45,40 @@ function App() {
     useTextModal(text);
   };
 
-  // useEffect(() => {
-  //   document.title = `Food Delivery`;
-  //   let span = 0;
-  //   basketArr.map(el => {
-  //     if(el.name !== basketItem.name && basketItem !== undefined ){
-  //         span = basketItem.span + 1;
-  //     }
+  useEffect(() => {
+    document.title = `Food Delivery`;
+    // let span = 0;
+    const basket = [];
 
-  //   })
-  //   useBasketItem(basketItem.span === span)
-  // },[basketArr,basketItem]);
+    basketArr.forEach((item, index) => {
+      for (let i = index + 1; i < basketArr.length; i++) {
+        if (item.name === basketArr[i].name) {
+          item.span++;
+          basketArr.splice(i, 1);
+          i--;
+        }
+      }
+    });
+
+    console.log(basket);
+    // console.log(basketArr);
+    // basketArr.map(el => {
+    //   if (el.name !== basketItem.name && basketItem !== undefined) {
+    //     span = basketItem.span + 1;
+    //   }
+    // });
+    // console.log(basketItem);
+    // useBasketItem(basketItem.span === span);
+  }, [basketArr, basketItem]);
 
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
 
-    if (basketArr.filter(el => el.name === name).length > 0) {
-      span = +1;
-    }
-    // useBasketItem({ img, name, price, text, span})
+    // if (basketArr.filter(el => el.name === name).length > 0) {
+    //   span = +1;
+    // }
+
+    useBasketItem({ img, name, price, text, span });
     useBasketArr([...basketArr, { img, name, price, text, span }]);
   };
 
