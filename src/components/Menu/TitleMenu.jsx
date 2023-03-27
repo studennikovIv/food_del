@@ -17,27 +17,16 @@ export function TitleMenu({ props }) {
         <Link to={`/food_del`}>
           <LOGO_H1>Home page</LOGO_H1>
         </Link>
-<<<<<<< HEAD
-        <BURGER_MOBILE_IMG>
-
-        </BURGER_MOBILE_IMG>
-        <ul>
-          {props.map(({ title }) => {
-=======
-        <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
+        <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>;
         {props.map(({ title }) => {
->>>>>>> 8eaa3a30a85e6a718a8831f70483ce4b4fdb9109
           return (
             <ONE_POSITION_LI key={title}>
               <LINK_A href={`#${title}`}>{title}</LINK_A>
             </ONE_POSITION_LI>
           );
         })}
-<<<<<<< HEAD
-      </ul>
-    </NAVIGATION_MENU_MOB_DIV>
-=======
       </NAVIGATION_MENU_UL>
+
       <NAVIGATION_MENU_MOB_DIV>
         <Link to={`/food_del`}>
           <LOGO_H1>Home page</LOGO_H1>
@@ -53,7 +42,6 @@ export function TitleMenu({ props }) {
           })}
         </ul>
       </NAVIGATION_MENU_MOB_DIV>
->>>>>>> 8eaa3a30a85e6a718a8831f70483ce4b4fdb9109
     </>
   );
 }

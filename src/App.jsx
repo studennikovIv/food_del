@@ -48,32 +48,23 @@ function App() {
   // useEffect(() => {
   //   document.title = `Food Delivery`;
   //   let span = 0;
-  //   basketArr.map(el => { 
+  //   basketArr.map(el => {
   //     if(el.name !== basketItem.name && basketItem !== undefined ){
   //         span = basketItem.span + 1;
   //     }
-      
+
   //   })
   //   useBasketItem(basketItem.span === span)
   // },[basketArr,basketItem]);
 
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
-<<<<<<< HEAD
-    if(basketArr.filter(el => el.name === name).length > 0){
-      span =+1;
+
+    if (basketArr.filter(el => el.name === name).length > 0) {
+      span = +1;
     }
     // useBasketItem({ img, name, price, text, span})
-    useBasketArr([...basketArr, { img, name, price, text, span}]);
-=======
-    if (basketArr.filter(el => el.name === name).length > 0) {
-      basketArr.map(el => {
-        return (span = el.span + 1);
-      });
-    }
-
     useBasketArr([...basketArr, { img, name, price, text, span }]);
->>>>>>> 8eaa3a30a85e6a718a8831f70483ce4b4fdb9109
   };
 
   const CloseModal = () => {
