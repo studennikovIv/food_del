@@ -47,9 +47,6 @@ function App() {
 
   useEffect(() => {
     document.title = `Food Delivery`;
-    // let span = 0;
-    const basket = [];
-
     basketArr.forEach((item, index) => {
       for (let i = index + 1; i < basketArr.length; i++) {
         if (item.name === basketArr[i].name) {
@@ -60,7 +57,6 @@ function App() {
       }
     });
 
-    console.log(basket);
     // console.log(basketArr);
     // basketArr.map(el => {
     //   if (el.name !== basketItem.name && basketItem !== undefined) {
