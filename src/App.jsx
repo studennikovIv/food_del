@@ -34,6 +34,7 @@ function App() {
 
   const [modalBasket, useModalBasket] = useState(false);
   const [basketArr, useBasketArr] = useState([]);
+  // const [basketItem, useBasketItem] = useState()
 
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
@@ -44,12 +45,24 @@ function App() {
     useTextModal(text);
   };
 
+  // useEffect(() => {
+  //   document.title = `Food Delivery`;
+  //   let span = 0;
+  //   basketArr.map(el => { 
+  //     if(el.name !== basketItem.name && basketItem !== undefined ){
+  //         span = basketItem.span + 1;
+  //     }
+      
+  //   })
+  //   useBasketItem(basketItem.span === span)
+  // },[basketArr,basketItem]);
+
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
     if(basketArr.filter(el => el.name === name).length > 0){
       span =+1;
-      console.log(span)
     }
+    // useBasketItem({ img, name, price, text, span})
     useBasketArr([...basketArr, { img, name, price, text, span}]);
   };
 

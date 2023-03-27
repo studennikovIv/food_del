@@ -34,13 +34,13 @@ export function TitleMenu({ props }) {
 
         </BURGER_MOBILE_IMG>
         <ul>
-        {props.map(({ title }) => {
-        return (
-          <ONE_POSITION_LI key={title}>
-            <LINK_A href={`#${title}`}>{title}</LINK_A>
-          </ONE_POSITION_LI>
-        );
-      })}
+          {props.map(({ title }) => {
+          return (
+            <ONE_POSITION_LI key={title}>
+              <LINK_A href={`#${title}`}>{title}</LINK_A>
+            </ONE_POSITION_LI>
+          );
+        })}
       </ul>
     </NAVIGATION_MENU_MOB_DIV>
     </>
