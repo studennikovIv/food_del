@@ -50,7 +50,7 @@ export const BUTTONE_CLOSE = styled.button`
   }
 `;
 
-export const BOTTOM_FORM = styled.form`
+export const BOTTOM_DIV = styled.div`
   padding: 10px;
   background-color: #fff;
 `;
@@ -121,52 +121,155 @@ export const BUTTON_MINUS = styled.button`
 `;
 export const NUMBER_SPAN = styled.span``;
 
-
-
 export const CONTEINER_SUM_DIV = styled.div`
-width:100%;
-display:flex;
-justify-content: space-between;
-margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 `;
 
 export const SUM_P = styled.p``;
 
-export const DELIVERY_P = styled.p``
-
+export const DELIVERY_P = styled.p``;
 
 export const CONTEINER_BTN_DIV = styled.div`
-width:100%;
-display:flex;
-justify-content: space-between;
-margin-top: 10px;`
-
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
 
 export const LEFT_BUTTON = styled.button`
-
-cursor:pointer;
-vertical-align: middle;
-outline: 0;
-border: 1px solid rgba(0,0,0, 0.05);
-background-color: rgba(255,255,255, 0);
-color: #999;
-transition: all 0.4s ease 0s;
-:hover,
-:focus {
-  background-color: rgba(0,0,0, 0.1)
-}`;
+  cursor: pointer;
+  vertical-align: middle;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0);
+  color: #999;
+  transition: all 0.4s ease 0s;
+  :hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+`;
 
 export const RIGHT_BUTTON = styled.button`
-    border: 1px solid #ec2929;
-    background-color: #ec2929;
-    color: #FFF;
-    cursor: pointer;
-    transition: all 0.4s ease 0s;
-    :hover,
-    :focus {
-      color: #ec2929;
-      background-color:#fff;
-    }`
+  border: 1px solid #ec2929;
+  background-color: #ec2929;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  :hover {
+    color: #ec2929;
+    background-color: #fff;
+  }
+`;
 
+// CLIENT FORM
+export const CLIENT_H3 = styled.h3`
+  color: #999;
+  width: 90%;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+`;
+export const CLIENT_FORM = styled.form`
+  text-align: center;
+  width: 97%;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+`;
 
-   
+export const CLIENT_LI = styled.li`
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  width: 100%;
+`;
+export const CLIENT_LABEL = styled.label`
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+  text-align: left;
+  display: block;
+  color: #ccc;
+  margin-right: auto;
+  margin-left: 35px;
+  z-index: 8;
+  height: 0px;
+  width: 100%;
+  transition: all 1s ease 0s;
+  .active {
+    font-size: 11px;
+    top: -15px;
+  }
+`;
+
+export const CLIENT_SMALL = styled.small`
+  transition: all 1s ease 0s;
+  position: relative;
+  .active {
+    color: #f00;
+    top: -25px;
+  }
+`;
+export const CLIENT_SUP = styled.sup`
+  color: #f00;
+  position: relative;
+  transition: all 1s ease 0s;
+  top: 0px;
+  .active {
+    color: #f00;
+    top: -25px;
+  }
+`;
+
+export const CLIENT_INPUT = styled.input`
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 7px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+  outline: none;
+  width: calc(100% - 35px);
+  :focus {
+    border: none;
+  }
+`;
+export const CLIENT_SELECT = styled.select`
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 7px;
+  border-top-style: none;
+  border-right-style: none;
+  outline: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+  width: -moz-calc(100% - 35px);
+  width: -webkit-calc(100% - 35px);
+  width: calc(100% - 35px);
+`;

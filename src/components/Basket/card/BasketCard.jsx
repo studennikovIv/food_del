@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import {
   CARD_BASKET_DIV,
   // CONTEINER_CARD_BASKET_DIV,
@@ -12,28 +12,21 @@ import {
   NUMBER_SPAN,
 } from '../styled/ModalBasket.styled';
 
-export function CardBasket({ basketArr, funcSum }) {
+export function CardBasket({ arr, minus, basketArr, plus }) {
   const { img, text, name, price, span } = basketArr;
-  const [valSpan, setValSpan] = useState(span);
-
-  useEffect(() => {
-    funcSum(price * valSpan);
-  }, [valSpan, funcSum, price]);
+  const [valSpan] = useState(span);
 
   const plusButton = () => {
-    setValSpan(valSpan + 1);
+    plus(basketArr);
   };
 
   const minusButton = () => {
     if (valSpan === 1) {
       return;
     }
-    setValSpan(valSpan - 1);
+    minus(basketArr);
   };
   return (
-    // <CONTEINER_CARD_BASKET_DIV>
-    //   {basketArr.map(({ img, text, name, price, span }) => {
-    // return (
     <CARD_BASKET_DIV>
       <CARD_NAME_P>{name}</CARD_NAME_P>
       <CARD_IMG src={img} alt={text} width="50px" />
@@ -46,7 +39,4 @@ export function CardBasket({ basketArr, funcSum }) {
       <CARD_PRICE_P>{price}₴</CARD_PRICE_P>
     </CARD_BASKET_DIV>
   );
-  //   })}
-  // </CONTEINER_CARD_BASKET_DIV>
-  // );
 }
