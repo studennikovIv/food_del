@@ -1,9 +1,12 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { CONTENT_DIV, CLIENTS_DIV, CARD_DIV } from './styled/Home.styled';
 import myClients from './My_clients/My_clients';
 import { Link } from 'react-router-dom';
 
-export function Home() {
+export function Home({ arr }) {
+  useEffect(() => {
+    arr([]);
+  }, [arr]);
   return (
     <>
       <CONTENT_DIV>

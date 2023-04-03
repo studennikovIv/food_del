@@ -32,9 +32,9 @@ function App() {
 
   // Modal Basket
 
-  const [modalBasket, useModalBasket] = useState(false);
-  const [basketArr, useBasketArr] = useState([]);
-  const [basketItem, useBasketItem] = useState();
+  const [modalBasket, setModalBasket] = useState(false);
+  const [basketArr, setBasketArr] = useState([]);
+  const [basketItem, setBasketItem] = useState();
 
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
@@ -56,26 +56,44 @@ function App() {
         }
       }
     });
-
-    // console.log(basketArr);
-    // basketArr.map(el => {
-    //   if (el.name !== basketItem.name && basketItem !== undefined) {
-    //     span = basketItem.span + 1;
-    //   }
-    // });
-    // console.log(basketItem);
-    // useBasketItem(basketItem.span === span);
   }, [basketArr, basketItem]);
+  const handleAdd = obj => {
+    const existingProduct = basketArr.find(p => p.name === obj.name);
+    if (existingProduct) {
+      setBasketArr(
+        basketArr.map(p => {
+          if (p.name === obj.name) {
+            return { ...p, span: p.span + 1 };
+          } else {
+            return p;
+          }
+        })
+      );
+    } else {
+      setBasketArr([...basketArr, { ...obj, span: 1 }]);
+    }
+  };
+  const handleRemove = obj => {
+    const existingProduct = basketArr.find(p => p.name === obj.name);
+    if (existingProduct.span === 1) {
+      setBasketArr(basketArr.filter(p => p.name !== obj.name));
+    } else {
+      setBasketArr(
+        basketArr.map(p => {
+          if (p.name === obj.name) {
+            return { ...p, span: p.span - 1 };
+          } else {
+            return p;
+          }
+        })
+      );
+    }
+  };
 
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
-
-    // if (basketArr.filter(el => el.name === name).length > 0) {
-    //   span = +1;
-    // }
-
-    useBasketItem({ img, name, price, text, span });
-    useBasketArr([...basketArr, { img, name, price, text, span }]);
+    setBasketItem({ img, name, price, text, span });
+    setBasketArr([...basketArr, { img, name, price, text, span }]);
   };
 
   const CloseModal = () => {
@@ -83,14 +101,14 @@ function App() {
   };
 
   const OpenBusket = bool => {
-    useModalBasket(bool);
+    setModalBasket(bool);
   };
   return (
     <>
       <Header openBusket={OpenBusket} />
       <BESIC_CONTAINER_DIV>
         <Routes>
-          <Route path="/food_del" element={<Home />} />
+          <Route path="/food_del" element={<Home arr={setBasketArr} />} />
           <Route
             path="/food_del/KFC"
             element={<Menu prop={menuKFC} clickOnCard={ClickOnCard} />}
@@ -134,7 +152,12 @@ function App() {
         />
       )}
       {modalBasket && (
-        <ModalBasket basketArr={basketArr} modalClose={useModalBasket} />
+        <ModalBasket
+          basketArr={basketArr}
+          modalClose={setModalBasket}
+          plus={handleAdd}
+          minus={handleRemove}
+        />
       )}
     </>
   );

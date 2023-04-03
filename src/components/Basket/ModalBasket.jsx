@@ -25,48 +25,14 @@ import {
   CLIENT_SELECT,
 } from './styled/ModalBasket.styled';
 
-export function ModalBasket({ basketArr, modalClose }) {
+export function ModalBasket({ plus, minus, basketArr, modalClose }) {
   const [currentActive, setActive] = useState(null);
-  const [cart, setCart] = useState([...basketArr]);
 
   const closeButton = () => {
     modalClose(false);
   };
 
-  const handleAdd = basketArr => {
-    const existingProduct = cart.find(p => p.name === basketArr.name);
-    if (existingProduct) {
-      setCart(
-        cart.map(p => {
-          if (p.name === basketArr.name) {
-            return { ...p, span: p.span + 1 };
-          } else {
-            return p;
-          }
-        })
-      );
-    } else {
-      setCart([...cart, { ...basketArr, span: 1 }]);
-    }
-  };
-  const handleRemove = basketArr => {
-    const existingProduct = cart.find(p => p.name === basketArr.name);
-    if (existingProduct.span === 1) {
-      setCart(cart.filter(p => p.name !== basketArr.name));
-    } else {
-      setCart(
-        cart.map(p => {
-          if (p.name === basketArr.name) {
-            return { ...p, span: p.span - 1 };
-          } else {
-            return p;
-          }
-        })
-      );
-    }
-  };
-  console.log(cart);
-  const total = cart.reduce((acc, p) => acc + p.price * p.span, 0);
+  const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
 
   return (
     <BACKDROP_DIV>
@@ -80,13 +46,13 @@ export function ModalBasket({ basketArr, modalClose }) {
             <TEXT_ARR_EMPTY_P>У вашому кошику порожньо!</TEXT_ARR_EMPTY_P>
           )}
           {basketArr &&
-            cart.map(obj => (
+            basketArr.map(obj => (
               <CardBasket
                 key={nanoid()}
-                plus={handleAdd}
+                plus={plus}
                 basketArr={obj}
-                minus={handleRemove}
-                arr={cart}
+                minus={minus}
+                arr={basketArr}
               />
             ))}
           {/* <CardBasket basketArr={basketArr} /> */}
