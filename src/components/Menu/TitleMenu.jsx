@@ -17,7 +17,7 @@ export function TitleMenu({ props }) {
         <Link to={`/food_del`}>
           <LOGO_H1>Home page</LOGO_H1>
         </Link>
-        <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>;
+        <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
         {props.map(({ title }) => {
           return (
             <ONE_POSITION_LI key={title}>

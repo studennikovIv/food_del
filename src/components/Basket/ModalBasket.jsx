@@ -19,7 +19,7 @@ import {
   RIGHT_BUTTON,
 } from './styled/ModalBasket.styled';
 
-export function ModalBasket({ plus, minus, basketArr, modalClose }) {
+export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
   // const [message, setMessage] = useState('');
   const closeButton = () => {
     modalClose(false);
@@ -48,7 +48,6 @@ export function ModalBasket({ plus, minus, basketArr, modalClose }) {
                 arr={basketArr}
               />
             ))}
-          {/* <CardBasket basketArr={basketArr} /> */}
           {basketArr.length !== 0 && (
             <>
               <CONTEINER_SUM_DIV>
@@ -60,9 +59,13 @@ export function ModalBasket({ plus, minus, basketArr, modalClose }) {
                 <LEFT_BUTTON>Продовжіти покупки</LEFT_BUTTON>
                 <RIGHT_BUTTON>Оформити замовлення</RIGHT_BUTTON>
               </CONTEINER_BTN_DIV>
+              <BasketFormClient
+                food={basketArr}
+                total={total}
+                resetBasket={reset}
+              />
             </>
           )}
-          <BasketFormClient prop={basketArr} total={total} />
         </BOTTOM_DIV>
       </BASKET_DIV>
     </BACKDROP_DIV>

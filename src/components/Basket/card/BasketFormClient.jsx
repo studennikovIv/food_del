@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { sendMessage } from 'components/botTg';
 import { useLocation } from 'react-router-dom';
+
 import {
   CLIENT_FORM,
   CLIENT_LI,
@@ -12,7 +13,7 @@ import {
   // CLIENT_SELECT,
 } from '../styled/ModalBasket.styled';
 
-export function BasketFormClient({ prop, total }) {
+export function BasketFormClient({ food, total, resetBasket }) {
   const [changeTel, setChangeTel] = useState('');
   const [phoneActive, setPhoneActive] = useState(null);
   // const [nameActive, setNameActive] = useState(null);
@@ -27,13 +28,19 @@ export function BasketFormClient({ prop, total }) {
   const kafe = location.pathname;
 
   return (
-    <div>
+    <>
       <CLIENT_H3>Оформлення замовлення</CLIENT_H3>
       <CLIENT_FORM
         method="post"
         onSubmit={e => {
           e.preventDefault();
-          sendMessage(changeTel, prop, total, kafe);
+          sendMessage(changeTel, food, total, kafe);
+          setChangeTel('');
+          e.target.elements.telephone.value = '';
+          resetBasket([]);
+          // Notiflix.Notify.success(
+          //   `Замовлення офрмлене, зараз  з вами зв'яжеться  менеджер.`
+          // );
         }}
       >
         <ul>
@@ -214,8 +221,8 @@ export function BasketFormClient({ prop, total }) {
             />
           </CLIENT_LI> */}
         </ul>
-        <button>sunmit</button>
+        <button>submit</button>
       </CLIENT_FORM>
-    </div>
+    </>
   );
 }

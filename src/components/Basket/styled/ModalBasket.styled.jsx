@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 export const BASKET_DIV = styled.div`
   position: absolute;
   left: 50%;

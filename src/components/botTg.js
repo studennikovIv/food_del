@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Notiflix from 'notiflix';
 
 const botToken = '6175964793:AAFU_yX2YGSWvbfBjSdhy2wdNQBss0WN0A0';
 const chatId = '-928235385';
@@ -21,9 +22,17 @@ export const sendMessage = (tel, food, total, kafe) => {
 
   axiosInstance
     .then(response => {
-      console.log('Message sent:', response.data);
+      // console.log('Message sent:', response.data);
+      Notiflix.Notify.success(
+        `Замовлення офрмлене, зараз  з вами зв'яжеться  менеджер.`,
+        {
+          timeout: 6000,
+        }
+      );
+      return response.data;
     })
     .catch(error => {
-      console.error('Error sending message:', error);
+      Notiflix.Notify.failure(`${error}`);
+      return error;
     });
 };
