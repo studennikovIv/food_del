@@ -26,6 +26,7 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
     }
     minus(basketArr);
   };
+
   return (
     <CARD_BASKET_DIV>
       <CARD_NAME_P>{name}</CARD_NAME_P>

@@ -193,6 +193,21 @@ export const CLIENT_LI = styled.li`
   margin-left: auto;
   display: inline-block;
   width: 100%;
+  // :nth-child(4) {
+  //   width: 65%;
+  // }
+  // :nth-child(5) {
+  //   width: 30%;
+  // }
+  // :nth-child(6) {
+  //   width: 30%;
+  // }
+  // :nth-child(7) {
+  //   width: 35%;
+  // }
+  // :nth-child(8) {
+  //   width: 35%;
+  // }
 `;
 export const CLIENT_LABEL = styled.label`
   font-size: 16px;
@@ -209,7 +224,7 @@ export const CLIENT_LABEL = styled.label`
   transition: all 1s ease 0s;
   .active {
     font-size: 11px;
-    top: -15px;
+    top: -25px;
   }
 `;
 
@@ -218,7 +233,6 @@ export const CLIENT_SMALL = styled.small`
   position: relative;
   .active {
     color: #f00;
-    top: -25px;
   }
 `;
 export const CLIENT_SUP = styled.sup`
@@ -228,7 +242,6 @@ export const CLIENT_SUP = styled.sup`
   top: 0px;
   .active {
     color: #f00;
-    top: -25px;
   }
 `;
 

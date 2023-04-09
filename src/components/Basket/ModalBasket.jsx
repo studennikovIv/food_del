@@ -3,6 +3,7 @@ import { CardBasket } from './card/BasketCard.jsx';
 // import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { BasketFormClient } from './card/BasketFormClient';
+
 import {
   BASKET_DIV,
   TOP_DIV,
@@ -61,7 +62,7 @@ export function ModalBasket({ plus, minus, basketArr, modalClose }) {
               </CONTEINER_BTN_DIV>
             </>
           )}
-          <BasketFormClient />
+          <BasketFormClient prop={basketArr} total={total} />
         </BOTTOM_DIV>
       </BASKET_DIV>
     </BACKDROP_DIV>

@@ -16,7 +16,6 @@ export function ModalCard({
   price,
   text,
   clickAddBasket,
-  basketArr,
 }) {
   const ClickOnCard = () => {
     modalClose(false);
