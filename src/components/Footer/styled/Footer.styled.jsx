@@ -2,11 +2,11 @@ import styled from '@emotion/styled';
 
 export const STYLED_FOOTER = styled.footer`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 120px;
+  height: 190px;
   z-index: 9999;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 
@@ -23,8 +23,10 @@ export const CONTENT_DIV = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 0 5px;
   width: 100%;
+  height: 200px;
 
   @media screen and (min-width: 760px) {
     padding: 0 16px;
@@ -41,7 +43,6 @@ export const INFO_UL = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 
   @media screen and (min-width: 760px) {
     padding: 5px;
