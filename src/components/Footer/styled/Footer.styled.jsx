@@ -8,27 +8,13 @@ export const STYLED_FOOTER = styled.footer`
   width: 100%;
   height: 120px;
   z-index: 9999;
-  box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 
   @media screen and (min-width: 760px) {
-    height: 170px;
+    height: 130px;
   }
   @media screen and (min-width: 1200px) {
-    height: 150px;
-  }
-`;
-
-export const TITLE_H1 = styled.h1`
-  display: flex;
-  font-size: 15px;
-  font-family: Ubuntu;
-
-  @media screen and (min-width: 760px) {
-    font-size: 17px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 19px;
+    height: 125px;
   }
 `;
 
@@ -37,11 +23,11 @@ export const CONTENT_DIV = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 5px;
+  padding: 0 5px;
   width: 100%;
 
   @media screen and (min-width: 760px) {
-    padding: 16px;
+    padding: 0 16px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -51,7 +37,7 @@ export const CONTENT_DIV = styled.div`
   }
 `;
 
-export const CONTACTS_UL = styled.ul`
+export const INFO_UL = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,6 +50,63 @@ export const CONTACTS_UL = styled.ul`
   @media screen and (min-width: 1200px) {
     padding: 0px;
   }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 5px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    p {
+      display: flex;
+      color: black;
+      font-size: 17px;
+      transition: all 0.4s ease 0s;
+
+      :hover,
+      :focus {
+        color: red;
+        box-shadow: 0px 5px 5px -5px rgb(255 0 0 / 100%);
+      }
+    }
+  }
+`;
+
+export const CONTACT_UL = styled.ul`
+  display: flex;
+  li {
+    margin-right: 10px;
+    a {
+      position: relative;
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      transition: all 0.4s ease 0s;
+
+      :hover,
+      :focus {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+      }
+    }
+  }
 `;
 
 export const CONTACTS_TEXT_P = styled.p`
@@ -72,7 +115,21 @@ export const CONTACTS_TEXT_P = styled.p`
   // font-family: Robota;
 
   @media screen and (min-width: 760px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 13px;
+  }
+`;
+export const CONTACTS_TEXT_P_BOLD = styled.p`
+  padding: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  // font-family: Robota;
+
+  @media screen and (min-width: 760px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {

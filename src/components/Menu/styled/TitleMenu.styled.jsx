@@ -13,10 +13,11 @@ export const NAVIGATION_MENU_UL = styled.ul`
     flex-direction: column;
     align-items: center;
     left: 1%;
-    top: 15%;
+    top: 80px;
   }
 
   @media screen and (min-width: 1200px) {
+    top: 100px;
     left: 4%;
   }
 `;
@@ -37,7 +38,7 @@ export const LOGO_H1 = styled.h1`
     font-size: 13px;
   }
   @media screen and (min-width: 1200px) {
-    margin: 15px 0;
+    margin: 10px 0;
     padding: 5px 35px;
     font-size: 16px;
   }
