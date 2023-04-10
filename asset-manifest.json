@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.bc4905db.css",
-    "main.js": "/food_del/static/js/main.c267677e.js",
+    "main.js": "/food_del/static/js/main.ad6a1d02.js",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
     "static/media/pizza1.jpg": "/food_del/static/media/pizza1.78bd10480f15f78da174.jpg",
@@ -259,12 +259,16 @@
     "static/media/lokshina5.jpg": "/food_del/static/media/lokshina5.f6b5c212176cc0b0787e.jpg",
     "static/media/lokshina2.jpg": "/food_del/static/media/lokshina2.71186a00ac182fa3bf23.jpg",
     "static/media/sushi1.jpg": "/food_del/static/media/sushi1.ae8f35a6cddd5a16a48c.jpg",
+    "static/media/instagram-1-svgrepo-com.svg": "/food_del/static/media/instagram-1-svgrepo-com.b236eb82b1cf3cb89ab01b6a2db2b088.svg",
+    "static/media/bike-svgrepo-com (1).svg": "/food_del/static/media/bike-svgrepo-com (1).49dfa48f7873f522e865c76566324f15.svg",
     "index.html": "/food_del/index.html",
+    "static/media/facebook-color-svgrepo-com.svg": "/food_del/static/media/facebook-color-svgrepo-com.9377109beb880468b01ab41b846c45f7.svg",
+    "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.bc4905db.css.map": "/food_del/static/css/main.bc4905db.css.map",
-    "main.c267677e.js.map": "/food_del/static/js/main.c267677e.js.map"
+    "main.ad6a1d02.js.map": "/food_del/static/js/main.ad6a1d02.js.map"
   },
   "entrypoints": [
     "static/css/main.bc4905db.css",
-    "static/js/main.c267677e.js"
+    "static/js/main.ad6a1d02.js"
   ]
 }
