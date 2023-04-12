@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 const botToken = '6175964793:AAFU_yX2YGSWvbfBjSdhy2wdNQBss0WN0A0';
 const chatId = '-928235385';
 
-export const sendMessage = (tel, food, total, kafe) => {
+export const sendMessage = (tel, streat, coments, food, total, kafe) => {
   let res = [];
 
   food.map(({ name, span }) => {
@@ -14,9 +14,9 @@ export const sendMessage = (tel, food, total, kafe) => {
     `https://api.telegram.org/bot${botToken}/sendMessage`,
     {
       chat_id: chatId,
-      text: `Заведение: ${kafe}, Телефон: ${tel},  Заказ: ${res}. Сумма: ${
+      text: `Заведение: ${kafe}, Телефон: ${tel},Адреса:${streat}  Заказ: ${res}. Сумма: ${
         total + 50
-      }`,
+      }. Коментар:${coments}`,
     }
   );
 

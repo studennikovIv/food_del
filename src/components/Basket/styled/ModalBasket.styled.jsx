@@ -220,10 +220,9 @@ export const CLIENT_LABEL = styled.label`
   z-index: 8;
   height: 0px;
   width: 100%;
-  transition: all 1s ease 0s;
+  transition: all 0, 1s;
   .active {
-    font-size: 11px;
-    top: -25px;
+    color: rgba(0, 0, 0, 0);
   }
 `;
 
@@ -232,6 +231,7 @@ export const CLIENT_SMALL = styled.small`
   position: relative;
   .active {
     color: #f00;
+    display: none;
   }
 `;
 export const CLIENT_SUP = styled.sup`
@@ -240,7 +240,7 @@ export const CLIENT_SUP = styled.sup`
   transition: all 1s ease 0s;
   top: 0px;
   .active {
-    color: #f00;
+    display: none !important;
   }
 `;
 
@@ -261,8 +261,9 @@ export const CLIENT_INPUT = styled.input`
   z-index: 10;
   outline: none;
   width: calc(100% - 35px);
+  transition: all 1s;
   :focus {
-    border: none;
+    border-color: #ff0000;
   }
 `;
 export const CLIENT_SELECT = styled.select`

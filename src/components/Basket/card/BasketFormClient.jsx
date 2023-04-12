@@ -10,12 +10,17 @@ import {
   CLIENT_SUP,
   CLIENT_INPUT,
   CLIENT_H3,
-  // CLIENT_SELECT,
-} from '../styled/ModalBasket.styled';
+  CLIENT_SELECT,
+} from '../styled/ModalBasket.styled.jsx';
 
 export function BasketFormClient({ food, total, resetBasket }) {
   const [changeTel, setChangeTel] = useState('');
+  const [changeStreat, setChangeStreat] = useState('');
+  const [changeComents, setChangeComents] = useState('');
   const [phoneActive, setPhoneActive] = useState(null);
+  const [streatActive, setStreatActive] = useState(null);
+  const [comentsActive, setComentsActive] = useState(null);
+
   // const [nameActive, setNameActive] = useState(null);
   // const [streatActive, setStreatActive] = useState(null);
   // const [houseActive, setHouseActive] = useState(null);
@@ -34,7 +39,14 @@ export function BasketFormClient({ food, total, resetBasket }) {
         method="post"
         onSubmit={e => {
           e.preventDefault();
-          sendMessage(changeTel, food, total, kafe);
+          sendMessage(
+            changeTel,
+            changeStreat,
+            changeComents,
+            food,
+            total,
+            kafe
+          );
           setChangeTel('');
           e.target.elements.telephone.value = '';
           resetBasket([]);
@@ -46,10 +58,18 @@ export function BasketFormClient({ food, total, resetBasket }) {
         <ul>
           <CLIENT_LI>
             <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={phoneActive === true ? 'active' : null}>
+              <CLIENT_SMALL
+                className={
+                  phoneActive === true || changeTel !== '' ? 'active' : null
+                }
+              >
                 Телефон 380000000000
               </CLIENT_SMALL>
-              <CLIENT_SUP className={phoneActive === true ? 'active' : null}>
+              <CLIENT_SUP
+                className={
+                  phoneActive === true || changeTel !== '' ? 'active' : null
+                }
+              >
                 *
               </CLIENT_SUP>
             </CLIENT_LABEL>
@@ -63,6 +83,81 @@ export function BasketFormClient({ food, total, resetBasket }) {
               type="number"
               name="telephone"
               pattern="[0-9]*"
+              required
+            />
+          </CLIENT_LI>
+          <CLIENT_LI>
+            <CLIENT_LABEL htmlFor="telephone">
+              <CLIENT_SMALL className={'active'}>Місто</CLIENT_SMALL>
+              <CLIENT_SUP className={'active'}>*</CLIENT_SUP>
+            </CLIENT_LABEL>
+            <CLIENT_SELECT>
+              <option>Павлоград</option>
+            </CLIENT_SELECT>
+          </CLIENT_LI>
+          <CLIENT_LI>
+            <CLIENT_LABEL htmlFor="streat">
+              <CLIENT_SMALL
+                className={
+                  streatActive === true || changeStreat !== '' ? 'active' : null
+                }
+              >
+                Адреса
+              </CLIENT_SMALL>
+              <CLIENT_SUP
+                className={
+                  streatActive === true || changeStreat !== '' ? 'active' : null
+                }
+              >
+                *
+              </CLIENT_SUP>
+            </CLIENT_LABEL>
+            <CLIENT_INPUT
+              onBlur={() => setStreatActive(null)}
+              onChange={e => {
+                setStreatActive(true);
+                setChangeStreat(e.target.value);
+              }}
+              onClick={() => {
+                setStreatActive(true);
+              }}
+              type="text"
+              name="streat"
+              pattern="*"
+              required
+            />
+          </CLIENT_LI>
+          <CLIENT_LI>
+            <CLIENT_LABEL htmlFor="coments">
+              <CLIENT_SMALL
+                className={
+                  comentsActive === true || changeComents !== ''
+                    ? 'active'
+                    : null
+                }
+              >
+                Коментар
+              </CLIENT_SMALL>
+              <CLIENT_SUP
+                className={
+                  comentsActive === true || changeComents !== ''
+                    ? 'active'
+                    : null
+                }
+              >
+                *
+              </CLIENT_SUP>
+            </CLIENT_LABEL>
+            <CLIENT_INPUT
+              onBlur={() => setComentsActive(null)}
+              onChange={e => {
+                setComentsActive(true);
+                setChangeComents(e.target.value);
+              }}
+              onClick={() => setComentsActive(true)}
+              type="text"
+              name="coments"
+              pattern="*"
               required
             />
           </CLIENT_LI>
