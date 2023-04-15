@@ -63,10 +63,18 @@ export const MENU_HEADER_H2 = styled.h2`
   }
 `;
 
-export const ONE_POSITION_LI = styled.li`
-  display: block;
+export const ONE_POSITION_LI = styled.div`
   width: 100%;
   height: 100%;
+
+  border: none;
+  border-radius: 4px;
+  .false {
+    display: none !important;
+  }
+  @media screen and (max-width: 760px) {
+    background-color: red;
+  }
 `;
 
 export const LINK_A = styled.a`
@@ -80,15 +88,17 @@ export const LINK_A = styled.a`
   font-size: 10px;
   font-weight: bold;
   text-decoration: none;
-  color: #000;
-  background-color: #0000001c;
-  transition: all 0.4s ease 0s;
 
+  transition: all 0.4s ease 0s;
+  @media screen and (max-width: 760px) {
+    color: #fff;
+  }
   @media screen and (min-width: 760px) {
     padding: 6px;
     margin: 4px;
     width: 130px;
     font-size: 12px;
+    background-color: #0000001c;
   }
 
   @media screen and (min-width: 1200px) {
@@ -111,10 +121,12 @@ export const LINK_A = styled.a`
 export const NAVIGATION_MENU_MOB_DIV = styled.div`
   position: fixed;
   left: 0%;
-  top: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  top: 8%;
+  display: grid;
+  place-items: center;
+
+  grid-template-columns: 33% 33% 33%;
+
   @media screen and (min-width: 760px) {
     display: none;
   }

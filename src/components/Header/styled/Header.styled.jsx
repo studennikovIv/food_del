@@ -15,6 +15,9 @@ export const STYLED_HEADER = styled.header`
   @media screen and (min-width: 760px) {
     height: 80px;
   }
+  @media screen and (max-width: 760px) {
+    position: fixed;
+  }
   @media screen and (min-width: 1200px) {
     height: 100px;
     padding: 0 300px 0 300px;
@@ -61,6 +64,9 @@ export const LOGO_IMG = styled.img`
   @media screen and (min-width: 350px) {
     width: 40px;
   }
+  @media screen and (max-width: 760px) {
+    width: 33px;
+  }
   @media screen and (min-width: 760px) {
     width: 45px;
   }
@@ -79,6 +85,7 @@ export const TITLE_CONTEINER_DIV = styled.div`
     align-items: start;
     margin-left: 85px;
   }
+
   @media screen and (min-width: 1200px) {
     align-items: center;
   }
@@ -91,6 +98,9 @@ export const TITLE_H1 = styled.h1`
     font-size: 19px;
     letter-spacing: 3px;
     font-weight: 300;
+  }
+  @media screen and (max-width: 759px) {
+    font-size: 15px;
   }
   @media screen and (min-width: 760px) {
     font-size: 30px;

@@ -192,9 +192,9 @@ export const CLIENT_LI = styled.li`
   margin-left: auto;
   display: inline-block;
   width: 100%;
-  // :nth-child(4) {
-  //   width: 65%;
-  // }
+  :nth-child(4) {
+    width: 65%;
+  }
   // :nth-child(5) {
   //   width: 30%;
   // }
