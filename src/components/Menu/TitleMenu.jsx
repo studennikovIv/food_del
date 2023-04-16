@@ -8,7 +8,7 @@ import {
   ONE_POSITION_LI,
   LINK_A,
   NAVIGATION_MENU_MOB_DIV,
-  BURGER_MOBILE_IMG,
+  // BURGER_MOBILE_IMG,
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
