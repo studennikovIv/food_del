@@ -74,7 +74,7 @@ export const ONE_POSITION_LI = styled.div`
   }
   @media screen and (max-width: 760px) {
     background-color: red;
-  }
+    width: 100%;
 `;
 
 export const LINK_A = styled.a`
@@ -121,12 +121,12 @@ export const LINK_A = styled.a`
 export const NAVIGATION_MENU_MOB_DIV = styled.div`
   position: fixed;
   left: 0%;
-  top: 8%;
+  top: 70px;
+
   display: grid;
   place-items: center;
 
-  grid-template-columns: 33% 33% 33%;
-
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   @media screen and (min-width: 760px) {
     display: none;
   }

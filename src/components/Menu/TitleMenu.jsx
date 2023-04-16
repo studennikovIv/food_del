@@ -40,7 +40,7 @@ export function TitleMenu({ props }) {
 
         {props.slice(index, index + 3).map(({ title }, index) => {
           return (
-            <ONE_POSITION_LI key={title}>
+            <ONE_POSITION_LI key={index}>
               <LINK_A href={`#${title}`}>{title}</LINK_A>
             </ONE_POSITION_LI>
           );

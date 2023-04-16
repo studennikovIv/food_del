@@ -12,6 +12,9 @@ export const BASKET_DIV = styled.div`
   @media screen and (min-width: 760px) {
     width: 440px;
   }
+  @media screen and (max-width: 760px) {
+    top: 20%;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 600px;
