@@ -84,7 +84,7 @@ export const LINK_A = styled.a`
   margin: 2px;
   border: none;
   border-radius: 4px;
-  width: 100px;
+  width: 100%;
   font-size: 10px;
   font-weight: bold;
   text-decoration: none;
@@ -126,7 +126,8 @@ export const NAVIGATION_MENU_MOB_DIV = styled.div`
   display: grid;
   place-items: center;
 
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-template-columns: 100% 100% 100%;
+  grid-auto-flow: column;
   @media screen and (min-width: 760px) {
     display: none;
   }
