@@ -70,6 +70,11 @@ export const ONE_POSITION_LI = styled.div`
   border-radius: 4px;
   @media screen and (max-width: 760px) {
     background-color: red;
+    width: 33.33%;
+    height: 40px;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
 `;
 
 export const LINK_A = styled.a`
@@ -117,10 +122,10 @@ export const NAVIGATION_MENU_MOB_DIV = styled.div`
   position: fixed;
   left: 0%;
   top: 70px;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 100% 100% 100%;
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
   @media screen and (min-width: 760px) {
     display: none;
   }
