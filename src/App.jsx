@@ -19,9 +19,9 @@ import menuShaurmichka from './components/MenuAllBookmarks/Shaurmichka/Shaurmich
 // MaCherie
 import menuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.jsx';
 // SushiZoom
-import menuSushiZoom from 'components/MenuAllBookmarks/SushiZoom/menuSushiZoom.jsx';
+// import menuSushiZoom from 'components/MenuAllBookmarks/SushiZoom/menuSushiZoom.jsx';
 // Osama Sushi
-import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.jsx';
+// import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.jsx';
 
 function App() {
   const [modalCard, useModalCard] = useState(false);
@@ -138,14 +138,14 @@ function App() {
             path="/food_del/MaCherie"
             element={<Menu prop={menuMaCherie} clickOnCard={ClickOnCard} />}
           />
-          <Route
+          {/* <Route
             path="/food_del/SushiZoom"
             element={<Menu prop={menuSushiZoom} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/food_del/OsamaSushi"
             element={<Menu prop={menuOsamaSushi} clickOnCard={ClickOnCard} />}
-          />
+          /> */}
         </Routes>
       </BESIC_CONTAINER_DIV>
       <Footer />

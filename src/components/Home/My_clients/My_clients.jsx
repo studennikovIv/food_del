@@ -4,8 +4,8 @@ import myCherie from './images/MyCherie.jpg';
 import Shaurmichka from './images/Shaurmichka.jpg';
 import pizzaDay from './images/pizzaDay.jpg';
 import MyPlace from './images/MyPlace.jpg';
-import sushiZoom from './images/sushiZoom.jpg';
-import osamaSushi from './images/osamaSushi.jpg';
+// import sushiZoom from './images/sushiZoom.jpg';
+// import osamaSushi from './images/osamaSushi.jpg';
 
 const myClients = [
   {
@@ -38,16 +38,16 @@ const myClients = [
     name: 'MyPlace',
     logoImg: MyPlace,
   },
-  {
-    id: 8,
-    name: 'SushiZoom',
-    logoImg: sushiZoom,
-  },
-  {
-    id: 9,
-    name: 'OsamaSushi',
-    logoImg: osamaSushi,
-  },
+  // {
+  //   id: 8,
+  //   name: 'SushiZoom',
+  //   logoImg: sushiZoom,
+  // },
+  // {
+  //   id: 9,
+  //   name: 'OsamaSushi',
+  //   logoImg: osamaSushi,
+  // },
 ];
 
 export default myClients;

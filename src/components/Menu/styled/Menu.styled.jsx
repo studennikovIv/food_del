@@ -27,6 +27,9 @@ export const MENU_UL = styled.ul`
   @media screen and (min-width: 760px) {
     max-width: 600px;
   }
+  @media screen and (max-width: 760px) {
+    margin-top: 70px;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1000px;
@@ -35,7 +38,6 @@ export const MENU_UL = styled.ul`
 
 export const ONE_CASE_LI = styled.li`
   margin: 0 0 20px 0;
-  // padding: 80px 0 0 0;
   :active {
     opacity: 1;
   }
