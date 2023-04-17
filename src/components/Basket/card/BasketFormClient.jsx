@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import {
   CLIENT_FORM,
+  CLIENT_UL,
   CLIENT_LI,
   CLIENT_LABEL,
   CLIENT_SMALL,
@@ -55,7 +56,7 @@ export function BasketFormClient({ food, total, resetBasket }) {
           // );
         }}
       >
-        <ul>
+        <CLIENT_UL>
           <CLIENT_LI>
             <CLIENT_LABEL htmlFor="telephone">
               <CLIENT_SMALL
@@ -315,7 +316,7 @@ export function BasketFormClient({ food, total, resetBasket }) {
               required
             />
           </CLIENT_LI> */}
-        </ul>
+        </CLIENT_UL>
         <button>submit</button>
       </CLIENT_FORM>
     </>

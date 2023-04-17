@@ -12,8 +12,9 @@ export const BASKET_DIV = styled.div`
   @media screen and (min-width: 760px) {
     width: 440px;
   }
-  @media screen and (max-width: 760px) {
-    top: 20%;
+  @media screen and (max-width: 759px) {
+    width: 100%;
+    height: 100vh;
   }
 
   @media screen and (min-width: 1200px) {
@@ -62,6 +63,13 @@ export const TEXT_ARR_EMPTY_P = styled.p`
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  @media screen and (max-width: 760px) {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
 `;
 
 // ////////////////////CARD
@@ -185,7 +193,9 @@ export const CLIENT_FORM = styled.form`
   margin-right: auto;
   margin-left: auto;
 `;
-
+export const CLIENT_UL = styled.ul`
+  padding: 0;
+`;
 export const CLIENT_LI = styled.li`
   background-color: #fff;
   margin-top: 10px;

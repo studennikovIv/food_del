@@ -66,15 +66,10 @@ export const MENU_HEADER_H2 = styled.h2`
 export const ONE_POSITION_LI = styled.div`
   width: 100%;
   height: 100%;
-
   border: none;
   border-radius: 4px;
-  .false {
-    display: none !important;
-  }
   @media screen and (max-width: 760px) {
     background-color: red;
-    width: 100%;
 `;
 
 export const LINK_A = styled.a`
@@ -122,10 +117,8 @@ export const NAVIGATION_MENU_MOB_DIV = styled.div`
   position: fixed;
   left: 0%;
   top: 70px;
-
   display: grid;
   place-items: center;
-
   grid-template-columns: 100% 100% 100%;
   grid-auto-flow: column;
   @media screen and (min-width: 760px) {

@@ -8,7 +8,7 @@ export const STYLED_HEADER = styled.header`
   height: 70px;
   background-color: #fff;
   box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
+  z-index: 10;
   @media screen and (min-width: 320px) {
     padding: 0 30px 0 30px;
   }
@@ -29,6 +29,7 @@ export const CONTENT_DIV = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  margin: 0 auto;
   @media screen and (min-width: 760px) {
     padding: 16px;
     justify-content: space-between;

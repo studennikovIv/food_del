@@ -22,6 +22,7 @@ import {
 export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
   // const [message, setMessage] = useState('');
   const [basketFormClient, setBasketFormClient] = useState(false);
+
   const closeButton = () => {
     modalClose(false);
   };

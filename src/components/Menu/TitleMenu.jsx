@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
+
 import {
   NAVIGATION_MENU_UL,
   LOGO_H1,
@@ -12,13 +13,13 @@ import {
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
+  const [index, setIndex] = useState(0);
   const handlers = useSwipeable({
     onSwipedLeft: () => setIndex(index === 0 ? props.length - 3 : index - 1),
     onSwipedRight: () => setIndex(index === props.length - 3 ? 0 : index + 1),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
-  const [index, setIndex] = useState(0);
 
   return (
     <>
@@ -35,6 +36,7 @@ export function TitleMenu({ props }) {
           );
         })}
       </NAVIGATION_MENU_UL>
+
       <NAVIGATION_MENU_MOB_DIV {...handlers}>
         {/* <BURGER_MOBILE_IMG></BURGER_MOBILE_IMG> */}
 

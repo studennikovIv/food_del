@@ -36,6 +36,15 @@ function App() {
   const [basketArr, setBasketArr] = useState([]);
   const [basketItem, setBasketItem] = useState();
 
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (modalBasket) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  }, [modalBasket]);
+
   const ClickOnCard = (bool, img, name, price, text) => {
     useModalCard(bool);
 
