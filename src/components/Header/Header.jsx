@@ -28,8 +28,8 @@ export function Header({ openBusket }) {
           <LOGO_IMG src={logo} alt="logo" />
         </Link>
         <TITLE_CONTEINER_DIV>
-          <TITLE_H1>FOOD DELIVERY</TITLE_H1>
-          <TITLE_P>Швидка доставка у твоєму Місті!</TITLE_P>
+          <TITLE_H1 to="food_del">FOOD DELIVERY</TITLE_H1>
+          <TITLE_P to="food_del">Швидка доставка у твоєму Місті!</TITLE_P>
         </TITLE_CONTEINER_DIV>
         <BASKET_BTN onClick={clickBusket}>
           <BASKET_IMG src={basket} alt="basket" />

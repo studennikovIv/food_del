@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 export const STYLED_HEADER = styled.header`
   // position: fixed;
   display: flex;
@@ -91,10 +92,11 @@ export const TITLE_CONTEINER_DIV = styled.div`
     align-items: center;
   }
 `;
-export const TITLE_H1 = styled.h1`
+export const TITLE_H1 = styled(Link)`
   font-size: 25px;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
+  color: #000;
   @media screen and (min-width: 350px) {
     font-size: 19px;
     letter-spacing: 3px;
@@ -113,9 +115,10 @@ export const TITLE_H1 = styled.h1`
     letter-spacing: 25px;
   }
 `;
-export const TITLE_P = styled.p`
+export const TITLE_P = styled(Link)`
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  color: #000;
 
   @media screen and (min-width: 350px) {
     font-size: 9px;
