@@ -13,9 +13,20 @@ import {
   CLIENT_H3,
   CLIENT_SELECT,
   CLIENT_CONTEINER_STREET_DIV,
+  CONTEINER_CLIENT_SUM_DIV,
+  SUM_CLIENT_P,
+  DELIVERY_CLIENT_P,
+  CONTEINER_BTN_CLIENT_DIV,
+  LEFT_CLIENT_BUTTON,
+  RIGHT_CLIENT_BUTTON,
 } from '../styled/ModalBasket.styled.jsx';
 
-export function BasketFormClient({ food, total, resetBasket }) {
+export function BasketFormClient({
+  food,
+  total,
+  resetBasket,
+  basketFormClient,
+}) {
   const [changeTel, setChangeTel] = useState('');
   const [changeStreat, setChangeStreat] = useState('');
   const [changeHouse, setChangeHouse] = useState('');
@@ -47,9 +58,6 @@ export function BasketFormClient({ food, total, resetBasket }) {
           setChangeTel('');
           e.target.elements.telephone.value = '';
           resetBasket([]);
-          // Notiflix.Notify.success(
-          //   `Замовлення офрмлене, зараз  з вами зв'яжеться  менеджер.`
-          // );
         }}
       >
         <CLIENT_UL>
@@ -188,162 +196,23 @@ export function BasketFormClient({ food, total, resetBasket }) {
               pattern="*"
             />
           </CLIENT_LI>
-
-          {/* <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={nameActive === true ? 'active' : null}>
-                Ім'я
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={nameActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setNameActive(null)}
-              onChange={() => setNameActive(true)}
-              onClick={() => setNameActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={'active'}>Місто</CLIENT_SMALL>
-              <CLIENT_SUP className={'active'}>*</CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_SELECT>
-              <option>Павлоград</option>
-            </CLIENT_SELECT>
-          </CLIENT_LI>
-
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={streatActive === true ? 'active' : null}>
-                Вулиця
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={streatActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setStreatActive(null)}
-              onChange={() => setStreatActive(true)}
-              onClick={() => setStreatActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={houseActive === true ? 'active' : null}>
-                Будинок
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={houseActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setHouseActive(null)}
-              onChange={() => setHouseActive(true)}
-              onClick={() => setHouseActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL
-                className={entranceActive === true ? 'active' : null}
-              >
-                Під'їзд
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={entranceActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setEntranceActive(null)}
-              onChange={() => setEntranceActive(true)}
-              onClick={() => setEntranceActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={overActive === true ? 'active' : null}>
-                Поверх
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={overActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setOverActive(null)}
-              onChange={() => setOverActive(true)}
-              onClick={() => setOverActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL
-                className={apartmentActive === true ? 'active' : null}
-              >
-                Квартира
-              </CLIENT_SMALL>
-              <CLIENT_SUP
-                className={apartmentActive === true ? 'active' : null}
-              >
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setApartmentActive(null)}
-              onChange={() => setApartmentActive(true)}
-              onClick={() => setApartmentActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL
-                className={commentActive === true ? 'active' : null}
-              >
-                Коментар
-              </CLIENT_SMALL>
-              <CLIENT_SUP className={commentActive === true ? 'active' : null}>
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setCommentActive(null)}
-              onChange={() => setCommentActive(true)}
-              onClick={() => setCommentActive(true)}
-              type="name"
-              name="telephone"
-              pattern="[0-9]*"
-              required
-            />
-          </CLIENT_LI> */}
         </CLIENT_UL>
-        <button>submit</button>
+        <CONTEINER_CLIENT_SUM_DIV>
+          <SUM_CLIENT_P>Сумма:{total}</SUM_CLIENT_P>
+          <DELIVERY_CLIENT_P>Доставка:50грн</DELIVERY_CLIENT_P>
+          <SUM_CLIENT_P>До сплати:{total + 50}</SUM_CLIENT_P>
+        </CONTEINER_CLIENT_SUM_DIV>
+        <CONTEINER_BTN_CLIENT_DIV>
+          <LEFT_CLIENT_BUTTON
+            onClick={e => {
+              e.preventDefault();
+              basketFormClient(false);
+            }}
+          >
+            Назад
+          </LEFT_CLIENT_BUTTON>
+          <RIGHT_CLIENT_BUTTON>Відправити замовлення</RIGHT_CLIENT_BUTTON>
+        </CONTEINER_BTN_CLIENT_DIV>
       </CLIENT_FORM>
     </>
   );

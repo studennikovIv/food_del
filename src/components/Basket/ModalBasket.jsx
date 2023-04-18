@@ -63,21 +63,26 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
                   food={basketArr}
                   total={total}
                   resetBasket={reset}
+                  basketFormClient={setBasketFormClient}
                 />
               )}
-              <CONTEINER_SUM_DIV>
-                <SUM_P>Сумма:{total}</SUM_P>
-                <DELIVERY_P>Доставка:50грн</DELIVERY_P>
-                <SUM_P>До сплати:{total + 50}</SUM_P>
-              </CONTEINER_SUM_DIV>
-              <CONTEINER_BTN_DIV>
-                <LEFT_BUTTON onClick={closeButton}>
-                  Продовжіти покупки
-                </LEFT_BUTTON>
-                <RIGHT_BUTTON onClick={clickBtn}>
-                  Оформити замовлення
-                </RIGHT_BUTTON>
-              </CONTEINER_BTN_DIV>
+              {basketFormClient === false && (
+                <>
+                  <CONTEINER_SUM_DIV>
+                    <SUM_P>Сумма:{total}</SUM_P>
+                    <DELIVERY_P>Доставка:50грн</DELIVERY_P>
+                    <SUM_P>До сплати:{total + 50}</SUM_P>
+                  </CONTEINER_SUM_DIV>
+                  <CONTEINER_BTN_DIV>
+                    <LEFT_BUTTON onClick={closeButton}>
+                      Продовжіти покупки
+                    </LEFT_BUTTON>
+                    <RIGHT_BUTTON onClick={clickBtn}>
+                      Оформити замовлення
+                    </RIGHT_BUTTON>
+                  </CONTEINER_BTN_DIV>
+                </>
+              )}
             </>
           )}
         </BOTTOM_DIV>

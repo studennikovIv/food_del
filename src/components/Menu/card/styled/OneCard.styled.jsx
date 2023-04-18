@@ -13,10 +13,11 @@ export const ONE_CARD_LI = styled.li`
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   transition: all 0.4s ease 0s;
-
+  min-height: 280px;
   @media screen and (min-width: 760px) {
     margin: 10px;
     width: 200px;
+    min-height: 420px;
   }
 
   @media screen and (min-width: 1200px) {

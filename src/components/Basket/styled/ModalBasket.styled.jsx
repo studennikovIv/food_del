@@ -286,3 +286,44 @@ export const CLIENT_SELECT = styled.select`
   width: -webkit-calc(100% - 35px);
   width: calc(100% - 35px);
 `;
+
+export const CONTEINER_CLIENT_SUM_DIV = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
+
+export const SUM_CLIENT_P = styled.p``;
+export const DELIVERY_CLIENT_P = styled.p``;
+export const CONTEINER_BTN_CLIENT_DIV = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+`;
+export const LEFT_CLIENT_BUTTON = styled.button`
+  cursor: pointer;
+  vertical-align: middle;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0);
+  color: #999;
+  transition: all 0.4s ease 0s;
+  width: 50%;
+  :hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+`;
+export const RIGHT_CLIENT_BUTTON = styled.button`
+  border: 1px solid #ec2929;
+  background-color: #ec2929;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+  width: 50%;
+  :hover {
+    color: #ec2929;
+    background-color: #fff;
+  }
+`;
