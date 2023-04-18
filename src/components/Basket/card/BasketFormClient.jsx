@@ -12,23 +12,18 @@ import {
   CLIENT_INPUT,
   CLIENT_H3,
   CLIENT_SELECT,
+  CLIENT_CONTEINER_STREET_DIV,
 } from '../styled/ModalBasket.styled.jsx';
 
 export function BasketFormClient({ food, total, resetBasket }) {
   const [changeTel, setChangeTel] = useState('');
   const [changeStreat, setChangeStreat] = useState('');
+  const [changeHouse, setChangeHouse] = useState('');
   const [changeComents, setChangeComents] = useState('');
   const [phoneActive, setPhoneActive] = useState(null);
   const [streatActive, setStreatActive] = useState(null);
+  const [houseActive, setHouseActive] = useState(null);
   const [comentsActive, setComentsActive] = useState(null);
-
-  // const [nameActive, setNameActive] = useState(null);
-  // const [streatActive, setStreatActive] = useState(null);
-  // const [houseActive, setHouseActive] = useState(null);
-  // const [entranceActive, setEntranceActive] = useState(null);
-  // const [overActive, setOverActive] = useState(null);
-  // const [apartmentActive, setApartmentActive] = useState(null);
-  // const [commentActive, setCommentActive] = useState(null);
 
   const location = useLocation();
   const kafe = location.pathname;
@@ -43,6 +38,7 @@ export function BasketFormClient({ food, total, resetBasket }) {
           sendMessage(
             changeTel,
             changeStreat,
+            changeHouse,
             changeComents,
             food,
             total,
@@ -96,38 +92,78 @@ export function BasketFormClient({ food, total, resetBasket }) {
               <option>Павлоград</option>
             </CLIENT_SELECT>
           </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="streat">
-              <CLIENT_SMALL
-                className={
-                  streatActive === true || changeStreat !== '' ? 'active' : null
-                }
-              >
-                Адреса
-              </CLIENT_SMALL>
-              <CLIENT_SUP
-                className={
-                  streatActive === true || changeStreat !== '' ? 'active' : null
-                }
-              >
-                *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
-              onBlur={() => setStreatActive(null)}
-              onChange={e => {
-                setStreatActive(true);
-                setChangeStreat(e.target.value);
-              }}
-              onClick={() => {
-                setStreatActive(true);
-              }}
-              type="text"
-              name="streat"
-              pattern="*"
-              required
-            />
-          </CLIENT_LI>
+          <CLIENT_CONTEINER_STREET_DIV>
+            <CLIENT_LI>
+              <CLIENT_LABEL htmlFor="streat">
+                <CLIENT_SMALL
+                  className={
+                    streatActive === true || changeStreat !== ''
+                      ? 'active'
+                      : null
+                  }
+                >
+                  Вулиця
+                </CLIENT_SMALL>
+                <CLIENT_SUP
+                  className={
+                    streatActive === true || changeStreat !== ''
+                      ? 'active'
+                      : null
+                  }
+                >
+                  *
+                </CLIENT_SUP>
+              </CLIENT_LABEL>
+              <CLIENT_INPUT
+                onBlur={() => setStreatActive(null)}
+                onChange={e => {
+                  setStreatActive(true);
+                  setChangeStreat(e.target.value);
+                }}
+                onClick={() => {
+                  setStreatActive(true);
+                }}
+                type="text"
+                name="streat"
+                pattern="*"
+                required
+              />
+            </CLIENT_LI>
+
+            <CLIENT_LI>
+              <CLIENT_LABEL htmlFor="house">
+                <CLIENT_SMALL
+                  className={
+                    houseActive === true || changeHouse !== '' ? 'active' : null
+                  }
+                >
+                  Будинок
+                </CLIENT_SMALL>
+                <CLIENT_SUP
+                  className={
+                    houseActive === true || changeHouse !== '' ? 'active' : null
+                  }
+                >
+                  *
+                </CLIENT_SUP>
+              </CLIENT_LABEL>
+              <CLIENT_INPUT
+                onBlur={() => setHouseActive(null)}
+                onChange={e => {
+                  setHouseActive(true);
+                  setChangeHouse(e.target.value);
+                }}
+                onClick={() => {
+                  setHouseActive(true);
+                }}
+                type="text"
+                name="house"
+                pattern="*"
+                required
+              />
+            </CLIENT_LI>
+          </CLIENT_CONTEINER_STREET_DIV>
+
           <CLIENT_LI>
             <CLIENT_LABEL htmlFor="coments">
               <CLIENT_SMALL
@@ -139,15 +175,6 @@ export function BasketFormClient({ food, total, resetBasket }) {
               >
                 Коментар
               </CLIENT_SMALL>
-              <CLIENT_SUP
-                className={
-                  comentsActive === true || changeComents !== ''
-                    ? 'active'
-                    : null
-                }
-              >
-                *
-              </CLIENT_SUP>
             </CLIENT_LABEL>
             <CLIENT_INPUT
               onBlur={() => setComentsActive(null)}
@@ -159,7 +186,6 @@ export function BasketFormClient({ food, total, resetBasket }) {
               type="text"
               name="coments"
               pattern="*"
-              required
             />
           </CLIENT_LI>
 

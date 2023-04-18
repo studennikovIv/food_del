@@ -193,10 +193,12 @@ export const CLIENT_FORM = styled.form`
   margin-right: auto;
   margin-left: auto;
 `;
-export const CLIENT_UL = styled.ul`
-  padding: 0;
+
+export const CLIENT_CONTEINER_STREET_DIV = styled.div`
+  display: flex;
 `;
-export const CLIENT_LI = styled.li`
+export const CLIENT_UL = styled.div``;
+export const CLIENT_LI = styled.div`
   background-color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -205,21 +207,6 @@ export const CLIENT_LI = styled.li`
   margin-left: auto;
   display: inline-block;
   width: 100%;
-  :nth-child(4) {
-    width: 65%;
-  }
-  // :nth-child(5) {
-  //   width: 30%;
-  // }
-  // :nth-child(6) {
-  //   width: 30%;
-  // }
-  // :nth-child(7) {
-  //   width: 35%;
-  // }
-  // :nth-child(8) {
-  //   width: 35%;
-  // }
 `;
 export const CLIENT_LABEL = styled.label`
   font-size: 16px;

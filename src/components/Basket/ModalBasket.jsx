@@ -71,7 +71,9 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
                 <SUM_P>До сплати:{total + 50}</SUM_P>
               </CONTEINER_SUM_DIV>
               <CONTEINER_BTN_DIV>
-                <LEFT_BUTTON>Продовжіти покупки</LEFT_BUTTON>
+                <LEFT_BUTTON onClick={closeButton}>
+                  Продовжіти покупки
+                </LEFT_BUTTON>
                 <RIGHT_BUTTON onClick={clickBtn}>
                   Оформити замовлення
                 </RIGHT_BUTTON>
