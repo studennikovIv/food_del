@@ -7,7 +7,7 @@ export const CONTENT_DIV = styled.div`
   gap: 0 100px;
   grid-template-columns: 250px 250px 250px;
   justify-content: center;
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 950px) {
     grid-template-columns: 200px 200px;
     gap: 0;
     margin-top: 70px;

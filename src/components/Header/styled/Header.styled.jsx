@@ -83,25 +83,27 @@ export const TITLE_CONTEINER_DIV = styled.div`
   @media screen and (min-width: 760px) {
   }
 `;
+
 export const TITLE_H1 = styled(Link)`
   font-family: 'Inter', sans-serif;
   color: #000;
   @media screen and (min-width: 350px) {
-    font-size: 19px;
+    font-size: 20px;
     letter-spacing: 3px;
-    font-weight: 300;
+    font-weight: 400;
   }
   @media screen and (min-width: 760px) {
-    font-weight: 400
+    font-weight: 500;
     font-size: 25px;
     letter-spacing: 10px;
   }
   @media screen and (min-width: 1200px) {
-    font-weight: 500;
-    font-size: 35px;
+    font-weight: 600;
+    font-size: 30px;
     letter-spacing: 15px;
   }
 `;
+
 export const TITLE_P = styled(Link)`
   font-family: 'Inter', sans-serif;
   color: #000;
