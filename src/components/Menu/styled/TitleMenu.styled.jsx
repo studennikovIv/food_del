@@ -1,5 +1,37 @@
 import styled from '@emotion/styled';
+// import { Link } from 'react-router-dom';
+// import { ReactComponent as Home } from '../svg/home.svg';
 
+// export const LINK_Link = styled(Link)`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   margin: 5px;
+//   width: 60px;
+//   height: 60px;
+//   color: black;
+//   transition: all 0.4s ease 0s;
+
+//   :hover,
+//   :focus {
+//     cursor: pointer;
+//     font-weight: bold;
+//     background-color: #e9e9e9;
+//     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 80px;
+//     height: 80px;
+//   }
+// `;
+
+// export const HOME_SVG = styled(Home)`
+//   fill: currentColor;
+//   width: 70%;
+//   height: 70%;
+// `;
+// --------------------------------------------
 export const NAVIGATION_MENU_UL = styled.ul`
   a {
     text-decoration: none;
@@ -13,53 +45,21 @@ export const NAVIGATION_MENU_UL = styled.ul`
     flex-direction: column;
     align-items: center;
     left: 1%;
-    top: 80px;
+    top: 120px;
   }
 
   @media screen and (min-width: 1200px) {
-    top: 100px;
+    top: 140px;
     left: 4%;
   }
 `;
 
-export const LOGO_H1 = styled.h1`
-  margin: 5px 0;
-  padding: 3px 10px;
-  border-radius: 4px;
-  font-size: 10px;
-  color: #ff0000;
-  background-color: transparent;
-  border: 1px solid #ff0000;
-  transition: all 0.4s ease 0s;
-
-  @media screen and (min-width: 760px) {
-    margin: 10px 0;
-    padding: 5px 28px;
-    font-size: 13px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin: 10px 0;
-    padding: 5px 35px;
-    font-size: 16px;
-  }
-
-  :hover,
-  :focus {
-    cursor: pointer;
-    font-weight: bold;
-    color: #cb0000;
-    border-color: #cb0000;
-  }
-`;
-
 export const MENU_HEADER_H2 = styled.h2`
-  font-size: 14px;
   @media screen and (min-width: 760px) {
-    font-size: 16px;
+    font-size: 18px;
   }
-
   @media screen and (min-width: 1200px) {
-    font-size: 20px;
+    font-size: 22px;
   }
 `;
 
@@ -68,7 +68,7 @@ export const ONE_POSITION_LI = styled.div`
   height: 100%;
   border: none;
   border-radius: 4px;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 759px) {
     background-color: red;
     width: 33.33%;
     height: 40px;
@@ -90,7 +90,7 @@ export const LINK_A = styled.a`
   text-decoration: none;
 
   transition: all 0.4s ease 0s;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 759px) {
     color: #fff;
   }
   @media screen and (min-width: 760px) {

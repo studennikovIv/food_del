@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 
 import {
   NAVIGATION_MENU_UL,
-  LOGO_H1,
+  // LINK_Link,
+  // HOME_SVG,
   MENU_HEADER_H2,
   ONE_POSITION_LI,
   LINK_A,
   NAVIGATION_MENU_MOB_DIV,
-  // BURGER_MOBILE_IMG,
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
@@ -24,9 +24,11 @@ export function TitleMenu({ props }) {
   return (
     <>
       <NAVIGATION_MENU_UL>
-        <Link to={`/food_del`}>
-          <LOGO_H1>Home page</LOGO_H1>
-        </Link>
+        {/* <LINK_Link to={`/food_del`}>
+          <HOME_SVG /> */}
+        {/* <Home /> */}
+        {/* <LOGO_H1>Home page</LOGO_H1> */}
+        {/* </LINK_Link> */}
         <MENU_HEADER_H2>{props[0].nameInst}:</MENU_HEADER_H2>
         {props.map(({ title }, index) => {
           return (

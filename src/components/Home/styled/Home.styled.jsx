@@ -2,11 +2,12 @@ import styled from '@emotion/styled';
 
 export const CONTENT_DIV = styled.div`
   display: grid;
+  margin: 100px 0 0 0;
   place-items: center;
   gap: 0 100px;
   grid-template-columns: 250px 250px 250px;
   justify-content: center;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 840px) {
     grid-template-columns: 200px 200px;
     gap: 0;
     margin-top: 70px;
@@ -14,9 +15,7 @@ export const CONTENT_DIV = styled.div`
 `;
 
 export const CLIENTS_DIV = styled.div`
-  @media screen and (min-width: 760px) {
-    padding: 10px;
-  }
+  padding: 10px;
 
   img {
     border-radius: 13px;
@@ -32,7 +31,7 @@ export const CLIENTS_DIV = styled.div`
 `;
 
 export const CARD_DIV = styled.div`
-  width: 120px;
+  width: 100px;
   cursor: pointer;
 
   @media screen and (min-width: 760px) {

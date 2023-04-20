@@ -2,13 +2,14 @@ import styled from '@emotion/styled';
 
 export const STYLED_FOOTER = styled.footer`
   display: flex;
+  flex-basis: 100%;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 190px;
   z-index: 9999;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -10px 5px -5px rgba(0, 0, 0, 0.1);
 
   @media screen and (min-width: 760px) {
     height: 130px;

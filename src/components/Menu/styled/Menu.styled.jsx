@@ -4,17 +4,18 @@ export const CONTEINER_MENU_DIV = styled.div`
   position: relative;
   display: flex;
   align-items: flex-start;
-
-  @media screen and (max-width: 759px) {
-    margin-top: 115px;
-  }
+  margin-top: 110px;
   @media screen and (min-width: 760px) {
     justify-content: center;
+    margin-top: 100px;
   }
   @media screen and (min-width: 890px) {
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
+    // width: 1000px;
+    // justify-content: center;
+    // align-items: center;
   }
 `;
 
@@ -31,7 +32,7 @@ export const MENU_UL = styled.ul`
     margin-top: 70px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1350px) {
     max-width: 1000px;
   }
 `;
