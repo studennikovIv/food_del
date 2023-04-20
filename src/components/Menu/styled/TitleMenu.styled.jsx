@@ -63,14 +63,14 @@ export const MENU_HEADER_H2 = styled.h2`
   }
 `;
 
-export const ONE_POSITION_LI = styled.div`
+export const ONE_POSITION_LI = styled.li`
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 4px;
   @media screen and (max-width: 759px) {
     background-color: red;
-    width: 33.33%;
+    // width: 33.33%;
     height: 40px;
     border-radius: 0px;
     display: flex;
@@ -118,17 +118,30 @@ export const LINK_A = styled.a`
   }
 `;
 
-export const NAVIGATION_MENU_MOB_DIV = styled.div`
+export const NAVIGATION_MENU_MOB_UL = styled.ul`
+  position: relative;
   position: fixed;
+  flex-wrap: nowrap;
   left: 0%;
   top: 70px;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   width: 100%;
   align-items: center;
+  transition: all 0.4s ease 0s;
+
   @media screen and (min-width: 760px) {
     display: none;
   }
+`;
+
+export const BUTTON_NAV = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 40px;
+  background-color: red;
 `;
 
 export const BURGER_MOBILE_IMG = styled.img``;

@@ -9,7 +9,8 @@ import {
   MENU_HEADER_H2,
   ONE_POSITION_LI,
   LINK_A,
-  NAVIGATION_MENU_MOB_DIV,
+  NAVIGATION_MENU_MOB_UL,
+  BUTTON_NAV,
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
@@ -20,7 +21,6 @@ export function TitleMenu({ props }) {
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
-
   return (
     <>
       <NAVIGATION_MENU_UL>
@@ -39,8 +39,8 @@ export function TitleMenu({ props }) {
         })}
       </NAVIGATION_MENU_UL>
 
-      <NAVIGATION_MENU_MOB_DIV {...handlers}>
-        {/* <BURGER_MOBILE_IMG></BURGER_MOBILE_IMG> */}
+      <NAVIGATION_MENU_MOB_UL {...handlers}>
+        <BUTTON_NAV>{`<`}</BUTTON_NAV>
 
         {props.slice(index, index + 3).map(({ title }, index) => {
           return (
@@ -49,7 +49,8 @@ export function TitleMenu({ props }) {
             </ONE_POSITION_LI>
           );
         })}
-      </NAVIGATION_MENU_MOB_DIV>
+        <BUTTON_NAV>{`>`}</BUTTON_NAV>
+      </NAVIGATION_MENU_MOB_UL>
     </>
   );
 }
