@@ -75,12 +75,14 @@ import drink10 from './img/drink/10.jpg';
 import drink12 from './img/drink/12.jpg';
 import drink13 from './img/drink/13.jpg';
 import drink14 from './img/drink/14.jpg';
+import drink20 from './img/drink/20.jpg';
 
 import desert1 from './img/desert/1.jpg';
 // import desert2 from "./img/desert/2.jpg";
 import desert3 from './img/desert/3.jpg';
 import desert4 from './img/desert/4.jpg';
 import desert5 from './img/desert/5.jpg';
+import desert6 from './img/desert/6.jpg';
 
 const menuKFC = [
   {
@@ -88,9 +90,16 @@ const menuKFC = [
     title: 'Бургери',
     list: [
       {
+        img: burger8,
+        title: 'Бургери',
+        name: 'Чізбургер',
+        text: 'Пряний гірч. соус, кетчуп, стріпси оригінальні, сир Чеддер, огірки на пшеничній булочці з кукурудзяною посипкою.',
+        price: 80,
+      },
+      {
         img: burger1,
         title: 'Бургери',
-        name: 'Чісбургер Джуніор',
+        name: 'Чізбургер Джуніор',
         text: 'Пряний гірчичний соус, кетчуп, стріпс оригінальний, сир Чеддер, огірки на пшеничній булочці.',
         price: 60,
       },
@@ -102,28 +111,28 @@ const menuKFC = [
         price: 55,
       },
       {
-        img: burger3,
+        img: burger6,
         title: 'Бургери',
         name: 'Чікенбургер',
         text: 'Соус «Гамбургер», філе в оригінальній паніровці, мариновані огірки на пшеничній булочці з чорно-білим кунжутом.',
         price: 95,
       },
       {
-        img: burger4,
+        img: burger5,
         title: 'Бургери',
         name: 'Чікенбургер гострий',
         text: 'Соус «Гамбургер», філе в гострій паніровці, мариновані огірки на пшеничній булочці з чорно-білим кунжутом.',
         price: 95,
       },
       {
-        img: burger5,
+        img: burger4,
         title: 'Бургери',
         name: 'Дабл чікен',
         text: 'Два соковитих курячих філе, мариновані огірки, сир, майонез та кетчуп.',
         price: 140,
       },
       {
-        img: burger6,
+        img: burger3,
         title: 'Бургери',
         name: 'Дабл чікен гострий',
         text: 'Два гострих соковитих курячих філе, мариновані огірки, сир, майонез та кетчуп.',
@@ -136,13 +145,7 @@ const menuKFC = [
         text: "Тост з двома скибочками ніжного сиру на підрум'яненій булочці.",
         price: 45,
       },
-      {
-        img: burger8,
-        title: 'Бургери',
-        name: 'Чісбургер',
-        text: 'Пряний гірч. соус, кетчуп, стріпси оригінальні, сир Чеддер, огірки на пшеничній булочці з кукурудзяною посипкою.',
-        price: 80,
-      },
+      
     ],
   },
 
@@ -158,35 +161,35 @@ const menuKFC = [
         price: 150,
       },
       {
-        img: twisters2,
+        img: twisters6,
         title: 'Твістери',
         name: 'Боксмайстер оригінальний',
         text: 'Куряче філе в оригінальній хрусткій паніровці, картопляник, скибочка сиру,мариновані огірки, ніжні соуси, загорнутi у  тортілью.',
         price: 150,
       },
       {
-        img: twisters3,
+        img: twisters2,
         title: 'Твістери',
         name: 'Твістер барбекю гострий',
         text: 'Шматочки курячого філе в гострiй паніровці, сир, мариновані огірки з барбекю та майонезним соусом загорнуті в гарячу тортілью.',
         price: 110,
       },
       {
-        img: twisters4,
+        img: twisters3,
         title: 'Твістери',
         name: 'Твістер барбекю',
         text: 'Шматочки курячого філе в оригінальній паніровці, сир, мариновані огірки з барбекю та майонезним соусом загорнуті в гарячу тортілью.',
         price: 100,
       },
       {
-        img: twisters5,
+        img: twisters4,
         title: 'Твістери',
         name: 'Твістер джуніор спешл',
         text: 'Тортілья, стріпси з гірчичним соусом, маринованими огірками, кетчупом  та сиром.',
         price: 75,
       },
       {
-        img: twisters6,
+        img: twisters5,
         title: 'Твістери',
         name: 'Ай-твістер',
         text: 'Соковита курочка з соусом барбекю та майонезом, маринованими огірками в пшеничній тортильї..',
@@ -472,14 +475,14 @@ const menuKFC = [
         price: 25,
       },
       {
-        img: sous2,
+        img: sous8,
         title: 'Соуси',
         name: 'Соус кисло-солодкий',
         text: 'Соус кисло-солодкий',
         price: 25,
       },
       {
-        img: sous3,
+        img: sous6,
         title: 'Соуси',
         name: 'Соус сирний',
         text: 'Соус сирний',
@@ -493,28 +496,28 @@ const menuKFC = [
         price: 25,
       },
       {
-        img: sous5,
+        img: sous7,
         title: 'Соуси',
         name: 'Соус гірчичний',
         text: 'Соус гірчичний',
         price: 25,
       },
       {
-        img: sous6,
+        img: sous3,
         title: 'Соуси',
         name: 'Соус барбекю',
         text: 'Соус барбекю',
         price: 25,
       },
       {
-        img: sous7,
+        img: sous5,
         title: 'Соуси',
         name: 'Майонез провансаль',
         text: 'Майонез провансаль',
         price: 25,
       },
       {
-        img: sous8,
+        img: sous2,
         title: 'Соуси',
         name: 'Кетчуп томатний',
         text: 'Кетчуп томатний',
@@ -607,7 +610,7 @@ const menuKFC = [
         price: 35,
       },
       {
-        img: drink12,
+        img: drink20,
         title: 'Напої',
         name: 'Пепсі ЖБ 0,33л',
         text: 'Пепсі ЖБ 0,33л',
@@ -639,6 +642,13 @@ const menuKFC = [
         title: 'Десерти',
         name: 'Полуничний донат',
         text: 'Полуничний донат',
+        price: 60,
+      },
+      {
+        img: desert6,
+        title: 'Десерти',
+        name: 'Донат солона карамель',
+        text: 'Донат солона карамель',
         price: 60,
       },
       {
