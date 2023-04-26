@@ -25,11 +25,11 @@ export const MODAL_DIV = styled.div`
   background-color: #fff;
 
   @media screen and (min-width: 760px) {
-    width: 600px;
+    width: 500px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 800px;
+    width: 600px;
   }
 `;
 
@@ -83,15 +83,8 @@ export const CONTENT_DIV = styled.div`
 `;
 
 export const INCREASED_INFO_DIV = styled.div`
-  p {
-    padding: 5px;
-  }
   @media screen and (min-width: 760px) {
     img {
-      width: 300px;
-    }
-    p {
-      padding: 10px;
       width: 300px;
     }
   }
@@ -100,15 +93,16 @@ export const INCREASED_INFO_DIV = styled.div`
     img {
       width: 400px;
     }
-    p {
-      padding: 15px;
-      width: 400px;
-    }
   }
 `;
 
 export const SUPPLEMENTS_DIV = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0 25px;
+  }
 `;
 
 export const BUTTON_ORDER = styled.div`

@@ -17,6 +17,8 @@ import {
   CONTEINER_BTN_DIV,
   LEFT_BUTTON,
   RIGHT_BUTTON,
+  CONTEINER_BOTTOM,
+  CONTEINER_CARD,
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
@@ -43,46 +45,52 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
           <BUTTONE_CLOSE onClick={closeButton}>×</BUTTONE_CLOSE>
         </TOP_DIV>
         <BOTTOM_DIV>
-          {basketArr.length === 0 && (
-            <TEXT_ARR_EMPTY_P>У вашому кошику порожньо!</TEXT_ARR_EMPTY_P>
-          )}
-          {basketArr &&
-            basketArr.map(obj => (
-              <CardBasket
-                key={nanoid()}
-                plus={plus}
-                basketArr={obj}
-                minus={minus}
-                arr={basketArr}
-              />
-            ))}
-          {basketArr.length !== 0 && (
-            <>
-              {basketFormClient === true && (
-                <BasketFormClient
-                  food={basketArr}
-                  total={total}
-                  resetBasket={reset}
-                  basketFormClient={setBasketFormClient}
+          <CONTEINER_CARD>
+            {basketArr.length === 0 && (
+              <TEXT_ARR_EMPTY_P>У вашому кошику порожньо!</TEXT_ARR_EMPTY_P>
+            )}
+
+            {basketArr &&
+              basketArr.map(obj => (
+                <CardBasket
+                  key={nanoid()}
+                  plus={plus}
+                  basketArr={obj}
+                  minus={minus}
+                  arr={basketArr}
                 />
-              )}
-              {basketFormClient === false && (
-                <>
-                  <CONTEINER_SUM_DIV>
-                    <SUM_P>Сумма:{total}</SUM_P>
-                    <DELIVERY_P>Доставка:50грн</DELIVERY_P>
-                    <SUM_P>До сплати:{total + 50}</SUM_P>
-                  </CONTEINER_SUM_DIV>
-                  <CONTEINER_BTN_DIV>
-                    <LEFT_BUTTON onClick={closeButton}>
-                      Продовжіти покупки
-                    </LEFT_BUTTON>
-                    <RIGHT_BUTTON onClick={clickBtn}>
-                      Оформити замовлення
-                    </RIGHT_BUTTON>
-                  </CONTEINER_BTN_DIV>
-                </>
-              )}
+              ))}
+
+            {basketArr.length !== 0 && (
+              <>
+                {basketFormClient === true && (
+                  <BasketFormClient
+                    food={basketArr}
+                    total={total}
+                    resetBasket={reset}
+                    basketFormClient={setBasketFormClient}
+                  />
+                )}
+              </>
+            )}
+          </CONTEINER_CARD>
+          {basketFormClient === false && (
+            <>
+              <CONTEINER_BOTTOM>
+                <CONTEINER_SUM_DIV>
+                  <SUM_P>Сумма:{total}</SUM_P>
+                  <DELIVERY_P>Доставка:50грн</DELIVERY_P>
+                  <SUM_P>До сплати:{total + 50}</SUM_P>
+                </CONTEINER_SUM_DIV>
+                <CONTEINER_BTN_DIV>
+                  <LEFT_BUTTON onClick={closeButton}>
+                    Продовжіти покупки
+                  </LEFT_BUTTON>
+                  <RIGHT_BUTTON onClick={clickBtn}>
+                    Оформити замовлення
+                  </RIGHT_BUTTON>
+                </CONTEINER_BTN_DIV>
+              </CONTEINER_BOTTOM>
             </>
           )}
         </BOTTOM_DIV>

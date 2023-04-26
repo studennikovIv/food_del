@@ -23,6 +23,7 @@ export function ModalCard({
 
   const addBasket = () => {
     clickAddBasket(img, name, price, text);
+    ClickOnCard();
   };
 
   return (
@@ -35,10 +36,9 @@ export function ModalCard({
         <CONTENT_DIV>
           <INCREASED_INFO_DIV>
             <img src={img} alt="" />
-            <p>{text}</p>
           </INCREASED_INFO_DIV>
           <SUPPLEMENTS_DIV>
-            <h3>CONTENT</h3>
+            <p>{text}</p>
           </SUPPLEMENTS_DIV>
         </CONTENT_DIV>
         <BUTTON_ORDER>

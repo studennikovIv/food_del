@@ -55,6 +55,8 @@ export const BUTTONE_CLOSE = styled.button`
 
 export const BOTTOM_DIV = styled.div`
   padding: 10px;
+  height: 500px;
+
   background-color: #fff;
 `;
 
@@ -73,7 +75,14 @@ export const TEXT_ARR_EMPTY_P = styled.p`
 `;
 
 // ////////////////////CARD
-
+export const CONTEINER_CARD = styled.div`
+  height: 400px;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+`;
 export const CONTEINER_CARD_BASKET_DIV = styled.div`
   display: grid;
   place-items: center;
@@ -113,6 +122,8 @@ export const CONTEINER_BTN = styled.div`
   right: 38%;
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 5px;
 `;
 
 export const BUTTON_PLUS = styled.button`
@@ -134,6 +145,7 @@ export const NUMBER_SPAN = styled.span``;
 export const CONTEINER_SUM_DIV = styled.div`
   width: 100%;
   display: flex;
+
   justify-content: space-between;
   margin-top: 10px;
 `;
@@ -146,9 +158,13 @@ export const CONTEINER_BTN_DIV = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
   margin-top: 10px;
 `;
-
+export const CONTEINER_BOTTOM = styled.div`
+  position: absolute;
+  width: 97%;
+`;
 export const LEFT_BUTTON = styled.button`
   cursor: pointer;
   vertical-align: middle;
