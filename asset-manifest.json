@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food_del/static/css/main.e8b40296.css",
-    "main.js": "/food_del/static/js/main.ffe39abb.js",
+    "main.css": "/food_del/static/css/main.6def86c1.css",
+    "main.js": "/food_del/static/js/main.5bd18ec6.js",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
     "static/media/pizza1.jpg": "/food_del/static/media/pizza1.78bd10480f15f78da174.jpg",
@@ -22,7 +22,7 @@
     "static/media/pizza16.jpg": "/food_del/static/media/pizza16.d2e2658f40a555be577d.jpg",
     "static/media/2.jpg": "/food_del/static/media/2.d8e97c675ba5bc661552.jpg",
     "static/media/pizza5.jpg": "/food_del/static/media/pizza5.d745eb447645ec40ec34.jpg",
-    "static/media/6.jpg": "/food_del/static/media/6.0326c30162e066573697.jpg",
+    "static/media/6.jpg": "/food_del/static/media/6.4a1ea762aba67551e2d5.jpg",
     "static/media/3.jpg": "/food_del/static/media/3.e77e4967bb806460ebc4.jpg",
     "static/media/5.jpg": "/food_del/static/media/5.b852581921030f4c5a38.jpg",
     "static/media/pizza9.jpg": "/food_del/static/media/pizza9.d592e86f40b7fedb607f.jpg",
@@ -148,13 +148,12 @@
     "static/media/instagram-1-svgrepo-com.svg": "/food_del/static/media/instagram-1-svgrepo-com.b236eb82b1cf3cb89ab01b6a2db2b088.svg",
     "static/media/bike-svgrepo-com (1).svg": "/food_del/static/media/bike-svgrepo-com (1).49dfa48f7873f522e865c76566324f15.svg",
     "index.html": "/food_del/index.html",
-    "static/media/facebook-color-svgrepo-com.svg": "/food_del/static/media/facebook-color-svgrepo-com.9377109beb880468b01ab41b846c45f7.svg",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
-    "main.e8b40296.css.map": "/food_del/static/css/main.e8b40296.css.map",
-    "main.ffe39abb.js.map": "/food_del/static/js/main.ffe39abb.js.map"
+    "main.6def86c1.css.map": "/food_del/static/css/main.6def86c1.css.map",
+    "main.5bd18ec6.js.map": "/food_del/static/js/main.5bd18ec6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8b40296.css",
-    "static/js/main.ffe39abb.js"
+    "static/css/main.6def86c1.css",
+    "static/js/main.5bd18ec6.js"
   ]
 }
