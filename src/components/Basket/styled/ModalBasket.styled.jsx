@@ -55,9 +55,15 @@ export const BUTTONE_CLOSE = styled.button`
 
 export const BOTTOM_DIV = styled.div`
   padding: 10px;
-  height: 500px;
-
+  height: 86vh;
   background-color: #fff;
+
+  @media screen and (max-width: 759px) {
+    height: 83vh;
+    .active {
+      height: 100vh !important;
+    }
+  }
 `;
 
 export const TEXT_ARR_EMPTY_P = styled.p`
@@ -76,11 +82,17 @@ export const TEXT_ARR_EMPTY_P = styled.p`
 
 // ////////////////////CARD
 export const CONTEINER_CARD = styled.div`
-  height: 400px;
+  max-height: 85%;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
+  }
+  .active {
+    min-height: 100% !important;
+  }
+  @media screen and (max-width: 760px) {
+    max-height: 100%;
   }
 `;
 export const CONTEINER_CARD_BASKET_DIV = styled.div`
@@ -164,6 +176,7 @@ export const CONTEINER_BTN_DIV = styled.div`
 export const CONTEINER_BOTTOM = styled.div`
   position: absolute;
   width: 97%;
+  bottom: 10px;
 `;
 export const LEFT_BUTTON = styled.button`
   cursor: pointer;
