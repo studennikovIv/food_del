@@ -64,6 +64,9 @@ export const BOTTOM_DIV = styled.div`
       height: 100vh !important;
     }
   }
+  .active {
+    height: 100% !important;
+  }
 `;
 
 export const TEXT_ARR_EMPTY_P = styled.p`
@@ -82,14 +85,14 @@ export const TEXT_ARR_EMPTY_P = styled.p`
 
 // ////////////////////CARD
 export const CONTEINER_CARD = styled.div`
-  max-height: 85%;
+  max-height: 100%;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
   }
   .active {
-    min-height: 100% !important;
+    max-height: 100% !important;
   }
   @media screen and (max-width: 760px) {
     max-height: 100%;

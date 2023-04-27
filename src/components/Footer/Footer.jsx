@@ -1,6 +1,6 @@
 import { ReactComponent as Bike } from './svg/bike-svgrepo-com (1).svg';
 import { ReactComponent as Instagram } from './svg/instagram-1-svgrepo-com.svg';
-import { ReactComponent as Facebook } from './svg/facebook-color-svgrepo-com.svg';
+// import { ReactComponent as Facebook } from './svg/facebook-color-svgrepo-com.svg';
 import { ReactComponent as Telegramm } from './svg/telegram-svgrepo-com.svg';
 import {
   STYLED_FOOTER,
@@ -17,7 +17,7 @@ export function Footer() {
       <CONTENT_DIV>
         <INFO_UL>
           <li>
-            <CONTACTS_TEXT_P_BOLD> 8:00 - 21:00</CONTACTS_TEXT_P_BOLD>
+            <CONTACTS_TEXT_P_BOLD> 10:00 - 22:00</CONTACTS_TEXT_P_BOLD>
             <Bike />
           </li>
           <li>
@@ -31,17 +31,13 @@ export function Footer() {
         </INFO_UL>
         <CONTACT_UL>
           <li>
-            <a href="/">
+            <a href="https://instagram.com/food_delivery_pavlograd?igshid=ZDdkNTZiNTM=">
               <Instagram />
             </a>
           </li>
+        
           <li>
-            <a href="/">
-              <Facebook />
-            </a>
-          </li>
-          <li>
-            <a href="/">
+            <a href="https://t.me/food_delivery_pvl">
               <Telegramm />
             </a>
           </li>

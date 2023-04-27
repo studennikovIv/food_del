@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const CONTEINER_MENU_DIV = styled.div`
   position: relative;
   display: flex;
+  min-height:85wh;
   align-items: flex-start;
   margin-top: 110px;
   @media screen and (min-width: 760px) {
