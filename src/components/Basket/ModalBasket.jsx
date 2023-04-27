@@ -74,7 +74,7 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
               </>
             )}
           </CONTEINER_CARD>
-          {basketFormClient === false && (
+          {basketFormClient === false && basketArr.length !== 0 && (
             <>
               <CONTEINER_BOTTOM>
                 <CONTEINER_SUM_DIV>

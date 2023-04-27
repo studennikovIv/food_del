@@ -70,14 +70,14 @@ export const BOTTOM_DIV = styled.div`
 `;
 
 export const TEXT_ARR_EMPTY_P = styled.p`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 30%;
   font-size: 20px;
   @media screen and (max-width: 760px) {
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 64%;
     transform: translate(-50%, -50%);
     width: 100%;
   }

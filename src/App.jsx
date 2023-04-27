@@ -22,7 +22,8 @@ import menuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.jsx';
 // import menuSushiZoom from 'components/MenuAllBookmarks/SushiZoom/menuSushiZoom.jsx';
 // Osama Sushi
 // import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.jsx';
-
+// MyPlace
+import menuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace';
 function App() {
   const [modalCard, useModalCard] = useState(false);
   const [imgModal, useImgModal] = useState('');
@@ -117,26 +118,30 @@ function App() {
       <Header openBusket={OpenBusket} />
       <BESIC_CONTAINER_DIV>
         <Routes>
-          <Route path="/food_del" element={<Home arr={setBasketArr} />} />
+          <Route path="/" element={<Home arr={setBasketArr} />} />
           <Route
-            path="/food_del/KFC"
+            path="/KFC"
             element={<Menu prop={menuKFC} clickOnCard={ClickOnCard} />}
           />
           <Route
-            path="/food_del/PizzaDay"
+            path="/PizzaDay"
             element={<Menu prop={menuPizza} clickOnCard={ClickOnCard} />}
           />
           <Route
-            path="/food_del/Shaurmichka"
+            path="/Shaurmichka"
             element={<Menu prop={menuShaurmichka} clickOnCard={ClickOnCard} />}
           />
           <Route
-            path="/food_del/SushiFamily"
+            path="/SushiFamily"
             element={<Menu prop={menuSushiFamily} clickOnCard={ClickOnCard} />}
           />
           <Route
-            path="/food_del/MaCherie"
+            path="/MaCherie"
             element={<Menu prop={menuMaCherie} clickOnCard={ClickOnCard} />}
+          />
+          <Route
+            path="/MyPlace"
+            element={<Menu prop={menuMyPlace} clickOnCard={ClickOnCard} />}
           />
           {/* <Route
             path="/food_del/SushiZoom"

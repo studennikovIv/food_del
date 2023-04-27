@@ -24,12 +24,12 @@ export function Header({ openBusket }) {
   return (
     <STYLED_HEADER>
       <CONTENT_DIV>
-        <Link to="/food_del">
+        <Link to="/">
           <LOGO_IMG src={logo} alt="logo" />
         </Link>
         <TITLE_CONTEINER_DIV>
-          <TITLE_H1 to="food_del">FOOD DELIVERY</TITLE_H1>
-          <TITLE_P to="food_del">Швидка доставка у твоєму Місті!</TITLE_P>
+          <TITLE_H1 to="/">FOOD DELIVERY</TITLE_H1>
+          <TITLE_P to="/">Швидка доставка у твоєму Місті!</TITLE_P>
         </TITLE_CONTEINER_DIV>
         <BASKET_BTN onClick={clickBusket}>
           <BASKET_IMG src={basket} alt="basket" />
