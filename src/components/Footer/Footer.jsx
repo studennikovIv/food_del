@@ -21,11 +21,13 @@ export function Footer() {
             <Bike />
           </li>
           <li>
-            <CONTACTS_TEXT_P>+380992121234</CONTACTS_TEXT_P>
+            <a href="tel:+380936649675">
+              <CONTACTS_TEXT_P>+380936649675</CONTACTS_TEXT_P>
+            </a>
           </li>
           <li>
-            <a href="/">
-              <p>food-del@gmail.com</p>
+            <a href="mailto:food.delivery.pvl@gmail.com">
+              <p>food.delivery.pvl@gmail.com</p>
             </a>
           </li>
         </INFO_UL>
@@ -35,7 +37,7 @@ export function Footer() {
               <Instagram />
             </a>
           </li>
-        
+
           <li>
             <a href="https://t.me/food_delivery_pvl">
               <Telegramm />

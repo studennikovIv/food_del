@@ -10,7 +10,6 @@ import {
   ONE_POSITION_LI,
   LINK_A,
   NAVIGATION_MENU_MOB_UL,
-  BUTTON_NAV,
 } from './styled/TitleMenu.styled';
 
 export function TitleMenu({ props }) {
@@ -40,8 +39,6 @@ export function TitleMenu({ props }) {
       </NAVIGATION_MENU_UL>
 
       <NAVIGATION_MENU_MOB_UL {...handlers}>
-        <BUTTON_NAV>{`<`}</BUTTON_NAV>
-
         {props.slice(index, index + 3).map(({ title }, index) => {
           return (
             <ONE_POSITION_LI key={index}>
@@ -49,7 +46,6 @@ export function TitleMenu({ props }) {
             </ONE_POSITION_LI>
           );
         })}
-        <BUTTON_NAV>{`>`}</BUTTON_NAV>
       </NAVIGATION_MENU_MOB_UL>
     </>
   );

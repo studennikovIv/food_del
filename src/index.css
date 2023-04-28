@@ -119,3 +119,11 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar:hover {
   display: none;
 }
+
+/* Basket */
+.false {
+  height: 80%;
+}
+.active {
+  height: 100% !important;
+}

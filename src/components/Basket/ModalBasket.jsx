@@ -45,7 +45,9 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
           <BUTTONE_CLOSE onClick={closeButton}>×</BUTTONE_CLOSE>
         </TOP_DIV>
         <BOTTOM_DIV className={basketFormClient === true && 'active'}>
-          <CONTEINER_CARD className={basketFormClient === true && 'active'}>
+          <CONTEINER_CARD
+            className={basketFormClient === true ? 'active' : 'false'}
+          >
             {basketArr.length === 0 && (
               <TEXT_ARR_EMPTY_P>У вашому кошику порожньо!</TEXT_ARR_EMPTY_P>
             )}

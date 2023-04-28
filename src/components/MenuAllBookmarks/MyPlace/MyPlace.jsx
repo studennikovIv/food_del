@@ -1,3 +1,5 @@
+// import sweetFish from './img/
+
 const menuMyPlace = [
   {
     nameInst: 'My Place',

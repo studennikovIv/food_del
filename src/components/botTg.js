@@ -14,9 +14,18 @@ export const sendMessage = (tel, streat, house, coments, food, total, kafe) => {
     `https://api.telegram.org/bot${botToken}/sendMessage`,
     {
       chat_id: chatId,
-      text: `Заведение: ${kafe}, Телефон: ${tel},Вулиця:${streat},будинок:${house}  Заказ: ${res}. Сумма: ${
-        total + 50
-      }. Коментар:${coments}`,
+      text: `${kafe}
+      Замовлення:
+      ${res} 
+      Коментар:${coments}
+
+      Доставка за адресою: 
+      Вулиця:${streat},будинок:${house}
+      Телефон: ${tel}
+
+
+      До сплати клієнтом: ${total + 50}.
+      `,
     }
   );
 

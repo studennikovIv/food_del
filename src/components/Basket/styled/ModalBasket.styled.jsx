@@ -6,15 +6,13 @@ export const BASKET_DIV = styled.div`
   transform: translate(-50%, 0%);
   width: 70%;
   border-radius: 5px;
-
   background-color: #fff;
-
   @media screen and (min-width: 760px) {
     width: 440px;
   }
   @media screen and (max-width: 759px) {
     width: 100%;
-    height: 100vh;
+    height: 53vh;
   }
 
   @media screen and (min-width: 1200px) {
@@ -55,17 +53,10 @@ export const BUTTONE_CLOSE = styled.button`
 
 export const BOTTOM_DIV = styled.div`
   padding: 10px;
-  height: 86vh;
+  height: 420px;
   background-color: #fff;
 
-  @media screen and (max-width: 759px) {
-    height: 83vh;
-    .active {
-      height: 100vh !important;
-    }
-  }
   .active {
-    height: 100% !important;
   }
 `;
 
@@ -74,28 +65,30 @@ export const TEXT_ARR_EMPTY_P = styled.p`
   top: 45%;
   left: 30%;
   font-size: 20px;
+
   @media screen and (max-width: 760px) {
     position: absolute;
     top: 45%;
-    left: 64%;
+    left: 80%;
     transform: translate(-50%, -50%);
     width: 100%;
+  }
+  @media screen and (max-width: 420px) {
+    left: 64%;
   }
 `;
 
 // ////////////////////CARD
 export const CONTEINER_CARD = styled.div`
-  max-height: 100%;
   overflow-y: scroll;
+
   ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
   }
-  .active {
-    max-height: 100% !important;
-  }
+
   @media screen and (max-width: 760px) {
-    max-height: 100%;
+    height: 85%;
   }
 `;
 export const CONTEINER_CARD_BASKET_DIV = styled.div`
@@ -104,7 +97,6 @@ export const CONTEINER_CARD_BASKET_DIV = styled.div`
   gap: 20px;
   grid-template-columns: 100%;
   justify-items: center;
-
   align-items: center;
 `;
 export const CARD_BASKET_DIV = styled.div`
@@ -179,7 +171,6 @@ export const CONTEINER_BTN_DIV = styled.div`
 export const CONTEINER_BOTTOM = styled.div`
   position: absolute;
   width: 97%;
-  bottom: 10px;
 `;
 export const LEFT_BUTTON = styled.button`
   cursor: pointer;
