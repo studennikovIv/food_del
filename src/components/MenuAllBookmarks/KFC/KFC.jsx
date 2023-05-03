@@ -11,7 +11,7 @@ import twisters1 from './img/twisters/1.jpg';
 import twisters2 from './img/twisters/2.jpg';
 import twisters3 from './img/twisters/3.jpg';
 import twisters4 from './img/twisters/4.jpg';
-import twisters5 from './img/twisters/5.jpg';
+// import twisters5 from './img/twisters/5.jpg';
 import twisters6 from './img/twisters/6.jpg';
 
 import bakets1 from './img/bakets/1.jpg';
@@ -84,7 +84,78 @@ import desert4 from './img/desert/4.jpg';
 import desert5 from './img/desert/5.jpg';
 import desert6 from './img/desert/6.jpg';
 
+import menu1 from './img/menu/menu1.jpg';
+import menu2 from './img/menu/menu2.jpg';
+import menu3 from './img/menu/menu3.jpg';
+import menu4 from './img/menu/menu4.jpg';
+import menu5 from './img/menu/menu5.jpg';
+import menu6 from './img/menu/menu6.jpg';
+import menu7 from './img/menu/menu7.jpg';
+import menu8 from './img/menu/menu8.jpg';
+
 const menuKFC = [
+  {
+    nameInst: 'KFC',
+    title: 'Меню',
+    list: [
+      {
+        img: menu1,
+        title: 'Меню',
+        name: 'Ай-твістер барбекю меню',
+        text: 'До складу входить: Ай-твістер барбекю, картопля фрі мала, напій: пепсі, мірінда, сарайт (0.33).',
+        price: 110,
+      },
+      {
+        img: menu2,
+        title: 'Меню',
+        name: 'Чізбургер джуніор меню',
+        text: 'До складу входить:Чізбургер Джуніор, картопля фрі мала, напій: пепсі, мірінда, сарайт.',
+        price: 120,
+      },
+      {
+        img: menu3,
+        title: 'Меню',
+        name: 'Твістер джуніор меню',
+        text: 'До складу входить: Твістер Джуніор, картопля фрі мала, напій: пепсі, мірінда, сарай.',
+        price: 130,
+      },
+      {
+        img: menu4,
+        title: 'Меню',
+        name: 'Чізбургер меню',
+        text: 'До складу входить: Чізбургер, картопля фрі стандарт, напій: пепсі, мірінда, сарайт.',
+        price: 165,
+      },
+      {
+        img: menu5,
+        title: 'Меню',
+        name: 'Чікенбургер меню',
+        text: 'До складу входить: Чізбургер, картопля фрі стандарт, напій: пепсі, мірінда, сарайт.',
+        price: 175,
+      },
+      {
+        img: menu6,
+        title: 'Меню',
+        name: 'Твістер барбекю меню',
+        text: 'До складу входить:Твістер барбекю (оригінальний або гострий) картопля фрі стандарт, напій: пепсі, мірінда, сарайт.',
+        price: 185,
+      },
+      {
+        img: menu7,
+        title: 'Меню',
+        name: 'Дабл чікен меню',
+        text: 'До складу входить: Дабл чікен ( оригінальний або гострий) картопля фрі стандарт, напій: пепсі, мірінда, сарайт..',
+        price: 220,
+      },
+      {
+        img: menu8,
+        title: 'Меню',
+        name: 'Боксмайстер меню',
+        text: 'До складу входить: Боксмайстер (оригінальний або гострий), картопля фрі стандарт,Напій 0.5: пепсі, мірінда, сарайт',
+        price: 225,
+      },
+    ],
+  },
   {
     nameInst: 'KFC',
     title: 'Бургери',
@@ -145,7 +216,6 @@ const menuKFC = [
         text: "Тост з двома скибочками ніжного сиру на підрум'яненій булочці.",
         price: 45,
       },
-      
     ],
   },
 
@@ -188,13 +258,13 @@ const menuKFC = [
         text: 'Тортілья, стріпси з гірчичним соусом, маринованими огірками, кетчупом  та сиром.',
         price: 75,
       },
-      {
-        img: twisters5,
-        title: 'Твістери',
-        name: 'Ай-твістер',
-        text: 'Соковита курочка з соусом барбекю та майонезом, маринованими огірками в пшеничній тортильї..',
-        price: 55,
-      },
+      // {
+      //   img: twisters5,
+      //   title: 'Твістери',
+      //   name: 'Ай-твістер',
+      //   text: 'Соковита курочка з соусом барбекю та майонезом, маринованими огірками в пшеничній тортильї..',
+      //   price: 55,
+      // },
     ],
   },
 

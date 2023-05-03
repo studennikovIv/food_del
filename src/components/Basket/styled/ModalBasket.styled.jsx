@@ -86,10 +86,6 @@ export const CONTEINER_CARD = styled.div`
     width: 0px;
     background: transparent;
   }
-
-  @media screen and (max-width: 760px) {
-    height: 85%;
-  }
 `;
 export const CONTEINER_CARD_BASKET_DIV = styled.div`
   display: grid;

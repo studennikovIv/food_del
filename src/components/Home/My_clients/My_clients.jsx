@@ -3,7 +3,7 @@ import KFC from './images/KFC.jpg';
 import myCherie from './images/MyCherie.jpg';
 import Shaurmichka from './images/Shaurmichka.jpg';
 import pizzaDay from './images/pizzaDay.jpg';
-import MyPlace from './images/MyPlace.jpg';
+// import MyPlace from './images/MyPlace.jpg';
 // import sushiZoom from './images/sushiZoom.jpg';
 // import osamaSushi from './images/osamaSushi.jpg';
 
@@ -33,11 +33,11 @@ const myClients = [
     name: 'PizzaDay',
     logoImg: pizzaDay,
   },
-  {
-    id: 7,
-    name: 'MyPlace',
-    logoImg: MyPlace,
-  },
+  // {
+  //   id: 7,
+  //   name: 'MyPlace',
+  //   logoImg: MyPlace,
+  // },
   // {
   //   id: 8,
   //   name: 'SushiZoom',

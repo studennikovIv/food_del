@@ -79,6 +79,8 @@ import pizza12 from './img/pizza12.jpg';
 import pizza13 from './img/pizza13.jpg';
 import pizza14 from './img/pizza14.jpg';
 import pizza15 from './img/pizza15.jpg';
+import pizza18 from './img/pizza18.jpg';
+import pizza19 from './img/pizza19.jpg';
 
 // Локшина
 
@@ -712,6 +714,22 @@ const menuSushiFamily = [
         text: 'Вершки, сир Моцарела, шинка, печериці, сир Пармезан, орегано.',
         price: 135,
         mass: '450г',
+      },
+      {
+        img: pizza19,
+        title: 'Піцца',
+        name: 'Гавайська Lux',
+        text: 'Вершки, сир Моцарела, куряче філе, ананас, орегано.',
+        price: 145,
+        mass: '460г',
+      },
+      {
+        img: pizza18,
+        title: 'Піцца',
+        name: 'Карбонара',
+        text: 'Вершки ,сир Моцарела, шинка, бекон, сир Пармезан, яєчний жовток.',
+        price: 135,
+        mass: '420г',
       },
     ],
   },

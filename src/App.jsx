@@ -24,6 +24,8 @@ import menuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.jsx';
 // import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.jsx';
 // MyPlace
 import menuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace';
+// Laziz
+import menuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz';
 function App() {
   const [modalCard, useModalCard] = useState(false);
   const [imgModal, useImgModal] = useState('');
@@ -142,6 +144,10 @@ function App() {
           <Route
             path="/MyPlace"
             element={<Menu prop={menuMyPlace} clickOnCard={ClickOnCard} />}
+          />
+          <Route
+            path="/Laziz"
+            element={<Menu prop={menuLaziz} clickOnCard={ClickOnCard} />}
           />
           {/* <Route
             path="/food_del/SushiZoom"

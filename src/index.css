@@ -125,5 +125,5 @@ body::-webkit-scrollbar:hover {
   height: 80%;
 }
 .active {
-  height: 100% !important;
+  height: 100%;
 }
