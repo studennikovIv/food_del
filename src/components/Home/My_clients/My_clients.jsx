@@ -14,7 +14,7 @@ import myPlace2 from './images/my Place.jpg'
 import maCherie2 from './images/Ma Cherie.jpg'
 import sushiFamily2 from './images/sushi family.jpg'
 import shaurmichka2 from './images/SHAVARMA.jpg'
-import laziz from './images/laziz.jpg'
+// import laziz from './images/laziz.jpg'
 const myClients = [
   {
     id: 1,
