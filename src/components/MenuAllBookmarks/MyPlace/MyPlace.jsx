@@ -1,6 +1,29 @@
 // import sweetFish from './img/
-
+import rol2 from './img/червоний дракон.jpg'
+import rol3 from './img/фьюжн.jpg'
+import rol4 from './img/філадельфія еббі.jpg'
+import rol5 from './img/філадельфія унагі.jpg'
+import californiaSyake from './img/каліфорнія сяке.jpg'
+import bearTarelka from './img/пивна тарілка.jpg'
+import bearLux from './img/пивна lux.jpg'
+import cezar1 from './img/цезар з креветкою.jpg'
+import capreze from './img/капрезе.jpg'
+import greckiy from './img/грецький.jpg'
+import staykS from './img/стейк свинячий.jpg'
+import medalion from './img/медальони свинячі.jpg'
+import burgerSM from './img/бургер mini свинячий.jpg'
+import burgerMK from './img/бургер курячий mini.jpg'
+import burgerK from './img/бургер чікен.jpg'
+import buregerKB from './img/бургер чікен-блю.jpg'
+import burgerDouble from './img/double.jpg'
+import buregerS from './img/свинячий.jpg'
+import buregerYal from './img/яловичий.jpg'
+import burgerShef from './img/ шеф бургер.jpg'
+import burgerMegaShef from './img/мега шеф-бургер.jpg'
+import pastaK from './img/паста з креветками.jpg'
+import pastaS from './img/паста зі свининою.jpg'
 const menuMyPlace = [
+
   {
     nameInst: 'My Place',
     title: 'Роли',
@@ -14,7 +37,7 @@ const menuMyPlace = [
         mass: '340г',
       },
       {
-        // img: set1,
+        img: rol2,
         title: 'Роли',
         name: 'ЧЕРВОНИЙ ДРАОН',
         text: '',
@@ -22,7 +45,7 @@ const menuMyPlace = [
         mass: '323г',
       },
       {
-        // img: set1,
+        img: rol3,
         title: 'Роли',
         name: 'ФЮЖН',
         text: '',
@@ -38,7 +61,7 @@ const menuMyPlace = [
         mass: '315г',
       },
       {
-        // img: set1,
+        img:  rol4,
         title: 'Роли',
         name: 'ФІЛАДЕЛЬФІЯ ЄББІ',
         text: '',
@@ -46,7 +69,7 @@ const menuMyPlace = [
         mass: '313г',
       },
       {
-        // img: set1,
+        img: rol5,
         title: 'Роли',
         name: 'ФІЛА УНАГІ',
         text: '',
@@ -86,7 +109,7 @@ const menuMyPlace = [
         mass: '',
       },
       {
-        // img: set1,
+        img: californiaSyake,
         title: 'Роли',
         name: 'КАЛІФОРНІЯ СЯКЕ',
         text: '',
@@ -132,7 +155,7 @@ const menuMyPlace = [
     title: 'Пивна тарілка',
     list: [
       {
-        // img: set1,
+        img: bearTarelka,
         title: 'Пивна тарілка',
         name: 'Пивна тарілка',
         text: 'цебулеві кільця, сир, курка, соус',
@@ -140,7 +163,7 @@ const menuMyPlace = [
         mass: '400г',
       },
       {
-        // img: set1,
+        img: bearLux,
         title: 'Пивна тарілка',
         name: 'Пивна тарілка ЛЮКС',
         text: 'королівська креветка, цебулеві кільця, сир, курка, соус.',
@@ -153,7 +176,7 @@ const menuMyPlace = [
     title: 'Салати',
     list: [
       {
-        // img: set1,
+        img: cezar1,
         title: 'Салати',
         name: 'ЦЕЗАР З КРЕВЕТКОЮ',
         text: 'салат-мікс, креветки, помидор коктейльний, грінки, перепелине яйце, пармезан, соус.',
@@ -161,7 +184,7 @@ const menuMyPlace = [
         mass: '210г',
       },
       {
-        // img: set1,
+        img: capreze,
         title: 'Салати',
         name: 'КАПРЕЗЕ',
         text: 'помідор коктейльний, моцарела, соус песто, шпинат, базілік, бальзамік.',
@@ -169,7 +192,7 @@ const menuMyPlace = [
         mass: '265г',
       },
       {
-        // img: set1,
+        img: greckiy,
         title: 'Салати',
         name: 'ГРЕЦЬКИЙ САЛАТ',
         text: 'салат-мікс, помідор, огірок, перець, маслини, фета, цибуля, соус.',
@@ -178,32 +201,12 @@ const menuMyPlace = [
       },
     ],
   },
-  {
-    title: 'Супи',
-    list: [
-      {
-        // img: set1,
-        title: 'Супи',
-        name: 'ЮШКА',
-        text: 'бульон, цибуля, морква, тунець, лосось, сік лимона, помідор, чаник, зелень, лимон.',
-        price: 160,
-        mass: '420г',
-      },
-      {
-        // img: set1,
-        title: 'Супи',
-        name: 'КУРЯЧИЙ БУЛЬОН',
-        text: 'куряче філе, локшина, яйце перепелине, зелень.',
-        price: 140,
-        mass: '375г',
-      },
-    ],
-  },
+
   {
     title: 'Стейки',
     list: [
       {
-        // img: set1,
+        img: staykS,
         title: 'Стейки',
         name: 'СТЕЙК СВИННИЙ',
         text: 'свинний стейк, соус, картопля по селянськи.',
@@ -211,7 +214,7 @@ const menuMyPlace = [
         mass: '560г',
       },
       {
-        // img: set1,
+        img: medalion,
         title: 'Стейки',
         name: 'МЕДАЛЬОНИ',
         text: 'вирізка свиняча, пюре моркви, спаржа, шпинат.',
@@ -224,7 +227,7 @@ const menuMyPlace = [
     title: 'Бургери',
     list: [
       {
-        // img: set1,
+        img: burgerSM,
         title: 'Бургери',
         name: 'БУРГЕР МІНІ З СВИНИНОЮ',
         text: 'котлета, картопля пай, цибуля, помідор, соус, сир, лист, салату, огірок, булка.',
@@ -232,7 +235,7 @@ const menuMyPlace = [
         mass: '352г',
       },
       {
-        // img: set1,
+        img: burgerMK,
         title: 'Бургери',
         name: 'БУРГЕР МІНІ З КУРЯТИНОЮ',
         text: 'котлета, яйце, цибуля, помідор, соус, сир, лист, салату, огірок, булка.',
@@ -240,7 +243,7 @@ const menuMyPlace = [
         mass: '290г',
       },
       {
-        // img: set1,
+        img: burgerK,
         title: 'Бургери',
         name: 'БУРГЕР КУРЯЧИЙ',
         text: 'котлета, цибуля, помідор, соус, сир, лист, салату, огірок, булка.',
@@ -248,7 +251,15 @@ const menuMyPlace = [
         mass: '480г',
       },
       {
-        // img: set1,
+        img: buregerKB,
+        title: 'Бургери',
+        name: 'БУРГЕР ЧІКЕН-БЛЮ',
+        text: "булка, філе куряче, цибуля маринована, огірок мариновний, помідор, дор блю, соус",
+        price: 160,
+        mass: '440г',
+      },
+      {
+        img: buregerS,
         title: 'Бургери',
         name: 'БУРГЕР З СВИНИНОЮ',
         text: 'котлета, цибуля, помідор, соус, сир, лист салату, огірок, булка.',
@@ -256,12 +267,36 @@ const menuMyPlace = [
         mass: '410г',
       },
       {
-        // img: set1,
+        img: buregerYal,
         title: 'Бургери',
         name: 'БУРГЕР З ЯЛОВИЧИНОЮ',
         text: 'котлета, цибуля, помідор, соус, сир, лист салату, огірок, булка.',
         price: 160,
         mass: '432г',
+      },
+      {
+        img: burgerDouble,
+        title: 'Бургери',
+        name: 'БУРГЕР DOUBLE',
+        text: 'вирізка свиняча, булка, песто, гриби, чедер, цибуля, помідо, огірок маринований',
+        price: 160,
+        mass: '455г',
+      },
+      {
+        img: burgerShef,
+        title: 'Бургери',
+        name: 'БУРГЕР ШЕФ',
+        text: 'котлета свиняча, огірок, яйце, бекон, соус, цибуля маринована, лист салату, булка',
+        price: 170,
+        mass: '485г',
+      },
+      {
+        img: burgerMegaShef,
+        title: 'Бургери',
+        name: 'БУРГЕР МЕГА ШЕФ',
+        text: 'котлета свинна, котлета яловича, соус, цибуля маринована, огірок свіжий, картопля пай, лист салату, бекон, сир, булка',
+        price: 180,
+        mass: '555г',
       },
     ],
   },
@@ -269,12 +304,20 @@ const menuMyPlace = [
     title: 'Паста',
     list: [
       {
-        // img: set1,
+        img: pastaK,
         title: 'Паста',
         name: 'ПАСТА З КРЕВЕТКАМИ',
         text: 'Локшина, креветки, гриби, песто, вершки.',
         price: 160,
         mass: '298г',
+      },
+      {
+        img: pastaS,
+        title: 'Паста',
+        name: 'ПАСТА ЗІ СВИНИНОЮ',
+        text: 'Локшина, вирізка свиняча, гриби, цибуля, бульон, сойовий соус.',
+        price: 155,
+        mass: '390г',
       },
     ],
   },
