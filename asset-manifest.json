@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.fcd09c7c.css",
-    "main.js": "/food_del/static/js/main.6b44b27a.js",
+    "main.js": "/food_del/static/js/main.6b12144f.js",
     "static/media/salatKapreze.jpg": "/food_del/static/media/salatKapreze.570d28f9e266bdf624ae.jpg",
     "static/media/salatGreckiy.jpg": "/food_del/static/media/salatGreckiy.97a85723e3e7706b4497.jpg",
     "static/media/medalionSvin.jpg": "/food_del/static/media/medalionSvin.176f4ee8643c9cb80d12.jpg",
     "static/media/pastaZKrevetmi.jpg": "/food_del/static/media/pastaZKrevetmi.bb49ee37e2f467587709.jpg",
     "static/media/pastaZiSvin.jpg": "/food_del/static/media/pastaZiSvin.7c06db342b06acd42f81.jpg",
+    "static/media/kartoplyaPoSelynski.jpg": "/food_del/static/media/kartoplyaPoSelynski.24885a8012b6d5b21c0e.jpg",
     "static/media/kurka.jpg": "/food_del/static/media/kurka.64b503ee5380c4c5f49b.jpg",
     "static/media/chees.jpg": "/food_del/static/media/chees.7209a901c51504d97242.jpg",
     "static/media/korolivskaKrevetka.jpg": "/food_del/static/media/korolivskaKrevetka.39505047f232ed7a8e5a.jpg",
     "static/media/CibuleviKilca.jpg": "/food_del/static/media/CibuleviKilca.1f303635fae174eb55bc.jpg",
+    "static/media/IMG_8709.jpg": "/food_del/static/media/IMG_8709.e03bd937eb60a79f356e.jpg",
     "static/media/fugenHot.jpg": "/food_del/static/media/fugenHot.20c4b54e318c15205e80.jpg",
     "static/media/pivnaLux.jpg": "/food_del/static/media/pivnaLux.d658d7d2ca9140a7e0cd.jpg",
     "static/media/buregeYalov.jpg": "/food_del/static/media/buregeYalov.80014c841ce746da3e19.jpg",
@@ -27,6 +29,7 @@
     "static/media/filaUnagi.jpg": "/food_del/static/media/filaUnagi.9554c014a842627fe2e1.jpg",
     "static/media/fishBurger.jpg": "/food_del/static/media/fishBurger.1bd96a28a336e8817e9b.jpg",
     "static/media/filaEbi.jpg": "/food_del/static/media/filaEbi.9fb42af93a5c769496b8.jpg",
+    "static/media/burgerMiniYalov.jpg": "/food_del/static/media/burgerMiniYalov.24bb301942baf7e181ce.jpg",
     "static/media/carbonara.jpg": "/food_del/static/media/carbonara.94683355e554162b74fe.jpg",
     "static/media/setMini.jpg": "/food_del/static/media/setMini.afc8e796829f24254db6.jpg",
     "static/media/double.jpg": "/food_del/static/media/double.05a212ed4a69e3185a68.jpg",
@@ -201,10 +204,10 @@
     "index.html": "/food_del/index.html",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.fcd09c7c.css.map": "/food_del/static/css/main.fcd09c7c.css.map",
-    "main.6b44b27a.js.map": "/food_del/static/js/main.6b44b27a.js.map"
+    "main.6b12144f.js.map": "/food_del/static/js/main.6b12144f.js.map"
   },
   "entrypoints": [
     "static/css/main.fcd09c7c.css",
-    "static/js/main.6b44b27a.js"
+    "static/js/main.6b12144f.js"
   ]
 }
