@@ -1,29 +1,48 @@
 // import sweetFish from './img/
-import rol2 from './img/червоний дракон.jpg'
-import rol3 from './img/фьюжн.jpg'
-import rol4 from './img/філадельфія еббі.jpg'
-import rol5 from './img/філадельфія унагі.jpg'
-import californiaSyake from './img/каліфорнія сяке.jpg'
-import bearTarelka from './img/пивна тарілка.jpg'
-import bearLux from './img/пивна lux.jpg'
-import cezar1 from './img/цезар з креветкою.jpg'
-import capreze from './img/капрезе.jpg'
-import greckiy from './img/грецький.jpg'
-import staykS from './img/стейк свинячий.jpg'
-import medalion from './img/медальони свинячі.jpg'
-import burgerSM from './img/бургер mini свинячий.jpg'
-import burgerMK from './img/бургер курячий mini.jpg'
-import burgerK from './img/бургер чікен.jpg'
-import buregerKB from './img/бургер чікен-блю.jpg'
-import burgerDouble from './img/double.jpg'
-import buregerS from './img/свинячий.jpg'
-import buregerYal from './img/яловичий.jpg'
-import burgerShef from './img/ шеф бургер.jpg'
-import burgerMegaShef from './img/мега шеф-бургер.jpg'
-import pastaK from './img/паста з креветками.jpg'
-import pastaS from './img/паста зі свининою.jpg'
-const menuMyPlace = [
+import rol2 from './img/redDragon.jpg';
+import rol3 from './img/fugen.jpg';
+import rol4 from './img/filaEbi.jpg';
+import rol5 from './img/filaUnagi.jpg';
+import californiaSyake from './img/californiaSyake.jpg';
+import califormiaMag from './img/californiaMagura.jpg';
+import maguraHote from './img/maguraHot.jpg';
+import syakeHot from './img/syakeHot.jpg';
+import fugenHot from './img/fugenHot.jpg';
+// import ebbiHot from './img/h'
+import bearTarelka from './img/pivnaTarilka.jpg';
+import bearLux from './img/pivnaLux.jpg';
+import krevetka from './img/korolivskaKrevetka.jpg';
+import kurka from './img/kurka.jpg';
+import chees from './img/chees.jpg';
+import cibul from './img/CibuleviKilca.jpg';
+import cezar1 from './img/cezarZKrevetkoi.jpg';
+import cezarZLososem from './img/cezarZLososem.jpg';
+import cezarZKurkoi from './img/cezarZKurkoi.jpg';
 
+import capreze from './img/salatKapreze.jpg';
+import greckiy from './img/salatGreckiy.jpg';
+import staykS from './img/steykSvin.jpg';
+import medalion from './img/medalionSvin.jpg';
+import burgerSM from './img/burgerMiniSvin.jpg';
+import burgerMK from './img/burgerMiniKur.jpg';
+import burgerK from './img/burgerChiken.jpg';
+import buregerKB from './img/burger chiken-blu.jpg';
+import burgerDouble from './img/double.jpg';
+import buregerS from './img/burgerSvin.jpg';
+import burgerFish from './img/fishBurger.jpg';
+import buregerYal from './img/buregeYalov.jpg';
+import burgerShef from './img/shafBurger.jpg';
+import burgerMegaShef from './img/megaShefBurger.jpg';
+import pastaK from './img/pastaZKrevetmi.jpg';
+import pastaS from './img/pastaZiSvin.jpg';
+import carbonara from './img/carbonara.jpg';
+import cvadroForm from './img/cvadroForvadgi.jpg';
+import bigKUSH from './img/bigCush.jpg';
+import setLove from './img/love.jpg';
+import setHot from './img/setHot.jpg';
+import setMini from './img/setMini.jpg';
+import setFutumaki from './img/setFutumaki.jpg';
+const menuMyPlace = [
   {
     nameInst: 'My Place',
     title: 'Роли',
@@ -47,7 +66,7 @@ const menuMyPlace = [
       {
         img: rol3,
         title: 'Роли',
-        name: 'ФЮЖН',
+        name: 'ФЬЮЖН',
         text: '',
         price: 185,
         mass: '315г',
@@ -61,7 +80,7 @@ const menuMyPlace = [
         mass: '315г',
       },
       {
-        img:  rol4,
+        img: rol4,
         title: 'Роли',
         name: 'ФІЛАДЕЛЬФІЯ ЄББІ',
         text: '',
@@ -117,6 +136,22 @@ const menuMyPlace = [
         mass: '288г',
       },
       {
+        img: califormiaMag,
+        title: 'Роли',
+        name: 'КАЛІФОРНІЯ МАГУРА',
+        text: '',
+        price: 180,
+        mass: '278г',
+      },
+      {
+        // img: califormiaMag,
+        title: 'Роли',
+        name: 'КАЛІФОРНІЯ УНАГІ',
+        text: '',
+        price: 180,
+        mass: '278г',
+      },
+      {
         // img: set1,
         title: 'Роли',
         name: 'ГУНКАН З ВУГРЕМ',
@@ -148,15 +183,140 @@ const menuMyPlace = [
         price: 60,
         mass: '',
       },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'ГРІН',
+        text: '',
+        price: 170,
+        mass: '293г',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'DRAGON OF LOVE',
+        text: '',
+        price: 180,
+        mass: '333г',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'SPRING KIVI',
+        text: '',
+        price: 180,
+        mass: '363г',
+      },
+      {
+        img: maguraHote,
+        title: 'Роли',
+        name: 'МАГУРА HOT',
+        text: '',
+        price: 160,
+        mass: '313г',
+      },
+      {
+        img: syakeHot,
+        title: 'Роли',
+        name: 'СЯКЕ HOT',
+        text: '',
+        price: 165,
+        mass: '260г',
+      },
+      {
+        img: fugenHot,
+        title: 'Роли',
+        name: 'ФЬЮЖИН HOT',
+        text: '',
+        price: 165,
+        mass: '310г',
+      },
+      {
+        // img: fugenHot,
+        title: 'Роли',
+        name: 'ЕББІ HOT',
+        text: '',
+        price: 180,
+        mass: '293г',
+      },
+      {
+        // img: fugenHot,
+        title: 'Роли',
+        name: 'БЕКОН HOT',
+        text: '',
+        price: 175,
+        mass: '370г',
+      },
+    ],
+  },
+  {
+    title: 'Сети',
+    list: [
+      {
+        img: bigKUSH,
+        title: 'Сети',
+        name: 'ВЕЛИКИЙ КУШ',
+        text: 'фьюжин, філадельфія, каліфорніа мугура, каппа макі, червоний дракон, нігірі з лососем, нігірі з тунцем',
+        price: 750,
+        mass: '1462г',
+      },
+      {
+        img: setLove,
+        title: 'Сети',
+        name: 'LOVE',
+        text: 'гункан з вугрем 2шт, гункан з тунцем 2шт, філадельфія, каліфорнія магура',
+        price: 550,
+        mass: '800г',
+      },
+      {
+        img: setHot,
+        title: 'Сети',
+        name: 'HOT',
+        text: 'магура хот, сяке хот, фьжин хот',
+        price: 450,
+        mass: '891г',
+      },
+      {
+        img: setMini,
+        title: 'Сети',
+        name: 'MINI',
+        text: 'сяке макі, каппа макі, авокадо макі, магура макі, еббі макі',
+        price: 380,
+        mass: '745г',
+      },
+      {
+        // img: rol1,
+        title: 'Сети',
+        name: 'FILA',
+        text: 'Філадельфія, філадельфія унагі, філадельфія еббі, гункан з тунцем 3шт',
+        price: 650,
+        mass: '1074г',
+      },
+      {
+        img: setFutumaki,
+        title: 'Сети',
+        name: 'ФУТОМАКІ',
+        text: '',
+        price: 650,
+        mass: '1074г',
+      },
+      {
+        img: setFutumaki,
+        title: 'Сети',
+        name: 'ФУТОМАКІ',
+        text: '',
+        price: 650,
+        mass: '1074г',
+      },
     ],
   },
   {
     nameInst: 'My Place',
-    title: 'Пивна тарілка',
+    title: 'Пивна закуски',
     list: [
       {
         img: bearTarelka,
-        title: 'Пивна тарілка',
+        title: 'Пивна закуски',
         name: 'Пивна тарілка',
         text: 'цебулеві кільця, сир, курка, соус',
         price: 180,
@@ -164,11 +324,43 @@ const menuMyPlace = [
       },
       {
         img: bearLux,
-        title: 'Пивна тарілка',
+        title: 'Пивна закуски',
         name: 'Пивна тарілка ЛЮКС',
         text: 'королівська креветка, цебулеві кільця, сир, курка, соус.',
         price: 230,
         mass: '490г',
+      },
+      {
+        img: krevetka,
+        title: 'Пивна закуски',
+        name: 'Королівська креветка 7шт',
+        text: '',
+        price: 190,
+        mass: '',
+      },
+      {
+        img: kurka,
+        title: 'Пивна закуски',
+        name: 'Курка',
+        text: '',
+        price: 130,
+        mass: '230г',
+      },
+      {
+        img: chees,
+        title: 'Пивна закуски',
+        name: 'Сир',
+        text: '',
+        price: 100,
+        mass: '10шт',
+      },
+      {
+        img: cibul,
+        title: 'Пивна закуски',
+        name: 'Цибулеві кільця',
+        text: '',
+        price: 80,
+        mass: '250г',
       },
     ],
   },
@@ -182,6 +374,22 @@ const menuMyPlace = [
         text: 'салат-мікс, креветки, помидор коктейльний, грінки, перепелине яйце, пармезан, соус.',
         price: 180,
         mass: '210г',
+      },
+      {
+        img: cezarZLososem,
+        title: 'Салати',
+        name: 'ЦЕЗАР З ЛОСОСЕМ',
+        text: 'салат-мікс, лосось, помидор коктейльний, грінки, перепелине яйце, пармезан, соус.',
+        price: 180,
+        mass: '280г',
+      },
+      {
+        img: cezarZKurkoi,
+        title: 'Салати',
+        name: 'ЦЕЗАР З КУРКОЮ',
+        text: 'салат-мікс, курка, помидор коктейльний, грінки, перепелине яйце, пармезан, соус.',
+        price: 165,
+        mass: '280г',
       },
       {
         img: capreze,
@@ -198,6 +406,14 @@ const menuMyPlace = [
         text: 'салат-мікс, помідор, огірок, перець, маслини, фета, цибуля, соус.',
         price: 90,
         mass: '225г',
+      },
+      {
+        img: cezar1,
+        title: 'Салати',
+        name: 'ТЕПЛИЙ З МОРЕПРОДУКТАМИ',
+        text: 'салат-мікс,цибуля маринована, морепродукти, яйце перепилине, устрічний соус',
+        price: 160,
+        mass: '190г',
       },
     ],
   },
@@ -254,7 +470,7 @@ const menuMyPlace = [
         img: buregerKB,
         title: 'Бургери',
         name: 'БУРГЕР ЧІКЕН-БЛЮ',
-        text: "булка, філе куряче, цибуля маринована, огірок мариновний, помідор, дор блю, соус",
+        text: 'булка, філе куряче, цибуля маринована, огірок мариновний, помідор, дор блю, соус',
         price: 160,
         mass: '440г',
       },
@@ -298,6 +514,15 @@ const menuMyPlace = [
         price: 180,
         mass: '555г',
       },
+
+      {
+        img: burgerFish,
+        title: 'Бургери',
+        name: 'FISH БУРГЕР',
+        text: 'булка, соус, огірок , цибуля маринована, лосось, дор-блю, шпинат, соус, лимоний сік',
+        price: 170,
+        mass: '410г',
+      },
     ],
   },
   {
@@ -310,6 +535,22 @@ const menuMyPlace = [
         text: 'Локшина, креветки, гриби, песто, вершки.',
         price: 160,
         mass: '298г',
+      },
+      {
+        img: carbonara,
+        title: 'Паста',
+        name: 'КАРБОНАРА',
+        text: 'Спагетті, вирізка свиняча, бекон, часник, чері, пармезан, вершки.',
+        price: 145,
+        mass: '320г',
+      },
+      {
+        img: cvadroForm,
+        title: 'Паста',
+        name: 'КВАДРО ФОРМАДЖО',
+        text: 'Пенне, вершки, дор-блю, моцарелла, пармезан.',
+        price: 160,
+        mass: '250г',
       },
       {
         img: pastaS,
