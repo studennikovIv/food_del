@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import logo from '../../Header/images/logo.jpg';
+
 import {
   ONE_CARD_LI,
   IMAGE_IMG,
@@ -37,8 +37,7 @@ export function OneCard({ position, clickOnCard }) {
           ClickOpenModal();
         }}
       >
-        {IMAGE_IMG ? <IMAGE_IMG src={img} alt={name} /> : logo}
-
+        <IMAGE_IMG src={img} alt={name} />
         <NAME_DISH_H1>{name}</NAME_DISH_H1>
         {text && <DESCRIPTION_P>{text}</DESCRIPTION_P>}
         <SUPPORT_DIV>

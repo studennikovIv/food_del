@@ -23,6 +23,7 @@ import capreze from './img/salatKapreze.jpg';
 import greckiy from './img/salatGreckiy.jpg';
 import staykS from './img/steykSvin.jpg';
 import medalion from './img/medalionSvin.jpg';
+import burgerYalMin from './img/burgerMiniYalov.jpg';
 import burgerSM from './img/burgerMiniSvin.jpg';
 import burgerMK from './img/burgerMiniKur.jpg';
 import burgerK from './img/burgerChiken.jpg';
@@ -42,6 +43,8 @@ import setLove from './img/love.jpg';
 import setHot from './img/setHot.jpg';
 import setMini from './img/setMini.jpg';
 import setFutumaki from './img/setFutumaki.jpg';
+import setCalofornia from './img/IMG_8709.jpg';
+import potetoSelo from './img/kartoplyaPoSelynski.jpg';
 const menuMyPlace = [
   {
     nameInst: 'My Place',
@@ -95,38 +98,7 @@ const menuMyPlace = [
         price: 195,
         mass: '298г',
       },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'НІГІРІ З ВУГРЕМ',
-        text: '',
-        price: 50,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'НІГІРІ З ТУНЦЕМ',
-        text: '',
-        price: 45,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'НІГІРІ З ЛОСОСЕМ',
-        text: '',
-        price: 45,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'НІГІРІ З КРЕВЕТКОЮ',
-        text: '',
-        price: 45,
-        mass: '',
-      },
+
       {
         img: californiaSyake,
         title: 'Роли',
@@ -151,38 +123,7 @@ const menuMyPlace = [
         price: 180,
         mass: '278г',
       },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'ГУНКАН З ВУГРЕМ',
-        text: '',
-        price: 60,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'ГУНКАН З ТУНЦЕМ',
-        text: '',
-        price: 55,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'ГУНКАН З ЛОСОСЕМ',
-        text: '',
-        price: 55,
-        mass: '',
-      },
-      {
-        // img: set1,
-        title: 'Роли',
-        name: 'ГУНКАН З КРЕВЕТКОЮ',
-        text: '',
-        price: 60,
-        mass: '',
-      },
+
       {
         // img: set1,
         title: 'Роли',
@@ -247,6 +188,70 @@ const menuMyPlace = [
         price: 175,
         mass: '370г',
       },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'НІГІРІ З ВУГРЕМ',
+        text: '',
+        price: 50,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'НІГІРІ З ТУНЦЕМ',
+        text: '',
+        price: 45,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'НІГІРІ З ЛОСОСЕМ',
+        text: '',
+        price: 45,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'НІГІРІ З КРЕВЕТКОЮ',
+        text: '',
+        price: 45,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'ГУНКАН З ВУГРЕМ',
+        text: '',
+        price: 60,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'ГУНКАН З ТУНЦЕМ',
+        text: '',
+        price: 55,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'ГУНКАН З ЛОСОСЕМ',
+        text: '',
+        price: 55,
+        mass: '',
+      },
+      {
+        // img: set1,
+        title: 'Роли',
+        name: 'ГУНКАН З КРЕВЕТКОЮ',
+        text: '',
+        price: 60,
+        mass: '',
+      },
     ],
   },
   {
@@ -297,26 +302,26 @@ const menuMyPlace = [
         title: 'Сети',
         name: 'ФУТОМАКІ',
         text: '',
-        price: 650,
-        mass: '1074г',
+        price: 600,
+        mass: '1000г',
       },
       {
-        img: setFutumaki,
+        img: setCalofornia,
         title: 'Сети',
-        name: 'ФУТОМАКІ',
+        name: 'КАЛІФОРНІЯ',
         text: '',
-        price: 650,
-        mass: '1074г',
+        price: 600,
+        mass: '1000г',
       },
     ],
   },
   {
     nameInst: 'My Place',
-    title: 'Пивна закуски',
+    title: 'Пивні закуски',
     list: [
       {
         img: bearTarelka,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Пивна тарілка',
         text: 'цебулеві кільця, сир, курка, соус',
         price: 180,
@@ -324,7 +329,7 @@ const menuMyPlace = [
       },
       {
         img: bearLux,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Пивна тарілка ЛЮКС',
         text: 'королівська креветка, цебулеві кільця, сир, курка, соус.',
         price: 230,
@@ -332,7 +337,7 @@ const menuMyPlace = [
       },
       {
         img: krevetka,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Королівська креветка 7шт',
         text: '',
         price: 190,
@@ -340,7 +345,7 @@ const menuMyPlace = [
       },
       {
         img: kurka,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Курка',
         text: '',
         price: 130,
@@ -348,7 +353,7 @@ const menuMyPlace = [
       },
       {
         img: chees,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Сир',
         text: '',
         price: 100,
@@ -356,7 +361,7 @@ const menuMyPlace = [
       },
       {
         img: cibul,
-        title: 'Пивна закуски',
+        title: 'Пивні закуски',
         name: 'Цибулеві кільця',
         text: '',
         price: 80,
@@ -439,9 +444,18 @@ const menuMyPlace = [
       },
     ],
   },
+
   {
     title: 'Бургери',
     list: [
+      {
+        img: burgerYalMin,
+        title: 'Бургери',
+        name: 'БУРГЕР МІНІ З ЯЛОВИЧЕНОЮ',
+        text: 'котлета, цибуля маринований, сир, огірок солоний, соус, булка, помідор, картопля пай.',
+        price: 100,
+        mass: '300г',
+      },
       {
         img: burgerSM,
         title: 'Бургери',
@@ -559,6 +573,27 @@ const menuMyPlace = [
         text: 'Локшина, вирізка свиняча, гриби, цибуля, бульон, сойовий соус.',
         price: 155,
         mass: '390г',
+      },
+    ],
+  },
+  {
+    title: 'Картопля',
+    list: [
+      {
+        img: potetoSelo,
+        title: 'Картопля',
+        name: 'КАРТОПЛЯ ПО СЕЛЯНСЬКИ',
+        text: '',
+        price: 40,
+        mass: '140г',
+      },
+      {
+        // img: potetoSelo,
+        title: 'СтеКартопляйки',
+        name: 'КАРТОПЛЯ ФРІ',
+        text: '',
+        price: 35,
+        mass: '140г',
       },
     ],
   },
