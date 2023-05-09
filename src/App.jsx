@@ -122,6 +122,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home arr={setBasketArr} />} />
           <Route
+            path="/MyPlace"
+            element={<Menu prop={menuMyPlace} clickOnCard={ClickOnCard} />}
+          />
+          <Route
+            path="/SushiFamily"
+            element={<Menu prop={menuSushiFamily} clickOnCard={ClickOnCard} />}
+          />
+          <Route
+            path="/MaCherie"
+            element={<Menu prop={menuMaCherie} clickOnCard={ClickOnCard} />}
+          />
+          <Route
             path="/KFC"
             element={<Menu prop={menuKFC} clickOnCard={ClickOnCard} />}
           />
@@ -133,18 +145,7 @@ function App() {
             path="/Shaurmichka"
             element={<Menu prop={menuShaurmichka} clickOnCard={ClickOnCard} />}
           />
-          <Route
-            path="/SushiFamily"
-            element={<Menu prop={menuSushiFamily} clickOnCard={ClickOnCard} />}
-          />
-          <Route
-            path="/MaCherie"
-            element={<Menu prop={menuMaCherie} clickOnCard={ClickOnCard} />}
-          />
-          <Route
-            path="/MyPlace"
-            element={<Menu prop={menuMyPlace} clickOnCard={ClickOnCard} />}
-          />
+
           <Route
             path="/Laziz"
             element={<Menu prop={menuLaziz} clickOnCard={ClickOnCard} />}
