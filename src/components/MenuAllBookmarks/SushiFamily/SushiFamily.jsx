@@ -111,6 +111,9 @@ import voda7 from './img/voda7.jpg';
 import voda8 from './img/voda8.jpg';
 import voda9 from './img/voda9.jpg';
 import voda10 from './img/voda10.jpg';
+import sprite075 from './img/sprite075.png';
+import cola075 from './img/cola0.75.png';
+import fanta075 from './img/fanta075.png';
 
 const menuSushiFamily = [
   // Ролы
@@ -874,19 +877,19 @@ const menuSushiFamily = [
         mass: '1шт',
       },
       {
-        img: voda3,
-        title: 'Напої',
-        name: 'Кока-кола 0,5л',
-        text: 'Кока-кола 0,5л напій безалкогольний сильногазований.',
-        price: 25,
-        mass: '1шт',
-      },
-      {
         img: voda4,
         title: 'Напої',
         name: 'Кока-кола 0,33',
         text: 'Кока-кола з/б 0,33л напій безалкогольний сильногазований.',
         price: 22,
+        mass: '1шт',
+      },
+      {
+        img: voda3,
+        title: 'Напої',
+        name: 'Кока-кола 0,5л',
+        text: 'Кока-кола 0,5л напій безалкогольний сильногазований.',
+        price: 25,
         mass: '1шт',
       },
       {
@@ -897,6 +900,15 @@ const menuSushiFamily = [
         price: 25,
         mass: '1шт',
       },
+      {
+        img: cola075,
+        title: 'Напої',
+        name: 'Кока-кола 0,75л',
+        text: 'Кока-кола 0,75л напій безалкогольний сильногазований.',
+        price: 34,
+        mass: '1шт',
+      },
+
       {
         img: voda6,
         title: 'Напої',
@@ -914,6 +926,14 @@ const menuSushiFamily = [
         mass: '1шт',
       },
       {
+        img: sprite075,
+        title: 'Напої',
+        name: 'Спрайт 0,75л',
+        text: 'Спрайт 0,75л напій безалкогольний сильногазований.',
+        price: 34,
+        mass: '1шт',
+      },
+      {
         img: voda8,
         title: 'Напої',
         name: 'Фанта 0,33л',
@@ -927,6 +947,14 @@ const menuSushiFamily = [
         name: 'Фанта 0,5л',
         text: 'Фанта 0,5л напій безалкогольний сильногазований.',
         price: 25,
+        mass: '1шт',
+      },
+      {
+        img: fanta075,
+        title: 'Напої',
+        name: 'Фанта 0,75л',
+        text: 'Фанта 0,75л напій безалкогольний сильногазований.',
+        price: 34,
         mass: '1шт',
       },
       {

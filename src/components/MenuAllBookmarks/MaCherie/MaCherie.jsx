@@ -34,6 +34,12 @@ import shawerma1 from './img/shawerma1.jpg';
 import shawerma2 from './img/shawerma2.jpg';
 import shawerma3 from './img/shawerma3.jpg';
 
+// Напої
+
+import voda from './img/voda1.jpg';
+import cola from './img/voda3.jpg';
+import sprite from './img/voda7.jpg';
+import fanta from './img/voda9.jpg';
 const menuMaCherie = [
   // Піцца
   {
@@ -84,7 +90,6 @@ const menuMaCherie = [
         price: 151,
         mass: '535гр',
       },
-      
 
       {
         img: pizza6,
@@ -94,8 +99,7 @@ const menuMaCherie = [
         price: 176,
         mass: '430гр',
       },
-      
-  
+
       {
         img: pizza7,
         title: 'Піцца',
@@ -113,13 +117,11 @@ const menuMaCherie = [
         price: 186,
         mass: '465гр',
       },
- 
     ],
   },
   {
     title: 'Піцца 40см',
     list: [
-  
       {
         img: pizza1,
         title: 'Піцца',
@@ -128,7 +130,7 @@ const menuMaCherie = [
         price: 176,
         mass: '815гр',
       },
-  
+
       {
         img: pizza2,
         title: 'Піцца',
@@ -137,7 +139,7 @@ const menuMaCherie = [
         price: 206,
         mass: '805гр',
       },
-  
+
       {
         img: pizza3,
         title: 'Піцца',
@@ -146,7 +148,7 @@ const menuMaCherie = [
         price: 221,
         mass: '835гр',
       },
- 
+
       {
         img: pizza4,
         title: 'Піцца',
@@ -155,8 +157,7 @@ const menuMaCherie = [
         price: 261,
         mass: '920гр',
       },
-      
-  
+
       {
         img: pizza5,
         title: 'Піцца',
@@ -165,7 +166,7 @@ const menuMaCherie = [
         price: 266,
         mass: '905гр',
       },
-   
+
       {
         img: pizza6,
         title: 'Піцца',
@@ -174,7 +175,7 @@ const menuMaCherie = [
         price: 306,
         mass: '725гр',
       },
-  
+
       {
         img: pizza7,
         title: 'Піцца',
@@ -183,7 +184,7 @@ const menuMaCherie = [
         price: 326,
         mass: '853гр',
       },
-  
+
       {
         img: pizza8,
         title: 'Піцца',
@@ -347,6 +348,44 @@ const menuMaCherie = [
         text: '',
         price: 120,
         mass: '400гр',
+      },
+    ],
+  },
+  {
+    nameInst: 'Ma Cherie',
+    title: 'Напої',
+    list: [
+      {
+        img: voda,
+        title: 'Напої',
+        name: 'Вода',
+        text: 'газованабез газу',
+        price: 25,
+        mass: '0,5л',
+      },
+      {
+        img: cola,
+        title: 'Напої',
+        name: 'Кока-кола',
+        text: 'Кока-кола 0,5л напій безалкогольний сильногазований.',
+        price: 35,
+        mass: '0,5л',
+      },
+      {
+        img: fanta,
+        title: 'Напої',
+        name: 'Фанта',
+        text: 'Фанта 0,5л напій безалкогольний сильногазований.',
+        price: 35,
+        mass: '0,5л',
+      },
+      {
+        img: sprite,
+        title: 'Напої',
+        name: 'Спрайт',
+        text: 'Спрайт 0,5л напій безалкогольний сильногазований.',
+        price: 35,
+        mass: '0,5л',
       },
     ],
   },

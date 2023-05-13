@@ -20,36 +20,42 @@ const myClients = [
     name: 'MyPlace',
     // logoImg: MyPlace,
     logoImg: myPlace2,
+    timeWork: '10:00-21:30',
   },
   {
     id: 4,
     name: 'MaCherie',
     // logoImg: myCherie,
     logoImg: maCherie2,
+    timeWork: '10:00-21:30',
   },
   {
     id: 1,
     name: 'SushiFamily',
     // logoImg: sushiFamily,
     logoImg: sushiFamily2,
+    timeWork: '10:00-21:30',
   },
   {
     id: 3,
     name: 'Shaurmichka',
     // logoImg: Shaurmichka,
     logoImg: shaurmichka2,
+    timeWork: '10:00-19:00',
   },
   // {
   //   id: 8,
   //   name: 'Laziz',
-  //   // logoImg: MyPlace,
+  //   logoImg: MyPlace,
   //   logoImg: laziz,
+  // timeWork:'',
   // },
   {
     id: 2,
     name: 'KFC',
     // logoImg: KFC,
     logoImg: KFC2,
+    timeWork: '10:00-20:30',
   },
 
   {
@@ -57,17 +63,20 @@ const myClients = [
     name: 'PizzaDay',
     // logoImg: pizzaDay,
     logoImg: pizzaDay2,
+    timeWork: '10:00-21:30',
   },
 
   // {
   //   id: 8,
   //   name: 'SushiZoom',
   //   logoImg: sushiZoom,
+  //  timeWork:'',
   // },
   // {
   //   id: 9,
   //   name: 'OsamaSushi',
   //   logoImg: osamaSushi,
+  // timeWork:'',
   // },
 ];
 

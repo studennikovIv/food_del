@@ -15,7 +15,10 @@ import pizza14 from './img/pizza14.jpg';
 import pizza15 from './img/pizza15.jpg';
 import pizza16 from './img/pizza16.jpg';
 import pizza17 from './img/pizza17.jpg';
-
+import voda from './img/voda1.jpg';
+import cola from './img/voda3.jpg';
+import sprite from './img/voda7.jpg';
+import fanta from './img/voda9.jpg';
 const menuPizza = [
   {
     nameInst: 'Pizza Day',
@@ -173,6 +176,43 @@ const menuPizza = [
         price: 155,
         mass: '450г',
         size: '30см',
+      },
+    ],
+  },
+  {
+    title: 'Напої',
+    list: [
+      {
+        img: voda,
+        title: 'Напої',
+        name: 'Вода',
+        text: 'Вода питна, виробник може відлічатися від зображення, уточнюйте у оператора',
+        price: 25,
+        mass: '0,5л',
+      },
+      {
+        img: cola,
+        title: 'Напої',
+        name: 'Кока-кола',
+        text: 'Кока-кола 0,5л напій безалкогольний сильногазований.',
+        price: 30,
+        mass: '0,5л',
+      },
+      {
+        img: fanta,
+        title: 'Напої',
+        name: 'Фанта',
+        text: 'Фанта 0,5л напій безалкогольний сильногазований.',
+        price: 30,
+        mass: '0,5л',
+      },
+      {
+        img: sprite,
+        title: 'Напої',
+        name: 'Спрайт',
+        text: 'Спрайт 0,5л напій безалкогольний сильногазований.',
+        price: 30,
+        mass: '0,5л',
       },
     ],
   },

@@ -20,26 +20,38 @@ export const CONTENT_DIV = styled.div`
 export const CLIENTS_DIV = styled.div`
   padding: 10px;
 
+  // img:hover,
+  // img:focus {
+  //   background: #ffffff;
+  //   box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
+  //   transform: scale(1.02);
+  // }
+`;
+export const TIME_WORL_DIV = styled.div`
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 13px 13px;
+  color: #fff;
+`;
+export const CARD_DIV = styled.div`
+  width: 350px;
+  cursor: pointer;
+  position: relative;
   img {
-    border-radius: 13px;
+    height: 233px;
+    width: 360px;
     transition: all 0.4s ease 0s;
+    border-radius: 13px;
   }
-
-  img:hover,
-  img:focus {
+  &:hover img {
     background: #ffffff;
     box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
     transform: scale(1.02);
   }
-`;
 
-export const CARD_DIV = styled.div`
-  width: 350px;
-  cursor: pointer;
-  img {
-    height: 233px;
-    width: 360px;
-  }
   @media screen and (max-width: 760px) {
     width: 100%;
   }
