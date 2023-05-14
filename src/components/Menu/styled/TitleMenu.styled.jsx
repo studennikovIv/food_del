@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Link } from 'react-router-dom';
 // import { ReactComponent as Home } from '../svg/home.svg';
 
@@ -118,8 +120,7 @@ export const LINK_A = styled.a`
   }
 `;
 
-export const NAVIGATION_MENU_MOB_UL = styled.ul`
-  position: relative;
+export const NAVIGATION_MENU_MOB = styled(Swiper)`
   position: fixed;
   flex-wrap: nowrap;
   left: 0%;
@@ -128,13 +129,24 @@ export const NAVIGATION_MENU_MOB_UL = styled.ul`
   // flex-wrap: wrap;
   width: 100%;
   align-items: center;
+  background-color: red;
   transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
     display: none;
   }
 `;
-
+export const ONE_POSITION_MOB = styled(SwiperSlide)`
+  border: none;
+  border-radius: 4px;
+  background-color: red;
+  @media screen and (max-width: 759px) {
+    // width: 33.33%;
+    height: 40px;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+`;
 export const BUTTON_NAV = styled.button`
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { BESIC_CONTAINER_DIV } from './App.styled';
+import { BESIC_CONTAINER_DIV, UP_BUTTON } from './App.styled';
 import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
@@ -27,6 +27,7 @@ import menuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace';
 // Laziz
 import menuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz';
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
   const [modalCard, useModalCard] = useState(false);
   const [imgModal, useImgModal] = useState('');
   const [nameModal, useNameModal] = useState('');
@@ -101,7 +102,20 @@ function App() {
       );
     }
   };
-
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsVisible(scrollTop > 300);
+  };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const ClickAddBasket = (img, name, price, text) => {
     let span = 1;
     setBasketItem({ img, name, price, text, span });
@@ -180,6 +194,14 @@ function App() {
           plus={handleAdd}
           minus={handleRemove}
         />
+      )}{' '}
+      {isVisible && (
+        <UP_BUTTON
+          className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
+          onClick={scrollToTop}
+        >
+          ⇑
+        </UP_BUTTON>
       )}
     </>
   );
