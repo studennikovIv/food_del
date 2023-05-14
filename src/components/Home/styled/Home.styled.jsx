@@ -4,7 +4,7 @@ export const CONTENT_DIV = styled.div`
   display: grid;
   margin: 100px 0 0 0;
   place-items: center;
-  gap: 0 100px;
+  gap: 0 50px;
   grid-template-columns: 280px 280px 280px;
   justify-content: center;
   @media screen and (min-width: 760px) {
@@ -27,7 +27,45 @@ export const CLIENTS_DIV = styled.div`
   //   transform: scale(1.02);
   // }
 `;
-export const TIME_WORL_DIV = styled.div`
+export const CARD_DIV = styled.div`
+  width: 200px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 13px;
+  transition: all 0.4s ease 0s;
+  img {
+    width: 100%;
+    max-height: 130px;
+    object-fit: cover;
+    border-radius: 13px;
+    @media screen and (min-width: 460px) {
+      max-height: 140px;
+    }
+    @media screen and (min-width: 760px) {
+      max-height: 150px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-height: 160px;
+    }
+  }
+  :hover,
+  :focus {
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+  }
+
+  @media screen and (min-width: 460px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 760px) {
+    width: 240px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 260px;
+  }
+`;
+export const TIME_WORL_P = styled.p`
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 0, 0, 0.5);
@@ -35,24 +73,4 @@ export const TIME_WORL_DIV = styled.div`
   text-align: center;
   border-radius: 0 0 13px 13px;
   color: #fff;
-`;
-export const CARD_DIV = styled.div`
-  width: 350px;
-  cursor: pointer;
-  position: relative;
-  img {
-    height: 233px;
-    width: 360px;
-    transition: all 0.4s ease 0s;
-    border-radius: 13px;
-  }
-  &:hover img {
-    background: #ffffff;
-    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.4);
-    transform: scale(1.02);
-  }
-
-  @media screen and (max-width: 760px) {
-    width: 100%;
-  }
 `;

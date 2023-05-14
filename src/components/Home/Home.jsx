@@ -3,7 +3,7 @@ import {
   CONTENT_DIV,
   CLIENTS_DIV,
   CARD_DIV,
-  TIME_WORL_DIV,
+  TIME_WORL_P,
 } from './styled/Home.styled';
 import myClients from './My_clients/My_clients';
 import { Link } from 'react-router-dom';
@@ -18,15 +18,12 @@ export function Home({ arr }) {
         {myClients.map(({ name, id, logoImg, timeWork }) => {
           return (
             <CLIENTS_DIV key={id}>
-              <Link to={`${name}`}>
-                <CARD_DIV>
+              <CARD_DIV>
+                <Link to={`${name}`}>
                   <img src={logoImg} alt={name} />
-                  <TIME_WORL_DIV>
-                    {' '}
-                    <p>{timeWork}</p>
-                  </TIME_WORL_DIV>
-                </CARD_DIV>
-              </Link>
+                  <TIME_WORL_P>{timeWork}</TIME_WORL_P>
+                </Link>
+              </CARD_DIV>
             </CLIENTS_DIV>
           );
         })}
