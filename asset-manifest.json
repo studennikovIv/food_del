@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.581d2c77.css",
-    "main.js": "/food_del/static/js/main.a6865719.js",
+    "main.js": "/food_del/static/js/main.e113abc8.js",
     "static/media/shafBurger.jpg": "/food_del/static/media/shafBurger.71d8d60c3e747e1cc4cf.jpg",
     "static/media/laziz-min.jpg": "/food_del/static/media/laziz-min.7c0ed2fbe863567e0724.jpg",
+    "static/media/halif-min.jpg": "/food_del/static/media/halif-min.5f3a7a09283ac67a9480.jpg",
     "static/media/burum-min.jpg": "/food_del/static/media/burum-min.706c257416045c98da94.jpg",
     "static/media/xxl-min.jpg": "/food_del/static/media/xxl-min.eda6e81dd493ce7e3a1a.jpg",
     "static/media/salatKapreze.jpg": "/food_del/static/media/salatKapreze.9237493f2becd1e949bc.jpg",
@@ -51,6 +52,7 @@
     "static/media/maguraHot.jpg": "/food_del/static/media/maguraHot.87905b6722981f5ca624.jpg",
     "static/media/setFutumaki.jpg": "/food_del/static/media/setFutumaki.57c4d893d7328e49cb51.jpg",
     "static/media/setMini.jpg": "/food_del/static/media/setMini.2a05ba7bd1940e0365fd.jpg",
+    "static/media/laziz.jpg": "/food_del/static/media/laziz.f2cbcf19248343d6810d.jpg",
     "static/media/potato.jpg": "/food_del/static/media/potato.fa23603174770d4eb09b.jpg",
     "static/media/chickenset-min.jpg": "/food_del/static/media/chickenset-min.38d166919a2d9baf861b.jpg",
     "static/media/shawerma1.jpg": "/food_del/static/media/shawerma1.2c041db94586b44207cc.jpg",
@@ -125,6 +127,7 @@
     "static/media/sprite075.png": "/food_del/static/media/sprite075.18bffc58cc440eb59f08.png",
     "static/media/16.jpg": "/food_del/static/media/16.ff25e799f5260c8a40ac.jpg",
     "static/media/salad2.jpg": "/food_del/static/media/salad2.acc3c009224b827e3dd7.jpg",
+    "static/media/notHaveFoto.png": "/food_del/static/media/notHaveFoto.c1efcd27dda9701fc60c.png",
     "static/media/hotDog.jpg": "/food_del/static/media/hotDog.c9e5a56770d1111cc906.jpg",
     "static/media/nagets.jpg": "/food_del/static/media/nagets.e494fd7bce2b163cc5a2.jpg",
     "static/media/logo.jpg": "/food_del/static/media/logo.ffdb50dd194f67b563bc.jpg",
@@ -213,10 +216,10 @@
     "index.html": "/food_del/index.html",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.581d2c77.css.map": "/food_del/static/css/main.581d2c77.css.map",
-    "main.a6865719.js.map": "/food_del/static/js/main.a6865719.js.map"
+    "main.e113abc8.js.map": "/food_del/static/js/main.e113abc8.js.map"
   },
   "entrypoints": [
     "static/css/main.581d2c77.css",
-    "static/js/main.a6865719.js"
+    "static/js/main.e113abc8.js"
   ]
 }
