@@ -28,41 +28,41 @@ export const CLIENTS_DIV = styled.div`
   // }
 `;
 export const CARD_DIV = styled.div`
-  width: 200px;
+  img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 13px;
+    @media screen and (min-width: 460px) {
+      max-height: 160px;
+    }
+    @media screen and (min-width: 760px) {
+      max-height: 170px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-height: 180px;
+    }
+  }
+  width: 300px;
   cursor: pointer;
   position: relative;
   border-radius: 13px;
   transition: all 0.4s ease 0s;
-  img {
-    width: 100%;
-    max-height: 130px;
-    object-fit: cover;
-    border-radius: 13px;
-    @media screen and (min-width: 460px) {
-      max-height: 140px;
-    }
-    @media screen and (min-width: 760px) {
-      max-height: 150px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-height: 160px;
-    }
+  @media screen and (min-width: 460px) {
+    width: 310px;
   }
+  // @media screen and (min-width: 760px) {
+  //   width: 340px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 300px;
+  // }
+
   :hover,
   :focus {
     background: #ffffff;
     box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.4);
     transform: scale(1.02);
-  }
-
-  @media screen and (min-width: 460px) {
-    width: 220px;
-  }
-  @media screen and (min-width: 760px) {
-    width: 240px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 260px;
   }
 `;
 export const TIME_WORL_P = styled.p`

@@ -60,6 +60,7 @@ export function TitleMenu({ props }) {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={3}
+        // pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
         {props.map(({ title }, index) => {
