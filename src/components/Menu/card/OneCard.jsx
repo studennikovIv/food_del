@@ -1,5 +1,6 @@
 // import { useState } from 'react';
-
+// import cat from '../../cat.png';
+import notHaveFoto from '../../notHaveFoto.png';
 import {
   ONE_CARD_LI,
   IMAGE_IMG,
@@ -37,7 +38,11 @@ export function OneCard({ position, clickOnCard }) {
           ClickOpenModal();
         }}
       >
-        <IMAGE_IMG src={img} alt={name} />
+        {img ? (
+          <IMAGE_IMG src={img} alt={name} />
+        ) : (
+          <img src={notHaveFoto} alt="" />
+        )}
         <NAME_DISH_H1>{name}</NAME_DISH_H1>
         {text && <DESCRIPTION_P>{text}</DESCRIPTION_P>}
         <SUPPORT_DIV>

@@ -61,7 +61,6 @@ export function TitleMenu({ props }) {
         spaceBetween={50}
         slidesPerView={3}
         // pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
       >
         {props.map(({ title }, index) => {
           return (

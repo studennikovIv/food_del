@@ -13,7 +13,7 @@ import myPlace2 from './images/my Place.jpg';
 import maCherie2 from './images/Ma Cherie.jpg';
 import sushiFamily2 from './images/sushi family.jpg';
 import shaurmichka2 from './images/SHAVARMA.jpg';
-// import laziz from './images/laziz.jpg';
+import laziz from './images/laziz.jpg';
 const myClients = [
   {
     id: 7,
@@ -43,13 +43,13 @@ const myClients = [
     logoImg: shaurmichka2,
     timeWork: '10:00-19:00',
   },
-  // {
-  //   id: 8,
-  //   name: 'Laziz',
-  //   logoImg: MyPlace,
-  //   logoImg: laziz,
-  // timeWork:'',
-  // },
+  {
+    id: 8,
+    name: 'Laziz',
+    // logoImg: MyPlace,
+    logoImg: laziz,
+    timeWork: '10:00-20:00',
+  },
   {
     id: 2,
     name: 'KFC',
