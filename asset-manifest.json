@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.581d2c77.css",
-    "main.js": "/food_del/static/js/main.e113abc8.js",
+    "main.js": "/food_del/static/js/main.d243fe96.js",
     "static/media/shafBurger.jpg": "/food_del/static/media/shafBurger.71d8d60c3e747e1cc4cf.jpg",
     "static/media/laziz-min.jpg": "/food_del/static/media/laziz-min.7c0ed2fbe863567e0724.jpg",
     "static/media/halif-min.jpg": "/food_del/static/media/halif-min.5f3a7a09283ac67a9480.jpg",
@@ -216,10 +216,10 @@
     "index.html": "/food_del/index.html",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.581d2c77.css.map": "/food_del/static/css/main.581d2c77.css.map",
-    "main.e113abc8.js.map": "/food_del/static/js/main.e113abc8.js.map"
+    "main.d243fe96.js.map": "/food_del/static/js/main.d243fe96.js.map"
   },
   "entrypoints": [
     "static/css/main.581d2c77.css",
-    "static/js/main.e113abc8.js"
+    "static/js/main.d243fe96.js"
   ]
 }
