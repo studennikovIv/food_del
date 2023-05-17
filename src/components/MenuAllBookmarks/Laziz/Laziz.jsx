@@ -5,6 +5,10 @@ import burum from './img/burum-min.jpg';
 import xxl from './img/xxl-min.jpg';
 import chikenSet from './img/chickenset-min.jpg';
 import halif from './img/halif-min.jpg';
+import baran from './img/baranina.jpg';
+import fanta from './img/fanta.jpg';
+import cola from './img/cola.jpg';
+import sprite from './img/sprite.jpg';
 const menuLaziz = [
   {
     nameInst: 'laziz',
@@ -32,7 +36,7 @@ const menuLaziz = [
         price: 115,
       },
       {
-        // img: menu1,
+        img: baran,
         title: 'Шаурма',
         name: 'Баранина',
         text: "До складу входить: м'ясо баранини, капуста, цибуля, памідор",
@@ -65,6 +69,32 @@ const menuLaziz = [
         name: 'Халіф',
         text: '',
         price: 145,
+      },
+    ],
+  },
+  {
+    title: 'Напої',
+    list: [
+      {
+        img: cola,
+        title: 'Напої',
+        name: 'Кока-кола',
+        text: 'Кока-кола 0,5л напій безалкогольний сильногазований.',
+        price: 35,
+      },
+      {
+        img: fanta,
+        title: 'Напої',
+        name: 'Фанта',
+        text: 'Фанта 0,5л напій безалкогольний сильногазований.',
+        price: 35,
+      },
+      {
+        img: sprite,
+        title: 'Напої',
+        name: 'Спрайт',
+        text: 'Спрайт 0,5л напій безалкогольний сильногазований.',
+        price: 35,
       },
     ],
   },
