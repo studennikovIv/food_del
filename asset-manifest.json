@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.581d2c77.css",
-    "main.js": "/food_del/static/js/main.d243fe96.js",
+    "main.js": "/food_del/static/js/main.02b02a64.js",
     "static/media/shafBurger.jpg": "/food_del/static/media/shafBurger.71d8d60c3e747e1cc4cf.jpg",
     "static/media/laziz-min.jpg": "/food_del/static/media/laziz-min.7c0ed2fbe863567e0724.jpg",
     "static/media/halif-min.jpg": "/food_del/static/media/halif-min.5f3a7a09283ac67a9480.jpg",
@@ -105,6 +105,7 @@
     "static/media/my Place.jpg": "/food_del/static/media/my Place.d34ec0346902224577a9.jpg",
     "static/media/menu6.jpg": "/food_del/static/media/menu6.f932509c6b81f82abdf4.jpg",
     "static/media/3.jpg": "/food_del/static/media/3.004512087ff7bcf9f228.jpg",
+    "static/media/baranina.jpg": "/food_del/static/media/baranina.c46fca292820b7061540.jpg",
     "static/media/menu4.jpg": "/food_del/static/media/menu4.baea351df768e199464d.jpg",
     "static/media/menu3.jpg": "/food_del/static/media/menu3.10583d5ce3862838a59a.jpg",
     "static/media/9.jpg": "/food_del/static/media/9.71bfe1219609760f2eb1.jpg",
@@ -191,8 +192,11 @@
     "static/media/lokshina14.jpg": "/food_del/static/media/lokshina14.41ac10060a90decd8941.jpg",
     "static/media/sushi4.jpg": "/food_del/static/media/sushi4.5f665190cd20893f5623.jpg",
     "static/media/lokshina13.jpg": "/food_del/static/media/lokshina13.ac21acfddf2b27dd3d21.jpg",
+    "static/media/fanta.jpg": "/food_del/static/media/fanta.27b8a3bb02a7798d7276.jpg",
     "static/media/voda9.jpg": "/food_del/static/media/voda9.27b8a3bb02a7798d7276.jpg",
+    "static/media/cola.jpg": "/food_del/static/media/cola.0d1bec02807ce57c4ba7.jpg",
     "static/media/voda3.jpg": "/food_del/static/media/voda3.0d1bec02807ce57c4ba7.jpg",
+    "static/media/sprite.jpg": "/food_del/static/media/sprite.21df57bee36c7f300139.jpg",
     "static/media/voda7.jpg": "/food_del/static/media/voda7.21df57bee36c7f300139.jpg",
     "static/media/voda2.jpg": "/food_del/static/media/voda2.0757fd07c47554ee55ab.jpg",
     "static/media/lokshina10.jpg": "/food_del/static/media/lokshina10.8d551a4babd748f2d4f6.jpg",
@@ -216,10 +220,10 @@
     "index.html": "/food_del/index.html",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.581d2c77.css.map": "/food_del/static/css/main.581d2c77.css.map",
-    "main.d243fe96.js.map": "/food_del/static/js/main.d243fe96.js.map"
+    "main.02b02a64.js.map": "/food_del/static/js/main.02b02a64.js.map"
   },
   "entrypoints": [
     "static/css/main.581d2c77.css",
-    "static/js/main.d243fe96.js"
+    "static/js/main.02b02a64.js"
   ]
 }
