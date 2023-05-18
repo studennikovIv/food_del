@@ -8,7 +8,7 @@ import {
 } from './styled/Menu.styled';
 import { TitleMenu } from './TitleMenu';
 
-export function Menu({ prop, clickOnCard }) {
+export function Menu({ prop, clickOnCard, propDops }) {
   return (
     <CONTEINER_MENU_DIV>
       <TitleMenu props={prop} />
@@ -20,7 +20,11 @@ export function Menu({ prop, clickOnCard }) {
             <ONE_CASE_LI key={title} id={title}>
               <NAME_SUBPOSITION_H1>{title}</NAME_SUBPOSITION_H1>
               <SUBPOSITION_UL>
-                <OneCard position={res} clickOnCard={clickOnCard} />
+                <OneCard
+                  position={res}
+                  clickOnCard={clickOnCard}
+                  toDopsInCard={propDops}
+                />
               </SUBPOSITION_UL>
             </ONE_CASE_LI>
           );

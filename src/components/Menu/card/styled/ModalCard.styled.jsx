@@ -74,7 +74,7 @@ export const CONTENT_DIV = styled.div`
 
   @media screen and (min-width: 760px) {
     padding: 0 20px;
-    flex-direction: row;
+    // flex-direction: row;
   }
 
   @media screen and (min-width: 1200px) {
@@ -99,11 +99,23 @@ export const INCREASED_INFO_DIV = styled.div`
 export const SUPPLEMENTS_DIV = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
-  p {
-    margin: 0 25px;
-  }
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 10px 0;
 `;
+export const SUPPLEMENTS_UL = styled.ul``;
+export const SUPPLEMENTS_LI = styled.li``;
+export const SUPPLEMENTS_NAME = styled.p`
+  font-weight: bold;
+`;
+export const CHECKBOX_DIV = styled.div`
+  display: flex;
+  padding: 2px 0;
+`;
+export const CHECKBOX_INPUT = styled.input`
+  margin: 0 5px 0 0;
+`;
+export const CHECKBOX_LABEL = styled.label``;
 
 export const BUTTON_ORDER = styled.div`
   display: flex;

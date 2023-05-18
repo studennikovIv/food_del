@@ -13,8 +13,7 @@ import {
 } from './styled/OneCard.styled';
 export { ModalCard } from './ModalCard';
 
-export function OneCard({ position, clickOnCard }) {
-  // const [lincImg, useLincImg] = useState('');
+export function OneCard({ position, clickOnCard, toDopsInCard }) {
   const { list } = position;
 
   let linkImg = '';
@@ -23,7 +22,7 @@ export function OneCard({ position, clickOnCard }) {
   let linkText = '';
 
   const ClickOpenModal = () => {
-    clickOnCard(true, linkImg, linkName, linkPrice, linkText);
+    clickOnCard(true, linkImg, linkName, linkPrice, linkText, toDopsInCard);
   };
 
   return list.map(({ img, name, text, price, mass, size }) => {

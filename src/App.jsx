@@ -14,6 +14,8 @@ import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
 import menuPizza from './components/MenuAllBookmarks/PizzaDay/pizzaDay';
 // SushiFamily
 import menuSushiFamily from './components/MenuAllBookmarks/SushiFamily/SushiFamily.jsx';
+import SushiFamily_Dops from 'components/MenuAllBookmarks/SushiFamily/SushiFamily_Dops';
+
 // Shaurmichka
 import menuShaurmichka from './components/MenuAllBookmarks/Shaurmichka/Shaurmichka.jsx';
 // MaCherie
@@ -26,6 +28,8 @@ import menuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.jsx';
 import menuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace';
 // Laziz
 import menuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz';
+import LazizDops from 'components/MenuAllBookmarks/Laziz/Laziz_Dops';
+
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [modalCard, useModalCard] = useState(false);
@@ -33,7 +37,7 @@ function App() {
   const [nameModal, useNameModal] = useState('');
   const [priceModal, usePriceModal] = useState('');
   const [textModal, useTextModal] = useState('');
-
+  const [dops, setDops] = useState([]);
   // Modal Basket
 
   const [modalBasket, setModalBasket] = useState(false);
@@ -49,13 +53,13 @@ function App() {
     }
   }, [modalBasket]);
 
-  const ClickOnCard = (bool, img, name, price, text) => {
+  const ClickOnCard = (bool, img, name, price, text, dopsOpen) => {
     useModalCard(bool);
-
     useImgModal(img);
     useNameModal(name);
     usePriceModal(price);
     useTextModal(text);
+    setDops(dopsOpen);
   };
 
   useEffect(() => {
@@ -137,32 +141,70 @@ function App() {
           <Route path="/" element={<Home arr={setBasketArr} />} />
           <Route
             path="/MyPlace"
-            element={<Menu prop={menuMyPlace} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuMyPlace}
+                clickOnCard={ClickOnCard}
+                propDops={dops}
+              />
+            }
           />
           <Route
             path="/SushiFamily"
-            element={<Menu prop={menuSushiFamily} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuSushiFamily}
+                clickOnCard={ClickOnCard}
+                propDops={SushiFamily_Dops}
+              />
+            }
           />
           <Route
             path="/MaCherie"
-            element={<Menu prop={menuMaCherie} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuMaCherie}
+                clickOnCard={ClickOnCard}
+                propDops={dops}
+              />
+            }
           />
           <Route
             path="/KFC"
-            element={<Menu prop={menuKFC} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu prop={menuKFC} clickOnCard={ClickOnCard} propDops={dops} />
+            }
           />
           <Route
             path="/PizzaDay"
-            element={<Menu prop={menuPizza} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuPizza}
+                clickOnCard={ClickOnCard}
+                propDops={dops}
+              />
+            }
           />
           <Route
             path="/Shaurmichka"
-            element={<Menu prop={menuShaurmichka} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuShaurmichka}
+                clickOnCard={ClickOnCard}
+                propDops={dops}
+              />
+            }
           />
 
           <Route
             path="/Laziz"
-            element={<Menu prop={menuLaziz} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu
+                prop={menuLaziz}
+                clickOnCard={ClickOnCard}
+                propDops={LazizDops}
+              />
+            }
           />
           {/* <Route
             path="/food_del/SushiZoom"
@@ -184,6 +226,7 @@ function App() {
           name={nameModal}
           price={priceModal}
           text={textModal}
+          dops={dops}
         />
       )}
       {modalBasket && (
