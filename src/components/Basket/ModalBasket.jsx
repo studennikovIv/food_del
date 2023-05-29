@@ -35,6 +35,7 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
       console.log('asdasd');
     }
   };
+
   const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
 
   return (

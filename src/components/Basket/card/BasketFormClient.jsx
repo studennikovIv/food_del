@@ -133,7 +133,7 @@ export function BasketFormClient({
                 }}
                 type="text"
                 name="streat"
-                pattern="*"
+                pattern=".*"
                 required
               />
             </CLIENT_LI>
@@ -164,9 +164,9 @@ export function BasketFormClient({
                 onClick={() => {
                   setHouseActive(true);
                 }}
-                type="text"
+                type="number"
                 name="house"
-                pattern="*"
+                pattern=".*"
                 required
               />
             </CLIENT_LI>
@@ -193,7 +193,7 @@ export function BasketFormClient({
               onClick={() => setComentsActive(true)}
               type="text"
               name="coments"
-              pattern="*"
+              pattern=".*"
             />
           </CLIENT_LI>
         </CLIENT_UL>
