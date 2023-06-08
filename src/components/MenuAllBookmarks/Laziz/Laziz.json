@@ -1,0 +1,90 @@
+[
+  {
+    "nameInst": "laziz",
+    "title": "Шаурма",
+    "list": [
+      {
+        "img": "Laziz/img/laziz-min.jpg",
+        "title": "Шаурма",
+        "name": "Міні-лазіз",
+        "text": "До складу входить: м'ясо курки, морква, картопля",
+        "price": 65
+      },
+      {
+        "img": "Laziz/img/standart-min.jpg",
+        "title": "Шаурма",
+        "name": "Стандарт",
+        "text": "До складу входить: м'ясо курки",
+        "price": 90
+      },
+      {
+        "img": "Laziz/img/laziz z morkvoy-min.jpg",
+        "title": "Шаурма",
+        "name": "Лазіз",
+        "text": "До складу входить: м'ясо курки, картопля",
+        "price": 115
+      },
+      {
+        "img": "Laziz/img/baranina.jpg",
+        "title": "Шаурма",
+        "name": "Баранина",
+        "text": "До складу входить: м'ясо баранини, капуста, цибуля, памідор",
+        "price": 145
+      },
+      {
+        "img": "Laziz/img/burum-min.jpg",
+        "title": "Шаурма",
+        "name": "Бурум",
+        "text": "До складу входить: м'ясо курки, ананас, сир помідор ",
+        "price": 175
+      },
+      {
+        "img": "Laziz/img/xxl-min.jpg",
+        "title": "Шаурма",
+        "name": "XXL",
+        "text": "До складу входить: м'ясо курки, картопля, сир ",
+        "price": 205
+      },
+      {
+        "img": "Laziz/img/chickenset-min.jpg",
+        "title": "Шаурма",
+        "name": "Чікен сет",
+        "text": "До складу входить: м'ясо курки, картопля, соус, лаваш",
+        "price": 255
+      },
+      {
+        "img": "Laziz/img/halif-min.jpg",
+        "title": "Шаурма",
+        "name": "Халіф",
+        "text": "",
+        "price": 145
+      }
+    ]
+  },
+  {
+    "title": "Напої",
+    "list": [
+      {
+        "img": "Laziz/img/cola.jpg",
+        "title": "Напої",
+        "name": "Кока-кола",
+        "text": "Кока-кола 0,5л напій безалкогольний сильногазований.",
+        "price": 35
+      },
+      {
+        "img": "Laziz/img/fanta.jpg",
+        "title": "Напої",
+        "name": "Фанта",
+        "text": "Фанта 0,5л напій безалкогольний сильногазований.",
+        "price": 35
+      },
+      {
+        "img": "Laziz/img/sprite.jpg",
+        "title": "Напої",
+        "name": "Спрайт",
+        "text": "Спрайт 0,5л напій безалкогольний сильногазований.",
+        "price": 35
+      }
+    ]
+  }
+]

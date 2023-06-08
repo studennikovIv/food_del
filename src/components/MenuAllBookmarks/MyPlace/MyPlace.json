@@ -1,0 +1,463 @@
+[
+  {
+    "nameInst": "My Place",
+    "title": "Роли",
+    "list": [
+      {
+        "img": "MyPlace/img/redDragon.jpg",
+        "title": "Роли",
+        "name": "ЧЕРВОНИЙ ДРАОН",
+        "text": "",
+        "price": 170,
+        "mass": "323г"
+      },
+      {
+        "img": "MyPlace/img/fugen.jpg",
+        "title": "Роли",
+        "name": "ФЬЮЖН",
+        "text": "",
+        "price": 185,
+        "mass": "315г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "Філадельфія",
+        "text": "",
+        "price": 200,
+        "mass": "315г"
+      },
+      {
+        "img": "MyPlace/img/filaEbi.jpg",
+        "title": "Роли",
+        "name": "ФІЛАДЕЛЬФІЯ ЄББІ",
+        "text": "",
+        "price": 195,
+        "mass": "313г"
+      },
+      {
+        "img": "MyPlace/img/filaUnagi.jpg",
+        "title": "Роли",
+        "name": "ФІЛА УНАГІ",
+        "text": "",
+        "price": 195,
+        "mass": "298г"
+      },
+      {
+        "img": "MyPlace/img/californiaSyake.jpg",
+        "title": "Роли",
+        "name": "КАЛІФОРНІЯ СЯКЕ",
+        "text": "",
+        "price": 165,
+        "mass": "288г"
+      },
+      {
+        "img": "MyPlace/img/californiaMagura.jpg",
+        "title": "Роли",
+        "name": "КАЛІФОРНІЯ МАГУРА",
+        "text": "",
+        "price": 180,
+        "mass": "278г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "КАЛІФОРНІЯ УНАГІ",
+        "text": "",
+        "price": 180,
+        "mass": "278г"
+      },
+      {
+        "img": "MyPlace/img/maguraHot.jpg",
+        "title": "Роли",
+        "name": "МАГУРА HOT",
+        "text": "",
+        "price": 160,
+        "mass": "313г"
+      },
+      {
+        "img": "MyPlace/img/syakeHot.jpg",
+        "title": "Роли",
+        "name": "СЯКЕ HOT",
+        "text": "",
+        "price": 165,
+        "mass": "260г"
+      },
+      {
+        "img": "MyPlace/img/fugenHot.jpg",
+        "title": "Роли",
+        "name": "ФЬЮЖИН HOT",
+        "text": "",
+        "price": 165,
+        "mass": "310г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "ЕББІ HOT",
+        "text": "",
+        "price": 180,
+        "mass": "293г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "БЕКОН HOT",
+        "text": "",
+        "price": 175,
+        "mass": "370г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "НІГІРІ З ВУГРЕМ",
+        "text": "",
+        "price": 50,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "НІГІРІ З ТУНЦЕМ",
+        "text": "",
+        "price": 45,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "НІГІРІ З ЛОСОСЕМ",
+        "text": "",
+        "price": 45,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "НІГІРІ З КРЕВЕТКОЮ",
+        "text": "",
+        "price": 45,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "ГУНКАН З ВУГРЕМ",
+        "text": "",
+        "price": 60,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "ГУНКАН З ТУНЦЕМ",
+        "text": "",
+        "price": 55,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "ГУНКАН З ЛОСОСЕМ",
+        "text": "",
+        "price": 55,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Роли",
+        "name": "ГУНКАН З КРЕВЕТКОЮ",
+        "text": "",
+        "price": 60,
+        "mass": ""
+      }
+    ]
+  },
+
+  {
+    "title": "Сети",
+    "list": [
+      {
+        "img": "MyPlace/img/bigCush.jpg",
+        "title": "Сети",
+        "name": "ВЕЛИКИЙ КУШ",
+        "text": "фьюжин, філадельфія, каліфорніа мугура, каппа макі, червоний дракон, нігірі з лососем, нігірі з тунцем",
+        "price": 750,
+        "mass": "1462г"
+      },
+      {
+        "img": "MyPlace/img/love.jpg",
+        "title": "Сети",
+        "name": "LOVE",
+        "text": "гункан з вугрем 2шт, гункан з тунцем 2шт, філадельфія, каліфорнія магура",
+        "price": 550,
+        "mass": "800г"
+      },
+      {
+        "img": "MyPlace/img/setHot.jpg",
+        "title": "Сети",
+        "name": "HOT",
+        "text": "магура хот, сяке хот, фьжин хот",
+        "price": 450,
+        "mass": "891г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Сети",
+        "name": "MINI",
+        "text": "сяке макі, каппа макі, авокадо макі, магура макі, еббі макі",
+        "price": 380,
+        "mass": "745г"
+      },
+      {
+        "img": "MyPlace/img/setMini.jpg",
+        "title": "Сети",
+        "name": "FILA",
+        "text": "Філадельфія, філадельфія унагі, філадельфія еббі, гункан з тунцем 3шт",
+        "price": 650,
+        "mass": "1074г"
+      },
+      {
+        "img": "MyPlace/img/setFutumaki.jpg",
+        "title": "Сети",
+        "name": "ФУТОМАКІ",
+        "text": "",
+        "price": 600,
+        "mass": "1000г"
+      },
+      {
+        "img": "MyPlace/img/IMG_8709.jpg",
+        "title": "Сети",
+        "name": "КАЛІФОРНІЯ",
+        "text": "",
+        "price": 600,
+        "mass": "1000г"
+      }
+    ]
+  },
+  {
+    "title": "Пивні закуски",
+    "list": [
+      {
+        "img": "MyPlace/img/pivnaTarilka.jpg",
+        "title": "Пивні закуски",
+        "name": "Пивна тарілка",
+        "text": "цебулеві кільця, сир, курка, соус",
+        "price": 180,
+        "mass": "400г"
+      },
+      {
+        "img": "MyPlace/img/pivnaLux.jpg",
+        "title": "Пивні закуски",
+        "name": "Пивна тарілка ЛЮКС",
+        "text": "королівська креветка, цебулеві кільця, сир, курка, соус.",
+        "price": 230,
+        "mass": "490г"
+      },
+      {
+        "img": "MyPlace/img/korolivskaKrevetka.jpg",
+        "title": "Пивні закуски",
+        "name": "Королівська креветка 7шт",
+        "text": "",
+        "price": 190,
+        "mass": ""
+      },
+      {
+        "img": "MyPlace/img/kurka.jpg",
+        "title": "Пивні закуски",
+        "name": "Курка",
+        "text": "",
+        "price": 130,
+        "mass": "230г"
+      },
+      {
+        "img": "MyPlace/img/chees.jpg",
+        "title": "Пивні закуски",
+        "name": "Сир",
+        "text": "",
+        "price": 100,
+        "mass": "10шт"
+      },
+      {
+        "img": "MyPlace/img/CibuleviKilca.jpg",
+        "title": "Пивні закуски",
+        "name": "Цибулеві кільця",
+        "text": "",
+        "price": 80,
+        "mass": "250г"
+      }
+    ]
+  },
+  {
+    "title": "Стейки",
+    "list": [
+      {
+        "img": "MyPlace/img/steykSvin.jpg",
+        "title": "Стейки",
+        "name": "СТЕЙК СВИННИЙ",
+        "text": "свинний стейк, соус, картопля по селянськи.",
+        "price": 220,
+        "mass": "560г"
+      },
+      {
+        "img": "MyPlace/img/medalionSvin.jpg",
+        "title": "Стейки",
+        "name": "МЕДАЛЬОНИ",
+        "text": "вирізка свиняча, пюре моркви, спаржа, шпинат.",
+        "price": 250,
+        "mass": "515г"
+      }
+    ]
+  },
+  {
+    "title": "Бургери",
+    "list": [
+      {
+        "img": "MyPlace/img/burgerMiniYalov.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР МІНІ З ЯЛОВИЧЕНОЮ",
+        "text": "котлета, цибуля маринований, сир, огірок солоний, соус, булка, помідор, картопля пай.",
+        "price": 100,
+        "mass": "300г"
+      },
+      {
+        "img": "MyPlace/img/burgerMiniSvin.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР МІНІ З СВИНИНОЮ",
+        "text": "котлета, картопля пай, цибуля, помідор, соус, сир, лист, салату, огірок, булка.",
+        "price": 100,
+        "mass": "352г"
+      },
+      {
+        "img": "MyPlace/img/burgerMiniKur.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР МІНІ З КУРЯТИНОЮ",
+        "text": "котлета, яйце, цибуля, помідор, соус, сир, лист, салату, огірок, булка.",
+        "price": 100,
+        "mass": "290г"
+      },
+      {
+        "img": "MyPlace/img/burgerChiken.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР КУРЯЧИЙ",
+        "text": "котлета, цибуля, помідор, соус, сир, лист, салату, огірок, булка.",
+        "price": 150,
+        "mass": "480г"
+      },
+      {
+        "img": "MyPlace/img/burger-chiken-blu.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР ЧІКЕН-БЛЮ",
+        "text": "булка, філе куряче, цибуля маринована, огірок мариновний, помідор, дор блю, соус",
+        "price": 160,
+        "mass": "440г"
+      },
+      {
+        "img": "MyPlace/img/double.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР DOUBLE",
+        "text": "вирізка свиняча, булка, песто, гриби, чедер, цибуля, помідо, огірок маринований",
+        "price": 160,
+        "mass": "455г"
+      },
+      {
+        "img": "MyPlace/img/burgerSvin.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР З СВИНИНОЮ",
+        "text": "котлета, цибуля, помідор, соус, сир, лист салату, огірок, булка.",
+        "price": 150,
+        "mass": "410г"
+      },
+      {
+        "img": "MyPlace/img/buregeYalov.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР З ЯЛОВИЧИНОЮ",
+        "text": "котлета, цибуля, помідор, соус, сир, лист салату, огірок, булка.",
+        "price": 160,
+        "mass": "432г"
+      },
+      {
+        "img": "MyPlace/img/shafBurger.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР ШЕФ",
+        "text": "котлета свиняча, огірок, яйце, бекон, соус, цибуля маринована, лист салату, булка",
+        "price": 170,
+        "mass": "485г"
+      },
+      {
+        "img": "MyPlace/img/megaShefBurger.jpg",
+        "title": "Бургери",
+        "name": "БУРГЕР МЕГА ШЕФ",
+        "text": "котлета свинна, котлета яловича, соус, цибуля маринована, огірок свіжий, картопля пай, лист салату, бекон, сир, булка",
+        "price": 180,
+        "mass": "555г"
+      },
+      {
+        "img": "MyPlace/img/fishBurger.jpg",
+        "title": "Бургери",
+        "name": "FISH БУРГЕР",
+        "text": "булка, соус, огірок , цибуля маринована, лосось, дор-блю, шпинат, соус, лимоний сік",
+        "price": 170,
+        "mass": "410г"
+      }
+    ]
+  },
+  {
+    "title": "Паста",
+    "list": [
+      {
+        "img": "MyPlace/img/pastaZKrevetmi.jpg",
+        "title": "Паста",
+        "name": "ПАСТА З КРЕВЕТКАМИ",
+        "text": "Локшина, креветки, гриби, песто, вершки.",
+        "price": 160,
+        "mass": "298г"
+      },
+      {
+        "img": "MyPlace/img/carbonara.jpg",
+        "title": "Паста",
+        "name": "КАРБОНАРА",
+        "text": "Спагетті, вирізка свиняча, бекон, часник, чері, пармезан, вершки.",
+        "price": 145,
+        "mass": "320г"
+      },
+      {
+        "img": "MyPlace/img/cvadroForvadgi.jpg",
+        "title": "Паста",
+        "name": "КВАДРО ФОРМАДЖО",
+        "text": "Пенне, вершки, дор-блю, моцарелла, пармезан.",
+        "price": 160,
+        "mass": "250г"
+      },
+      {
+        "img": "MyPlace/img/pastaZiSvin.jpg",
+        "title": "Паста",
+        "name": "ПАСТА ЗІ СВИНИНОЮ",
+        "text": "Локшина, вирізка свиняча, гриби, цибуля, бульон, соєвий соус.",
+        "price": 155,
+        "mass": "390г"
+      }
+    ]
+  },
+  {
+    "title": "Картопля",
+    "list": [
+      {
+        "img": "MyPlace/img/kartoplyaPoSelynski.jpg",
+        "title": "Картопля",
+        "name": "КАРТОПЛЯ ПО СЕЛЯНСЬКИ",
+        "text": "",
+        "price": 40,
+        "mass": "140г"
+      },
+      {
+        "img": "MyPlace/img/kartoplyaPoSelynski.jpg",
+        "title": "СтеКартопляйки",
+        "name": "КАРТОПЛЯ ФРІ",
+        "text": "",
+        "price": 35,
+        "mass": "140г"
+      }
+    ]
+  }
+]

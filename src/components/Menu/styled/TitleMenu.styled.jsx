@@ -38,22 +38,24 @@ export const NAVIGATION_MENU_UL = styled.ul`
   a {
     text-decoration: none;
   }
-  @media screen and (max-width: 759px) {
-    display: none;
-  }
-  @media screen and (min-width: 760px) {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 1%;
-    top: 120px;
-  }
+  // @media screen and (max-width: 759px) {
+  //   display: none;
+  // }
+  // @media screen and (min-width: 760px) {
+  //   position: fixed;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   left: 1%;
+  //   top: 120px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    top: 140px;
-    left: 4%;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   top: 140px;
+  //   left: 4%;
+  // }
+
+  display: none;
 `;
 
 export const MENU_HEADER_H2 = styled.h2`
@@ -89,24 +91,20 @@ export const LINK_A = styled.a`
   width: 100%;
   font-size: 10px;
   font-weight: bold;
+  color: #fff;
   text-decoration: none;
 
   transition: all 0.4s ease 0s;
-  @media screen and (max-width: 759px) {
-    color: #fff;
-  }
+
   @media screen and (min-width: 760px) {
     padding: 6px;
     margin: 4px;
-    width: 130px;
     font-size: 12px;
-    background-color: #0000001c;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 8px;
     margin: 6px;
-    width: 160px;
     font-size: 14px;
   }
 
@@ -121,6 +119,9 @@ export const LINK_A = styled.a`
 `;
 
 export const NAVIGATION_MENU_MOB = styled(Swiper)`
+  a {
+    text-decoration: none;
+  }
   position: fixed;
   flex-wrap: nowrap;
   left: 0%;
@@ -128,24 +129,35 @@ export const NAVIGATION_MENU_MOB = styled(Swiper)`
   display: flex;
   // flex-wrap: wrap;
   width: 100%;
+  border: 1px solid red;
   align-items: center;
   background-color: red;
   transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
-    display: none;
+    top: 80px;
+    width: 760px;
+    left: 50%;
+    transform: translate(-50%);
+    border-end-end-radius: 4px;
+    border-end-start-radius: 4px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 100px;
+    width: 1200px;
   }
 `;
 export const ONE_POSITION_MOB = styled(SwiperSlide)`
   border: none;
   border-radius: 4px;
   background-color: red;
-  @media screen and (max-width: 759px) {
+  @media screen and (max-width: 760px) {
     // width: 33.33%;
     height: 40px;
     border-radius: 0px;
     display: flex;
     align-items: center;
+  }
 `;
 export const BUTTON_NAV = styled.button`
   display: flex;

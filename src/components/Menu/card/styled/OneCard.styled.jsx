@@ -98,16 +98,17 @@ export const SIZE_P = styled.p`
   }
 `;
 
-export const BUTTON_PRICE = styled.button`
+export const BUTTON_PRICE = styled.p`
   font-size: 10px;
   text-align: center;
   padding: 2px 35px;
-  border: none;
+  border: 1px solid red;
   margin: 0 0 10px 0;
   border-radius: 4px;
-  color: #ffffff;
-  background-color: red;
+  // color: #ffffff;
+  // background-color: red;
   text-decoration: none;
+  font-weight: bold;
   transition: all 0.4s ease 0s;
 
   @media screen and (min-width: 760px) {
@@ -121,11 +122,11 @@ export const BUTTON_PRICE = styled.button`
     padding: 2px 75px;
   }
 
-  :hover,
-  :focus {
-    cursor: pointer;
-    color: red;
-    outline: 1px solid red;
-    background-color: #ffffff;
-  }
+  // :hover,
+  // :focus {
+  //   cursor: pointer;
+  //   color: red;
+  //   outline: 1px solid red;
+  //   background-color: #ffffff;
+  // }
 `;

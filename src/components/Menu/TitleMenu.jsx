@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
-
 import {
   NAVIGATION_MENU_UL,
   // LINK_Link,

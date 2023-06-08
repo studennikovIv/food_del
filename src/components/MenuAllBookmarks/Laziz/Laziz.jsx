@@ -5,6 +5,7 @@ import burum from './img/burum-min.jpg';
 import xxl from './img/xxl-min.jpg';
 import chikenSet from './img/chickenset-min.jpg';
 import halif from './img/halif-min.jpg';
+
 import baran from './img/baranina.jpg';
 import fanta from './img/fanta.jpg';
 import cola from './img/cola.jpg';

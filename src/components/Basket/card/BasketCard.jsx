@@ -26,11 +26,11 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
     }
     minus(basketArr);
   };
-
+  const imagePath = require(`../../MenuAllBookmarks/${img}`);
   return (
     <CARD_BASKET_DIV>
       <CARD_NAME_P>{name}</CARD_NAME_P>
-      <CARD_IMG src={img} alt={text} width="50px" />
+      <CARD_IMG src={imagePath} alt={text} width="50px" />
 
       <CONTEINER_BTN>
         <BUTTON_MINUS onClick={minusButton}>-</BUTTON_MINUS>

@@ -157,7 +157,6 @@ const menuKFC = [
     ],
   },
   {
-    nameInst: 'KFC',
     title: 'Бургери',
     list: [
       {

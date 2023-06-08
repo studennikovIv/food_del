@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { BESIC_CONTAINER_DIV, UP_BUTTON } from './App.styled';
 import { Home } from './components/Home/Home';
@@ -9,28 +10,34 @@ import { ModalBasket } from 'components/Basket/ModalBasket';
 import { Footer } from 'components/Footer/Footer';
 
 // KFC
-import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
+// import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
+import MenuKFC from './components/MenuAllBookmarks/KFC/KFC.json';
 // Pizza Day;
-import menuPizza from './components/MenuAllBookmarks/PizzaDay/pizzaDay';
+import MenuPizza from './components/MenuAllBookmarks/PizzaDay/pizzaDay';
 // SushiFamily
-import menuSushiFamily from './components/MenuAllBookmarks/SushiFamily/SushiFamily.jsx';
-import SushiFamily_Dops from 'components/MenuAllBookmarks/SushiFamily/SushiFamily_Dops';
-
+import MenuSushiFamily from './components/MenuAllBookmarks/SushiFamily/SushiFamily.json';
 // Shaurmichka
-import menuShaurmichka from './components/MenuAllBookmarks/Shaurmichka/Shaurmichka.jsx';
+import MenuShaurmichka from './components/MenuAllBookmarks/Shaurmichka/Shaurmichka.json';
 // MaCherie
-import menuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.jsx';
+import MenuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.json';
 // SushiZoom
 // import menuSushiZoom from 'components/MenuAllBookmarks/SushiZoom/menuSushiZoom.jsx';
 // Osama Sushi
 // import menuOsamaSushi from 'components/MenuAllBookmarks/OsamaSushi/OsamaSushi.jsx';
 // MyPlace
-import menuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace';
+import MenuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace.json';
 // Laziz
-import menuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz';
-import LazizDops from 'components/MenuAllBookmarks/Laziz/Laziz_Dops';
+import MenuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz.json';
 
-function App() {
+import arrow_top from './images/arrow-top-svgrepo.svg';
+console.log(MenuMyPlace);
+// const Menu = lazy(() =>
+//   import('./components/Menu/Menu').then(module => {
+//     // console.log(module);
+//     return { ...module, default: module.Menu };
+//   })
+// );
+const App = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [modalCard, useModalCard] = useState(false);
   const [imgModal, useImgModal] = useState('');
@@ -141,70 +148,32 @@ function App() {
           <Route path="/" element={<Home arr={setBasketArr} />} />
           <Route
             path="/MyPlace"
-            element={
-              <Menu
-                prop={menuMyPlace}
-                clickOnCard={ClickOnCard}
-                propDops={dops}
-              />
-            }
+            element={<Menu prop={MenuMyPlace} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/SushiFamily"
-            element={
-              <Menu
-                prop={menuSushiFamily}
-                clickOnCard={ClickOnCard}
-                propDops={SushiFamily_Dops}
-              />
-            }
+            element={<Menu prop={MenuSushiFamily} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/MaCherie"
-            element={
-              <Menu
-                prop={menuMaCherie}
-                clickOnCard={ClickOnCard}
-                propDops={dops}
-              />
-            }
+            element={<Menu prop={MenuMaCherie} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/KFC"
-            element={
-              <Menu prop={menuKFC} clickOnCard={ClickOnCard} propDops={dops} />
-            }
+            element={<Menu prop={MenuKFC} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/PizzaDay"
-            element={
-              <Menu
-                prop={menuPizza}
-                clickOnCard={ClickOnCard}
-                propDops={dops}
-              />
-            }
+            element={<Menu prop={MenuPizza} clickOnCard={ClickOnCard} />}
           />
           <Route
             path="/Shaurmichka"
-            element={
-              <Menu
-                prop={menuShaurmichka}
-                clickOnCard={ClickOnCard}
-                propDops={dops}
-              />
-            }
+            element={<Menu prop={MenuShaurmichka} clickOnCard={ClickOnCard} />}
           />
 
           <Route
             path="/Laziz"
-            element={
-              <Menu
-                prop={menuLaziz}
-                clickOnCard={ClickOnCard}
-                propDops={LazizDops}
-              />
-            }
+            element={<Menu prop={MenuLaziz} clickOnCard={ClickOnCard} />}
           />
           {/* <Route
             path="/food_del/SushiZoom"
@@ -243,11 +212,11 @@ function App() {
           className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
           onClick={scrollToTop}
         >
-          ⇑
+          <img src={arrow_top} alt="arrow_top" />
         </UP_BUTTON>
       )}
     </>
   );
-}
+};
 
 export default App;

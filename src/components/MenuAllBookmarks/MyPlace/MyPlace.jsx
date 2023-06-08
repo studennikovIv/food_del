@@ -15,36 +15,43 @@ import krevetka from './img/korolivskaKrevetka.jpg';
 import kurka from './img/kurka.jpg';
 import chees from './img/chees.jpg';
 import cibul from './img/CibuleviKilca.jpg';
+
 import cezar1 from './img/cezarZKrevetkoi.jpg';
 import cezarZLososem from './img/cezarZLososem.jpg';
 import cezarZKurkoi from './img/cezarZKurkoi.jpg';
 
 import capreze from './img/salatKapreze.jpg';
 import greckiy from './img/salatGreckiy.jpg';
+
 import staykS from './img/steykSvin.jpg';
 import medalion from './img/medalionSvin.jpg';
+
 import burgerYalMin from './img/burgerMiniYalov.jpg';
 import burgerSM from './img/burgerMiniSvin.jpg';
 import burgerMK from './img/burgerMiniKur.jpg';
 import burgerK from './img/burgerChiken.jpg';
-import buregerKB from './img/burger chiken-blu.jpg';
+import buregerKB from './img/burger-chiken-blu.jpg';
 import burgerDouble from './img/double.jpg';
 import buregerS from './img/burgerSvin.jpg';
 import burgerFish from './img/fishBurger.jpg';
 import buregerYal from './img/buregeYalov.jpg';
 import burgerShef from './img/shafBurger.jpg';
 import burgerMegaShef from './img/megaShefBurger.jpg';
+
 import pastaK from './img/pastaZKrevetmi.jpg';
 import pastaS from './img/pastaZiSvin.jpg';
 import carbonara from './img/carbonara.jpg';
 import cvadroForm from './img/cvadroForvadgi.jpg';
+
 import bigKUSH from './img/bigCush.jpg';
 import setLove from './img/love.jpg';
 import setHot from './img/setHot.jpg';
 import setMini from './img/setMini.jpg';
 import setFutumaki from './img/setFutumaki.jpg';
 import setCalofornia from './img/IMG_8709.jpg';
+
 import potetoSelo from './img/kartoplyaPoSelynski.jpg';
+
 const menuMyPlace = [
   {
     nameInst: 'My Place',

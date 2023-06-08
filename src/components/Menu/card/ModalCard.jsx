@@ -6,13 +6,13 @@ import {
   CONTENT_DIV,
   INCREASED_INFO_DIV,
   BUTTON_ORDER,
-  SUPPLEMENTS_DIV,
-  SUPPLEMENTS_UL,
-  SUPPLEMENTS_LI,
-  SUPPLEMENTS_NAME,
-  CHECKBOX_DIV,
-  CHECKBOX_INPUT,
-  CHECKBOX_LABEL,
+  // SUPPLEMENTS_DIV,
+  // SUPPLEMENTS_UL,
+  // SUPPLEMENTS_LI,
+  // SUPPLEMENTS_NAME,
+  // CHECKBOX_DIV,
+  // CHECKBOX_INPUT,
+  // CHECKBOX_LABEL,
 } from './styled/ModalCard.styled';
 
 export function ModalCard({
@@ -22,7 +22,6 @@ export function ModalCard({
   price,
   text,
   clickAddBasket,
-  dops,
 }) {
   const ClickOnCard = () => {
     modalClose(false);
@@ -32,7 +31,7 @@ export function ModalCard({
     clickAddBasket(img, name, price, text);
     ClickOnCard();
   };
-
+  const imagePath = require(`../../MenuAllBookmarks/${img}`);
   return (
     <BACKDROP_DIV>
       <MODAL_DIV>
@@ -42,10 +41,10 @@ export function ModalCard({
         </TOP_MODAL_DIV>
         <CONTENT_DIV>
           <INCREASED_INFO_DIV>
-            <img src={img} alt={name} />
+            <img src={imagePath} alt={name} />
             <p>{text}</p>
           </INCREASED_INFO_DIV>
-          <SUPPLEMENTS_DIV>
+          {/* <SUPPLEMENTS_DIV>
             {dops.map(({ name, list }) => {
               return (
                 <SUPPLEMENTS_UL key={name}>
@@ -66,7 +65,7 @@ export function ModalCard({
                 </SUPPLEMENTS_UL>
               );
             })}
-          </SUPPLEMENTS_DIV>
+          </SUPPLEMENTS_DIV> */}
         </CONTENT_DIV>
         <div></div>
 

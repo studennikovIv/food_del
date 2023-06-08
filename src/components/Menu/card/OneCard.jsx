@@ -11,21 +11,21 @@ import {
   SIZE_P,
   BUTTON_PRICE,
 } from './styled/OneCard.styled';
+
 export { ModalCard } from './ModalCard';
-
-export function OneCard({ position, clickOnCard, toDopsInCard }) {
-  const { list } = position;
-
+export function OneCard({ position, clickOnCard }) {
+  // const { list } = position;
   let linkImg = '';
   let linkName = '';
   let linkPrice = '';
   let linkText = '';
 
   const ClickOpenModal = () => {
-    clickOnCard(true, linkImg, linkName, linkPrice, linkText, toDopsInCard);
+    clickOnCard(true, linkImg, linkName, linkPrice, linkText);
   };
+  return position.map(({ img, name, text, price, mass, size }) => {
+    const imagePath = require(`../../MenuAllBookmarks/${img}`);
 
-  return list.map(({ img, name, text, price, mass, size }) => {
     return (
       <ONE_CARD_LI
         key={name}
@@ -37,11 +37,12 @@ export function OneCard({ position, clickOnCard, toDopsInCard }) {
           ClickOpenModal();
         }}
       >
-        {img ? (
-          <IMAGE_IMG src={img} alt={name} />
+        <IMAGE_IMG src={img ? imagePath : notHaveFoto} alt={name} />
+        {/* {img ? (
+          <IMAGE_IMG src={imagePath} alt={name} />
         ) : (
-          <img src={notHaveFoto} alt="" />
-        )}
+          <IMAGE_IMG src={notHaveFoto} alt="food-del" />
+        )} */}
         <NAME_DISH_H1>{name}</NAME_DISH_H1>
         {text && <DESCRIPTION_P>{text}</DESCRIPTION_P>}
         <SUPPORT_DIV>

@@ -1,0 +1,234 @@
+[
+  {
+    "nameInst": "Шаурмичка",
+    "title": "Шаурма",
+    "list": [
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Арабська",
+        "text": "Картопля, солоні огірки, соус, мясо курки, лаваш",
+        "price": 130,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Подвійна",
+        "text": "Капуста, морква по корейськи, солоні огірки, соус, мясо курки, лаваш",
+        "price": 160,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Стандарт з куркою",
+        "text": "Капуста, морква по корейськи, солоні огірки, соус, мясо курки, лаваш",
+        "price": 120,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Міні",
+        "text": "Капуста, морква по корейськи, солоні огірки, соус, мясо курки, лаваш",
+        "price": 90,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Бурум",
+        "text": "Сир, помідор, мясо курки, соус, лаваш",
+        "price": 130,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/shaurma.jpg",
+        "title": "Шаурма",
+        "name": "Донер",
+        "text": "Сир, помідор, мясо курки, соус, солоні огірки, булка",
+        "price": 140,
+        "mass": "-"
+      }
+    ]
+  },
+  {
+    "title": "Піцца",
+    "list": [
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Цезар",
+        "text": "соус Цезар, курка, балик, чері, сухарі, моцарелла, лист салату",
+        "price": 185,
+        "mass": "35см"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Падишах",
+        "text": "вершки, курка, балик, помідор, ананас, моцарела",
+        "price": 175,
+        "mass": "35см"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Хан",
+        "text": " томатний соус, курка, балик, помідор, гриби, маслини, моцарела",
+        "price": 165,
+        "mass": "35см"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Піде з куркою",
+        "text": "фарш курки, помідор, кетчуп, моцарела, цибуля маринована",
+        "price": 120,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Піде з яловичиною",
+        "text": "фарш яловичий, помідор, гострий соус, моцарела, цибуля маринована",
+        "price": 140,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Чотири сира",
+        "text": " вершковий соус, моцарела, брі, фета, пармезан",
+        "price": 200,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Карбонара",
+        "text": "вершковий соус, моцарела, грудка, помідор, жовток",
+        "price": 170,
+        "mass": "-"
+      },
+      {
+        "img": "Shaurmichka/img/pizza.jpg",
+        "title": "Піцца",
+        "name": "Пеппероні",
+        "text": " соус томатний, пепероні, помідор, моцарела",
+        "price": 180,
+        "mass": "-"
+      }
+    ]
+  },
+  {
+    "title": "Картопля фрі",
+    "list": [
+      {
+        "img": "Shaurmichka/img/potato.jpg",
+        "title": "Картопля фрі",
+        "name": "Міні",
+        "text": "",
+        "price": 55,
+        "mass": "90гр"
+      },
+      {
+        "img": "Shaurmichka/img/potato.jpg",
+        "title": "Картопля фрі",
+        "name": "Стандарт",
+        "text": "",
+        "price": 75,
+        "mass": "200гр"
+      },
+      {
+        "img": "Shaurmichka/img/potato.jpg",
+        "title": "Картопля фрі",
+        "name": "Велика",
+        "text": "",
+        "price": 140,
+        "mass": "400гр"
+      }
+    ]
+  },
+  {
+    "title": "Нагетси",
+    "list": [
+      {
+        "img": "Shaurmichka/img/nagets.jpg",
+        "title": "Нагетси",
+        "name": "Нагетси Міні",
+        "text": "",
+        "price": 85,
+        "mass": "6шт"
+      },
+      {
+        "img": "Shaurmichka/img/nagets.jpg",
+        "title": "Нагетси",
+        "name": "Нагетси Стандарт",
+        "text": "",
+        "price": 105,
+        "mass": "9шт"
+      },
+      {
+        "img": "Shaurmichka/img/nagets.jpg",
+        "title": "Нагетси",
+        "name": "Нагетси Макс",
+        "text": "",
+        "price": 210,
+        "mass": "20шт"
+      }
+    ]
+  },
+  {
+    "title": "Хот-дог",
+    "list": [
+      {
+        "img": "Shaurmichka/img/hotDog.jpg",
+        "title": "Хот-дог",
+        "name": "Хот-дог французький",
+        "text": "",
+        "price": 60,
+        "mass": "1шт"
+      }
+    ]
+  },
+
+  {
+    "title": "Напої",
+    "list": [
+      {
+        "img": "Shaurmichka/img/voda1.jpg",
+        "title": "Напої",
+        "name": "Вода",
+        "text": "Вода питна, виробник може відлічатися від зображення, уточнюйте у оператора",
+        "price": 25,
+        "mass": "0,5л"
+      },
+      {
+        "img": "Shaurmichka/img/voda3.jpg",
+        "title": "Напої",
+        "name": "Кока-кола",
+        "text": "Кока-кола 0,5л напій безалкогольний сильногазований.",
+        "price": 30,
+        "mass": "0,5л"
+      },
+      {
+        "img": "Shaurmichka/img/voda9.jpg",
+        "title": "Напої",
+        "name": "Фанта",
+        "text": "Фанта 0,5л напій безалкогольний сильногазований.",
+        "price": 30,
+        "mass": "0,5л"
+      },
+      {
+        "img": "Shaurmichka/img/voda7.jpg",
+        "title": "Напої",
+        "name": "Спрайт",
+        "text": "Спрайт 0,5л напій безалкогольний сильногазований.",
+        "price": 30,
+        "mass": "0,5л"
+      }
+    ]
+  }
+]
