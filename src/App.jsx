@@ -13,7 +13,7 @@ import { Footer } from 'components/Footer/Footer';
 // import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
 import MenuKFC from './components/MenuAllBookmarks/KFC/KFC.json';
 // Pizza Day;
-import MenuPizza from './components/MenuAllBookmarks/PizzaDay/pizzaDay';
+import MenuPizza from './components/MenuAllBookmarks/PizzaDay/pizzaDay.json';
 // SushiFamily
 import MenuSushiFamily from './components/MenuAllBookmarks/SushiFamily/SushiFamily.json';
 // Shaurmichka
