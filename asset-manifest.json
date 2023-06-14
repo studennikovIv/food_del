@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food_del/static/css/main.e72611c2.css",
-    "main.js": "/food_del/static/js/main.8fcebb2a.js",
+    "main.css": "/food_del/static/css/main.1a6e7206.css",
+    "main.js": "/food_del/static/js/main.502798f2.js",
     "static/media/shafBurger.jpg": "/food_del/static/media/shafBurger.71d8d60c3e747e1cc4cf.jpg",
     "static/media/laziz-min.jpg": "/food_del/static/media/laziz-min.7c0ed2fbe863567e0724.jpg",
     "static/media/mini laziz z morkvoy-min.jpg": "/food_del/static/media/mini laziz z morkvoy-min.85b465e07e5a404f0ab1.jpg",
@@ -354,11 +354,11 @@
     "static/media/bike-svgrepo-com (1).svg": "/food_del/static/media/bike-svgrepo-com (1).49dfa48f7873f522e865c76566324f15.svg",
     "index.html": "/food_del/index.html",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
-    "main.e72611c2.css.map": "/food_del/static/css/main.e72611c2.css.map",
-    "main.8fcebb2a.js.map": "/food_del/static/js/main.8fcebb2a.js.map"
+    "main.1a6e7206.css.map": "/food_del/static/css/main.1a6e7206.css.map",
+    "main.502798f2.js.map": "/food_del/static/js/main.502798f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e72611c2.css",
-    "static/js/main.8fcebb2a.js"
+    "static/css/main.1a6e7206.css",
+    "static/js/main.502798f2.js"
   ]
 }
