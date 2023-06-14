@@ -3,8 +3,8 @@ import {
   CONTEINER_MENU_DIV,
   MENU_UL,
   ONE_CASE_LI,
-  NAMEINST_P,
-  NAME_SUBPOSITION_H1,
+  NAMEINST_H1,
+  NAME_SUBPOSITION_H2,
   SUBPOSITION_UL,
 } from './styled/Menu.styled';
 import { TitleMenu } from './TitleMenu';
@@ -18,8 +18,8 @@ export const Menu = ({ prop, clickOnCard }) => {
           const { title, nameInst, list } = res;
           return (
             <ONE_CASE_LI key={title} id={title}>
-              {nameInst && <NAMEINST_P>{nameInst}</NAMEINST_P>}
-              <NAME_SUBPOSITION_H1>{title}</NAME_SUBPOSITION_H1>
+              {nameInst && <NAMEINST_H1>{nameInst}</NAMEINST_H1>}
+              <NAME_SUBPOSITION_H2>{title}</NAME_SUBPOSITION_H2>
               <SUBPOSITION_UL>
                 <OneCard position={list} clickOnCard={clickOnCard} />;
               </SUBPOSITION_UL>
@@ -31,8 +31,8 @@ export const Menu = ({ prop, clickOnCard }) => {
           console.log(res);
           return (
             <ONE_CASE_LI key={title} id={title}>
-              {nameInst && <NAMEINST_P>{nameInst}</NAMEINST_P>}
-              <NAME_SUBPOSITION_H1>{title}</NAME_SUBPOSITION_H1>
+              {nameInst && <NAMEINST_H1>{nameInst}</NAMEINST_H1>}
+              <NAME_SUBPOSITION_H>{title}</NAME_SUBPOSITION_H>
               <SUBPOSITION_UL>
                 <OneCard position={res} clickOnCard={clickOnCard} />
               </SUBPOSITION_UL>

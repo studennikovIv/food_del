@@ -21,7 +21,7 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
   };
 
   const minusButton = () => {
-    if (valSpan === 1) {
+    if (valSpan === 0) {
       return;
     }
     minus(basketArr);

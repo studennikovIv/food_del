@@ -30,7 +30,7 @@ import MenuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace.json';
 import MenuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz.json';
 
 import arrow_top from './images/arrow-top-svgrepo.svg';
-console.log(MenuMyPlace);
+
 // const Menu = lazy(() =>
 //   import('./components/Menu/Menu').then(module => {
 //     // console.log(module);

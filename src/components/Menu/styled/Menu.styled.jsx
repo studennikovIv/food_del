@@ -3,18 +3,15 @@ import styled from '@emotion/styled';
 export const CONTEINER_MENU_DIV = styled.div`
   position: relative;
   display: flex;
-  min-height: 85wh;
+  // height: 100vh;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 10px;
   @media screen and (min-width: 760px) {
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 130px;
-    // width: 1000px;
-    // justify-content: center;
-    // align-items: center;
+    margin-top: 30px;
   }
 `;
 
@@ -39,7 +36,7 @@ export const MENU_UL = styled.ul`
 export const ONE_CASE_LI = styled.li`
   position: relative;
   margin: 0 0 20px 0;
-  padding: 150px 0 0 0;
+  padding: 100px 0 0 0;
   :active {
     opacity: 1;
   }
@@ -47,16 +44,18 @@ export const ONE_CASE_LI = styled.li`
   //   padding-top: 150px;
   // }
 `;
-export const NAMEINST_P = styled.p`
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-  font-size: 60px;
+export const NAMEINST_H1 = styled.h1`
+  font-size: 30px;
+  @media screen and (min-width: 760px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
 `;
 
-export const NAME_SUBPOSITION_H1 = styled.h1`
+export const NAME_SUBPOSITION_H2 = styled.h2`
   font-size: 15px;
   @media screen and (min-width: 760px) {
     font-size: 20px;
