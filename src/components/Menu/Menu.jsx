@@ -21,7 +21,7 @@ export const Menu = ({ prop, clickOnCard }) => {
               {nameInst && <NAMEINST_H1>{nameInst}</NAMEINST_H1>}
               <NAME_SUBPOSITION_H2>{title}</NAME_SUBPOSITION_H2>
               <SUBPOSITION_UL>
-                <OneCard position={list} clickOnCard={clickOnCard} />;
+                <OneCard position={list} clickOnCard={clickOnCard} />
               </SUBPOSITION_UL>
             </ONE_CASE_LI>
           );
