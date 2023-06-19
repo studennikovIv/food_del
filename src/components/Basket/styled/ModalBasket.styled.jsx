@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-export const BASKET_DIV = styled.div`
+
+export const basketDiv = styled.div`
   position: absolute;
   left: 50%;
   top: 0%;
@@ -19,7 +20,8 @@ export const BASKET_DIV = styled.div`
     width: 600px;
   }
 `;
-export const TOP_DIV = styled.div`
+
+export const topDiv = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -28,14 +30,14 @@ export const TOP_DIV = styled.div`
   background-color: #ff0000;
 `;
 
-export const BASKET_H3 = styled.h3`
+export const basketH3 = styled.h3`
   padding: 5px 0;
   margin-left: 1%;
   color: #fff;
   font-size: 18px;
 `;
 
-export const BUTTONE_CLOSE = styled.button`
+export const buttonClose = styled.button`
   position: absolute;
   top: 0;
   right: 1%;
@@ -51,7 +53,7 @@ export const BUTTONE_CLOSE = styled.button`
   }
 `;
 
-export const BOTTOM_DIV = styled.div`
+export const bottomDiv = styled.div`
   padding: 10px;
   height: 420px;
   background-color: #fff;
@@ -60,7 +62,7 @@ export const BOTTOM_DIV = styled.div`
   }
 `;
 
-export const TEXT_ARR_EMPTY_P = styled.p`
+export const textArrEmptyP = styled.p`
   position: absolute;
   top: 45%;
   left: 30%;
@@ -79,7 +81,7 @@ export const TEXT_ARR_EMPTY_P = styled.p`
 `;
 
 // ////////////////////CARD
-export const CONTEINER_CARD = styled.div`
+export const conteinerCard = styled.div`
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
@@ -87,7 +89,8 @@ export const CONTEINER_CARD = styled.div`
     background: transparent;
   }
 `;
-export const CONTEINER_CARD_BASKET_DIV = styled.div`
+
+export const conteinerCardBasketDiv = styled.div`
   display: grid;
   place-items: center;
   gap: 20px;
@@ -95,7 +98,8 @@ export const CONTEINER_CARD_BASKET_DIV = styled.div`
   justify-items: center;
   align-items: center;
 `;
-export const CARD_BASKET_DIV = styled.div`
+
+export const cardBasketDiv = styled.div`
   width: 100%;
   min-height: 80px;
   border-radius: 5px;
@@ -106,19 +110,21 @@ export const CARD_BASKET_DIV = styled.div`
   position: relative;
 `;
 
-export const CARD_NAME_P = styled.p`
+export const cardNameP = styled.p`
   color: #ff0000;
 `;
 
-export const CARD_IMG = styled.img`
+export const cardImg = styled.img`
   border-radius: 50%;
 `;
-export const CARD_PRICE_P = styled.p`
+
+export const cardPriceP = styled.p`
   position: absolute;
   top: 60%;
   right: 5%;
 `;
-export const CONTEINER_BTN = styled.div`
+
+export const conteinerBtn = styled.div`
   width: 60px;
   position: absolute;
   bottom: 10%;
@@ -129,23 +135,23 @@ export const CONTEINER_BTN = styled.div`
   bottom: 5px;
 `;
 
-export const BUTTON_PLUS = styled.button`
+export const buttonPlus = styled.button`
   border-radius: 50%;
   cursor: pointer;
   border: none;
   background-color: transparent;
   margin-left: 10px;
 `;
-export const BUTTON_MINUS = styled.button`
+export const buttonMinus = styled.button`
   border-radius: 50%;
   cursor: pointer;
   border: none;
   background-color: transparent;
   margin-right: 10px;
 `;
-export const NUMBER_SPAN = styled.span``;
+export const numberSpan = styled.span``;
 
-export const CONTEINER_SUM_DIV = styled.div`
+export const containerSumDiv = styled.div`
   width: 100%;
   display: flex;
 
@@ -153,22 +159,22 @@ export const CONTEINER_SUM_DIV = styled.div`
   margin-top: 10px;
 `;
 
-export const SUM_P = styled.p``;
+export const sumP = styled.p``;
 
-export const DELIVERY_P = styled.p``;
+export const deliveryP = styled.p``;
 
-export const CONTEINER_BTN_DIV = styled.div`
+export const containerBtnDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
 
   margin-top: 10px;
 `;
-export const CONTEINER_BOTTOM = styled.div`
+export const containerBottom = styled.div`
   position: absolute;
   width: 97%;
 `;
-export const LEFT_BUTTON = styled.button`
+export const leftButton = styled.button`
   cursor: pointer;
   vertical-align: middle;
   outline: 0;
@@ -181,7 +187,7 @@ export const LEFT_BUTTON = styled.button`
   }
 `;
 
-export const RIGHT_BUTTON = styled.button`
+export const rightButton = styled.button`
   border: 1px solid #ec2929;
   background-color: #ec2929;
   color: #fff;
@@ -194,7 +200,7 @@ export const RIGHT_BUTTON = styled.button`
 `;
 
 // CLIENT FORM
-export const CLIENT_H3 = styled.h3`
+export const clientH3 = styled.h3`
   color: #999;
   width: 90%;
   display: block;
@@ -205,7 +211,8 @@ export const CLIENT_H3 = styled.h3`
   margin-bottom: 10px;
   font-size: 18px;
 `;
-export const CLIENT_FORM = styled.form`
+
+export const clientForm = styled.form`
   text-align: center;
   width: 97%;
   max-width: 500px;
@@ -213,11 +220,13 @@ export const CLIENT_FORM = styled.form`
   margin-left: auto;
 `;
 
-export const CLIENT_CONTEINER_STREET_DIV = styled.div`
+export const clientConteinerStreetDiv = styled.div`
   display: flex;
 `;
-export const CLIENT_UL = styled.div``;
-export const CLIENT_LI = styled.div`
+
+export const clientUl = styled.div``;
+
+export const clientLi = styled.div`
   background-color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -227,7 +236,8 @@ export const CLIENT_LI = styled.div`
   display: inline-block;
   width: 100%;
 `;
-export const CLIENT_LABEL = styled.label`
+
+export const clientLabel = styled.label`
   font-size: 16px;
   position: relative;
   top: 10px;
@@ -245,7 +255,7 @@ export const CLIENT_LABEL = styled.label`
   }
 `;
 
-export const CLIENT_SMALL = styled.small`
+export const clientSmall = styled.small`
   transition: all 1s ease 0s;
   position: relative;
   .active {
@@ -253,7 +263,8 @@ export const CLIENT_SMALL = styled.small`
     display: none;
   }
 `;
-export const CLIENT_SUP = styled.sup`
+
+export const clientSup = styled.sup`
   color: #f00;
   position: relative;
   transition: all 1s ease 0s;
@@ -263,7 +274,7 @@ export const CLIENT_SUP = styled.sup`
   }
 `;
 
-export const CLIENT_INPUT = styled.input`
+export const clientInput = styled.input`
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0);
   padding: 7px;
@@ -285,7 +296,8 @@ export const CLIENT_INPUT = styled.input`
     border-color: #ff0000;
   }
 `;
-export const CLIENT_SELECT = styled.select`
+
+export const clientSelect = styled.select`
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0);
   padding: 7px;
@@ -306,22 +318,24 @@ export const CLIENT_SELECT = styled.select`
   width: calc(100% - 35px);
 `;
 
-export const CONTEINER_CLIENT_SUM_DIV = styled.div`
+export const conteinerClientSumDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 `;
 
-export const SUM_CLIENT_P = styled.p``;
-export const DELIVERY_CLIENT_P = styled.p``;
-export const CONTEINER_BTN_CLIENT_DIV = styled.div`
+export const sumClientP = styled.p``;
+
+export const deliveryClientP = styled.p``;
+
+export const conteinerBtnClientDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 `;
-export const LEFT_CLIENT_BUTTON = styled.button`
+export const leftClientButton = styled.button`
   cursor: pointer;
   vertical-align: middle;
   outline: 0;
@@ -334,7 +348,7 @@ export const LEFT_CLIENT_BUTTON = styled.button`
     background-color: rgba(0, 0, 0, 0.1);
   }
 `;
-export const RIGHT_CLIENT_BUTTON = styled.button`
+export const rightClientButton = styled.button`
   border: 1px solid #ec2929;
   background-color: #ec2929;
   color: #fff;

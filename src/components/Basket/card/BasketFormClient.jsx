@@ -2,25 +2,6 @@ import { useState } from 'react';
 import { sendMessage } from 'components/botTg';
 import { useLocation } from 'react-router-dom';
 
-import {
-  CLIENT_FORM,
-  CLIENT_UL,
-  CLIENT_LI,
-  CLIENT_LABEL,
-  CLIENT_SMALL,
-  CLIENT_SUP,
-  CLIENT_INPUT,
-  CLIENT_H3,
-  CLIENT_SELECT,
-  CLIENT_CONTEINER_STREET_DIV,
-  CONTEINER_CLIENT_SUM_DIV,
-  SUM_CLIENT_P,
-  DELIVERY_CLIENT_P,
-  CONTEINER_BTN_CLIENT_DIV,
-  LEFT_CLIENT_BUTTON,
-  RIGHT_CLIENT_BUTTON,
-} from '../styled/ModalBasket.styled.jsx';
-
 export function BasketFormClient({
   food,
   total,
@@ -41,8 +22,7 @@ export function BasketFormClient({
 
   return (
     <>
-      <CLIENT_H3>Оформлення замовлення</CLIENT_H3>
-      <CLIENT_FORM
+      <clientForm
         method="post"
         onSubmit={e => {
           e.preventDefault();
@@ -60,25 +40,25 @@ export function BasketFormClient({
           resetBasket([]);
         }}
       >
-        <CLIENT_UL>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL
+        <clientUl>
+          <clientLi>
+            <clientLabel htmlFor="telephone">
+              <clientSmall
                 className={
                   phoneActive === true || changeTel !== '' ? 'active' : null
                 }
               >
                 Телефон 380000000000
-              </CLIENT_SMALL>
-              <CLIENT_SUP
+              </clientSmall>
+              <clientSup
                 className={
                   phoneActive === true || changeTel !== '' ? 'active' : null
                 }
               >
                 *
-              </CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
+              </clientSup>
+            </clientLabel>
+            <clientInput
               onBlur={() => setPhoneActive(null)}
               onChange={e => {
                 setPhoneActive(true);
@@ -90,20 +70,20 @@ export function BasketFormClient({
               pattern="[0-9]*"
               required
             />
-          </CLIENT_LI>
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="telephone">
-              <CLIENT_SMALL className={'active'}>Місто</CLIENT_SMALL>
-              <CLIENT_SUP className={'active'}>*</CLIENT_SUP>
-            </CLIENT_LABEL>
-            <CLIENT_SELECT>
+          </clientLi>
+          <clientLi>
+            <clientLabel htmlFor="telephone">
+              <clientSmall className={'active'}>Місто</clientSmall>
+              <clientSup className={'active'}>*</clientSup>
+            </clientLabel>
+            <clientSelect>
               <option>Павлоград</option>
-            </CLIENT_SELECT>
-          </CLIENT_LI>
-          <CLIENT_CONTEINER_STREET_DIV>
-            <CLIENT_LI>
-              <CLIENT_LABEL htmlFor="streat">
-                <CLIENT_SMALL
+            </clientSelect>
+          </clientLi>
+          <clientConteinerStreetDiv>
+            <clientLi>
+              <clientLabel htmlFor="streat">
+                <clientSmall
                   className={
                     streatActive === true || changeStreat !== ''
                       ? 'active'
@@ -111,8 +91,8 @@ export function BasketFormClient({
                   }
                 >
                   Вулиця
-                </CLIENT_SMALL>
-                <CLIENT_SUP
+                </clientSmall>
+                <clientSup
                   className={
                     streatActive === true || changeStreat !== ''
                       ? 'active'
@@ -120,9 +100,9 @@ export function BasketFormClient({
                   }
                 >
                   *
-                </CLIENT_SUP>
-              </CLIENT_LABEL>
-              <CLIENT_INPUT
+                </clientSup>
+              </clientLabel>
+              <clientInput
                 onBlur={() => setStreatActive(null)}
                 onChange={e => {
                   setStreatActive(true);
@@ -136,26 +116,26 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               />
-            </CLIENT_LI>
+            </clientLi>
 
-            <CLIENT_LI>
-              <CLIENT_LABEL htmlFor="house">
-                <CLIENT_SMALL
+            <clientLi>
+              <clientLabel htmlFor="house">
+                <clientSmall
                   className={
                     houseActive === true || changeHouse !== '' ? 'active' : null
                   }
                 >
                   Будинок
-                </CLIENT_SMALL>
-                <CLIENT_SUP
+                </clientSmall>
+                <clientSup
                   className={
                     houseActive === true || changeHouse !== '' ? 'active' : null
                   }
                 >
                   *
-                </CLIENT_SUP>
-              </CLIENT_LABEL>
-              <CLIENT_INPUT
+                </clientSup>
+              </clientLabel>
+              <clientInput
                 onBlur={() => setHouseActive(null)}
                 onChange={e => {
                   setHouseActive(true);
@@ -169,12 +149,12 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               />
-            </CLIENT_LI>
-          </CLIENT_CONTEINER_STREET_DIV>
+            </clientLi>
+          </clientConteinerStreetDiv>
 
-          <CLIENT_LI>
-            <CLIENT_LABEL htmlFor="coments">
-              <CLIENT_SMALL
+          <clientLi>
+            <clientLabel htmlFor="coments">
+              <clientSmall
                 className={
                   comentsActive === true || changeComents !== ''
                     ? 'active'
@@ -182,9 +162,9 @@ export function BasketFormClient({
                 }
               >
                 Коментар
-              </CLIENT_SMALL>
-            </CLIENT_LABEL>
-            <CLIENT_INPUT
+              </clientSmall>
+            </clientLabel>
+            <clientInput
               onBlur={() => setComentsActive(null)}
               onChange={e => {
                 setComentsActive(true);
@@ -195,25 +175,25 @@ export function BasketFormClient({
               name="coments"
               pattern=".*"
             />
-          </CLIENT_LI>
-        </CLIENT_UL>
-        <CONTEINER_CLIENT_SUM_DIV>
-          <SUM_CLIENT_P>Сумма:{total}</SUM_CLIENT_P>
-          <DELIVERY_CLIENT_P>Доставка:50грн</DELIVERY_CLIENT_P>
-          <SUM_CLIENT_P>До сплати:{total + 50}</SUM_CLIENT_P>
-        </CONTEINER_CLIENT_SUM_DIV>
-        <CONTEINER_BTN_CLIENT_DIV>
-          <LEFT_CLIENT_BUTTON
+          </clientLi>
+        </clientUl>
+        <conteinerClientSumDiv>
+          <sumClientP>Сумма:{total}</sumClientP>
+          <deliveryClientP>Доставка:50грн</deliveryClientP>
+          <sumClientP>До сплати:{total + 50}</sumClientP>
+        </conteinerClientSumDiv>
+        <conteinerBtnClientDiv>
+          <leftClientButton
             onClick={e => {
               e.preventDefault();
               basketFormClient(false);
             }}
           >
             Назад
-          </LEFT_CLIENT_BUTTON>
-          <RIGHT_CLIENT_BUTTON>Відправити замовлення</RIGHT_CLIENT_BUTTON>
-        </CONTEINER_BTN_CLIENT_DIV>
-      </CLIENT_FORM>
+          </leftClientButton>
+          <rightClientButton>Відправити замовлення</rightClientButton>
+        </conteinerBtnClientDiv>
+      </clientForm>
     </>
   );
 }
