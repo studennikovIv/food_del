@@ -21,9 +21,6 @@ export const MENU_UL = styled.ul`
   // background-color: #d1d1d1d1;
   // box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 
-  @media screen and (min-width: 760px) {
-    max-width: 600px;
-  }
   @media screen and (max-width: 760px) {
     margin-top: 70px;
   }

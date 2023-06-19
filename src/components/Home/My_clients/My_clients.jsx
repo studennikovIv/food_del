@@ -17,6 +17,13 @@ import laziz from './images/laziz.jpg';
 import sempai from './images/Sempai.jpg';
 const myClients = [
   {
+    id: 9,
+    name: 'Sempai',
+    // logoImg: pizzaDay,
+    logoImg: sempai,
+    timeWork: '10:00-20:00',
+  },
+  {
     id: 7,
     name: 'MyPlace',
     // logoImg: MyPlace,
@@ -65,13 +72,6 @@ const myClients = [
     // logoImg: pizzaDay,
     logoImg: pizzaDay2,
     timeWork: '10:00-21:30',
-  },
-  {
-    id: 9,
-    name: 'Sempai',
-    // logoImg: pizzaDay,
-    logoImg: sempai,
-    timeWork: '10:00-20:00',
   },
 
   // {
