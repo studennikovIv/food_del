@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useForm, Controller } from 'react-hook-form';
 
 import { botService } from 'services/botService';
 
@@ -18,29 +19,35 @@ export function BasketFormClient({
   const [houseActive, setHouseActive] = useState(null);
   const [comentsActive, setComentsActive] = useState(null);
 
+  const {
+    control,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
   const location = useLocation();
   const kafe = location.pathname;
 
+  const onSubmit = async () => {
+    e.preventDefault();
+    await botService.sendMessage(
+      changeTel,
+      changeStreat,
+      changeHouse,
+      changeComents,
+      food,
+      total,
+      kafe
+    );
+    setChangeTel('');
+    e.target.elements.telephone.value = '';
+    resetBasket([]);
+  };
+
   return (
     <>
-      <clientForm
-        method="post"
-        onSubmit={async e => {
-          e.preventDefault();
-          await botService.sendMessage(
-            changeTel,
-            changeStreat,
-            changeHouse,
-            changeComents,
-            food,
-            total,
-            kafe
-          );
-          setChangeTel('');
-          e.target.elements.telephone.value = '';
-          resetBasket([]);
-        }}
-      >
+      <clientForm onSubmit={handleSubmit(onSubmit)}>
         <clientUl>
           <clientLi>
             <clientLabel htmlFor="telephone">
