@@ -53,6 +53,18 @@ const App = () => {
   const [basketItem, setBasketItem] = useState();
 
   useEffect(() => {
+    basketArr.forEach((item, index) => {
+      for (let i = index + 1; i < basketArr.length; i++) {
+        if (item.name === basketArr[i].name) {
+          item.span++;
+          basketArr.splice(i, 1);
+          i--;
+        }
+      }
+    });
+  }, [basketArr, basketItem]);
+
+  useEffect(() => {
     const body = document.querySelector('body');
     if (modalBasket) {
       body.style.overflow = 'hidden';
@@ -70,18 +82,6 @@ const App = () => {
     setDops(dopsOpen);
   };
 
-  useEffect(() => {
-    document.title = `Food Delivery`;
-    basketArr.forEach((item, index) => {
-      for (let i = index + 1; i < basketArr.length; i++) {
-        if (item.name === basketArr[i].name) {
-          item.span++;
-          basketArr.splice(i, 1);
-          i--;
-        }
-      }
-    });
-  }, [basketArr, basketItem]);
   const handleAdd = obj => {
     const existingProduct = basketArr.find(p => p.name === obj.name);
     if (existingProduct) {
@@ -98,6 +98,7 @@ const App = () => {
       setBasketArr([...basketArr, { ...obj, span: 1 }]);
     }
   };
+
   const handleRemove = obj => {
     const existingProduct = basketArr.find(p => p.name === obj.name);
     if (existingProduct.span === 1) {
