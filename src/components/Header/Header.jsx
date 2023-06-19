@@ -10,7 +10,7 @@ import {
   HeaderTitle,
   BasketBtn,
   BasketImg,
-  TITLE_P,
+  TitleDescription,
   HeaderTitleDescription,
 } from './styled/Header.styled';
 
@@ -27,7 +27,9 @@ export function Header({ openBusket }) {
         </Link>
         <HeaderTitleDescription>
           <HeaderTitle to="/">FOOD DELIVERY</HeaderTitle>
-          <TITLE_P to="/">Швидка доставка у твоєму Місті!</TITLE_P>
+          <TitleDescription to="/">
+            Швидка доставка у твоєму Місті!
+          </TitleDescription>
         </HeaderTitleDescription>
         <BasketBtn onClick={clickBusket}>
           <BasketImg src={basket} alt="basket" />

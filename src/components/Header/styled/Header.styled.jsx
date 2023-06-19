@@ -104,7 +104,7 @@ export const HeaderTitle = styled(Link)`
   }
 `;
 
-export const TITLE_P = styled(Link)`
+export const TitleDescription = styled(Link)`
   font-family: 'Inter', sans-serif;
   color: #000;
   font-size: 9px;
