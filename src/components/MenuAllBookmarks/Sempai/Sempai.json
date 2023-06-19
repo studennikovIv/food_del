@@ -60,7 +60,7 @@
     "title": "Боупи",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/boulBil.jpg",
         "title": "Боули",
         "name": "Боул Pork",
         "text": "велика тарілка з рисом, смажена на грилі свинина, салат кімчі, сметана та гриби печериці.",
@@ -69,7 +69,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/boulChiken.jpg",
         "title": "Боули",
         "name": "Боул Salmon",
         "text": "рис, лосось, авокадо, водорості та гострий соус.",
@@ -78,7 +78,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/boulSalmon.jpg",
         "title": "Боули",
         "name": "Боул Chiken",
         "text": "рис, курка в паніровці, гриби, цибуля, салат кімчі.",
@@ -92,7 +92,7 @@
     "title": "Шок",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/lokshinaZKurkoi.jpg",
         "title": "Шок",
         "name": "Шок з куркою",
         "text": "локшина пшенична або рисова, на вибір, морква, цибуля, болгарський перець, кунжут, кукурудза, стручкова квасоля.",
@@ -101,7 +101,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/lokshinaZKrevatkoi.jpg",
         "title": "Шок",
         "name": "Шок з креветками",
         "text": "локшина пшенична або рисова, на вибір, морква, цибуля, болгарський перець, кунжут, кукурудза, стручкова квасоля.",
@@ -110,7 +110,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/lokshinaZMoreprod.jpg",
         "title": "Шок",
         "name": "Шок з лососем",
         "text": "локшина пшенична або рисова, на вибір, морква, цибуля, болгарський перець, кунжут, кукурудза, стручкова квасоля.",
@@ -156,7 +156,7 @@
     "title": "Рамен",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/ramenChikenMiso.jpg",
         "title": "Рамен",
         "name": "Chiken mico",
         "text": "ситий суп з курячим філе, бульйоном, печерицями, салатом кімчі.",
@@ -165,7 +165,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/ramenChiz.jpg",
         "title": "Рамен",
         "name": "Рамени чіз",
         "text": "сулугуні, пармезан, печериці, вершки.",
@@ -174,7 +174,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/RamenSalmon.jpg",
         "title": "Рамен",
         "name": "Salmon (лосось)",
         "text": "бульйон, лосось, печериці, локшина, салат кімчі.",
@@ -183,7 +183,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/ramenPork.jpg",
         "title": "Рамен",
         "name": "Pork (свиниа)",
         "text": "свинина, локшина, бульйон, кукурудза, гострий соус, кімчі.",
@@ -197,7 +197,7 @@
     "title": "Корн-дог",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/kornDog.jpg",
         "title": "Корн-дог",
         "name": "Класичний з фрі",
         "text": "сосиска з сиром моцарелла в хрумкій паніровці з картплею фрі.",
@@ -206,7 +206,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/kornDog.jpg",
         "title": "Корн-дог",
         "name": "З мівінкою",
         "text": "сосиска з сиром моцарелла в хрумкій паніровці з мівіни.",
@@ -215,7 +215,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/kornDog.jpg",
         "title": "Корн-дог",
         "name": "Чіз корн-дог",
         "text": "Сир моцарелла в паніровці на вибір (мівіна, картопля фрі, хрумкі сухарі .",
@@ -229,7 +229,7 @@
     "title": "Прямісінько із Сеула",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/tokpoki.jpg",
         "title": "Прямісінько із Сеула",
         "name": "Токпокк",
         "text": "рисові галушки тушковані у гострому соусі з цибуляю та яйцем. додай локшину - буде раппокі. додай сир моцарелла - буде смачніше.",
@@ -243,7 +243,7 @@
     "title": "Онігірі",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/onigiri.jpg",
         "title": "Онігірі",
         "name": "Тунець та огірок",
         "text": "Рисовий трикутник, закритий листом норі та смачною начинкою всередині.",
@@ -252,7 +252,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/onigiri.jpg",
         "title": "Онігірі",
         "name": "Лосось з крем-сиром та авакадо",
         "text": "Рисовий трикутник, закритий листом норі та смачною начинкою всередині.",
@@ -261,7 +261,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/onigiri.jpg",
         "title": "Онігірі",
         "name": "Смажений в паніровці з куркою та сиром",
         "text": "Рисовий трикутник, закритий листом норі та смачною начинкою всередині.",
@@ -275,7 +275,7 @@
     "title": "Закуски",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/kimchi.jpg",
         "title": "Закуски",
         "name": "Кімчі",
         "text": "гостро приправлені ферментовані овочі в основному пекунська капуста.",
@@ -284,7 +284,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/kartoshkaFri.jpg",
         "title": "Закуски",
         "name": "Картопля Фрі",
         "text": "хрумка смажена картопля у фретюрі.",
@@ -293,7 +293,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/bitOgirki.jpg",
         "title": "Закуски",
         "name": "Биті огірки",
         "text": "биті огірки в гострих спеціях.",
@@ -302,7 +302,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/sirShariki.jpg",
         "title": "Закуски",
         "name": "Сирні кульки",
         "text": "сир обсмажений в хрумкій паніровці.",
@@ -311,7 +311,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/krevetki.jpg",
         "title": "Закуски",
         "name": "Креветки в соусі",
         "text": "креветки в паніровці та картопля фрі в кислосолодкому соусі.",
@@ -334,7 +334,7 @@
     "title": "Десерти",
     "list": [
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/moti.jpg",
         "title": "Десерти",
         "name": "Моті",
         "text": "десерт з тягнучкого тіста та кремовою начинкою, а в середині свіжі фркукти .",
@@ -343,7 +343,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/koreyskiSendvuch.jpg",
         "title": "Десерти",
         "name": "Корейські сендвічі",
         "text": "тостовий хліб з крем-чізом та стиглою полуничею.",
@@ -352,7 +352,7 @@
         "size": ""
       },
       {
-        "img": "Sempai/img/notHaveFoto.png",
+        "img": "Sempai/img/tokiZZgushenimMolokom.jpg",
         "title": "Десерти",
         "name": "Ток зі згущеним молоком",
         "text": "рисові 'токки' з плавленим сиром политі згущеним молоком.",
