@@ -8,12 +8,13 @@
 // import osamaSushi from './images/osamaSushi.jpg';
 
 import pizzaDay2 from './images/pizza day.jpg';
-import KFC2 from './images/FFC.jpg';
+// import KFC2 from './images/FFC.jpg';
 import myPlace2 from './images/my Place.jpg';
 import maCherie2 from './images/Ma Cherie.jpg';
 import sushiFamily2 from './images/sushi family.jpg';
 import shaurmichka2 from './images/SHAVARMA.jpg';
 import laziz from './images/laziz.jpg';
+import sempai from './images/Sempai.jpg';
 const myClients = [
   {
     id: 7,
@@ -50,13 +51,13 @@ const myClients = [
     logoImg: laziz,
     timeWork: '10:00-20:00',
   },
-  {
-    id: 2,
-    name: 'KFC',
-    // logoImg: KFC,
-    logoImg: KFC2,
-    timeWork: '10:00-20:30',
-  },
+  // {
+  //   id: 2,
+  //   name: 'KFC',
+  //   // logoImg: KFC,
+  //   logoImg: KFC2,
+  //   timeWork: '10:00-20:30',
+  // },
 
   {
     id: 6,
@@ -64,6 +65,13 @@ const myClients = [
     // logoImg: pizzaDay,
     logoImg: pizzaDay2,
     timeWork: '10:00-21:30',
+  },
+  {
+    id: 9,
+    name: 'Sempai',
+    // logoImg: pizzaDay,
+    logoImg: sempai,
+    timeWork: '10:00-20:00',
   },
 
   // {

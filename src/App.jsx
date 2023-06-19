@@ -28,7 +28,8 @@ import MenuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.json';
 import MenuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace.json';
 // Laziz
 import MenuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz.json';
-
+// Sempai
+import Sempai from './components/MenuAllBookmarks/Sempai/Sempai.json';
 import arrow_top from './images/arrow-top-svgrepo.svg';
 
 // const Menu = lazy(() =>
@@ -174,6 +175,10 @@ const App = () => {
           <Route
             path="/Laziz"
             element={<Menu prop={MenuLaziz} clickOnCard={ClickOnCard} />}
+          />
+          <Route
+            path="/Sempai"
+            element={<Menu prop={Sempai} clickOnCard={ClickOnCard} />}
           />
           {/* <Route
             path="/food_del/SushiZoom"
