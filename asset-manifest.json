@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food_del/static/css/main.1a6e7206.css",
-    "main.js": "/food_del/static/js/main.2dd5269d.js",
+    "main.js": "/food_del/static/js/main.8b4528d4.js",
     "static/media/shafBurger.jpg": "/food_del/static/media/shafBurger.71d8d60c3e747e1cc4cf.jpg",
     "static/media/laziz-min.jpg": "/food_del/static/media/laziz-min.7c0ed2fbe863567e0724.jpg",
     "static/media/mini laziz z morkvoy-min.jpg": "/food_del/static/media/mini laziz z morkvoy-min.85b465e07e5a404f0ab1.jpg",
@@ -19,11 +19,16 @@
     "static/media/redDragon.jpg": "/food_del/static/media/redDragon.5c30e2c5c9e12b6409af.jpg",
     "static/media/pastaZKrevetmi.jpg": "/food_del/static/media/pastaZKrevetmi.0e0b0d3e81c0410e03b9.jpg",
     "static/media/kappaMaki.jpg": "/food_del/static/media/kappaMaki.ed65dc5a5f31fc7b68d3.jpg",
+    "static/media/salsaBurger.png": "/food_del/static/media/salsaBurger.93c336baef563ace0f87.png",
+    "static/media/salsaBurgerHot.png": "/food_del/static/media/salsaBurgerHot.f018821a7ce3899639f2.png",
     "static/media/medalionSvin.jpg": "/food_del/static/media/medalionSvin.f5c73e5b4be4cfe05798.jpg",
     "static/media/kartoplyaPoSelynski.jpg": "/food_del/static/media/kartoplyaPoSelynski.e1b52279fdad8cf2fb74.jpg",
     "static/media/pastaZiSvin.jpg": "/food_del/static/media/pastaZiSvin.5cf3ff08bf942326a252.jpg",
     "static/media/burgerChiken.jpg": "/food_del/static/media/burgerChiken.7847b46cef5c09ca251a.jpg",
+    "static/media/takosSalsa.png": "/food_del/static/media/takosSalsa.5eb92bfcd81d53152413.png",
     "static/media/ynagiMaki.jpg": "/food_del/static/media/ynagiMaki.1f4bedb77f2d8cd38d6a.jpg",
+    "static/media/tokosSir.png": "/food_del/static/media/tokosSir.13e5f5fe3c681ac404b0.png",
+    "static/media/kesadilia.png": "/food_del/static/media/kesadilia.5e697af8b20309ec7898.png",
     "static/media/steykSvin.jpg": "/food_del/static/media/steykSvin.a667290bda50ba2f0d03.jpg",
     "static/media/makiAvicado.jpg": "/food_del/static/media/makiAvicado.c143268427b7bc517593.jpg",
     "static/media/chees.jpg": "/food_del/static/media/chees.3efac4f07dc00e82575f.jpg",
@@ -34,6 +39,9 @@
     "static/media/pivnaLux.jpg": "/food_del/static/media/pivnaLux.2fd04b110473a5c186f9.jpg",
     "static/media/filaEbi.jpg": "/food_del/static/media/filaEbi.ed8f0cb6374b67d3e90f.jpg",
     "static/media/filaUnagi.jpg": "/food_del/static/media/filaUnagi.8ed720ef514401fe8168.jpg",
+    "static/media/twisterSalsa.png": "/food_del/static/media/twisterSalsa.20d05847bd80918d5442.png",
+    "static/media/twisterSalsaHot.png": "/food_del/static/media/twisterSalsaHot.078c8830bedeb3e9fa8a.png",
+    "static/media/baytsSalsa.png": "/food_del/static/media/baytsSalsa.048a2c3d5e34e104c73f.png",
     "static/media/IMG_8597.jpg": "/food_del/static/media/IMG_8597.7c86cea21011918dcf28.jpg",
     "static/media/fugenHot.jpg": "/food_del/static/media/fugenHot.2bae9491d0f73972d950.jpg",
     "static/media/buregeYalov.jpg": "/food_del/static/media/buregeYalov.9ae86cd4286916993f95.jpg",
@@ -333,6 +341,7 @@
     "static/media/set12.jpg": "/food_del/static/media/set12.7e87c311a04c94f3bc54.jpg",
     "static/media/Sempai.jpg": "/food_del/static/media/Sempai.2ef72c52110bbdc1311f.jpg",
     "static/media/set15.jpg": "/food_del/static/media/set15.071cc7153c3146733f8f.jpg",
+    "static/media/FFC.jpg": "/food_del/static/media/FFC.18ce198bfa30b56a2eec.jpg",
     "static/media/set13.jpg": "/food_del/static/media/set13.2b3594041449f9a1c944.jpg",
     "static/media/set10.jpg": "/food_del/static/media/set10.a281d7e007856e3e4672.jpg",
     "static/media/set20.jpg": "/food_del/static/media/set20.fc0fc1e69e9b49823b03.jpg",
@@ -386,10 +395,10 @@
     "static/media/bike-svgrepo-com (1).svg": "/food_del/static/media/bike-svgrepo-com (1).49dfa48f7873f522e865c76566324f15.svg",
     "static/media/telegram-svgrepo-com.svg": "/food_del/static/media/telegram-svgrepo-com.12262c20666589f3965c47e78c814d09.svg",
     "main.1a6e7206.css.map": "/food_del/static/css/main.1a6e7206.css.map",
-    "main.2dd5269d.js.map": "/food_del/static/js/main.2dd5269d.js.map"
+    "main.8b4528d4.js.map": "/food_del/static/js/main.8b4528d4.js.map"
   },
   "entrypoints": [
     "static/css/main.1a6e7206.css",
-    "static/js/main.2dd5269d.js"
+    "static/js/main.8b4528d4.js"
   ]
 }
