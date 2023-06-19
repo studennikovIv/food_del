@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const CONTEINER_MENU_DIV = styled.div`
+export const MenuWrapper = styled.div`
   position: relative;
   display: flex;
   // height: 100vh;
@@ -15,7 +15,7 @@ export const CONTEINER_MENU_DIV = styled.div`
   }
 `;
 
-export const MENU_UL = styled.ul`
+export const MenuList = styled.ul`
   display: grid;
   margin: 0 auto !important;
   // background-color: #d1d1d1d1;
@@ -30,7 +30,7 @@ export const MENU_UL = styled.ul`
   // }
 `;
 
-export const ONE_CASE_LI = styled.li`
+export const CaseItem = styled.li`
   position: relative;
   margin: 0 0 20px 0;
   padding: 100px 0 0 0;
@@ -41,7 +41,7 @@ export const ONE_CASE_LI = styled.li`
   //   padding-top: 150px;
   // }
 `;
-export const NAMEINST_H1 = styled.h1`
+export const SocialTitle = styled.h1`
   font-size: 30px;
   @media screen and (min-width: 760px) {
     font-size: 40px;
@@ -52,7 +52,7 @@ export const NAMEINST_H1 = styled.h1`
   }
 `;
 
-export const NAME_SUBPOSITION_H2 = styled.h2`
+export const SubPositionTitle = styled.h2`
   font-size: 15px;
   @media screen and (min-width: 760px) {
     font-size: 20px;
@@ -64,7 +64,7 @@ export const NAME_SUBPOSITION_H2 = styled.h2`
   }
 `;
 
-export const SUBPOSITION_UL = styled.ul`
+export const SubpositionList = styled.ul`
   display: grid;
   place-items: center;
   gap: 0 50px;

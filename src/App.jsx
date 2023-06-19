@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { BESIC_CONTAINER_DIV, UP_BUTTON } from './App.styled';
+import { AppWrapper, ToTopBtn } from './App.styled';
 import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
@@ -40,11 +40,11 @@ import arrow_top from './images/arrow-top-svgrepo.svg';
 // );
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [modalCard, useModalCard] = useState(false);
-  const [imgModal, useImgModal] = useState('');
-  const [nameModal, useNameModal] = useState('');
-  const [priceModal, usePriceModal] = useState('');
-  const [textModal, useTextModal] = useState('');
+  const [modalCard, setModalCard] = useState(false);
+  const [imgModal, setImgModal] = useState('');
+  const [nameModal, setNameModal] = useState('');
+  const [priceModal, setPriceModal] = useState('');
+  const [textModal, setTextModal] = useState('');
   const [dops, setDops] = useState([]);
   // Modal Basket
 
@@ -61,11 +61,11 @@ const App = () => {
     }
   }, [modalBasket]);
 
-  const ClickOnCard = (bool, img, name, price, text, dopsOpen) => {
-    useModalCard(bool);
-    useImgModal(img);
-    useNameModal(name);
-    usePriceModal(price);
+  const onClickCardHandler = (bool, img, name, price, text, dopsOpen) => {
+    setModalCard(bool);
+    setImgModal(img);
+    setNameModal(name);
+    setPriceModal(price);
     useTextModal(text);
     setDops(dopsOpen);
   };
@@ -114,88 +114,100 @@ const App = () => {
       );
     }
   };
+
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 300);
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  const ClickAddBasket = (img, name, price, text) => {
+
+  const clickBasketHandler = (img, name, price, text) => {
     let span = 1;
     setBasketItem({ img, name, price, text, span });
     setBasketArr([...basketArr, { img, name, price, text, span }]);
   };
 
-  const CloseModal = () => {
-    useModalCard(false);
+  const closeModal = () => {
+    setModalCard(false);
   };
 
-  const OpenBusket = bool => {
+  const openBasket = bool => {
     setModalBasket(bool);
   };
   return (
     <>
-      <Header openBusket={OpenBusket} />
-      <BESIC_CONTAINER_DIV>
+      <Header openBusket={openBasket} />
+      <AppWrapper>
         <Routes>
           <Route path="/" element={<Home arr={setBasketArr} />} />
           <Route
             path="/MyPlace"
-            element={<Menu prop={MenuMyPlace} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu prop={MenuMyPlace} clickOnCard={onClickCardHandler} />
+            }
           />
           <Route
             path="/SushiFamily"
-            element={<Menu prop={MenuSushiFamily} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu prop={MenuSushiFamily} clickOnCard={onClickCardHandler} />
+            }
           />
           <Route
             path="/MaCherie"
-            element={<Menu prop={MenuMaCherie} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu prop={MenuMaCherie} clickOnCard={onClickCardHandler} />
+            }
           />
           <Route
             path="/KFC"
-            element={<Menu prop={MenuKFC} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={MenuKFC} clickOnCard={onClickCardHandler} />}
           />
           <Route
             path="/PizzaDay"
-            element={<Menu prop={MenuPizza} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={MenuPizza} clickOnCard={onClickCardHandler} />}
           />
           <Route
             path="/Shaurmichka"
-            element={<Menu prop={MenuShaurmichka} clickOnCard={ClickOnCard} />}
+            element={
+              <Menu prop={MenuShaurmichka} clickOnCard={onClickCardHandler} />
+            }
           />
 
           <Route
             path="/Laziz"
-            element={<Menu prop={MenuLaziz} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={MenuLaziz} clickOnCard={onClickCardHandler} />}
           />
           <Route
             path="/Sempai"
-            element={<Menu prop={Sempai} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={Sempai} clickOnCard={onClickCardHandler} />}
           />
           {/* <Route
             path="/food_del/SushiZoom"
-            element={<Menu prop={menuSushiZoom} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={menuSushiZoom} clickOnCard={onClickCardHandler} />}
           />
           <Route
             path="/food_del/OsamaSushi"
-            element={<Menu prop={menuOsamaSushi} clickOnCard={ClickOnCard} />}
+            element={<Menu prop={menuOsamaSushi} clickOnCard={onClickCardHandler} />}
           /> */}
         </Routes>
-      </BESIC_CONTAINER_DIV>
+      </AppWrapper>
       <Footer />
       {modalCard && (
         <ModalCard
           basketArr={basketArr}
-          clickAddBasket={ClickAddBasket}
-          modalClose={CloseModal}
+          clickAddBasket={clickBasketHandler}
+          modalClose={closeModal}
           img={imgModal}
           name={nameModal}
           price={priceModal}
@@ -213,12 +225,12 @@ const App = () => {
         />
       )}{' '}
       {isVisible && (
-        <UP_BUTTON
+        <ToTopBtn
           className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
           onClick={scrollToTop}
         >
           <img src={arrow_top} alt="arrow_top" />
-        </UP_BUTTON>
+        </ToTopBtn>
       )}
     </>
   );

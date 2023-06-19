@@ -1,29 +1,29 @@
 import { OneCard } from './card/OneCard';
 import {
-  CONTEINER_MENU_DIV,
-  MENU_UL,
-  ONE_CASE_LI,
-  NAMEINST_H1,
-  NAME_SUBPOSITION_H2,
-  SUBPOSITION_UL,
+  MenuWrapper,
+  MenuList,
+  CaseItem,
+  SocialTitle,
+  SubPositionTitle,
+  SubpositionList,
 } from './styled/Menu.styled';
 import { TitleMenu } from './TitleMenu';
 
 export const Menu = ({ prop, clickOnCard }) => {
   return (
-    <CONTEINER_MENU_DIV>
+    <MenuWrapper>
       <TitleMenu props={prop} />
-      <MENU_UL>
+      <MenuList>
         {prop.map(res => {
           const { title, nameInst, list } = res;
           return (
-            <ONE_CASE_LI key={title} id={title}>
-              {nameInst && <NAMEINST_H1>{nameInst}</NAMEINST_H1>}
-              <NAME_SUBPOSITION_H2>{title}</NAME_SUBPOSITION_H2>
-              <SUBPOSITION_UL>
+            <CaseItem key={title} id={title}>
+              {nameInst && <SocialTitle>{nameInst}</SocialTitle>}
+              <SubPositionTitle>{title}</SubPositionTitle>
+              <SubpositionList>
                 <OneCard position={list} clickOnCard={clickOnCard} />
-              </SUBPOSITION_UL>
-            </ONE_CASE_LI>
+              </SubpositionList>
+            </CaseItem>
           );
         })}
         {/* {prop.list.map(res => {
@@ -39,7 +39,7 @@ export const Menu = ({ prop, clickOnCard }) => {
             </ONE_CASE_LI>
           );
         })} */}
-      </MENU_UL>
-    </CONTEINER_MENU_DIV>
+      </MenuList>
+    </MenuWrapper>
   );
 };

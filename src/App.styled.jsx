@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const BESIC_CONTAINER_DIV = styled.div`
+export const AppWrapper = styled.div`
   padding: 8px;
   margin: 0px auto;
   max-width: 1200px;
@@ -14,7 +14,7 @@ export const BESIC_CONTAINER_DIV = styled.div`
     padding: 22px;
   }
 `;
-export const UP_BUTTON = styled.button`
+export const ToTopBtn = styled.button`
   img {
     width: 40px;
     @media screen and (min-width: 460px) {

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const CONTENT_DIV = styled.div`
+export const ContentWrapper = styled.div`
   display: grid;
   margin: 100px 0 0 0;
   place-items: center;
@@ -17,7 +17,7 @@ export const CONTENT_DIV = styled.div`
   }
 `;
 
-export const CLIENTS_DIV = styled.div`
+export const ClientsWrapper = styled.div`
   padding: 10px;
 
   // img:hover,
@@ -27,7 +27,7 @@ export const CLIENTS_DIV = styled.div`
   //   transform: scale(1.02);
   // }
 `;
-export const CARD_DIV = styled.div`
+export const ClientCardWrapper = styled.div`
   img {
     width: 100%;
     max-height: 150px;
@@ -65,7 +65,7 @@ export const CARD_DIV = styled.div`
     transform: scale(1.02);
   }
 `;
-export const TIME_WORL_P = styled.p`
+export const WorkTimeText = styled.p`
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 0, 0, 0.5);
