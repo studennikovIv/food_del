@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const basketDiv = styled.div`
+export const BasketWrapper = styled.div`
   position: absolute;
   left: 50%;
   top: 0%;
@@ -21,7 +21,7 @@ export const basketDiv = styled.div`
   }
 `;
 
-export const topDiv = styled.div`
+export const TopWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -30,14 +30,14 @@ export const topDiv = styled.div`
   background-color: #ff0000;
 `;
 
-export const basketH3 = styled.h3`
+export const BasketTitle = styled.h3`
   padding: 5px 0;
   margin-left: 1%;
   color: #fff;
   font-size: 18px;
 `;
 
-export const buttonClose = styled.button`
+export const CloseBtn = styled.button`
   position: absolute;
   top: 0;
   right: 1%;
@@ -53,7 +53,7 @@ export const buttonClose = styled.button`
   }
 `;
 
-export const bottomDiv = styled.div`
+export const BottomWrapper = styled.div`
   padding: 10px;
   height: 420px;
   background-color: #fff;
@@ -62,7 +62,7 @@ export const bottomDiv = styled.div`
   }
 `;
 
-export const textArrEmptyP = styled.p`
+export const EmptyMessage = styled.p`
   position: absolute;
   top: 45%;
   left: 30%;
@@ -81,7 +81,7 @@ export const textArrEmptyP = styled.p`
 `;
 
 // ////////////////////CARD
-export const conteinerCard = styled.div`
+export const CardContainer = styled.div`
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
@@ -99,7 +99,7 @@ export const conteinerCardBasketDiv = styled.div`
   align-items: center;
 `;
 
-export const cardBasketDiv = styled.div`
+export const CardBasketWrap = styled.div`
   width: 100%;
   min-height: 80px;
   border-radius: 5px;
@@ -110,15 +110,15 @@ export const cardBasketDiv = styled.div`
   position: relative;
 `;
 
-export const cardNameP = styled.p`
+export const CardName = styled.p`
   color: #ff0000;
 `;
 
-export const cardImg = styled.img`
+export const CardImage = styled.img`
   border-radius: 50%;
 `;
 
-export const cardPriceP = styled.p`
+export const CardPrice = styled.p`
   position: absolute;
   top: 60%;
   right: 5%;
@@ -135,46 +135,42 @@ export const conteinerBtn = styled.div`
   bottom: 5px;
 `;
 
-export const buttonPlus = styled.button`
+export const PlusBtn = styled.button`
   border-radius: 50%;
   cursor: pointer;
   border: none;
   background-color: transparent;
   margin-left: 10px;
 `;
-export const buttonMinus = styled.button`
+export const MinusBtn = styled.button`
   border-radius: 50%;
   cursor: pointer;
   border: none;
   background-color: transparent;
   margin-right: 10px;
 `;
-export const numberSpan = styled.span``;
 
-export const containerSumDiv = styled.div`
+
+export const SumWrapper = styled.div`
   width: 100%;
   display: flex;
-
   justify-content: space-between;
   margin-top: 10px;
 `;
 
-export const sumP = styled.p``;
 
-export const deliveryP = styled.p``;
-
-export const containerBtnDiv = styled.div`
+export const BtnWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
 
   margin-top: 10px;
 `;
-export const containerBottom = styled.div`
+export const BottomContainer = styled.div`
   position: absolute;
   width: 97%;
 `;
-export const leftButton = styled.button`
+export const LeftButton = styled.button`
   cursor: pointer;
   vertical-align: middle;
   outline: 0;
@@ -187,7 +183,7 @@ export const leftButton = styled.button`
   }
 `;
 
-export const rightButton = styled.button`
+export const RightButton = styled.button`
   border: 1px solid #ec2929;
   background-color: #ec2929;
   color: #fff;

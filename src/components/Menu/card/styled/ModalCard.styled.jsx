@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const BACKDROP_DIV = styled.div`
+export const BasketDropWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;

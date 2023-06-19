@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import {
-  cardBasketDiv,
-  cardImg,
-  cardNameP,
-  cardPriceP,
+  CardBasketWrap,
+  CardImage,
+  CardName,
+  CardPrice,
   containerBtn,
-  buttonPlus,
-  buttonMinus,
-  numberSpan,
+  PlusBtn,
+  MinusBtn,
+
 } from '../styled/ModalBasket.styled';
+
 
 export function CardBasket({ arr, minus, basketArr, plus }) {
   const { img, text, name, price, span } = basketArr;
   const [valSpan] = useState(span);
+  const imagePath = require(`../../MenuAllBookmarks/${img}`);
 
   const plusButton = () => {
     plus(basketArr);
@@ -24,18 +26,17 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
     }
     minus(basketArr);
   };
-  const imagePath = require(`../../MenuAllBookmarks/${img}`);
-  return (
-    <cardBasketDiv>
-      <cardNameP>{name}</cardNameP>
-      <cardImg src={imagePath} alt={text} width="50px" />
 
-      <containerBtnDiv>
-        <buttonMinus onClick={minusButton}>-</buttonMinus>
+  return (
+    <CardBasketWrap>
+      <СardName>{name}</СardName>
+      <CardImage src={imagePath} alt={text} width="50px" />
+      <div>
+        <MinusBtn onClick={minusButton}>-</MinusBtn>
         <numberSpan>{valSpan}</numberSpan>
-        <buttonPlus onClick={plusButton}>+</buttonPlus>
-      </containerBtnDiv>
-      <cardPriceP>{price}₴</cardPriceP>
-    </cardBasketDiv>
+        <PlusBtn onClick={plusButton}>+</PlusBtn>
+      </div>
+      <CardPrice>{price}₴</CardPrice>
+    </CardBasketWrap>
   );
 }

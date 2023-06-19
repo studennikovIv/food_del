@@ -5,20 +5,18 @@ import { nanoid } from 'nanoid';
 import { BasketFormClient } from './card/BasketFormClient';
 
 import {
-  basketDiv,
-  topDiv,
-  basketH3,
-  bottomDiv,
-  textArrEmptyP,
-  buttonClose,
-  containerSumDiv,
-  sumP,
-  deliveryP,
-  containerBtnDiv,
-  leftButton,
-  rightButton,
-  containerBottom,
-  containerCard,
+  BasketWrapper,
+  TopWrapper,
+  BasketTitle,
+  BottomWrapper,
+  EmptyMessage,
+  CloseBtn,
+  SumWrapper,
+  BtnWrapper,
+  LeftButton,
+  RightButton,
+  BottomContainer,
+  CardContainer,
 } from './styled/ModalBasket.styled';
 
 export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
@@ -39,19 +37,19 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
   const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
 
   return (
-    <BACKDROP_DIV>
-      <basketDiv>
-        <topDiv>
-          <basketH3>Кошик</basketH3>
-          <buttonClose onClick={closeButton}>×</buttonClose>
-        </topDiv>
-        <bottomDiv className={basketFormClient === true && 'active'}>
-          <containerCard
+    <BasketDropWrapper>
+      <BasketWrapper>
+        <TopWrapper>
+          <BasketTitle>Кошик</BasketTitle>
+          <CloseBtn onClick={closeButton}>×</CloseBtn>
+        </TopWrapper>
+        <BottomContainer className={basketFormClient === true && 'active'}>
+          <CardContainer
             className={basketFormClient === true ? 'active' : 'false'}
           >
-            {basketArr.length === 0 && (
-              <textArrEmptyP>У вашому кошику порожньо!</textArrEmptyP>
-            )}
+            {basketArr.length === 0 ? (
+              <EmptyMessage>У вашому кошику порожньо!</EmptyMessage>
+            ) : null}
 
             {basketArr &&
               basketArr.map(obj => (
@@ -76,28 +74,28 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
                 )}
               </>
             )}
-          </containerCard>
+          </CardContainer>
           {basketFormClient === false && basketArr.length !== 0 && (
             <>
-              <containerBottom>
-                <containerSumDiv>
-                  <sumP>Сумма:{total}</sumP>
-                  <deliveryP>Доставка:50грн</deliveryP>
-                  <sumP>До сплати:{total + 50}</sumP>
-                </containerSumDiv>
-                <containerBtnDiv>
-                  <leftButton onClick={closeButton}>
+              <BottomContainer>
+                <SumWrapper>
+                  <p>Сумма:{total}</p>
+                  <p>Доставка:50грн</p>
+                  <p>До сплати:{total + 50}</p>
+                </SumWrapper>
+                <BtnWrapper>
+                  <LeftButton onClick={closeButton}>
                     Продовжіти покупки
-                  </leftButton>
-                  <rightButton onClick={clickBtn}>
+                  </LeftButton>
+                  <RightButton onClick={clickBtn}>
                     Оформити замовлення
-                  </rightButton>
-                </containerBtnDiv>
-              </containerBottom>
+                  </RightButton>
+                </BtnWrapper>
+              </BottomContainer>
             </>
           )}
-        </bottomDiv>
-      </basketDiv>
-    </BACKDROP_DIV>
+        </BottomContainer>
+      </BasketWrapper>
+    </BasketDropWrapper>
   );
 }
