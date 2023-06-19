@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { sendMessage } from 'components/botTg';
 import { useLocation } from 'react-router-dom';
+
+import { botService } from 'services/botService';
 
 export function BasketFormClient({
   food,
@@ -24,9 +25,9 @@ export function BasketFormClient({
     <>
       <clientForm
         method="post"
-        onSubmit={e => {
+        onSubmit={async e => {
           e.preventDefault();
-          sendMessage(
+          await botService.sendMessage(
             changeTel,
             changeStreat,
             changeHouse,
