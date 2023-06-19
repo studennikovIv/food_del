@@ -3,26 +3,26 @@ import { ReactComponent as Instagram } from './svg/instagram-1-svgrepo-com.svg';
 // import { ReactComponent as Facebook } from './svg/facebook-color-svgrepo-com.svg';
 import { ReactComponent as Telegramm } from './svg/telegram-svgrepo-com.svg';
 import {
-  STYLED_FOOTER,
-  CONTENT_DIV,
-  INFO_UL,
-  CONTACT_UL,
-  CONTACTS_TEXT_P,
-  CONTACTS_TEXT_P_BOLD,
+  FooterWrapper,
+  ContentWrapper,
+  InfoList,
+  ContactList,
+  ContactsText,
+  ContactsTextBold,
 } from './styled/Footer.styled';
 
 export function Footer() {
   return (
-    <STYLED_FOOTER>
-      <CONTENT_DIV>
-        <INFO_UL>
+    <FooterWrapper>
+      <ContentWrapper>
+        <InfoList>
           <li>
-            <CONTACTS_TEXT_P_BOLD> 10:00 - 22:00</CONTACTS_TEXT_P_BOLD>
+            <ContactsTextBold> 10:00 - 22:00</ContactsTextBold>
             <Bike />
           </li>
           <li>
             <a href="tel:+380936649675">
-              <CONTACTS_TEXT_P>+380936649675</CONTACTS_TEXT_P>
+              <ContactsText>+380936649675</ContactsText>
             </a>
           </li>
           <li>
@@ -30,8 +30,8 @@ export function Footer() {
               <p>food.delivery.pvl@gmail.com</p>
             </a>
           </li>
-        </INFO_UL>
-        <CONTACT_UL>
+        </InfoList>
+        <ContactList>
           <li>
             <a href="https://instagram.com/food_delivery_pavlograd?igshid=ZDdkNTZiNTM=">
               <Instagram />
@@ -43,9 +43,9 @@ export function Footer() {
               <Telegramm />
             </a>
           </li>
-        </CONTACT_UL>
-      </CONTENT_DIV>
-      <CONTACTS_TEXT_P>© 2023. Food Delivery.</CONTACTS_TEXT_P>
-    </STYLED_FOOTER>
+        </ContactList>
+      </ContentWrapper>
+      <ContactsText>© 2023. Food Delivery.</ContactsText>
+    </FooterWrapper>
   );
 }

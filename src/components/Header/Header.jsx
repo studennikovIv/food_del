@@ -1,19 +1,17 @@
 import { Link } from 'react-router-dom';
 
-// import logo from './images/location-pin-svgrepo-com.svg';
 import logo from './images/logo.jpg';
-// import basket from './images/basket-free-material-svgrepo-com.svg';
 import basket from './images/1.jpg';
 
 import {
-  STYLED_HEADER,
-  CONTENT_DIV,
-  LOGO_IMG,
-  TITLE_H1,
-  BASKET_BTN,
-  BASKET_IMG,
+  HeaderWrapper,
+  ContentWrapper,
+  LogoImg,
+  HeaderTitle,
+  BasketBtn,
+  BasketImg,
   TITLE_P,
-  TITLE_CONTEINER_DIV,
+  HeaderTitleDescription,
 } from './styled/Header.styled';
 
 export function Header({ openBusket }) {
@@ -22,19 +20,19 @@ export function Header({ openBusket }) {
   };
 
   return (
-    <STYLED_HEADER>
-      <CONTENT_DIV>
+    <HeaderWrapper>
+      <ContentWrapper>
         <Link to="/">
-          <LOGO_IMG src={logo} alt="logo" />
+          <LogoImg src={logo} alt="logo" />
         </Link>
-        <TITLE_CONTEINER_DIV>
-          <TITLE_H1 to="/">FOOD DELIVERY</TITLE_H1>
+        <HeaderTitleDescription>
+          <HeaderTitle to="/">FOOD DELIVERY</HeaderTitle>
           <TITLE_P to="/">Швидка доставка у твоєму Місті!</TITLE_P>
-        </TITLE_CONTEINER_DIV>
-        <BASKET_BTN onClick={clickBusket}>
-          <BASKET_IMG src={basket} alt="basket" />
-        </BASKET_BTN>
-      </CONTENT_DIV>
-    </STYLED_HEADER>
+        </HeaderTitleDescription>
+        <BasketBtn onClick={clickBusket}>
+          <BasketImg src={basket} alt="basket" />
+        </BasketBtn>
+      </ContentWrapper>
+    </HeaderWrapper>
   );
 }

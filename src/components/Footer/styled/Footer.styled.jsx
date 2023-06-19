@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const STYLED_FOOTER = styled.footer`
+export const FooterWrapper = styled.footer`
   display: flex;
   flex-basis: 100%;
   justify-content: space-around;
@@ -19,7 +19,7 @@ export const STYLED_FOOTER = styled.footer`
   }
 `;
 
-export const CONTENT_DIV = styled.div`
+export const ContentWrapper = styled.div`
   // position: relative;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ export const CONTENT_DIV = styled.div`
   }
 `;
 
-export const INFO_UL = styled.ul`
+export const InfoList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@ export const INFO_UL = styled.ul`
   }
 `;
 
-export const CONTACT_UL = styled.ul`
+export const ContactList = styled.ul`
   display: flex;
   li {
     margin-right: 10px;
@@ -110,7 +110,7 @@ export const CONTACT_UL = styled.ul`
   }
 `;
 
-export const CONTACTS_TEXT_P = styled.p`
+export const ContactsText = styled.p`
   padding: 2px;
   font-size: 11px;
   // font-family: Robota;
@@ -123,7 +123,7 @@ export const CONTACTS_TEXT_P = styled.p`
     font-size: 13px;
   }
 `;
-export const CONTACTS_TEXT_P_BOLD = styled.p`
+export const ContactsTextBold = styled.p`
   padding: 2px;
   font-size: 13px;
   font-weight: bold;

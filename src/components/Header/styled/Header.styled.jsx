@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
 
-export const STYLED_HEADER = styled.header`
+export const HeaderWrapper = styled.header`
   position: fixed;
   display: flex;
   top: 0;
@@ -25,7 +25,7 @@ export const STYLED_HEADER = styled.header`
   }
 `;
 
-export const CONTENT_DIV = styled.div`
+export const ContentWrapper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ export const LOGO_DIV = styled.div`
 }
 `;
 
-export const LOGO_IMG = styled.img`
+export const LogoImg = styled.img`
   fill: black;
   @media screen and (min-width: 350px) {
     width: 40px;
@@ -74,7 +74,7 @@ export const LOGO_IMG = styled.img`
   }
 `;
 
-export const TITLE_CONTEINER_DIV = styled.div`
+export const HeaderTitleDescription = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +84,7 @@ export const TITLE_CONTEINER_DIV = styled.div`
   }
 `;
 
-export const TITLE_H1 = styled(Link)`
+export const HeaderTitle = styled(Link)`
   font-family: 'Inter', sans-serif;
   color: #000;
   @media screen and (min-width: 350px) {
@@ -122,7 +122,7 @@ export const TITLE_P = styled(Link)`
     letter-spacing: 2px;
   }
 `;
-export const BASKET_BTN = styled.button`
+export const BasketBtn = styled.button`
   display: flex;
   padding: 0;
   padding: 2px;
@@ -130,6 +130,8 @@ export const BASKET_BTN = styled.button`
   border-radius: 10px;
   background-color: #fff;
   width: 50px;
+  outline: none;
+  border: none;
 
   &:hover,
   &:focus {
@@ -153,7 +155,7 @@ export const BASKET_BTN = styled.button`
 //   borber-radius: 50%;
 // `;
 
-export const BASKET_IMG = styled.img`
+export const BasketImg = styled.img`
   width: 100%;
   @media screen and (max-width: 759px) {
     width: 85%;
