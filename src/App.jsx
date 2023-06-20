@@ -78,7 +78,7 @@ const App = () => {
     setImgModal(img);
     setNameModal(name);
     setPriceModal(price);
-    useTextModal(text);
+    setTextModal(text);
     setDops(dopsOpen);
   };
 
