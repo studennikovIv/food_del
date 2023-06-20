@@ -7,9 +7,7 @@ import {
   containerBtn,
   PlusBtn,
   MinusBtn,
-
 } from '../styled/ModalBasket.styled';
-
 
 export function CardBasket({ arr, minus, basketArr, plus }) {
   const { img, text, name, price, span } = basketArr;
@@ -29,7 +27,7 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
 
   return (
     <CardBasketWrap>
-      <СardName>{name}</СardName>
+      <CardName>{name}</CardName>
       <CardImage src={imagePath} alt={text} width="50px" />
       <div>
         <MinusBtn onClick={minusButton}>-</MinusBtn>

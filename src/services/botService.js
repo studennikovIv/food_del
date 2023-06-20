@@ -7,15 +7,17 @@ class BotApi {
 
   sendMessage = async (tel, streat, house, coments, food, total, kafe) => {
     //TODO replace this map to store
+    let res = [];
+
     food.map(({ name, span }) => {
       return (res += [`${name} - ${span}, `]);
     });
 
     try {
-      const res = await request.post(
+      const req = await request.post(
         `https://api.telegram.org/bot${this._botToken}/sendMessage`,
         {
-          chat_id: chatId,
+          chat_id: _chatId,
           text: `${kafe}
             Замовлення:
             ${res} 

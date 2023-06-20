@@ -29,7 +29,7 @@ export function BasketFormClient({
   const location = useLocation();
   const kafe = location.pathname;
 
-  const onSubmit = async () => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     await botService.sendMessage(
       changeTel,

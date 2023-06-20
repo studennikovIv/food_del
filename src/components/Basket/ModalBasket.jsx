@@ -14,6 +14,7 @@ import {
   SumWrapper,
   BtnWrapper,
   LeftButton,
+  BasketDropWrapper,
   RightButton,
   BottomContainer,
   CardContainer,
