@@ -17,7 +17,7 @@ class BotApi {
       const req = await request.post(
         `https://api.telegram.org/bot${this._botToken}/sendMessage`,
         {
-          chat_id: _chatId,
+          chat_id: this._chatId,
           text: `${kafe}
             Замовлення:
             ${res} 
