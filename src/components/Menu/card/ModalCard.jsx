@@ -1,5 +1,5 @@
 import {
-  BACKDROP_DIV,
+  BasketDropWrapper,
   MODAL_DIV,
   TOP_MODAL_DIV,
   BUTTON_CLOSE,
@@ -33,7 +33,7 @@ export function ModalCard({
   };
   const imagePath = require(`../../MenuAllBookmarks/${img}`);
   return (
-    <BACKDROP_DIV>
+    <BasketDropWrapper>
       <MODAL_DIV>
         <TOP_MODAL_DIV>
           <h3>{name}</h3>
@@ -73,6 +73,6 @@ export function ModalCard({
           <button onClick={addBasket}>{price}₴</button>
         </BUTTON_ORDER>
       </MODAL_DIV>
-    </BACKDROP_DIV>
+    </BasketDropWrapper>
   );
 }

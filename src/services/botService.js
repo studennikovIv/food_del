@@ -18,7 +18,8 @@ class BotApi {
         `https://api.telegram.org/bot${this._botToken}/sendMessage`,
         {
           chat_id: this._chatId,
-          text: `${kafe}
+          text: `
+            ${kafe}
             Замовлення:
             ${res} 
             Коментар:${coments}
@@ -36,7 +37,7 @@ class BotApi {
       Notiflix.Notify.success(
         `Замовлення офрмлене, зараз  з вами зв'яжеться  менеджер.`,
         {
-          timeout: 6000,
+          timeout: 3000,
         }
       );
     } catch (error) {

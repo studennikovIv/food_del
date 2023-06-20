@@ -1,4 +1,4 @@
-import { BACKDROP_DIV } from '../Menu/card/styled/ModalCard.styled';
+import { BasketDropWrapper } from '../Menu/card/styled/ModalCard.styled';
 import { CardBasket } from './card/BasketCard.jsx';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
@@ -8,13 +8,12 @@ import {
   BasketWrapper,
   TopWrapper,
   BasketTitle,
-  BottomWrapper,
+  // BottomWrapper,
   EmptyMessage,
   CloseBtn,
   SumWrapper,
   BtnWrapper,
   LeftButton,
-  BasketDropWrapper,
   RightButton,
   BottomContainer,
   CardContainer,

@@ -150,14 +150,12 @@ export const MinusBtn = styled.button`
   margin-right: 10px;
 `;
 
-
 export const SumWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 `;
-
 
 export const BtnWrapper = styled.div`
   width: 100%;
