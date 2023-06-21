@@ -8,7 +8,7 @@ import {
   BasketWrapper,
   TopWrapper,
   BasketTitle,
-  // BottomWrapper,
+  BottomWrapper,
   EmptyMessage,
   CloseBtn,
   SumWrapper,
@@ -43,7 +43,7 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
           <BasketTitle>Кошик</BasketTitle>
           <CloseBtn onClick={closeButton}>×</CloseBtn>
         </TopWrapper>
-        <BottomContainer className={basketFormClient === true && 'active'}>
+        <BottomWrapper className={basketFormClient === true && 'active'}>
           <CardContainer
             className={basketFormClient === true ? 'active' : 'false'}
           >
@@ -94,7 +94,7 @@ export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
               </BottomContainer>
             </>
           )}
-        </BottomContainer>
+        </BottomWrapper>
       </BasketWrapper>
     </BasketDropWrapper>
   );

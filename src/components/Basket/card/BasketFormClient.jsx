@@ -3,6 +3,24 @@ import { useLocation } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 
 import { botService } from 'services/botService';
+import {
+  clientH3,
+  clientForm,
+  clientConteinerStreetDiv,
+  clientUl,
+  clientLi,
+  clientLabel,
+  clientSmall,
+  clientSup,
+  clientInput,
+  clientSelect,
+  conteinerClientSumDiv,
+  sumClientP,
+  deliveryClientP,
+  conteinerBtnClientDiv,
+  leftClientButton,
+  rightClientButton,
+} from '../styled/ModalBasket.styled';
 
 export function BasketFormClient({
   food,
@@ -29,7 +47,7 @@ export function BasketFormClient({
   const location = useLocation();
   const kafe = location.pathname;
 
-  const onSubmit = async (e) => {
+  const onSubmit = async e => {
     e.preventDefault();
     await botService.sendMessage(
       changeTel,
@@ -47,7 +65,7 @@ export function BasketFormClient({
 
   return (
     <>
-      <clientForm onSubmit={handleSubmit(onSubmit)}>
+      <clientForm onSubmit={useForm(onSubmit)}>
         <clientUl>
           <clientLi>
             <clientLabel htmlFor="telephone">
