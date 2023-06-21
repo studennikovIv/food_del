@@ -2,7 +2,6 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://studennikov.github.io/food_del",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@emotion/memoize": "^0.8.1",
