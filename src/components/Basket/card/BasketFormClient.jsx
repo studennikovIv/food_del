@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 
 import { botService } from 'services/botService';
+// import styled from '../styled/ModalBasket.styled.jsx';
 import {
   clientH3,
   clientForm,
@@ -20,7 +21,7 @@ import {
   conteinerBtnClientDiv,
   leftClientButton,
   rightClientButton,
-} from '../styled/ModalBasket.styled';
+} from '../styled/ModalBasket.styled.jsx';
 
 export function BasketFormClient({
   food,
@@ -65,7 +66,7 @@ export function BasketFormClient({
 
   return (
     <>
-      <clientForm onSubmit={useForm(onSubmit)}>
+      <clientForm onSubmit={handleSubmit(onSubmit)}>
         <clientUl>
           <clientLi>
             <clientLabel htmlFor="telephone">

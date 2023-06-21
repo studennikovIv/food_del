@@ -342,6 +342,7 @@ export const leftClientButton = styled.button`
     background-color: rgba(0, 0, 0, 0.1);
   }
 `;
+
 export const rightClientButton = styled.button`
   border: 1px solid #ec2929;
   background-color: #ec2929;
