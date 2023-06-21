@@ -1,11 +1,9 @@
 // code for Axios
 
-import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
+import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.VITE_APP_API_URL,
-  withCredentials: true,
-  headers: {},
+  baseURL: 'https://api.telegram.org',
 });
 
 export class Request {
@@ -15,16 +13,6 @@ export class Request {
   setDirection(value) {
     this.direction = value;
   }
-
-  setToken = () => {
-    this.instance.interceptors.request.use(config => {
-      const token = localStorage.getItem('token');
-      config.headers = {
-        Authorization: `Bearer ${token}`,
-      };
-      return config;
-    });
-  };
 
   get = (url, config) =>
     this.instance

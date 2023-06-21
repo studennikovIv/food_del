@@ -14,11 +14,9 @@ class BotApi {
     });
 
     try {
-      const req = await request.post(
-        `https://api.telegram.org/bot${this._botToken}/sendMessage`,
-        {
-          chat_id: this._chatId,
-          text: `
+      await request.post(`/bot${this._botToken}/sendMessage`, {
+        chat_id: this._chatId,
+        text: `
             ${kafe}
             Замовлення:
             ${res} 
@@ -31,8 +29,7 @@ class BotApi {
       
             До сплати клієнтом: ${total + 50}.
             `,
-        }
-      );
+      });
 
       Notiflix.Notify.success(
         `Замовлення офрмлене, зараз  з вами зв'яжеться  менеджер.`,

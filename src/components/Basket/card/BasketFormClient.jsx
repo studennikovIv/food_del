@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
-
+import { sendMessage } from 'components/botTg.js';
 import { botService } from '../../../services/botService';
 // import styled from '../styled/ModalBasket.styled.jsx';
 import {
