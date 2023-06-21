@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
 
-import { botService } from 'services/botService';
+import { botService } from '../../../services/botService';
 // import styled from '../styled/ModalBasket.styled.jsx';
 import {
   ClientH3,
@@ -51,16 +51,16 @@ export function BasketFormClient({
   const onSubmit = async e => {
     // e.preventDefault();
     await botService.sendMessage(
-      changeTel,
-      changeStreat,
-      changeHouse,
-      changeComents,
+      e.changeTel,
+      e.changeStreat,
+      e.changeHouse,
+      e.changeComents,
       food,
       total,
       kafe
     );
-    setChangeTel('');
-    e.target.elements.telephone.value = '';
+
+    e.telephone = '';
     resetBasket([]);
   };
 
@@ -85,7 +85,7 @@ export function BasketFormClient({
                 *
               </ClientSup>
             </ClientLabel>
-            <ClientInput
+            {/* <ClientInput
               onBlur={() => setPhoneActive(null)}
               onChange={e => {
                 setPhoneActive(true);
@@ -96,6 +96,24 @@ export function BasketFormClient({
               name="telephone"
               pattern="[0-9]*"
               required
+            /> */}
+            <Controller
+              control={control}
+              name="telephone"
+              render={({ field }) => (
+                <ClientInput
+                  {...field}
+                  onBlur={() => setPhoneActive(null)}
+                  onChange={e => {
+                    setPhoneActive(true);
+                    field.onChange(e);
+                  }}
+                  onClick={() => setPhoneActive(true)}
+                  type="number"
+                  pattern="[0-9]*"
+                  required
+                />
+              )}
             />
           </ClientLi>
           <ClientLi>
@@ -129,7 +147,7 @@ export function BasketFormClient({
                   *
                 </ClientSup>
               </ClientLabel>
-              <ClientInput
+              {/* <ClientInput
                 onBlur={() => setStreatActive(null)}
                 onChange={e => {
                   setStreatActive(true);
@@ -142,6 +160,24 @@ export function BasketFormClient({
                 name="streat"
                 pattern=".*"
                 required
+              /> */}
+              <Controller
+                control={control}
+                name="streat"
+                render={({ field }) => (
+                  <ClientInput
+                    {...field}
+                    onBlur={() => setStreatActive(null)}
+                    onChange={e => {
+                      setStreatActive(true);
+                      field.onChange(e);
+                    }}
+                    onClick={() => setStreatActive(true)}
+                    type="text"
+                    pattern=".*"
+                    required
+                  />
+                )}
               />
             </ClientLi>
 
@@ -162,7 +198,7 @@ export function BasketFormClient({
                   *
                 </ClientSup>
               </ClientLabel>
-              <ClientInput
+              {/* <ClientInput
                 onBlur={() => setHouseActive(null)}
                 onChange={e => {
                   setHouseActive(true);
@@ -175,6 +211,25 @@ export function BasketFormClient({
                 name="house"
                 pattern=".*"
                 required
+              /> */}
+              <Controller
+                control={control}
+                name="house"
+                render={({ field }) => (
+                  <ClientInput
+                    {...field}
+                    onBlur={() => setHouseActive(null)}
+                    onChange={e => {
+                      setHouseActive(true);
+                      setChangeHouse(e.target.value);
+                      field.onChange(e);
+                    }}
+                    onClick={() => setHouseActive(true)}
+                    type="number"
+                    pattern=".*"
+                    required
+                  />
+                )}
               />
             </ClientLi>
           </ClientConteinerStreetDiv>
@@ -191,7 +246,8 @@ export function BasketFormClient({
                 Коментар
               </ClientSmall>
             </ClientLabel>
-            <ClientInput
+
+            {/* <ClientInput
               onBlur={() => setComentsActive(null)}
               onChange={e => {
                 setComentsActive(true);
@@ -201,6 +257,24 @@ export function BasketFormClient({
               type="text"
               name="coments"
               pattern=".*"
+            /> */}
+            <Controller
+              control={control}
+              name="coments"
+              render={({ field }) => (
+                <ClientInput
+                  {...field}
+                  onBlur={() => setComentsActive(null)}
+                  onChange={e => {
+                    setComentsActive(true);
+
+                    field.onChange(e);
+                  }}
+                  onClick={() => setComentsActive(true)}
+                  type="text"
+                  pattern=".*"
+                />
+              )}
             />
           </ClientLi>
         </ClientUl>
