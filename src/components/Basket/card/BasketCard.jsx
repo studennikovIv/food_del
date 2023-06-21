@@ -4,10 +4,10 @@ import {
   CardImage,
   CardName,
   CardPrice,
-  containerBtn,
+  ContainerBtn,
   PlusBtn,
   MinusBtn,
-} from '../styled/ModalBasket.styled';
+} from '../styled/ModalBasket.styled.jsx';
 
 export function CardBasket({ arr, minus, basketArr, plus }) {
   const { img, text, name, price, span } = basketArr;
@@ -31,7 +31,7 @@ export function CardBasket({ arr, minus, basketArr, plus }) {
       <CardImage src={imagePath} alt={text} width="50px" />
       <div>
         <MinusBtn onClick={minusButton}>-</MinusBtn>
-        <numberSpan>{valSpan}</numberSpan>
+        <span>{valSpan}</span>
         <PlusBtn onClick={plusButton}>+</PlusBtn>
       </div>
       <CardPrice>{price}₴</CardPrice>

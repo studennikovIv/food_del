@@ -194,7 +194,7 @@ export const RightButton = styled.button`
 `;
 
 // CLIENT FORM
-export const clientH3 = styled.h3`
+export const ClientH3 = styled.h3`
   color: #999;
   width: 90%;
   display: block;
@@ -206,7 +206,7 @@ export const clientH3 = styled.h3`
   font-size: 18px;
 `;
 
-export const clientForm = styled.form`
+export const ClientForm = styled.form`
   text-align: center;
   width: 97%;
   max-width: 500px;
@@ -214,13 +214,13 @@ export const clientForm = styled.form`
   margin-left: auto;
 `;
 
-export const clientConteinerStreetDiv = styled.div`
+export const ClientConteinerStreetDiv = styled.div`
   display: flex;
 `;
 
-export const clientUl = styled.div``;
+export const ClientUl = styled.div``;
 
-export const clientLi = styled.div`
+export const ClientLi = styled.div`
   background-color: #fff;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -231,7 +231,7 @@ export const clientLi = styled.div`
   width: 100%;
 `;
 
-export const clientLabel = styled.label`
+export const ClientLabel = styled.label`
   font-size: 16px;
   position: relative;
   top: 10px;
@@ -249,7 +249,7 @@ export const clientLabel = styled.label`
   }
 `;
 
-export const clientSmall = styled.small`
+export const ClientSmall = styled.small`
   transition: all 1s ease 0s;
   position: relative;
   .active {
@@ -258,7 +258,7 @@ export const clientSmall = styled.small`
   }
 `;
 
-export const clientSup = styled.sup`
+export const ClientSup = styled.sup`
   color: #f00;
   position: relative;
   transition: all 1s ease 0s;
@@ -268,7 +268,7 @@ export const clientSup = styled.sup`
   }
 `;
 
-export const clientInput = styled.input`
+export const ClientInput = styled.input`
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0);
   padding: 7px;
@@ -291,7 +291,7 @@ export const clientInput = styled.input`
   }
 `;
 
-export const clientSelect = styled.select`
+export const ClientSelect = styled.select`
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0);
   padding: 7px;
@@ -312,24 +312,24 @@ export const clientSelect = styled.select`
   width: calc(100% - 35px);
 `;
 
-export const conteinerClientSumDiv = styled.div`
+export const ConteinerClientSumDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 `;
 
-export const sumClientP = styled.p``;
+export const SumClientP = styled.p``;
 
-export const deliveryClientP = styled.p``;
+export const DeliveryClientP = styled.p``;
 
-export const conteinerBtnClientDiv = styled.div`
+export const ConteinerBtnClientDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 `;
-export const leftClientButton = styled.button`
+export const LeftClientButton = styled.button`
   cursor: pointer;
   vertical-align: middle;
   outline: 0;
@@ -343,7 +343,7 @@ export const leftClientButton = styled.button`
   }
 `;
 
-export const rightClientButton = styled.button`
+export const RightClientButton = styled.button`
   border: 1px solid #ec2929;
   background-color: #ec2929;
   color: #fff;

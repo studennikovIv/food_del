@@ -5,22 +5,22 @@ import { useForm, Controller } from 'react-hook-form';
 import { botService } from 'services/botService';
 // import styled from '../styled/ModalBasket.styled.jsx';
 import {
-  clientH3,
-  clientForm,
-  clientConteinerStreetDiv,
-  clientUl,
-  clientLi,
-  clientLabel,
-  clientSmall,
-  clientSup,
-  clientInput,
-  clientSelect,
-  conteinerClientSumDiv,
-  sumClientP,
-  deliveryClientP,
-  conteinerBtnClientDiv,
-  leftClientButton,
-  rightClientButton,
+  ClientH3,
+  ClientForm,
+  ClientConteinerStreetDiv,
+  ClientUl,
+  ClientLi,
+  ClientLabel,
+  ClientSmall,
+  ClientSup,
+  ClientInput,
+  ClientSelect,
+  ConteinerClientSumDiv,
+  SumClientP,
+  DeliveryClientP,
+  ConteinerBtnClientDiv,
+  LeftClientButton,
+  RightClientButton,
 } from '../styled/ModalBasket.styled.jsx';
 
 export function BasketFormClient({
@@ -49,7 +49,7 @@ export function BasketFormClient({
   const kafe = location.pathname;
 
   const onSubmit = async e => {
-    e.preventDefault();
+    // e.preventDefault();
     await botService.sendMessage(
       changeTel,
       changeStreat,
@@ -66,26 +66,26 @@ export function BasketFormClient({
 
   return (
     <>
-      <clientForm onSubmit={handleSubmit(onSubmit)}>
-        <clientUl>
-          <clientLi>
-            <clientLabel htmlFor="telephone">
-              <clientSmall
+      <ClientForm onSubmit={handleSubmit(onSubmit)}>
+        <ClientUl>
+          <ClientLi>
+            <ClientLabel htmlFor="telephone">
+              <ClientSmall
                 className={
                   phoneActive === true || changeTel !== '' ? 'active' : null
                 }
               >
                 Телефон 380000000000
-              </clientSmall>
-              <clientSup
+              </ClientSmall>
+              <ClientSup
                 className={
                   phoneActive === true || changeTel !== '' ? 'active' : null
                 }
               >
                 *
-              </clientSup>
-            </clientLabel>
-            <clientInput
+              </ClientSup>
+            </ClientLabel>
+            <ClientInput
               onBlur={() => setPhoneActive(null)}
               onChange={e => {
                 setPhoneActive(true);
@@ -97,20 +97,20 @@ export function BasketFormClient({
               pattern="[0-9]*"
               required
             />
-          </clientLi>
-          <clientLi>
-            <clientLabel htmlFor="telephone">
-              <clientSmall className={'active'}>Місто</clientSmall>
-              <clientSup className={'active'}>*</clientSup>
-            </clientLabel>
-            <clientSelect>
+          </ClientLi>
+          <ClientLi>
+            <ClientLabel htmlFor="telephone">
+              <ClientSmall className={'active'}>Місто</ClientSmall>
+              <ClientSup className={'active'}>*</ClientSup>
+            </ClientLabel>
+            <ClientSelect>
               <option>Павлоград</option>
-            </clientSelect>
-          </clientLi>
-          <clientConteinerStreetDiv>
-            <clientLi>
-              <clientLabel htmlFor="streat">
-                <clientSmall
+            </ClientSelect>
+          </ClientLi>
+          <ClientConteinerStreetDiv>
+            <ClientLi>
+              <ClientLabel htmlFor="streat">
+                <ClientSmall
                   className={
                     streatActive === true || changeStreat !== ''
                       ? 'active'
@@ -118,8 +118,8 @@ export function BasketFormClient({
                   }
                 >
                   Вулиця
-                </clientSmall>
-                <clientSup
+                </ClientSmall>
+                <ClientSup
                   className={
                     streatActive === true || changeStreat !== ''
                       ? 'active'
@@ -127,9 +127,9 @@ export function BasketFormClient({
                   }
                 >
                   *
-                </clientSup>
-              </clientLabel>
-              <clientInput
+                </ClientSup>
+              </ClientLabel>
+              <ClientInput
                 onBlur={() => setStreatActive(null)}
                 onChange={e => {
                   setStreatActive(true);
@@ -143,26 +143,26 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               />
-            </clientLi>
+            </ClientLi>
 
-            <clientLi>
-              <clientLabel htmlFor="house">
-                <clientSmall
+            <ClientLi>
+              <ClientLabel htmlFor="house">
+                <ClientSmall
                   className={
                     houseActive === true || changeHouse !== '' ? 'active' : null
                   }
                 >
                   Будинок
-                </clientSmall>
-                <clientSup
+                </ClientSmall>
+                <ClientSup
                   className={
                     houseActive === true || changeHouse !== '' ? 'active' : null
                   }
                 >
                   *
-                </clientSup>
-              </clientLabel>
-              <clientInput
+                </ClientSup>
+              </ClientLabel>
+              <ClientInput
                 onBlur={() => setHouseActive(null)}
                 onChange={e => {
                   setHouseActive(true);
@@ -176,12 +176,12 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               />
-            </clientLi>
-          </clientConteinerStreetDiv>
+            </ClientLi>
+          </ClientConteinerStreetDiv>
 
-          <clientLi>
-            <clientLabel htmlFor="coments">
-              <clientSmall
+          <ClientLi>
+            <ClientLabel htmlFor="coments">
+              <ClientSmall
                 className={
                   comentsActive === true || changeComents !== ''
                     ? 'active'
@@ -189,9 +189,9 @@ export function BasketFormClient({
                 }
               >
                 Коментар
-              </clientSmall>
-            </clientLabel>
-            <clientInput
+              </ClientSmall>
+            </ClientLabel>
+            <ClientInput
               onBlur={() => setComentsActive(null)}
               onChange={e => {
                 setComentsActive(true);
@@ -202,25 +202,25 @@ export function BasketFormClient({
               name="coments"
               pattern=".*"
             />
-          </clientLi>
-        </clientUl>
-        <conteinerClientSumDiv>
-          <sumClientP>Сумма:{total}</sumClientP>
-          <deliveryClientP>Доставка:50грн</deliveryClientP>
-          <sumClientP>До сплати:{total + 50}</sumClientP>
-        </conteinerClientSumDiv>
-        <conteinerBtnClientDiv>
-          <leftClientButton
+          </ClientLi>
+        </ClientUl>
+        <ConteinerClientSumDiv>
+          <SumClientP>Сумма:{total}</SumClientP>
+          <DeliveryClientP>Доставка:50грн</DeliveryClientP>
+          <SumClientP>До сплати:{total + 50}</SumClientP>
+        </ConteinerClientSumDiv>
+        <ConteinerBtnClientDiv>
+          <LeftClientButton
             onClick={e => {
               e.preventDefault();
               basketFormClient(false);
             }}
           >
             Назад
-          </leftClientButton>
-          <rightClientButton>Відправити замовлення</rightClientButton>
-        </conteinerBtnClientDiv>
-      </clientForm>
+          </LeftClientButton>
+          <RightClientButton>Відправити замовлення</RightClientButton>
+        </ConteinerBtnClientDiv>
+      </ClientForm>
     </>
   );
 }
