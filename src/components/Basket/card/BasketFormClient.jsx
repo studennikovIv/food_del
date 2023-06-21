@@ -50,11 +50,13 @@ export function BasketFormClient({
 
   const onSubmit = async e => {
     // e.preventDefault();
+    console.log(e);
+    const { telephone, streat, house, coments } = e;
     await botService.sendMessage(
-      e.changeTel,
-      e.changeStreat,
-      e.changeHouse,
-      e.changeComents,
+      telephone,
+      streat,
+      house,
+      coments,
       food,
       total,
       kafe
@@ -268,7 +270,7 @@ export function BasketFormClient({
                   onChange={e => {
                     setComentsActive(true);
 
-                    field.onChange(e);
+                    field.onChange(console.log(field));
                   }}
                   onClick={() => setComentsActive(true)}
                   type="text"
