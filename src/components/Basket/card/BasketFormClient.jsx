@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useForm, Controller } from 'react-hook-form';
-import { sendMessage } from 'components/botTg.js';
+// import { sendMessage } from 'components/botTg.js';
 import { botService } from '../../../services/botService';
 // import styled from '../styled/ModalBasket.styled.jsx';
 import {
-  ClientH3,
+  // ClientH3,
   ClientForm,
   ClientConteinerStreetDiv,
   ClientUl,
@@ -29,10 +29,10 @@ export function BasketFormClient({
   resetBasket,
   basketFormClient,
 }) {
-  const [changeTel, setChangeTel] = useState('');
-  const [changeStreat, setChangeStreat] = useState('');
+  const [changeTel] = useState('');
+  const [changeStreat] = useState('');
   const [changeHouse, setChangeHouse] = useState('');
-  const [changeComents, setChangeComents] = useState('');
+  const [changeComents] = useState('');
   const [phoneActive, setPhoneActive] = useState(null);
   const [streatActive, setStreatActive] = useState(null);
   const [houseActive, setHouseActive] = useState(null);
@@ -41,10 +41,10 @@ export function BasketFormClient({
   const {
     control,
     handleSubmit,
-    watch,
+
     formState: { errors },
   } = useForm();
-
+  console.log(errors);
   const location = useLocation();
   const kafe = location.pathname;
 
