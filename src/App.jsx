@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, useEffect } from 'react';
 // import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -6,8 +7,8 @@ import { Home } from './components/Home/Home';
 import { Header } from './components/Header/Header';
 import { Menu } from './components/Menu/Menu';
 import { ModalCard } from './components/Menu/card/ModalCard';
-import { ModalBasket } from 'components/Basket/ModalBasket';
-import { Footer } from 'components/Footer/Footer';
+import { ModalBasket } from './components/Basket/ModalBasket';
+import { Footer } from './components/Footer/Footer';
 
 // KFC
 // import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
@@ -19,7 +20,7 @@ import MenuSushiFamily from './components/MenuAllBookmarks/SushiFamily/SushiFami
 // Shaurmichka
 import MenuShaurmichka from './components/MenuAllBookmarks/Shaurmichka/Shaurmichka.json';
 // MaCherie
-import MenuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.json';
+import MenuMaCherie from './components/MenuAllBookmarks/MaCherie/MaCherie.json';
 // SushiZoom
 // import menuSushiZoom from 'components/MenuAllBookmarks/SushiZoom/menuSushiZoom.jsx';
 // Osama Sushi
@@ -27,7 +28,7 @@ import MenuMaCherie from 'components/MenuAllBookmarks/MaCherie/MaCherie.json';
 // MyPlace
 import MenuMyPlace from './components/MenuAllBookmarks/MyPlace/MyPlace.json';
 // Laziz
-import MenuLaziz from 'components/MenuAllBookmarks/Laziz/Laziz.json';
+import MenuLaziz from './components/MenuAllBookmarks/Laziz/Laziz.json';
 // Sempai
 import Sempai from './components/MenuAllBookmarks/Sempai/Sempai.json';
 import arrow_top from './images/arrow-top-svgrepo.svg';

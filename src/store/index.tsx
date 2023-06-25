@@ -1,5 +1,6 @@
+import React, { createContext, useContext, ReactNode } from 'react';
 import { makeAutoObservable } from 'mobx';
-import { createContext, useContext } from 'react';
+
 export class RootStore {
   constructor() {
     makeAutoObservable(this);
@@ -9,13 +10,13 @@ export class RootStore {
 
 export const rootStore = new RootStore();
 
-const RootStoreContext = createContext(rootStore);
+const RootStoreContext = React.createContext(rootStore);
 
-export function useStore() {
+export function useStore(): RootStore {
   return useContext(RootStoreContext);
 }
 
-export function RootStoreProvider(children) {
+export function RootStoreProvider({ children }: { children: ReactNode }) {
   return (
     <RootStoreContext.Provider value={rootStore}>
       {children}
