@@ -74,6 +74,11 @@ const App = () => {
     }
   }, [modalBasket]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const onClickCardHandler = (bool, img, name, price, text, dopsOpen) => {
     setModalCard(bool);
     setImgModal(img);
@@ -128,11 +133,6 @@ const App = () => {
       behavior: 'smooth',
     });
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const clickBasketHandler = (img, name, price, text) => {
     let span = 1;
