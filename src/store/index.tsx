@@ -1,9 +1,9 @@
-import React, { createContext, useContext, ReactNode } from 'react';
+import React, { useContext, ReactNode } from 'react';
 import { makeAutoObservable } from 'mobx';
-import BasketStore from './basketStore';
+import BasketButtonSpan from './BasketButtonSpan';
 
 export class RootStore {
-  basketStore = new BasketStore();
+  BasketButtonSpan = new BasketButtonSpan();
   constructor() {
     makeAutoObservable(this);
   }

@@ -1,6 +1,6 @@
 const { makeAutoObservable } = require('mobx');
 
-class BasketStore {
+class BasketButtonSpan {
   total = 1;
   constructor() {
     makeAutoObservable(this);
@@ -10,8 +10,11 @@ class BasketStore {
     this.total += value;
   }
   minusValue(value: number) {
+    if (this.total === 1) {
+      return;
+    }
     this.total -= value;
   }
 }
 
-export default BasketStore;
+export default BasketButtonSpan;
