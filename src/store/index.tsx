@@ -1,7 +1,9 @@
 import React, { createContext, useContext, ReactNode } from 'react';
 import { makeAutoObservable } from 'mobx';
+import BasketStore from './basketStore';
 
 export class RootStore {
+  basketStore = new BasketStore();
   constructor() {
     makeAutoObservable(this);
   }

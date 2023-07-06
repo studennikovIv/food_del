@@ -5,6 +5,7 @@ class BasketStore {
   constructor() {
     makeAutoObservable(this);
   }
+
   plusValue(value: number) {
     this.total += value;
   }
@@ -13,4 +14,4 @@ class BasketStore {
   }
 }
 
-export default new BasketStore();
+export default BasketStore;
