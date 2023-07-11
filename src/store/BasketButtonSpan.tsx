@@ -8,6 +8,7 @@ class BasketButtonSpan {
 
   plusValue(value: number) {
     this.total += value;
+    console.log(this.total);
   }
   minusValue(value: number) {
     if (this.total === 1) {

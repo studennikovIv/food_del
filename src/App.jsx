@@ -9,6 +9,8 @@ import { Menu } from './components/Menu/Menu';
 import { ModalCard } from './components/Menu/card/ModalCard';
 import { ModalBasket } from './components/Basket/ModalBasket';
 import { Footer } from './components/Footer/Footer';
+import { observer } from 'mobx-react';
+import { useStore } from './store/index';
 
 // KFC
 // import menuKFC from './components/MenuAllBookmarks/KFC/KFC.jsx';
@@ -39,7 +41,9 @@ import arrow_top from './images/arrow-top-svgrepo.svg';
 //     return { ...module, default: module.Menu };
 //   })
 // );
-const App = () => {
+const App = observer(() => {
+  // const { Basket } = useStore();
+  // const { basketArrr } = Basket;
   const [isVisible, setIsVisible] = useState(false);
   const [modalCard, setModalCard] = useState(false);
   const [imgModal, setImgModal] = useState('');
@@ -236,6 +240,6 @@ const App = () => {
       )}
     </>
   );
-};
+});
 
 export default App;

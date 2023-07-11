@@ -18,84 +18,90 @@ import {
   BottomContainer,
   CardContainer,
 } from './styled/ModalBasket.styled';
+import { observer } from 'mobx-react';
+import { useStore } from '../../store/index';
 
-export function ModalBasket({ plus, minus, basketArr, modalClose, reset }) {
-  const [basketFormClient, setBasketFormClient] = useState(false);
+export const ModalBasket = observer(
+  ({ plus, bas, minus, modalClose, reset }) => {
+    const { Basket } = useStore();
+    const basketArr = Basket.arr.map(obj => ({ ...obj }));
+    const [basketFormClient, setBasketFormClient] = useState(false);
 
-  const closeButton = () => {
-    modalClose(false);
-  };
+    const closeButton = () => {
+      modalClose(false);
+    };
 
-  const clickBtn = () => {
-    if (basketFormClient === false) {
-      setBasketFormClient(true);
-    } else {
-      console.log('asdasd');
-    }
-  };
+    const clickBtn = () => {
+      if (basketFormClient === false) {
+        setBasketFormClient(true);
+      } else {
+        console.log('asdasd');
+      }
+    };
 
-  const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
+    const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
 
-  return (
-    <BasketDropWrapper>
-      <BasketWrapper>
-        <TopWrapper>
-          <BasketTitle>Кошик</BasketTitle>
-          <CloseBtn onClick={closeButton}>×</CloseBtn>
-        </TopWrapper>
-        <BottomWrapper className={basketFormClient === true && 'active'}>
-          <CardContainer
-            className={basketFormClient === true ? 'active' : 'false'}
-          >
-            {basketArr.length === 0 ? (
-              <EmptyMessage>У вашому кошику порожньо!</EmptyMessage>
-            ) : null}
+    return (
+      <BasketDropWrapper>
+        <BasketWrapper>
+          <TopWrapper>
+            <BasketTitle>Кошик</BasketTitle>
+            <CloseBtn onClick={closeButton}>×</CloseBtn>
+          </TopWrapper>
+          <BottomWrapper className={basketFormClient === true && 'active'}>
+            <CardContainer
+              className={basketFormClient === true ? 'active' : 'false'}
+            >
+              {basketArr.length === 0 ? (
+                <EmptyMessage>У вашому кошику порожньо!</EmptyMessage>
+              ) : null}
 
-            {basketArr &&
-              basketArr.map(obj => (
-                <CardBasket
-                  key={nanoid()}
-                  plus={plus}
-                  basketArr={obj}
-                  minus={minus}
-                  arr={basketArr}
-                />
-              ))}
-
-            {basketArr.length !== 0 && (
-              <>
-                {basketFormClient === true && (
-                  <BasketFormClient
-                    food={basketArr}
-                    total={total}
-                    resetBasket={reset}
-                    basketFormClient={setBasketFormClient}
+              {basketArr &&
+                basketArr.map(obj => (
+                  <CardBasket
+                    key={nanoid()}
+                    plus={plus}
+                    basketArr={obj}
+                    minus={minus}
+                    arr={basketArr}
                   />
-                )}
+                ))}
+
+              {basketArr.length !== 0 && (
+                <>
+                  {basketFormClient === true && (
+                    <BasketFormClient
+                      food={basketArr}
+                      total={total}
+                      resetBasket={reset}
+                      basketFormClient={setBasketFormClient}
+                    />
+                  )}
+                </>
+              )}
+            </CardContainer>
+            {basketFormClient === false && basketArr.length !== 0 && (
+              <>
+                <BottomContainer>
+                  <SumWrapper>
+                    <p>Сумма:{total}</p>
+                    <p>Доставка:50грн</p>
+                    <p>До сплати:{total + 50}</p>
+                  </SumWrapper>
+                  <BtnWrapper>
+                    <LeftButton onClick={closeButton}>
+                      Продовжіти покупки
+                    </LeftButton>
+                    <RightButton onClick={clickBtn}>
+                      Оформити замовлення
+                    </RightButton>
+                  </BtnWrapper>
+                </BottomContainer>
               </>
             )}
-          </CardContainer>
-          {basketFormClient === false && basketArr.length !== 0 && (
-            <>
-              <BottomContainer>
-                <SumWrapper>
-                  <p>Сумма:{total}</p>
-                  <p>Доставка:50грн</p>
-                  <p>До сплати:{total + 50}</p>
-                </SumWrapper>
-                <BtnWrapper>
-                  <LeftButton onClick={closeButton}>
-                    Продовжіти покупки
-                  </LeftButton>
-                  <RightButton onClick={clickBtn}>
-                    Оформити замовлення
-                  </RightButton>
-                </BtnWrapper>
-              </BottomContainer>
-            </>
-          )}
-        </BottomWrapper>
-      </BasketWrapper>
-    </BasketDropWrapper>
-  );
-}
+          </BottomWrapper>
+        </BasketWrapper>
+      </BasketDropWrapper>
+    );
+  }
+);

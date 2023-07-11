@@ -1,9 +1,11 @@
 import React, { useContext, ReactNode } from 'react';
 import { makeAutoObservable } from 'mobx';
 import BasketButtonSpan from './BasketButtonSpan';
+import Basket from './Basket';
 
 export class RootStore {
   BasketButtonSpan = new BasketButtonSpan();
+  Basket = new Basket();
   constructor() {
     makeAutoObservable(this);
   }
