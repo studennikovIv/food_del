@@ -26,7 +26,7 @@ export const ModalBasket = observer(
     const { Basket } = useStore();
     const basketArr = Basket.arr.map(obj => ({ ...obj }));
     const [basketFormClient, setBasketFormClient] = useState(false);
-
+    console.log(Basket.arr);
     const closeButton = () => {
       modalClose(false);
     };
@@ -39,7 +39,7 @@ export const ModalBasket = observer(
       }
     };
 
-    const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
+    // const total = basketArr.reduce((acc, p) => acc + p.price * p.span, 0);
 
     return (
       <BasketDropWrapper>
@@ -72,7 +72,7 @@ export const ModalBasket = observer(
                   {basketFormClient === true && (
                     <BasketFormClient
                       food={basketArr}
-                      total={total}
+                      // total={total}
                       resetBasket={reset}
                       basketFormClient={setBasketFormClient}
                     />
@@ -84,9 +84,9 @@ export const ModalBasket = observer(
               <>
                 <BottomContainer>
                   <SumWrapper>
-                    <p>Сумма:{total}</p>
+                    <p>Сумма:{Basket.total}</p>
                     <p>Доставка:50грн</p>
-                    <p>До сплати:{total + 50}</p>
+                    <p>До сплати:{Basket.total + 50}</p>
                   </SumWrapper>
                   <BtnWrapper>
                     <LeftButton onClick={closeButton}>

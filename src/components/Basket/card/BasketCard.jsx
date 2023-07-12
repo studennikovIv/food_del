@@ -13,9 +13,10 @@ import {
 } from '../styled/ModalBasket.styled.jsx';
 
 export const CardBasket = observer(({ arr, minus, basketArr, plus }) => {
-  const { BasketButtonSpan } = useStore();
+  const { BasketButtonSpan, Basket } = useStore();
 
   const { img, text, name, price, span } = basketArr;
+
   const [valSpan] = useState(span);
   const imagePath = require(`../../MenuAllBookmarks/${img}`);
 
@@ -36,10 +37,7 @@ export const CardBasket = observer(({ arr, minus, basketArr, plus }) => {
       <CardImage src={imagePath} alt={text} width="50px" />
       <div>
         <MinusBtn onClick={() => BasketButtonSpan.minusValue(1)}>-</MinusBtn>
-        <span>
-          {BasketButtonSpan.total}
-          {console.log(basketArr)}
-        </span>
+        <span>{BasketButtonSpan.total}</span>
         <PlusBtn onClick={() => BasketButtonSpan.plusValue(1)}>+</PlusBtn>
       </div>
       <CardPrice>{price}₴</CardPrice>

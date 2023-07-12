@@ -224,7 +224,6 @@ const App = observer(() => {
       {modalBasket && (
         <ModalBasket
           reset={setBasketArr}
-          basketArr={basketArr}
           modalClose={setModalBasket}
           plus={handleAdd}
           minus={handleRemove}

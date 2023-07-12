@@ -17,34 +17,30 @@ import {
   // CHECKBOX_LABEL,
 } from './styled/ModalCard.styled';
 
-export const ModalCard = observer(
-  ({ modalClose, img, name, price, text, clickAddBasket }) => {
-    const { Basket } = useStore();
-    const ClickOnCard = () => {
-      modalClose(false);
-    };
+export const ModalCard = observer(({ modalClose, img, name, price, text }) => {
+  const { Basket } = useStore();
+  const ClickOnCard = () => {
+    modalClose(false);
+  };
 
-    const addBasket = () => {
-      clickAddBasket(img, name, price, text);
-
-      // Basket.basketArrAdd(img, name, price, text);
-      console.log(Basket.arr);
-      ClickOnCard();
-    };
-    const imagePath = require(`../../MenuAllBookmarks/${img}`);
-    return (
-      <BasketDropWrapper>
-        <MODAL_DIV>
-          <TOP_MODAL_DIV>
-            <h3>{name}</h3>
-            <BUTTON_CLOSE onClick={ClickOnCard}>×</BUTTON_CLOSE>
-          </TOP_MODAL_DIV>
-          <CONTENT_DIV>
-            <INCREASED_INFO_DIV>
-              <img src={imagePath} alt={name} />
-              <p>{text}</p>
-            </INCREASED_INFO_DIV>
-            {/* <SUPPLEMENTS_DIV>
+  const addBasket = () => {
+    Basket.basketArrAdd(img, name, price, text);
+    ClickOnCard();
+  };
+  const imagePath = require(`../../MenuAllBookmarks/${img}`);
+  return (
+    <BasketDropWrapper>
+      <MODAL_DIV>
+        <TOP_MODAL_DIV>
+          <h3>{name}</h3>
+          <BUTTON_CLOSE onClick={ClickOnCard}>×</BUTTON_CLOSE>
+        </TOP_MODAL_DIV>
+        <CONTENT_DIV>
+          <INCREASED_INFO_DIV>
+            <img src={imagePath} alt={name} />
+            <p>{text}</p>
+          </INCREASED_INFO_DIV>
+          {/* <SUPPLEMENTS_DIV>
             {dops.map(({ name, list }) => {
               return (
                 <SUPPLEMENTS_UL key={name}>
@@ -66,16 +62,13 @@ export const ModalCard = observer(
               );
             })}
           </SUPPLEMENTS_DIV> */}
-          </CONTENT_DIV>
-          <div></div>
+        </CONTENT_DIV>
+        <div></div>
 
-          <BUTTON_ORDER>
-            <button onClick={() => Basket.basketArrAdd(img, name, price, text)}>
-              {price}₴
-            </button>
-          </BUTTON_ORDER>
-        </MODAL_DIV>
-      </BasketDropWrapper>
-    );
-  }
-);
+        <BUTTON_ORDER>
+          <button onClick={addBasket}>{price}₴</button>
+        </BUTTON_ORDER>
+      </MODAL_DIV>
+    </BasketDropWrapper>
+  );
+});
