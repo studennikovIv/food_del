@@ -24,7 +24,7 @@ export const ModalCard = observer(({ modalClose, img, name, price, text }) => {
   };
 
   const addBasket = () => {
-    Basket.basketArrAdd(img, name, price, text);
+    Basket.basketArrAdd(img, name, price, text, 1);
     ClickOnCard();
   };
   const imagePath = require(`../../MenuAllBookmarks/${img}`);

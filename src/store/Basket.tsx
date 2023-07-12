@@ -1,25 +1,22 @@
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable, computed } from 'mobx';
 
 class Basket {
   arr = [];
+  sum = 0;
 
-  total = this.arr
-    .map(arr => ({ ...arr }))
-    .reduce((acc, p) => acc + p.price * p.span, 0);
   constructor() {
     makeAutoObservable(this);
   }
 
-  basketArrAdd(
-    img: any,
-    name: string,
-    price: number,
-    text: string,
-    span: number
-  ) {
+  basketArrAdd(img, name, price, text, span) {
     this.arr.push({ img, name, price, text, span });
+    this.sum = this.calculateTotal();
+  }
 
-    console.log(this.total);
+  calculateTotal() {
+    return this.arr
+      .map(arr => ({ ...arr }))
+      .reduce((acc, p) => acc + p.price * p.span, 0);
   }
 }
 
