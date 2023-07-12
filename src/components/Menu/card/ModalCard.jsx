@@ -18,13 +18,13 @@ import {
 } from './styled/ModalCard.styled';
 
 export const ModalCard = observer(({ modalClose, img, name, price, text }) => {
-  const { Basket } = useStore();
+  const { basketStore } = useStore();
   const ClickOnCard = () => {
     modalClose(false);
   };
 
   const addBasket = () => {
-    Basket.basketArrAdd(img, name, price, text, 1);
+    basketStore.basketArrAdd(img, name, price, text, 1);
     ClickOnCard();
   };
   const imagePath = require(`../../MenuAllBookmarks/${img}`);

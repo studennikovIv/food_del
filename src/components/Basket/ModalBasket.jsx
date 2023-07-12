@@ -23,10 +23,10 @@ import { useStore } from '../../store/index';
 
 export const ModalBasket = observer(
   ({ plus, bas, minus, modalClose, reset }) => {
-    const { Basket } = useStore();
-    const basketArr = Basket.arr.map(obj => ({ ...obj }));
+    const { basketStore } = useStore();
+    const basketArr = basketStore.arr.map(obj => ({ ...obj }));
     const [basketFormClient, setBasketFormClient] = useState(false);
-
+    console.log(basketStore);
     const closeButton = () => {
       modalClose(false);
     };
@@ -84,9 +84,9 @@ export const ModalBasket = observer(
               <>
                 <BottomContainer>
                   <SumWrapper>
-                    <p>Сумма:{Basket.sum}</p>
+                    <p>Сумма:{basketStore.sum}</p>
                     <p>Доставка:50грн</p>
-                    <p>До сплати:{Basket.sum + 50}</p>
+                    <p>До сплати:{basketStore.sum + 50}</p>
                   </SumWrapper>
                   <BtnWrapper>
                     <LeftButton onClick={closeButton}>

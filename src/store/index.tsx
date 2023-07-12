@@ -5,7 +5,7 @@ import Basket from './Basket';
 
 export class RootStore {
   BasketButtonSpan = new BasketButtonSpan();
-  Basket = new Basket();
+  basketStore = new Basket();
   constructor() {
     makeAutoObservable(this);
   }
