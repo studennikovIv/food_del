@@ -1,7 +1,12 @@
 import { makeAutoObservable, computed } from 'mobx';
 
 class Basket {
-  arr = [];
+  private _bItems = [];
+
+  get getBasketItems() {
+    return this._bItems;
+  }
+
   sum = 0;
 
   constructor() {
@@ -9,12 +14,12 @@ class Basket {
   }
 
   basketArrAdd(img, name, price, text, span) {
-    this.arr.push({ img, name, price, text, span });
+    this._bItems.push({ img, name, price, text, span });
     this.sum = this.calculateTotal();
   }
 
   calculateTotal() {
-    return this.arr
+    return this._bItems
       .map(arr => ({ ...arr }))
       .reduce((acc, p) => acc + p.price * p.span, 0);
   }

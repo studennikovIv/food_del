@@ -18,15 +18,15 @@ import {
   BottomContainer,
   CardContainer,
 } from './styled/ModalBasket.styled';
-import { observer } from 'mobx-react';
+import { observer } from 'mobx-react-lite';
 import { useStore } from '../../store/index';
 
 export const ModalBasket = observer(
   ({ plus, bas, minus, modalClose, reset }) => {
     const { basketStore } = useStore();
-    const basketArr = basketStore.arr.map(obj => ({ ...obj }));
+    const basketArr = basketStore.getBasketItems;
     const [basketFormClient, setBasketFormClient] = useState(false);
-    console.log(basketStore);
+    console.log(basketArr);
     const closeButton = () => {
       modalClose(false);
     };
