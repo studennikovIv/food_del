@@ -26,7 +26,7 @@ export const ModalBasket = observer(
     const { basketStore } = useStore();
     const basketArr = basketStore.getBasketItems;
     const [basketFormClient, setBasketFormClient] = useState(false);
-    console.log(basketArr);
+    // console.log(basketArr);
     const closeButton = () => {
       modalClose(false);
     };
