@@ -22,72 +22,72 @@ import {
   LeftClientButton,
   RightClientButton,
 } from '../styled/ModalBasket.styled.jsx';
+import { observer } from 'mobx-react-lite';
+import { useStore } from '../../../store/index';
 
-export function BasketFormClient({
-  food,
-  total,
-  resetBasket,
-  basketFormClient,
-}) {
-  const [changeTel] = useState('');
-  const [changeStreat] = useState('');
-  const [changeHouse, setChangeHouse] = useState('');
-  const [changeComents] = useState('');
-  const [phoneActive, setPhoneActive] = useState(null);
-  const [streatActive, setStreatActive] = useState(null);
-  const [houseActive, setHouseActive] = useState(null);
-  const [comentsActive, setComentsActive] = useState(null);
+export const BasketFormClient = observer(
+  ({ food, total, basketFormClient }) => {
+    const { basketStore } = useStore();
+    const [changeTel] = useState('');
+    const [changeStreat] = useState('');
+    const [changeHouse, setChangeHouse] = useState('');
+    const [changeComents] = useState('');
+    const [phoneActive, setPhoneActive] = useState(null);
+    const [streatActive, setStreatActive] = useState(null);
+    const [houseActive, setHouseActive] = useState(null);
+    const [comentsActive, setComentsActive] = useState(null);
 
-  const {
-    control,
-    handleSubmit,
+    const {
+      control,
+      handleSubmit,
+      formState: { errors },
+    } = useForm();
+    console.log(errors);
+    const location = useLocation();
+    const kafe = location.pathname;
 
-    formState: { errors },
-  } = useForm();
-  console.log(errors);
-  const location = useLocation();
-  const kafe = location.pathname;
+    const onSubmit = async e => {
+      // e.preventDefault();
+      const resetBasket = basketStore.resetBasket;
+      console.log(basketStore.getBasketItems);
+      console.log(e);
+      const { telephone, streat, house, coments } = e;
+      await botService.sendMessage(
+        telephone,
+        streat,
+        house,
+        coments,
+        food,
+        total,
+        kafe
+      );
 
-  const onSubmit = async e => {
-    // e.preventDefault();
-    console.log(e);
-    const { telephone, streat, house, coments } = e;
-    await botService.sendMessage(
-      telephone,
-      streat,
-      house,
-      coments,
-      food,
-      total,
-      kafe
-    );
+      e.telephone = '';
+      resetBasket([]);
+    };
 
-    e.telephone = '';
-    resetBasket([]);
-  };
-
-  return (
-    <>
-      <ClientForm onSubmit={handleSubmit(onSubmit)}>
-        <ClientUl>
-          <ClientLi>
-            <ClientLabel htmlFor="telephone">
-              <ClientSmall
-                className={
-                  phoneActive === true || changeTel !== '' ? 'active' : null
-                }
-              >
-                Телефон 380000000000
-              </ClientSmall>
-              <ClientSup
-                className={
-                  phoneActive === true || changeTel !== '' ? 'active' : null
-                }
-              >
-                *
-              </ClientSup>
-            </ClientLabel>
-            {/* <ClientInput
+    return (
+      <>
+        <ClientForm onSubmit={handleSubmit(onSubmit)}>
+          <ClientUl>
+            <ClientLi>
+              <ClientLabel htmlFor="telephone">
+                <ClientSmall
+                  className={
+                    phoneActive === true || changeTel !== '' ? 'active' : null
+                  }
+                >
+                  Телефон 380000000000
+                </ClientSmall>
+                <ClientSup
+                  className={
+                    phoneActive === true || changeTel !== '' ? 'active' : null
+                  }
+                >
+                  *
+                </ClientSup>
+              </ClientLabel>
+              {/* <ClientInput
               onBlur={() => setPhoneActive(null)}
               onChange={e => {
                 setPhoneActive(true);
@@ -99,57 +99,57 @@ export function BasketFormClient({
               pattern="[0-9]*"
               required
             /> */}
-            <Controller
-              control={control}
-              name="telephone"
-              render={({ field }) => (
-                <ClientInput
-                  {...field}
-                  onBlur={() => setPhoneActive(null)}
-                  onChange={e => {
-                    setPhoneActive(true);
-                    field.onChange(e);
-                  }}
-                  onClick={() => setPhoneActive(true)}
-                  type="number"
-                  pattern="[0-9]*"
-                  required
-                />
-              )}
-            />
-          </ClientLi>
-          <ClientLi>
-            <ClientLabel htmlFor="telephone">
-              <ClientSmall className={'active'}>Місто</ClientSmall>
-              <ClientSup className={'active'}>*</ClientSup>
-            </ClientLabel>
-            <ClientSelect>
-              <option>Павлоград</option>
-            </ClientSelect>
-          </ClientLi>
-          <ClientConteinerStreetDiv>
+              <Controller
+                control={control}
+                name="telephone"
+                render={({ field }) => (
+                  <ClientInput
+                    {...field}
+                    onBlur={() => setPhoneActive(null)}
+                    onChange={e => {
+                      setPhoneActive(true);
+                      field.onChange(e);
+                    }}
+                    onClick={() => setPhoneActive(true)}
+                    type="number"
+                    pattern="[0-9]*"
+                    required
+                  />
+                )}
+              />
+            </ClientLi>
             <ClientLi>
-              <ClientLabel htmlFor="streat">
-                <ClientSmall
-                  className={
-                    streatActive === true || changeStreat !== ''
-                      ? 'active'
-                      : null
-                  }
-                >
-                  Вулиця
-                </ClientSmall>
-                <ClientSup
-                  className={
-                    streatActive === true || changeStreat !== ''
-                      ? 'active'
-                      : null
-                  }
-                >
-                  *
-                </ClientSup>
+              <ClientLabel htmlFor="telephone">
+                <ClientSmall className={'active'}>Місто</ClientSmall>
+                <ClientSup className={'active'}>*</ClientSup>
               </ClientLabel>
-              {/* <ClientInput
+              <ClientSelect>
+                <option>Павлоград</option>
+              </ClientSelect>
+            </ClientLi>
+            <ClientConteinerStreetDiv>
+              <ClientLi>
+                <ClientLabel htmlFor="streat">
+                  <ClientSmall
+                    className={
+                      streatActive === true || changeStreat !== ''
+                        ? 'active'
+                        : null
+                    }
+                  >
+                    Вулиця
+                  </ClientSmall>
+                  <ClientSup
+                    className={
+                      streatActive === true || changeStreat !== ''
+                        ? 'active'
+                        : null
+                    }
+                  >
+                    *
+                  </ClientSup>
+                </ClientLabel>
+                {/* <ClientInput
                 onBlur={() => setStreatActive(null)}
                 onChange={e => {
                   setStreatActive(true);
@@ -163,44 +163,48 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               /> */}
-              <Controller
-                control={control}
-                name="streat"
-                render={({ field }) => (
-                  <ClientInput
-                    {...field}
-                    onBlur={() => setStreatActive(null)}
-                    onChange={e => {
-                      setStreatActive(true);
-                      field.onChange(e);
-                    }}
-                    onClick={() => setStreatActive(true)}
-                    type="text"
-                    pattern=".*"
-                    required
-                  />
-                )}
-              />
-            </ClientLi>
+                <Controller
+                  control={control}
+                  name="streat"
+                  render={({ field }) => (
+                    <ClientInput
+                      {...field}
+                      onBlur={() => setStreatActive(null)}
+                      onChange={e => {
+                        setStreatActive(true);
+                        field.onChange(e);
+                      }}
+                      onClick={() => setStreatActive(true)}
+                      type="text"
+                      pattern=".*"
+                      required
+                    />
+                  )}
+                />
+              </ClientLi>
 
-            <ClientLi>
-              <ClientLabel htmlFor="house">
-                <ClientSmall
-                  className={
-                    houseActive === true || changeHouse !== '' ? 'active' : null
-                  }
-                >
-                  Будинок
-                </ClientSmall>
-                <ClientSup
-                  className={
-                    houseActive === true || changeHouse !== '' ? 'active' : null
-                  }
-                >
-                  *
-                </ClientSup>
-              </ClientLabel>
-              {/* <ClientInput
+              <ClientLi>
+                <ClientLabel htmlFor="house">
+                  <ClientSmall
+                    className={
+                      houseActive === true || changeHouse !== ''
+                        ? 'active'
+                        : null
+                    }
+                  >
+                    Будинок
+                  </ClientSmall>
+                  <ClientSup
+                    className={
+                      houseActive === true || changeHouse !== ''
+                        ? 'active'
+                        : null
+                    }
+                  >
+                    *
+                  </ClientSup>
+                </ClientLabel>
+                {/* <ClientInput
                 onBlur={() => setHouseActive(null)}
                 onChange={e => {
                   setHouseActive(true);
@@ -214,42 +218,42 @@ export function BasketFormClient({
                 pattern=".*"
                 required
               /> */}
-              <Controller
-                control={control}
-                name="house"
-                render={({ field }) => (
-                  <ClientInput
-                    {...field}
-                    onBlur={() => setHouseActive(null)}
-                    onChange={e => {
-                      setHouseActive(true);
-                      setChangeHouse(e.target.value);
-                      field.onChange(e);
-                    }}
-                    onClick={() => setHouseActive(true)}
-                    type="number"
-                    pattern=".*"
-                    required
-                  />
-                )}
-              />
-            </ClientLi>
-          </ClientConteinerStreetDiv>
+                <Controller
+                  control={control}
+                  name="house"
+                  render={({ field }) => (
+                    <ClientInput
+                      {...field}
+                      onBlur={() => setHouseActive(null)}
+                      onChange={e => {
+                        setHouseActive(true);
+                        setChangeHouse(e.target.value);
+                        field.onChange(e);
+                      }}
+                      onClick={() => setHouseActive(true)}
+                      type="number"
+                      pattern=".*"
+                      required
+                    />
+                  )}
+                />
+              </ClientLi>
+            </ClientConteinerStreetDiv>
 
-          <ClientLi>
-            <ClientLabel htmlFor="coments">
-              <ClientSmall
-                className={
-                  comentsActive === true || changeComents !== ''
-                    ? 'active'
-                    : null
-                }
-              >
-                Коментар
-              </ClientSmall>
-            </ClientLabel>
+            <ClientLi>
+              <ClientLabel htmlFor="coments">
+                <ClientSmall
+                  className={
+                    comentsActive === true || changeComents !== ''
+                      ? 'active'
+                      : null
+                  }
+                >
+                  Коментар
+                </ClientSmall>
+              </ClientLabel>
 
-            {/* <ClientInput
+              {/* <ClientInput
               onBlur={() => setComentsActive(null)}
               onChange={e => {
                 setComentsActive(true);
@@ -260,43 +264,44 @@ export function BasketFormClient({
               name="coments"
               pattern=".*"
             /> */}
-            <Controller
-              control={control}
-              name="coments"
-              render={({ field }) => (
-                <ClientInput
-                  {...field}
-                  onBlur={() => setComentsActive(null)}
-                  onChange={e => {
-                    setComentsActive(true);
+              <Controller
+                control={control}
+                name="coments"
+                render={({ field }) => (
+                  <ClientInput
+                    {...field}
+                    onBlur={() => setComentsActive(null)}
+                    onChange={e => {
+                      setComentsActive(true);
 
-                    field.onChange(console.log(field));
-                  }}
-                  onClick={() => setComentsActive(true)}
-                  type="text"
-                  pattern=".*"
-                />
-              )}
-            />
-          </ClientLi>
-        </ClientUl>
-        <ConteinerClientSumDiv>
-          <SumClientP>Сумма:{total}</SumClientP>
-          <DeliveryClientP>Доставка:50грн</DeliveryClientP>
-          <SumClientP>До сплати:{total + 50}</SumClientP>
-        </ConteinerClientSumDiv>
-        <ConteinerBtnClientDiv>
-          <LeftClientButton
-            onClick={e => {
-              e.preventDefault();
-              basketFormClient(false);
-            }}
-          >
-            Назад
-          </LeftClientButton>
-          <RightClientButton>Відправити замовлення</RightClientButton>
-        </ConteinerBtnClientDiv>
-      </ClientForm>
-    </>
-  );
-}
+                      field.onChange(console.log(field));
+                    }}
+                    onClick={() => setComentsActive(true)}
+                    type="text"
+                    pattern=".*"
+                  />
+                )}
+              />
+            </ClientLi>
+          </ClientUl>
+          <ConteinerClientSumDiv>
+            <SumClientP>Сумма:{basketStore.sum}</SumClientP>
+            <DeliveryClientP>Доставка:50грн</DeliveryClientP>
+            <SumClientP>До сплати:{basketStore.sum + 50}</SumClientP>
+          </ConteinerClientSumDiv>
+          <ConteinerBtnClientDiv>
+            <LeftClientButton
+              onClick={e => {
+                e.preventDefault();
+                basketFormClient(false);
+              }}
+            >
+              Назад
+            </LeftClientButton>
+            <RightClientButton>Відправити замовлення</RightClientButton>
+          </ConteinerBtnClientDiv>
+        </ClientForm>
+      </>
+    );
+  }
+);

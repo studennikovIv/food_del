@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 export function Home({ arr }) {
   useEffect(() => {
-    arr([]);
+    arr = [];
   }, [arr]);
 
   return (

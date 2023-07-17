@@ -9,7 +9,7 @@ import { Menu } from './components/Menu/Menu';
 import { ModalCard } from './components/Menu/card/ModalCard';
 import { ModalBasket } from './components/Basket/ModalBasket';
 import { Footer } from './components/Footer/Footer';
-import { observer } from 'mobx-react';
+import { observer } from 'mobx-react-lite';
 import { useStore } from './store/index';
 
 // KFC
@@ -42,8 +42,8 @@ import arrow_top from './images/arrow-top-svgrepo.svg';
 //   })
 // );
 const App = observer(() => {
-  // const { Basket } = useStore();
-  // const { basketArrr } = Basket;
+  const { basketStore } = useStore();
+
   const [isVisible, setIsVisible] = useState(false);
   const [modalCard, setModalCard] = useState(false);
   const [imgModal, setImgModal] = useState('');
@@ -54,20 +54,20 @@ const App = observer(() => {
   // Modal Basket
 
   const [modalBasket, setModalBasket] = useState(false);
-  const [basketArr, setBasketArr] = useState([]);
+  // const [basketArr, setBasketArr] = useState([]);
   const [basketItem, setBasketItem] = useState();
 
   useEffect(() => {
-    basketArr.forEach((item, index) => {
-      for (let i = index + 1; i < basketArr.length; i++) {
-        if (item.name === basketArr[i].name) {
+    basketStore.getBasketItems.forEach((item, index) => {
+      for (let i = index + 1; i < basketStore.getBasketItems.length; i++) {
+        if (item.name === basketStore.getBasketItems[i].name) {
           item.span++;
-          basketArr.splice(i, 1);
+          basketStore.getBasketItems.splice(i, 1);
           i--;
         }
       }
     });
-  }, [basketArr, basketItem]);
+  }, [basketStore.getBasketItems, basketItem]);
 
   useEffect(() => {
     const body = document.querySelector('body');
@@ -92,56 +92,20 @@ const App = observer(() => {
     setDops(dopsOpen);
   };
 
-  const handleAdd = obj => {
-    const existingProduct = basketArr.find(p => p.name === obj.name);
-    if (existingProduct) {
-      setBasketArr(
-        basketArr.map(p => {
-          if (p.name === obj.name) {
-            return { ...p, span: p.span + 1 };
-          } else {
-            return p;
-          }
-        })
-      );
-    } else {
-      setBasketArr([...basketArr, { ...obj, span: 1 }]);
-    }
-  };
-
-  const handleRemove = obj => {
-    const existingProduct = basketArr.find(p => p.name === obj.name);
-    if (existingProduct.span === 1) {
-      setBasketArr(basketArr.filter(p => p.name !== obj.name));
-    } else {
-      setBasketArr(
-        basketArr.map(p => {
-          if (p.name === obj.name) {
-            return { ...p, span: p.span - 1 };
-          } else {
-            return p;
-          }
-        })
-      );
-    }
-  };
-
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setIsVisible(scrollTop > 300);
   };
-
+  const clickBasketHandler = (img, name, price, text) => {
+    let span = 1;
+    basketStore.handleAdd({ img, name, price, text, span });
+    // setBasketArr([...basketArr, { img, name, price, text, span }]);
+  };
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-  };
-
-  const clickBasketHandler = (img, name, price, text) => {
-    let span = 1;
-    setBasketItem({ img, name, price, text, span });
-    setBasketArr([...basketArr, { img, name, price, text, span }]);
   };
 
   const closeModal = () => {
@@ -156,7 +120,7 @@ const App = observer(() => {
       <Header openBusket={openBasket} />
       <AppWrapper>
         <Routes>
-          <Route path="/" element={<Home arr={setBasketArr} />} />
+          <Route path="/" element={<Home arr={basketStore.getBasketItems} />} />
           <Route
             path="/MyPlace"
             element={
@@ -211,7 +175,7 @@ const App = observer(() => {
       <Footer />
       {modalCard && (
         <ModalCard
-          basketArr={basketArr}
+          basketArr={basketStore.getBasketItems}
           clickAddBasket={clickBasketHandler}
           modalClose={closeModal}
           img={imgModal}
@@ -223,10 +187,8 @@ const App = observer(() => {
       )}
       {modalBasket && (
         <ModalBasket
-          reset={setBasketArr}
+          reset={basketStore.resetBasket}
           modalClose={setModalBasket}
-          plus={handleAdd}
-          minus={handleRemove}
         />
       )}{' '}
       {isVisible && (

@@ -29,6 +29,9 @@ class Basket {
       this._bItems.push({ img, name, price, text, span });
     }
   }
+  resetBasket() {
+    this._bItems = [];
+  }
 
   calculateTotal() {
     return this._bItems.reduce((acc, p) => acc + p.price * p.span, 0);
