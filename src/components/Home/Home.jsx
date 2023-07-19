@@ -1,4 +1,6 @@
 import { React, useEffect } from 'react';
+import { observer } from 'mobx-react-lite';
+import { useStore } from '../../store/index';
 import {
   ContentWrapper,
   ClientsWrapper,
@@ -8,10 +10,11 @@ import {
 import myClients from './My_clients/My_clients';
 import { Link } from 'react-router-dom';
 
-export function Home({ arr }) {
+export const Home = observer(() => {
+  const { basketStore } = useStore();
   useEffect(() => {
-    arr = [];
-  }, [arr]);
+    basketStore.resetBasket();
+  }, [basketStore]);
 
   return (
     <>
@@ -31,4 +34,4 @@ export function Home({ arr }) {
       </ContentWrapper>
     </>
   );
-}
+});

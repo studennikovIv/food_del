@@ -49,6 +49,7 @@ export const BasketFormClient = observer(
     const onSubmit = async e => {
       // e.preventDefault();
       const resetBasket = basketStore.resetBasket;
+      basketStore.openBusket = false;
       console.log(basketStore.getBasketItems);
       console.log(e);
       const { telephone, streat, house, coments } = e;

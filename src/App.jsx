@@ -53,7 +53,7 @@ const App = observer(() => {
   const [dops, setDops] = useState([]);
   // Modal Basket
 
-  const [modalBasket, setModalBasket] = useState(false);
+  // const [modalBasket, setModalBasket] = useState(false);
   // const [basketArr, setBasketArr] = useState([]);
   const [basketItem, setBasketItem] = useState();
 
@@ -71,12 +71,12 @@ const App = observer(() => {
 
   useEffect(() => {
     const body = document.querySelector('body');
-    if (modalBasket) {
+    if (basketStore.openBusket) {
       body.style.overflow = 'hidden';
     } else {
       body.style.overflow = 'auto';
     }
-  }, [modalBasket]);
+  }, [basketStore.openBusket]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -113,7 +113,7 @@ const App = observer(() => {
   };
 
   const openBasket = bool => {
-    setModalBasket(bool);
+    basketStore.openBusket = bool;
   };
   return (
     <>
@@ -185,11 +185,8 @@ const App = observer(() => {
           dops={dops}
         />
       )}
-      {modalBasket && (
-        <ModalBasket
-          reset={basketStore.resetBasket}
-          modalClose={setModalBasket}
-        />
+      {basketStore.openBusket && (
+        <ModalBasket reset={basketStore.resetBasket} />
       )}{' '}
       {isVisible && (
         <ToTopBtn

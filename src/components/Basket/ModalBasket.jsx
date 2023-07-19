@@ -27,7 +27,7 @@ export const ModalBasket = observer(({ modalClose, reset }) => {
   const [basketFormClient, setBasketFormClient] = useState(false);
   // console.log(basketArr);
   const closeButton = () => {
-    modalClose(false);
+    basketStore.openBusket = false;
   };
 
   const clickBtn = () => {

@@ -66,6 +66,7 @@ class Basket {
       });
     }
   };
+  openBusket = false;
 }
 
 export default Basket;
