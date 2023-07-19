@@ -95,7 +95,7 @@ export function OneCard({ position, clickOnCard }) {
           <Box>
             {property.formattedPrice}
             <Box as="span" color="gray.600" fontSize="sm">
-              / wk
+              / ₴
             </Box>
           </Box>
 
