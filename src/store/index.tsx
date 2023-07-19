@@ -2,7 +2,7 @@ import React, { useContext, ReactNode } from 'react';
 import { makeAutoObservable } from 'mobx';
 import BasketButtonSpan from './BasketButtonSpan';
 import Basket from './Basket';
-
+import { ChakraProvider } from '@chakra-ui/react';
 export class RootStore {
   BasketButtonSpan = new BasketButtonSpan();
   basketStore = new Basket();
@@ -23,7 +23,7 @@ export function useStore(): RootStore {
 export function RootStoreProvider({ children }: { children: ReactNode }) {
   return (
     <RootStoreContext.Provider value={rootStore}>
-      {children}
+      <ChakraProvider>{children}</ChakraProvider>
     </RootStoreContext.Provider>
   );
 }
