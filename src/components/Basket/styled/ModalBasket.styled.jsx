@@ -208,7 +208,7 @@ export const ClientH3 = styled.h3`
 
 export const ClientForm = styled.form`
   text-align: center;
-  width: 97%;
+  width: 77%;
   max-width: 500px;
   margin-right: auto;
   margin-left: auto;

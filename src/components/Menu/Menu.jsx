@@ -1,4 +1,5 @@
 import { OneCard } from './card/OneCard';
+import { Box, Image, Heading, Text, Button } from '@chakra-ui/react';
 import {
   MenuWrapper,
   MenuList,
@@ -17,7 +18,7 @@ export const Menu = ({ prop, clickOnCard }) => {
         {prop.map(res => {
           const { title, nameInst, list } = res;
           return (
-            <CaseItem key={title} id={title}>
+            <CaseItem key={nameInst} id={title}>
               {nameInst && <SocialTitle>{nameInst}</SocialTitle>}
               <SubPositionTitle>{title}</SubPositionTitle>
               <SubpositionList>
@@ -26,19 +27,6 @@ export const Menu = ({ prop, clickOnCard }) => {
             </CaseItem>
           );
         })}
-        {/* {prop.list.map(res => {
-          const { title, nameInst } = res;
-          console.log(res);
-          return (
-            <ONE_CASE_LI key={title} id={title}>
-              {nameInst && <NAMEINST_H1>{nameInst}</NAMEINST_H1>}
-              <NAME_SUBPOSITION_H>{title}</NAME_SUBPOSITION_H>
-              <SUBPOSITION_UL>
-                <OneCard position={res} clickOnCard={clickOnCard} />
-              </SUBPOSITION_UL>
-            </ONE_CASE_LI>
-          );
-        })} */}
       </MenuList>
     </MenuWrapper>
   );

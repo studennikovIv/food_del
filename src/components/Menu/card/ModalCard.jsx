@@ -1,7 +1,18 @@
 import { observer } from 'mobx-react-lite';
 import { useStore } from '../../../store/index';
 import {
+  Flex,
+  Center,
+  Box,
+  Image,
+  Heading,
+  Text,
+  Button,
+} from '@chakra-ui/react';
+
+import {
   BasketDropWrapper,
+  WrapButton,
   MODAL_DIV,
   TOP_MODAL_DIV,
   BUTTON_CLOSE,
@@ -23,23 +34,52 @@ export const ModalCard = observer(({ modalClose, img, name, price, text }) => {
   const imagePath = require(`../../MenuAllBookmarks/${img}`);
   return (
     <BasketDropWrapper>
-      <MODAL_DIV>
-        <TOP_MODAL_DIV>
-          <h3>{name}</h3>
-          <BUTTON_CLOSE onClick={ClickOnCard}>×</BUTTON_CLOSE>
-        </TOP_MODAL_DIV>
-        <CONTENT_DIV>
-          <INCREASED_INFO_DIV>
-            <img src={imagePath} alt={name} />
-            <p>{text}</p>
-          </INCREASED_INFO_DIV>
-        </CONTENT_DIV>
-        <div></div>
+      <Center>
+        <Flex
+          overflow-x="auto"
+          borderWidth="1px"
+          borderRadius="lg"
+          overflow="hidden"
+          p="4"
+          flexDirection="column"
+          alignItems="center"
+          background="white"
+          maxW="300px"
+        >
+          {/* Изображение товара */}
+          <Image src={imagePath} alt={name} maxH="200px" objectFit="cover" />
 
-        <BUTTON_ORDER>
-          <button onClick={addBasket}>{price}₴</button>
-        </BUTTON_ORDER>
-      </MODAL_DIV>
+          {/* Заголовок товара */}
+          <Heading mt="4" size="md">
+            {name}
+          </Heading>
+
+          {/* Описание товара */}
+          <Text mt="2">{text}</Text>
+
+          {/* Кнопка с ценой товара */}
+          <WrapButton>
+            <Button
+              mt="4"
+              colorScheme="transpared"
+              color="#000"
+              border="solid 1px red"
+              borderRadius="none"
+              onClick={ClickOnCard}
+            >
+              Назад
+            </Button>
+            <Button
+              mt="4"
+              colorScheme="red"
+              borderRadius="none"
+              onClick={addBasket}
+            >
+              Додати у кошик: {price}₴
+            </Button>
+          </WrapButton>
+        </Flex>
+      </Center>
     </BasketDropWrapper>
   );
 });

@@ -67,7 +67,7 @@ export const SubPositionTitle = styled.h2`
 export const SubpositionList = styled.ul`
   display: grid;
   place-items: center;
-  gap: 0 50px;
+  gap: 50px;
   grid-template-columns: 250px 250px 250px;
   justify-items: center;
 
